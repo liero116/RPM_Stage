@@ -1,0 +1,75 @@
+;----------------------------------------------------------------------
+;= Throw
+[Statedef 810]
+type = S
+movetype= A
+physics = S
+anim = 810
+ctrl=0
+
+[State 0, PowerAdd]
+type = PowerAdd
+triggerall = fvar(17)= 0
+triggerall = fvar(7) = 0
+triggerall = var(40) = 0
+trigger1 = time = 0
+value = 120
+
+[State 200, vox]
+type = PlaySnd
+trigger1 = animelem=6
+value = 6,4
+volume=200
+channel=0
+
+[State 810, Bind 1]
+type = TargetBind
+trigger1 = AnimElem = 1
+pos = 35, 0
+
+[State 0, EnvShake]
+type = EnvShake
+trigger1 = time = 9
+time = 40
+freq = 60
+ampl = -1
+phase = 90
+persistent = 1
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = time = 0
+priority = 4, Hit
+attr = S, NA
+animtype  = Hard
+damage    = 80
+guardflag = MA
+hitflag = MAFD
+pausetime = 12,12
+sparkno = 30
+sparkxy = -40,-20
+hitsound = 5,12
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 3
+ground.hittime  = 20
+ground.velocity = -5,-2
+air.velocity = -5,-2
+air.hittime = 20
+air.fall=1
+fall.recover=0
+fall=1
+down.bounce=0
+fall.xvelocity=0
+fall.yvelocity=-0
+envshake.time = 5
+envshake.freq = 80
+envshake.ampl = -1
+envshake.phase = 90
+
+[State 810, State End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1

@@ -1,0 +1,46 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Roy"
+displayname = "ROY"
+versiondate = 01/07/12
+mugenversion = 1.0
+author = "Liero"
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite = roy.sff
+anim = roy.air
+sound = roy.snd
+cmd = roy.cmd
+cns = roy.cns
+stcommon = common1.cns
+st = roy.cns
+st2 = decimal.cns
+st3 = binary.cns
+st4 = throw.cns
+st5 = pause.cns
+pal1 = roy01.act
+pal2 = roy02.act
+pal3 = roy03.act
+pal4 = roy04.act
+pal5 = roy05.act
+pal6 = roy06.act
+pal7 = roy07.act
+pal8 = roy08.act
+pal9 = roy09.act
+pal10 = roy10.act
+pal11 = roy11.act
+pal12 = roy12.act
+
+[Arcade]
+;intro.storyboard = intro.def
+ending.storyboard = ending.def
+
+[Option]
+filename = chars/sofie/sofie.sff
+sprite.compress.5 = lz5
+;sprite.compress.8 = rle8

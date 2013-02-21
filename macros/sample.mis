@@ -1,0 +1,17 @@
+# sample macro for autoit keysender script
+
+A,w10,
+
+_2B,W41,*A,W10,
+
+_2B,W42,*A,W10,
+
+B,W10,2.26.6A,W10,
+
+2.26.6B,W15,
+
+2.26.6C,W20,
+
+6.2.26Z.
+
+! end of script

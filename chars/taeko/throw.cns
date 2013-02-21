@@ -1,0 +1,111 @@
+;----------------------------------------------------------------------
+;= Throw
+[Statedef 810]
+type = S
+movetype= A
+physics = S
+anim = 810
+ctrl=0
+
+[State 0, PowerAdd]
+type = PowerAdd
+triggerall = fvar(17)= 0
+triggerall = fvar(7) = 0
+triggerall = var(40) = 0
+trigger1 = time = 0
+value = 250
+
+[State 200, vox]
+type = PlaySnd
+trigger1 =time=0
+value = 6,37
+volume=200
+channel=0
+
+[State 810, Bind 1]
+type = TargetBind
+trigger1 = AnimElem = 1
+pos = 35, 0
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = time=0
+priority = 1,miss
+attr = S, NA
+animtype  = hard
+damage    = 20
+guardflag = MA
+hitflag = MAFD
+pausetime = 8,8
+sparkno = 0
+sparkxy = -10,-37
+hitsound = 5,12
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 3
+ground.hittime  = 40
+ground.velocity = 0
+air.velocity = 0,0
+air.hittime = 20
+
+[State 1000, Land]
+type= changestate
+trigger1= time = 4
+value= 812
+
+;----------------------------------------------------------------------
+;= Throw Jump
+[Statedef 812]
+type = S
+movetype= A
+physics = S
+anim = 812
+ctrl=0
+
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = time = 0
+y = -7
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = time >= 0
+x = 3.6
+
+[State 0, VelAdd]
+type = VelAdd
+trigger1 = time > 0
+y = 0.7
+
+[State 1000, Land]
+type= changestate
+trigger1 = animtime = 0
+value= 813
+
+;----------------------------------------------------------------------
+;= Throw End
+[Statedef 813]
+type = S
+movetype= I
+physics = S
+anim = 813
+ctrl=0
+velset = 0,0
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = time = 0
+y = 0
+
+[State 0, CtrlSet]
+type = CtrlSet
+trigger1 = time = 1
+value = 1
+
+[State 810, State End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1

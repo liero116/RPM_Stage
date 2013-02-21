@@ -1,0 +1,1337 @@
+;-------------------------------
+;==Twilight==
+[Statedef 10000000]
+type=S
+physics=N
+
+[state 0]
+type = Null
+trigger1=1
+
+;---------------------------------------------------------------------------
+;Portal
+[Statedef 3000]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 3000
+ctrl = 0
+sprpriority = 2
+poweradd=0
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[State -2, Damage Dampener]; Full damage
+type= attackmulset
+triggerall=fvar(16)=0
+trigger1=time=0
+value= ifelse(var(54)=0,1.0, ifelse(var(54)=1,1.1, ifelse(var(54)=2,1.2, ifelse(var(54)=3,1.3, ifelse(var(54)=4,1.4, 1.5)))))
+ignorehitpause= 1
+
+[State -2, Damage Dampener]; Full damage
+type= attackmulset
+triggerall=fvar(16)=1
+trigger1=time=0
+value= ifelse(var(54)=0,2.0, ifelse(var(54)=1,2.1, ifelse(var(54)=2,2.2, ifelse(var(54)=3,2.3, ifelse(var(54)=4,2.4, 2.5)))))
+ignorehitpause= 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, vox]
+type = PlaySnd
+trigger1 = Time = 19
+value = 6,1
+volume=200
+channel=0
+
+[state 3000, face crawl]
+type=explod
+trigger1 = time=20
+anim=10000
+ID=10000
+scale=1,1
+facing=0
+postype=back
+pos=0,200
+supermove=1
+supermovetime=9999
+pausemovetime=9999
+
+[State 3000, Super A]
+type = SuperPause
+trigger1 = time=20
+pos = 25, -57
+anim = 100
+sound = 20, 0
+poweradd = -1000
+
+[State 3000, Super B]
+type = AfterImage
+trigger1 = time=20
+time = 2
+
+[State 3000, AfterImage]
+type = AfterImage
+trigger1 = time=20
+time = 45
+palcolor = 256
+palbright = 30,30,30
+palcontrast = 120,120,120
+paladd = 10,10,10
+palmul = .65,.65,.65
+
+[State 200, PosSet]
+type = PosSet
+trigger1 = animelem=6
+x = enemynear, pos x
+y = 0
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = time=0
+attr = S, NA
+damage = 220,50
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 40,44
+sparkno = 0
+sparkxy = -10, -26
+hitsound = S7, 13
+guardsound = 6, 0
+ground.type = trip
+ground.slidetime = 5
+ground.hittime  = 17
+ground.velocity = -12, -8
+airguard.velocity = -.5,-.8
+air.type = trip
+air.velocity = -12 ,-8
+air.hittime = 30
+envshake.time=44
+envshake.freq=90
+envshake.ampl=6
+envshake.phase=90
+fall=1
+air.fall=1
+fall.recovertime=-1
+
+[State 3000, 7]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Power Hits
+[Statedef 3050]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+anim = 3050
+ctrl = 0
+sprpriority = 5
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[State -2, Damage Dampener]; Full damage
+type= attackmulset
+triggerall=fvar(16)=0
+trigger1=time=0
+value= ifelse(var(54)=0,1.0, ifelse(var(54)=1,1.1, ifelse(var(54)=2,1.2, ifelse(var(54)=3,1.3, ifelse(var(54)=4,1.4, 1.5)))))
+ignorehitpause= 1
+
+[State -2, Damage Dampener]; Full damage
+type= attackmulset
+triggerall=fvar(16)=1
+trigger1=time=0
+value= ifelse(var(54)=0,2.0, ifelse(var(54)=1,2.1, ifelse(var(54)=2,2.2, ifelse(var(54)=3,2.3, ifelse(var(54)=4,2.4, 2.5)))))
+ignorehitpause= 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, vox pause]
+type = PlaySnd
+trigger1=time=14
+value = 6,8
+volume=200
+channel=0
+
+[state 3000, face crawl]
+type=explod
+trigger1=animelem=6
+anim=10005
+ID=10005
+scale=1,1
+facing=0
+postype=back
+pos=0,150
+supermove=1
+supermovetime=9999
+pausemovetime=9999
+
+[State 3050, Super A]
+type = SuperPause
+trigger1 = animelem=6
+pos = -5, -55
+anim = 100
+sound = 20, 0
+poweradd = -1000
+time=80
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=8
+attr = S, NA
+damage = 50,30
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 13,30
+sparkno = 0
+sparkxy = -10, -26
+hitsound = S7,12
+guardsound = 6, 0
+ground.type = high
+ground.slidetime = 5
+ground.hittime  = 50
+ground.velocity = -0.5,0
+airguard.velocity = -.5,-.8
+air.type = high
+air.velocity = -0.5,8
+air.hittime = 30
+envshake.time=30
+envshake.freq=60
+envshake.ampl=4
+envshake.phase=90
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=14
+attr = S, NA
+damage = 100,50
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 43,43
+sparkno = 0
+sparkxy = -10, -26
+hitsound = S7,13
+guardsound = 6, 0
+ground.type = high
+ground.slidetime = 5
+ground.hittime  = 9999
+ground.velocity = -10,-3
+airguard.velocity = -.5,-.8
+air.type = high
+air.velocity = -10,-3
+air.hittime = 9999
+envshake.time=43
+envshake.freq=90
+envshake.ampl=6
+envshake.phase=90
+fall=1
+air.fall=1
+fall.recovertime=-1
+
+[State 3050, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+;Hyper Summon
+[Statedef 3070]
+type    = S
+movetype= A
+physics = S
+juggle  = 6
+poweradd= 0
+ctrl = 0
+anim = 3100
+sprpriority = 2
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (projhit3115=1)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[State -2, Damage Dampener]; Full damage
+type= attackmulset
+triggerall=fvar(16)=0
+trigger1=time=0
+value= ifelse(var(54)=0,1.0, ifelse(var(54)=1,1.1, ifelse(var(54)=2,1.2, ifelse(var(54)=3,1.3, ifelse(var(54)=4,1.4, 1.5)))))
+ignorehitpause= 1
+
+[State -2, Damage Dampener]; Full damage
+type= attackmulset
+triggerall=fvar(16)=1
+trigger1=time=0
+value= ifelse(var(54)=0,2.0, ifelse(var(54)=1,2.1, ifelse(var(54)=2,2.2, ifelse(var(54)=3,2.3, ifelse(var(54)=4,2.4, 2.5)))))
+ignorehitpause= 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[state 3000, face crawl]
+type=explod
+trigger1=animelem=11
+anim=10010
+ID=10010
+scale=.8,.8
+facing=0
+postype=back
+pos=30,200
+supermove=1
+supermovetime=9999
+pausemovetime=9999
+
+[State 3050, Super A]
+type = SuperPause
+trigger1=animelem=11
+pos = -5, -55
+anim = 100
+sound = 20, 0
+poweradd = -3000
+time=200
+
+[State 200, sfx: summon in]
+type = PlaySnd
+trigger1 = animelem=6
+value = 9,0
+volume=200
+
+[State 1060, summon in]
+type = Explod
+trigger1 = animelem=6
+anim =3111
+ID = 3111
+pos = 60,0
+postype = p1
+scale = 0.5,0.5
+sprpriority = 5
+ignorehitpause = 0
+
+[State 1060, old man]
+type = Projectile
+trigger1 = animelem=7
+ProjID = 3110
+projanim = 3110
+projscale = 0.5,0.5
+projremove = 0
+projremovetime = 170
+projhits = 1
+projpriority = 6
+projsprpriority = 6
+projremanim=1052
+offset =60,0
+
+[State 200, vox: "now i'll show you my miraculous illusion"]
+type = PlaySnd
+trigger1 = animelem=9
+value = 8,15
+volume=200
+
+;===========================================================================
+;Summons
+;===========================================================================
+
+[State 200, vox: "don't worry"]
+type = PlaySnd
+trigger1 = animelem=19
+value = 8,16
+volume=200
+
+[State 200, sfx: eye]
+type = PlaySnd
+trigger1 = animelem=29
+value = 8,17
+volume=200
+
+[State 200, sfx: main]
+type = PlaySnd
+trigger1 = animelem=14
+value = 8,18
+volume=200
+
+[State 1060, maromi]
+type = Projectile
+trigger1 = animelem=13
+ProjID = 3115
+projanim = 3115
+projscale = 1.2,1.2
+projremove = 0
+projremovetime = 124
+projhits = 1
+projpriority = 6
+projsprpriority = 7
+projremanim=-1
+offset =195,0
+postype = p1
+ignorehitpause = 0
+attr = S, NA
+damage =520,520
+animtype = Light
+;guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 0, 124
+sparkno = 0
+sparkxy = -10, -26
+hitsound = 0,0
+guardsound = 6, 0
+ground.type = trip
+ground.slidetime = 5
+ground.hittime  = 300
+ground.velocity = -2,-7
+airguard.velocity = -.5,-.8
+air.type = trip
+air.velocity = -2,-7
+air.hittime = 300
+fall=1
+air.fall=1
+fall.recover=-1
+envshake.time=60
+envshake.freq=90
+envshake.ampl=6
+envshake.phase=90
+
+;---------------------------------------------------------------------------
+;---------------------------------------------------------------------------
+
+[State 1050, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl=1
+
+;-------------------------------
+;==Midnight==
+[Statedef 10000001]
+type=S
+physics=N
+
+[state 0]
+type = Null
+trigger1=1
+
+;---------------------------------------------------------------------------
+;Portal
+[Statedef 3100]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 3000
+ctrl = 0
+sprpriority = 2
+poweradd=0
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, vox]
+type = PlaySnd
+trigger1 = Time = 19
+value = 6,1
+volume=200
+channel=0
+
+[state 3000, face crawl]
+type=explod
+trigger1 = time=20
+anim=10000
+ID=10000
+scale=1,1
+facing=0
+postype=back
+pos=0,200
+supermove=1
+supermovetime=9999
+pausemovetime=9999
+
+[State 3000, Super A]
+type = SuperPause
+trigger1 = time=20
+pos = 25, -57
+anim = 100
+sound = 20, 0
+poweradd = -1000
+
+[State 3000, Super B]
+type = AfterImage
+trigger1 = time=20
+time = 2
+
+[State 3000, AfterImage]
+type = AfterImage
+trigger1 = time=20
+time = 45
+palcolor = 256
+palbright = 30,30,30
+palcontrast = 120,120,120
+paladd = 10,10,10
+palmul = .65,.65,.65
+
+[State 200, PosSet]
+type = PosSet
+trigger1 = animelem=6
+x = enemynear, pos x
+y = 0
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = time=0
+attr = S, NA
+damage = 220,50
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 40,44
+sparkno = 0
+sparkxy = -10, -26
+hitsound = S7, 13
+guardsound = 6, 0
+ground.type = trip
+ground.slidetime = 5
+ground.hittime  = 17
+ground.velocity = -12, -8
+airguard.velocity = -.5,-.8
+air.type = trip
+air.velocity = -12 ,-8
+air.hittime = 30
+envshake.time=44
+envshake.freq=90
+envshake.ampl=6
+envshake.phase=90
+fall=1
+air.fall=1
+fall.recovertime=-1
+
+[State 3000, 7]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Power Hits
+[Statedef 3150]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+anim = 3050
+ctrl = 0
+sprpriority = 5
+facep2=1
+poweradd= ifelse(fvar(17)=0,0,0)
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, vox pause]
+type = PlaySnd
+trigger1=time=14
+value = 6,8
+volume=200
+channel=0
+
+[state 3000, face crawl]
+type=explod
+trigger1=animelem=6
+anim=10005
+ID=10005
+scale=1,1
+facing=0
+postype=back
+pos=0,150
+supermove=1
+supermovetime=9999
+pausemovetime=9999
+
+[State 3050, Super A]
+type = SuperPause
+trigger1 = animelem=6
+pos = -5, -55
+anim = 100
+sound = 20, 0
+poweradd = -1000
+time=80
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=8
+attr = S, NA
+damage = 50,30
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 13,30
+sparkno = 0
+sparkxy = -10, -26
+hitsound = S7,12
+guardsound = 6, 0
+ground.type = high
+ground.slidetime = 5
+ground.hittime  = 50
+ground.velocity = -0.5,0
+airguard.velocity = -.5,-.8
+air.type = high
+air.velocity = -0.5,8
+air.hittime = 30
+envshake.time=30
+envshake.freq=60
+envshake.ampl=4
+envshake.phase=90
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=14
+attr = S, NA
+damage = 100,50
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 43,43
+sparkno = 0
+sparkxy = -10, -26
+hitsound = S7,13
+guardsound = 6, 0
+ground.type = high
+ground.slidetime = 5
+ground.hittime  = 9999
+ground.velocity = -10,-3
+airguard.velocity = -.5,-.8
+air.type = high
+air.velocity = -10,-3
+air.hittime = 9999
+envshake.time=43
+envshake.freq=90
+envshake.ampl=6
+envshake.phase=90
+fall=1
+air.fall=1
+fall.recovertime=-1
+
+[State 3050, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+;Hyper Summon
+[Statedef 3170]
+type    = S
+movetype= A
+physics = S
+juggle  = 6
+poweradd= 0
+ctrl = 0
+anim = 3100
+sprpriority = 2
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (projhit3115=1)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[state 3000, face crawl]
+type=explod
+trigger1=animelem=11
+anim=10010
+ID=10010
+scale=.8,.8
+facing=0
+postype=back
+pos=30,200
+supermove=1
+supermovetime=9999
+pausemovetime=9999
+
+[State 3050, Super A]
+type = SuperPause
+trigger1=animelem=11
+pos = -5, -55
+anim = 100
+sound = 20, 0
+poweradd = -3000
+time=200
+
+[State 200, sfx: summon in]
+type = PlaySnd
+trigger1 = animelem=6
+value = 9,0
+volume=200
+
+[State 1060, summon in]
+type = Explod
+trigger1 = animelem=6
+anim =3111
+ID = 3111
+pos = 60,0
+postype = p1
+scale = 0.5,0.5
+sprpriority = 5
+ignorehitpause = 0
+
+[State 1060, old man]
+type = Projectile
+trigger1 = animelem=7
+ProjID = 3110
+projanim = 3110
+projscale = 0.5,0.5
+projremove = 0
+projremovetime = 170
+projhits = 1
+projpriority = 6
+projsprpriority = 6
+projremanim=1052
+offset =60,0
+
+[State 200, vox: "now i'll show you my miraculous illusion"]
+type = PlaySnd
+trigger1 = animelem=9
+value = 8,15
+volume=200
+
+;===========================================================================
+;Summons
+;===========================================================================
+
+[State 200, vox: "don't worry"]
+type = PlaySnd
+trigger1 = animelem=19
+value = 8,16
+volume=200
+
+[State 200, sfx: eye]
+type = PlaySnd
+trigger1 = animelem=29
+value = 8,17
+volume=200
+
+[State 200, sfx: main]
+type = PlaySnd
+trigger1 = animelem=14
+value = 8,18
+volume=200
+
+[State 1060, maromi]
+type = Projectile
+trigger1 = animelem=13
+ProjID = 3115
+projanim = 3115
+projscale = 1.2,1.2
+projremove = 0
+projremovetime = 124
+projhits = 1
+projpriority = 6
+projsprpriority = 7
+projremanim=-1
+offset =195,0
+postype = p1
+ignorehitpause = 0
+attr = S, NA
+damage =520,520
+animtype = Light
+;guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 0, 124
+sparkno = 0
+sparkxy = -10, -26
+hitsound = 0,0
+guardsound = 6, 0
+ground.type = trip
+ground.slidetime = 5
+ground.hittime  = 300
+ground.velocity = -2,-7
+airguard.velocity = -.5,-.8
+air.type = trip
+air.velocity = -2,-7
+air.hittime = 300
+fall=1
+air.fall=1
+fall.recover=-1
+envshake.time=60
+envshake.freq=90
+envshake.ampl=6
+envshake.phase=90
+
+;---------------------------------------------------------------------------
+;---------------------------------------------------------------------------
+
+[State 1050, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl=1
+
+;-------------------------------
+;==Dawn==
+[Statedef 10000002]
+type=S
+physics=N
+
+[state 0]
+type = Null
+trigger1=1
+
+;---------------------------------------------------------------------------
+;Portal
+[Statedef 3200]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+velset = 0,0
+;nim = 3000
+ctrl = 0
+sprpriority = 2
+poweradd=0
+facep2=1
+
+[state 0, super armor anim change]
+type = ChangeAnim
+trigger1 = Time = 0 && Anim !=3000
+value=3000
+
+[State 0, super armor damage]
+type = LifeAdd
+trigger1 = Time = 0
+value = -(gethitvar(damage))
+
+[state 0, super armor hitcounter]
+type=varadd
+trigger1=enemynear,movetype=A
+trigger1=enemynear,movecontact
+fv=5
+value=1
+persistent=0
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, vox]
+type = PlaySnd
+trigger1 = Time = 19
+value = 6,1
+volume=200
+channel=0
+
+[state 3000, face crawl]
+type=explod
+trigger1 = time=20
+anim=10000
+ID=10000
+scale=1,1
+facing=0
+postype=back
+pos=0,200
+supermove=1
+supermovetime=9999
+pausemovetime=9999
+
+[State 3000, Super A]
+type = SuperPause
+trigger1 = time=20
+pos = 25, -57
+anim = 100
+sound = 20, 0
+poweradd = -1000
+
+[State 3000, Super B]
+type = AfterImage
+trigger1 = time=20
+time = 2
+
+[State 3000, AfterImage]
+type = AfterImage
+trigger1 = time=20
+time = 45
+palcolor = 256
+palbright = 30,30,30
+palcontrast = 120,120,120
+paladd = 10,10,10
+palmul = .65,.65,.65
+
+[State 200, PosSet]
+type = PosSet
+trigger1 = animelem=6
+x = enemynear, pos x
+y = 0
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = time=0
+attr = S, NA
+damage = 220,50
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 40,44
+sparkno = 0
+sparkxy = -10, -26
+hitsound = S7, 13
+guardsound = 6, 0
+ground.type = trip
+ground.slidetime = 5
+ground.hittime  = 17
+ground.velocity = -12, -8
+airguard.velocity = -.5,-.8
+air.type = trip
+air.velocity = -12 ,-8
+air.hittime = 30
+envshake.time=44
+envshake.freq=90
+envshake.ampl=6
+envshake.phase=90
+fall=1
+air.fall=1
+fall.recovertime=-1
+
+[State 3000, 7]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Power Hits
+[Statedef 3250]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+;nim = 3050
+ctrl = 0
+sprpriority = 5
+facep2=1
+poweradd= ifelse(fvar(7)=0,0,0)
+
+[state 0, super armor anim change]
+type = ChangeAnim
+trigger1 = Time = 0 && Anim !=3050
+value=3050
+
+[State 0, super armor damage]
+type = LifeAdd
+trigger1 = Time = 0
+value = -(gethitvar(damage))
+
+[state 0, super armor hitcounter]
+type=varadd
+trigger1=enemynear,movetype=A
+trigger1=enemynear,movecontact
+fv=5
+value=1
+persistent=0
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, vox pause]
+type = PlaySnd
+trigger1=time=14
+value = 6,8
+volume=200
+channel=0
+
+[state 3000, face crawl]
+type=explod
+trigger1=animelem=6
+anim=10005
+ID=10005
+scale=1,1
+facing=0
+postype=back
+pos=0,150
+supermove=1
+supermovetime=9999
+pausemovetime=9999
+
+[State 3050, Super A]
+type = SuperPause
+trigger1 = animelem=6
+pos = -5, -55
+anim = 100
+sound = 20, 0
+poweradd = -1000
+time=80
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=8
+attr = S, NA
+damage = 50,30
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 13,30
+sparkno = 0
+sparkxy = -10, -26
+hitsound = S7,12
+guardsound = 6, 0
+ground.type = high
+ground.slidetime = 5
+ground.hittime  = 50
+ground.velocity = -0.5,0
+airguard.velocity = -.5,-.8
+air.type = high
+air.velocity = -0.5,8
+air.hittime = 30
+envshake.time=30
+envshake.freq=60
+envshake.ampl=4
+envshake.phase=90
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=14
+attr = S, NA
+damage = 100,50
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 43,43
+sparkno = 0
+sparkxy = -10, -26
+hitsound = S7,13
+guardsound = 6, 0
+ground.type = high
+ground.slidetime = 5
+ground.hittime  = 9999
+ground.velocity = -10,-3
+airguard.velocity = -.5,-.8
+air.type = high
+air.velocity = -10,-3
+air.hittime = 9999
+envshake.time=43
+envshake.freq=90
+envshake.ampl=6
+envshake.phase=90
+fall=1
+air.fall=1
+fall.recovertime=-1
+
+[State 3050, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+;Hyper Summon
+[Statedef 3270]
+type    = S
+movetype= A
+physics = S
+juggle  = 6
+poweradd= 0
+ctrl = 0
+;nim = 3100
+sprpriority = 2
+facep2=1
+
+[state 0, super armor anim change]
+type = ChangeAnim
+trigger1 = Time = 0 && Anim !=3100
+value=3100
+
+[State 0, super armor damage]
+type = LifeAdd
+trigger1 = Time = 0
+value = -(gethitvar(damage))
+
+[state 0, super armor hitcounter]
+type=varadd
+trigger1=enemynear,movetype=A
+trigger1=enemynear,movecontact
+fv=5
+value=1
+persistent=0
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[state 3000, face crawl]
+type=explod
+trigger1=animelem=11
+anim=10010
+ID=10010
+scale=.8,.8
+facing=0
+postype=back
+pos=30,200
+supermove=1
+supermovetime=9999
+pausemovetime=9999
+
+[State 3050, Super A]
+type = SuperPause
+trigger1=animelem=11
+pos = -5, -55
+anim = 100
+sound = 20, 0
+poweradd = -3000
+time=200
+
+[State 200, sfx: summon in]
+type = PlaySnd
+trigger1 = animelem=6
+value = 9,0
+volume=200
+
+[State 1060, summon in]
+type = Explod
+trigger1 = animelem=6
+anim =3111
+ID = 3111
+pos = 60,0
+postype = p1
+scale = 0.5,0.5
+sprpriority = 5
+ignorehitpause = 0
+
+[State 1060, old man]
+type = Projectile
+trigger1 = animelem=7
+ProjID = 3110
+projanim = 3110
+projscale = 0.5,0.5
+projremove = 0
+projremovetime = 170
+projhits = 1
+projpriority = 6
+projsprpriority = 6
+projremanim=1052
+offset =60,0
+
+[State 200, vox: "now i'll show you my miraculous illusion"]
+type = PlaySnd
+trigger1 = animelem=9
+value = 8,15
+volume=200
+
+;===========================================================================
+;Summons
+;===========================================================================
+
+[State 200, vox: "don't worry"]
+type = PlaySnd
+trigger1 = animelem=19
+value = 8,16
+volume=200
+
+[State 200, sfx: eye]
+type = PlaySnd
+trigger1 = animelem=29
+value = 8,17
+volume=200
+
+[State 200, sfx: main]
+type = PlaySnd
+trigger1 = animelem=14
+value = 8,18
+volume=200
+
+[State 1060, maromi]
+type = Projectile
+trigger1 = animelem=13
+ProjID = 3115
+projanim = 3115
+projscale = 1.2,1.2
+projremove = 0
+projremovetime = 124
+projhits = 1
+projpriority = 6
+projsprpriority = 7
+projremanim=-1
+offset =195,0
+postype = p1
+ignorehitpause = 0
+attr = S, NA
+damage =520,520
+animtype = Light
+;guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 0, 124
+sparkno = 0
+sparkxy = -10, -26
+hitsound = 0,0
+guardsound = 6, 0
+ground.type = trip
+ground.slidetime = 5
+ground.hittime  = 300
+ground.velocity = -2,-7
+airguard.velocity = -.5,-.8
+air.type = trip
+air.velocity = -2,-7
+air.hittime = 300
+fall=1
+air.fall=1
+fall.recover=-1
+envshake.time=60
+envshake.freq=90
+envshake.ampl=6
+envshake.phase=90
+
+;---------------------------------------------------------------------------
+;---------------------------------------------------------------------------
+
+[State 1050, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl=1

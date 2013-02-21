@@ -1,0 +1,847 @@
+;-------------------------------
+;==Twilight==
+[Statedef 10000000]
+type=S
+physics=N
+
+[state 0]
+type = Null
+trigger1=1
+
+;---------------------------------------------------------------------------
+;Light
+
+[Statedef 200]
+type    = S
+movetype= A
+physics = S
+juggle  = 1
+ctrl = 0
+anim = 200
+poweradd = 20
+sprpriority = 2
+;velset=vel x/2,0
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+value = 5,8
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<249
+value = 6,3
+volume=200
+channel=0
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = AnimElem = 2
+attr = S, NA
+damage = 10,0
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4, Hit
+pausetime = 5, 2
+sparkno = 0
+sparkxy = -10, -26
+hitsound =  S7,9
+guardsound = 6, 0
+ground.type = High
+ground.slidetime = 5
+ground.hittime  = 17
+ground.velocity = -3
+airguard.velocity = -.5,-.8
+air.type = High
+air.velocity = -.5 ,-3.5
+air.hittime = 30
+
+[state 210, jump cancel]
+type=changestate
+trigger1=movecontact
+trigger1=command="holdup"
+value=40
+ctrl=1
+
+[State 200, 7]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Mid
+
+[Statedef 210]
+type    = S
+movetype= A
+physics = S
+juggle  = 10
+poweradd= 65
+ctrl = 0
+anim = 210
+priority=3
+sprpriority = -1
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+value = 5,7
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<749
+value = 6,11
+volume=200
+channel=0
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=3
+trigger2 = animelem=4
+trigger3 = animelem=5
+attr = S, NA
+priority = 2,hit
+animtype  = High
+damage    = 4
+guardflag = MAF
+pausetime = 6,6
+sparkno = 0
+sparkxy = -10,-37
+hitsound   = S7,10
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 10
+ground.hittime  = 14
+ground.velocity = -1,0
+air.velocity = -.5,-2
+air.hittime  = 27
+
+[state 210, jump cancel]
+type=changestate
+trigger1=movecontact
+trigger1=command="holdup"
+value=40
+ctrl=1
+
+[State 210, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Strong
+
+[Statedef 230]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+poweradd= 22
+ctrl = 0
+anim = 230
+sprpriority = 2
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = animelem=2
+trigger2 = animelem=6
+value = 5,7
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<449
+value = 6,16
+volume=200
+channel=0
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=2
+attr = S, NA
+priority = 2,hit
+animtype  = High
+damage    = 8
+guardflag = MAF
+pausetime = 8,10
+sparkno = 0
+sparkxy = -10,-37
+hitsound   = S7,10
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 999
+ground.hittime  = 27
+ground.velocity = 0,0
+air.velocity = -.5,-4.2
+air.hittime  = 27
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=6
+attr = S, NA
+priority = 2,hit
+animtype  = High
+damage    = 12
+guardflag = MAF
+pausetime = 8,12
+sparkno = 0
+sparkxy = -10,-37
+hitsound   =  S7,11
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 10
+ground.hittime  = 25
+ground.velocity = -3,0
+air.velocity = -.5,-4.2
+air.hittime  = 27
+
+[state 210, jump cancel]
+type=changestate
+trigger1=movecontact
+trigger1=command="holdup"
+value=40
+ctrl=1
+
+[State 230, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------
+;==Midnight==
+[Statedef 10000001]
+type=S
+physics=N
+
+[state 0]
+type = Null
+trigger1=1
+
+;---------------------------------------------------------------------------
+;Light
+
+[Statedef 201]
+type    = S
+movetype= A
+physics = S
+juggle  = 1
+ctrl = 0
+anim = 200
+poweradd= ifelse(power!=3000,ifelse(enemynear,movetype!=H,ifelse(fvar(17)=0,20,0),0),0)
+sprpriority = 2
+;velset=vel x/2,0
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+value = 5,8
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<249
+value = 6,3
+volume=200
+channel=0
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = AnimElem = 2
+attr = S, NA
+damage = 19,0
+animtype = Light
+guardflag = MA
+hitflag = MAFD
+priority = 4, Hit
+pausetime = 14,14
+sparkno = 0
+sparkxy = -10, -26
+hitsound =  S7,9
+guardsound = 6, 0
+ground.type = High
+ground.slidetime = 5
+ground.hittime  = 23
+ground.velocity = -3
+airguard.velocity = -.5,-.8
+air.type = High
+air.velocity = -.5 ,-3.5
+air.hittime = 30
+
+[State 200, 7]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Mid
+
+[Statedef 211]
+type    = S
+movetype= A
+physics = S
+juggle  = 10
+poweradd= ifelse(power!=3000,ifelse(enemynear,movetype!=H,ifelse(fvar(17)=0,40,0),0),0)
+ctrl = 0
+anim = 210
+priority=3
+sprpriority = -1
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+value = 5,7
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<749
+value = 6,11
+volume=200
+channel=0
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = time=0
+attr = S, NA
+priority = 2,hit
+animtype  = High
+damage    = 34
+guardflag = MA
+hitflag = MAFD
+pausetime = 18,18
+sparkno = 0
+sparkxy = -10,-37
+hitsound   = S7,10
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 10
+ground.hittime  = 20
+ground.velocity = -1,0
+air.velocity = -.5,-2
+air.hittime  = 27
+
+[State 210, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Strong
+
+[Statedef 231]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+poweradd= ifelse(power!=3000,ifelse(enemynear,movetype!=H,ifelse(fvar(17)=0,55,0),0),0)
+ctrl = 0
+anim = 230
+sprpriority = 2
+facep2=1
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = animelem=2
+trigger2 = animelem=6
+value = 5,7
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<449
+value = 6,16
+volume=200
+channel=0
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=2
+attr = S, NA
+priority = 2,hit
+animtype  = High
+damage    = 18
+guardflag = MAF
+pausetime = 18,18
+sparkno = 0
+sparkxy = -10,-37
+hitsound   = S7,10
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 999
+ground.hittime  = 27
+ground.velocity = 0,0
+air.velocity = -.5,-4.2
+air.hittime  = 27
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=6
+attr = S, NA
+priority = 2,hit
+animtype  = High
+damage    = 24
+guardflag = MAF
+pausetime = 23,23
+sparkno = 0
+sparkxy = -10,-37
+hitsound   =  S7,11
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 10
+ground.hittime  = 25
+ground.velocity = -3,0
+air.velocity = -.5,-4.2
+air.hittime  = 27
+
+[State 230, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------
+;==Dawn==
+[Statedef 10000002]
+type=S
+physics=N
+
+[state 0]
+type = Null
+trigger1=1
+
+;---------------------------------------------------------------------------
+;Light
+
+[Statedef 202]
+type    = S
+movetype= A
+physics = S
+juggle  = 1
+ctrl = 0
+anim = 200
+poweradd= ifelse(fvar(7)=0,27,0)
+sprpriority = 2
+;velset=vel x/2,0
+facep2=1
+
+; [state 0, super armor anim change]
+; type = ChangeAnim
+; trigger1 = Time = 0 && Anim !=
+; value=
+
+[State 0, super armor damage]
+type = LifeAdd
+trigger1 = Time = 0
+value = -(gethitvar(damage))
+
+[state 0, super armor hitcounter]
+type=varadd
+trigger1=enemynear,movetype=A
+trigger1=enemynear,movecontact
+fv=5
+value=1
+persistent=0
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+value = 5,8
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<249
+value = 6,3
+volume=200
+channel=0
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = AnimElem = 2
+attr = S, NA
+damage = 10,0
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4, Hit
+pausetime = 5, 2
+sparkno = 0
+sparkxy = -10, -26
+hitsound =  S7,9
+guardsound = 6, 0
+ground.type = High
+ground.slidetime = 5
+ground.hittime  = 17
+ground.velocity = -3
+airguard.velocity = -.5,-.8
+air.type = High
+air.velocity = -.5 ,-3.5
+air.hittime = 30
+
+[state 210, jump cancel]
+type=changestate
+trigger1=movecontact
+trigger1=command="holdup"
+value=40
+ctrl=1
+
+[State 200, 7]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Mid
+
+[Statedef 212]
+type    = S
+movetype= A
+physics = S
+juggle  = 10
+poweradd= ifelse(fvar(7)=0,56,0)
+ctrl = 0
+;nim = 210
+priority=3
+sprpriority = -1
+facep2=1
+
+[state 0, super armor anim change]
+type = ChangeAnim
+trigger1 = Time = 0 && Anim !=210
+value=210
+
+[State 0, super armor damage]
+type = LifeAdd
+trigger1 = Time = 0
+value = -(gethitvar(damage))
+
+[state 0, super armor hitcounter]
+type=varadd
+trigger1=enemynear,movetype=A
+trigger1=enemynear,movecontact
+fv=5
+value=1
+persistent=0
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+value = 5,7
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<749
+value = 6,11
+volume=200
+channel=0
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=3
+trigger2 = animelem=4
+trigger3 = animelem=5
+attr = S, NA
+priority = 2,hit
+animtype  = High
+damage    = 4
+guardflag = MAF
+pausetime = 6,6
+sparkno = 0
+sparkxy = -10,-37
+hitsound   = S7,10
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 10
+ground.hittime  = 14
+ground.velocity = -1,0
+air.velocity = -.5,-2
+air.hittime  = 27
+
+[state 210, jump cancel]
+type=changestate
+trigger1=movecontact
+trigger1=command="holdup"
+value=40
+ctrl=1
+
+[State 210, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Strong
+
+[Statedef 232]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+poweradd= ifelse(fvar(7)=0,79,0)
+ctrl = 0
+;nim = 230
+sprpriority = 2
+facep2=1
+
+[state 0, super armor anim change]
+type = ChangeAnim
+trigger1 = Time = 0 && Anim !=230
+value=230
+
+[State 0, super armor damage]
+type = LifeAdd
+trigger1 = Time = 0
+value = -(gethitvar(damage))
+
+[state 0, super armor hitcounter]
+type=varadd
+trigger1=enemynear,movetype=A
+trigger1=enemynear,movecontact
+fv=5
+value=1
+persistent=0
+
+[state 200, physics]
+type=veladd
+trigger1=vel x > 0
+trigger1=time>0
+x=-0.5
+
+[state 200, physics]
+type=veladd
+trigger1=vel x < 0
+trigger1=time>0
+x=0.5
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = animelem=2
+trigger2 = animelem=6
+value = 5,7
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<449
+value = 6,16
+volume=200
+channel=0
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=2
+attr = S, NA
+priority = 2,hit
+animtype  = High
+damage    = 8
+guardflag = MAF
+pausetime = 8,10
+sparkno = 0
+sparkxy = -10,-37
+hitsound   = S7,10
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 999
+ground.hittime  = 23
+ground.velocity = 0,0
+air.velocity = -.5,-4.2
+air.hittime  = 27
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = animelem=6
+attr = S, NA
+priority = 2,hit
+animtype  = High
+damage    = 12
+guardflag = MAF
+pausetime = 8,12
+sparkno = 0
+sparkxy = -10,-37
+hitsound   =  S7,11
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 10
+ground.hittime  = 35
+ground.velocity = -3,0
+air.velocity = -.5,-4.2
+air.hittime  = 27
+
+[state 210, jump cancel]
+type=changestate
+trigger1=movecontact
+trigger1=command="holdup"
+value=40
+ctrl=1
+
+[State 230, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1

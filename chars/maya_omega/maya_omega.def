@@ -1,0 +1,48 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Maya Omega"
+displayname ="Maya Omega"
+versiondate =02/15/12
+mugenversion =1.0
+author ="Liero"
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite   = maya.sff
+anim     = maya.air
+sound    = maya.snd
+cmd      = maya.cmd
+cns      = maya.cns
+stcommon = common1.cns
+st       = maya.cns
+st1      = hex.cns
+st2      = decimal.cns
+st3      = binary.cns
+st4      = throw.cns
+st5      = pause.cns
+pal1     = maya01.act
+pal2     = maya02.act
+pal3     = maya03.act
+pal4     = maya04.act
+pal5     = maya05.act
+pal6     = maya06.act
+pal7     = maya07.act
+pal8     = maya08.act
+pal9     = maya09.act
+pal10    = maya10.act
+pal11    = maya11.act
+pal12    = maya12.act
+
+[Arcade]
+;intro.storyboard = intro.def
+ending.storyboard =ending.def
+intro.storyboard=
+
+[Option]
+filename = chars/sofie/sofie.sff
+sprite.compress.5 = lz5
+;sprite.compress.8 = rle8

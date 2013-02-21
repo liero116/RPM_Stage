@@ -1,0 +1,28 @@
+Kung Fu Man - The AeroGP Tag Code Edition
+KFM character by Elecbyte
+Tag Code (tag_system.cns) by AeroGP
+Code Applied to KFM by mh777
+Website: http://mugenorama.smeenet.org/index.html
+
+
+
+*Notes*
+I take no credit whatsoever for the tag code, as it was originally made by AeroGP. 
+I just applied it to KFM as an example to show that the code does indeed work.
+
+*Usage*
+To see the code in action, pick Team Arcade and play in Simul mode.  Choose KFM as 
+both of your characters.  During the KFM intro at the beginning of the round, press
+Ctrl+3 on your keyboard.  This will give you control of your partner when you tag him
+in.  To tag, press the Z+C buttons.  You must have at least one power stock to tag your 
+partner in.
+
+For more information on the tag code, please read the readme_TAG.txt included with this 
+character.  It is the same readme that originally came with AeroGP's tag code file.
+(You don't mind, right?)
+
+*Thanks*
+Elecbyte for MUGEN and KFM
+AeroGP for the Tag Code
+Mugenguild Forum
+delicious store-bought ramen

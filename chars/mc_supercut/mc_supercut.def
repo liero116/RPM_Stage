@@ -1,0 +1,56 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "M.C. Supercut"
+displayname = "MC SUPERCUT"
+versiondate = 08/17/2011
+mugenversion = 1.0
+author = "Liero"
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite = mc_supercut.sff
+anim = mc_supercut.air
+sound = mc_supercut.snd
+cmd = mc_supercut.cmd
+cns = mc_supercut.cns
+stcommon = common1.cns
+st = mc_supercut.cns
+st1 = hex.cns
+st2 = decimal.cns
+st3 = binary.cns
+st4 = throw.cns
+st5 = pause.cns
+pal1 = p1.act
+pal2 = p2.act
+pal3 = p3.act
+pal4 = p4.act
+pal5 = p5.act
+pal6 = p6.act
+pal7 = p7.act
+pal8 = p8.act
+pal9 = p13.act
+pal10 = p10.act
+pal11 = p12.act
+pal12 = p9.act
+
+[Palette Keymap]
+x = 4 
+y = 5
+z = 6
+a = 1
+b = 2
+c = 3
+x2 = 10
+y2 = 11
+z2 = 12
+a2 = 7
+b2 = 8
+c2 = 9
+
+[Arcade]
+;intro.storyboard = intro.def
+;ending.storyboard = ending.def

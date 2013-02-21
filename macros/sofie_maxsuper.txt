@@ -1,0 +1,28 @@
+# sample macro for autoit keysender script
+
+2.26.6Z.Z,
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.A.B.C.
+
+
+! end of script

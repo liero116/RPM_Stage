@@ -1,0 +1,11 @@
+;-------------------------------
+;==Stand==
+[Statedef 10000000]
+type=S
+physics=N
+
+[state 0]
+type = Null
+trigger1=1
+
+

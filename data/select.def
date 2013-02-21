@@ -1,0 +1,96 @@
+﻿;---------------------------------------------------------------------
+[Characters]
+
+; row 1
+
+blank
+blank
+charlotte,    order = 2
+sofie,        order = 1
+roy,          order = 1
+nadia,        order = 2
+blank
+blank
+
+; row 2
+
+blank
+blank
+natalia,      order = 2
+yoko,         order = 3
+taeko,        order = 3
+tsukiko,      order = 1
+blank
+blank
+
+; row 3 
+
+blank
+blank
+zppr,         order = 3
+mc_supercut,  order = 2
+captain_jack, order = 2
+endora,       order = 2
+blank
+blank
+
+;row 4
+
+blank
+blank
+oliver,       order = 1
+maya,         order = 1
+randomselect
+randomselect
+blank
+blank
+
+;row 5
+
+blank
+blank
+randomselect
+randomselect
+randomselect
+maya_omega,   order = 6
+blank
+blank
+
+;row 6
+
+blank
+blank
+blank
+randomselect
+randomselect
+blank
+blank
+blank
+
+;-----------------------
+[ExtraStages]
+ ;Put extra stages here. They will be available in VS and Watch modes.
+ ;For example, you can insert "stages/mybg.def".
+
+stages/valley_field/valley_field.def
+stages/skypalace/skypalace.def
+stages/germany_night/germany_night.def
+stages/roys_house/roys_house.def
+stages/paintedbridge/paintedbridge.def
+stages/void/void.def
+stages/training2/training2.def
+
+
+;---------------------------------------------------------------------
+[Options]
+ ;Here you set the maximum number of matches to fight before game ends
+ ;in Arcade Mode. The first number is the number of matches against
+ ;characters with order=1, followed by order=2 and order=3 respectively.
+ ;For example, for 4,3,1 you will fight up to 4 randomly-picked
+ ;characters who have order=1, followed by 3 with order=2 and 1 with
+ ;order=3.
+arcade.maxmatches = 4,3,2,2,2,1,1,1
+
+ ;Maximum number of matches to fight before game ends in Team Mode.
+ ;Like arcade.maxmatches, but applies to Team Battle.
+team.maxmatches = 4,3,2,2,2,1,1,1

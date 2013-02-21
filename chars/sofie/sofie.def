@@ -1,0 +1,47 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Sofie"
+displayname = "SOFIE"
+versiondate = 08/17/2011
+mugenversion = 1.0
+author = "Liero"
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite = sofie.sff
+anim = sofie.air
+sound = sofie.snd
+cmd = sofie.cmd
+cns = sofie.cns
+stcommon = common1.cns
+st = sofie.cns
+st1 = hex.cns
+st2 = decimal.cns
+st3 = binary.cns
+st4 = throw.cns
+st5 = pause.cns
+pal1 = sofiep1.act
+pal2 = sofiep2.act
+pal3 = sofiep3.act
+pal4 = sofiep4.act
+pal5 = sofiep5.act
+pal6 = sofiep6.act
+pal7 = sofiep7.act
+pal8 = sofiep8.act
+pal9 = sofiep9.act
+pal10 = sofiep10.act
+pal11 = sofiep11.act
+pal12 = sofiep12.act
+
+[Arcade]
+;intro.storyboard = intro.def
+ending.storyboard = ending.def
+
+[Option]
+filename = chars/sofie/sofie.sff
+sprite.compress.5 = lz5
+;sprite.compress.8 = rle8

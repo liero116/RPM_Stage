@@ -1,0 +1,48 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Captain Jack"
+displayname ="CAPTAIN JACK"
+versiondate =02/15/12
+mugenversion =1.0
+author ="Liero"
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite   = captain_jack.sff
+anim     = captain_jack.air
+sound    = captain_jack.snd
+cmd      = captain_jack.cmd
+cns      = captain_jack.cns
+stcommon = common1.cns
+st       = captain_jack.cns
+st1      = hex.cns
+st2      = decimal.cns
+st3      = binary.cns
+st4      = throw.cns
+st5      = pause.cns
+pal1     = captain_jack01.act
+pal2     = captain_jack02.act
+pal3     = captain_jack03.act
+pal4     = captain_jack04.act
+pal5     = captain_jack05.act
+pal6     = captain_jack06.act
+pal7     = captain_jack07.act
+pal8     = captain_jack08.act
+pal9     = captain_jack09.act
+pal10    = captain_jack10.act
+pal11    = captain_jack11.act
+pal12    = captain_jack12.act
+
+[Arcade]
+;intro.storyboard = intro.def
+ending.storyboard =ending.def
+intro.storyboard=
+
+[Option]
+filename = chars/sofie/sofie.sff
+sprite.compress.5 = lz5
+;sprite.compress.8 = rle8

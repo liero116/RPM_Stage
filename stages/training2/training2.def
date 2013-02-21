@@ -1,0 +1,115 @@
+﻿[Info]
+name = "TRAINING STAGE"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -200
+boundright = 200
+boundhigh = -700
+boundlow = 0
+verticalfollow = 1.1
+floortension = 90
+tension = 30 
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70        
+p1starty = 0           
+p1startz = 0           
+p1facing = 1         
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -500
+rightbound =  500 
+topbound  =  0    
+botbound  =  0     
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0      
+botz     = 50     
+topscale = 1      
+botscale = 1.2     
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15   
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+HIRES = 1
+xscale = 0.245;0.20
+yscale = 0.245;0.20
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 128
+color = 0,0,0
+yscale = -0.3
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 128
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/training2/training2.mp3
+bgvolume = 255
+
+;========================================================
+;--------------------------------------------------------
+; Background definition
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = stages/training2/training2.sff
+debugbg = 0
+
+;----------
+[BG Floor]
+type  = parallax
+spriteno = 0,1
+start = 0,0
+delta = 2,2
+;xscale = 3,1
+width = 3000,4400
+yscalestart = 55
+yscaledelta = 0
+trans=addalpha
+alpha=256,0
+
+;----------
+[BG Sky]
+type  = normal
+spriteno = 0,2
+start = 0,255
+delta = 1.98,2
+xscale = 1,1
+yscalestart = 100
+yscaledelta = 0.2
+trans=addalpha
+alpha=256,0
+
+;----------
+[BG Sky]
+type  = normal
+spriteno = 0,3
+start = 0,255
+delta = 1.98,2
+xscale = 1,1
+yscalestart = 100
+yscaledelta = 0.2
+trans=addalpha
+alpha=256,0

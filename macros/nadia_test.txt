@@ -1,0 +1,5 @@
+# sample macro for autoit keysender script
+
+2.26.6C,W12,C.
+
+! end of script

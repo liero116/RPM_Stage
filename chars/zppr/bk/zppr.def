@@ -1,0 +1,45 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Zppr BK"
+displayname = "ZPPR"
+versiondate = 08/17/2011
+mugenversion = 1.0
+author = "Liero"
+pal.defaults = 1,2,3,4,5,6,7,8
+
+[Files]
+sprite = zppr.sff
+anim = zppr.air
+sound = zppr.snd
+cmd = zppr.cmd
+cns = zppr.cns
+stcommon = common1.cns
+st = zppr.cns
+st1 = decimal.cns
+st2 = binary.cns
+st3 = throw.cns
+pal1 = zppr1.act
+pal2 = zppr2.act
+pal3 = zppr3.act
+pal4 = zppr4.act
+pal5 = zppr5.act
+pal6 = zppr6.act
+pal7 = zppr7.act
+pal8 = zppr8.act
+pal9 = zppr9.act
+pal10 = zppr10.act
+pal11 = zppr11.act
+pal12 = zppr12.act
+
+[Arcade]
+;intro.storyboard = zppr_intro.def
+;ending.storyboard = zppr_end.der
+
+[Option]
+filename = chars/zppr/zppr.sff
+sprite.compress.5 = lz5
+;sprite.compress.8 = rle8

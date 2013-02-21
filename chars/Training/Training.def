@@ -1,0 +1,33 @@
+[Info]
+name = "TRAINING"
+displayname = "TRAINING"
+versiondate = 01/01/13
+mugenversion = 1.0
+author = "Liero"
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+Cmd     = Training.cmd
+Cns     = Training.cns 
+St      = Training.cns
+St0     = config.txt
+StCommon = common1.cns
+Sprite  = Training.sff
+Anim    = Training.air
+Sound   = Training.snd
+
+Pal1 = 01.act
+Pal2 = 01.act
+Pal3 = 01.act
+Pal4 = 01.act
+Pal5 = 01.act
+Pal6 = 01.act
+Pal7 = 01.act
+Pal8 = 01.act
+Pal9 = 01.act
+Pal10 = 01.act
+Pal11 = 01.act
+Pal12 = 01.act
+[Arcade]
+Intro.Storyboard =
+Ending.Storyboard =

@@ -1,0 +1,3512 @@
+[statedef 90951800]
+type=S
+
+[State 0, Null]
+type = Null
+trigger1 = 1
+;ignorehitpause =
+;persistent =
+
+; ;--------------------------------------------------
+; ;Power Charge
+; 
+; [Statedef 8070]
+; type=S
+; physics=S
+; movetype=I
+; anim=7
+; ctrl=0
+; velset=0,0
+; 
+; [State 0, vox charge]
+; type = PlaySnd
+; trigger1 = animelem = 1
+; value = 6,19
+; channel = 0
+; volume=255
+; 
+; [State 0, start]
+; type = PlaySnd
+; trigger1 = animelem = 1
+; value = 13,4
+; channel = 7
+; persistent=0
+; 
+; [State 0, start (whirr)]
+; type = PlaySnd
+; trigger1 = animelem = 1
+; value = 13,6
+; volume = 125
+; channel = 10
+; persistent=0
+; loop=-1
+; 
+; [State 0, StopSnd]
+; type = StopSnd
+; trigger1 = power>2989
+; trigger2 = command != "holdB"
+; channel = 10
+; 
+; [State 0, level 1,2]
+; type = PlaySnd
+; trigger1 = power > 1000 && power < 1015
+; trigger2 = power > 2000 && power < 2015
+; value = 13,2
+; channel = 7
+; volume = 255
+; 
+; [State 0, level 3]
+; type = PlaySnd
+; trigger1 = power > 2975 && power < 3000
+; value = 13,1
+; channel = 7
+; volume = 255
+; 
+; [State 0, level 1,2]
+; type = PlaySnd
+; trigger1 = power > 1000 && power < 1015
+; trigger2 = power > 2000 && power < 2015
+; value = 13,3
+; channel = 8
+; volume = 255
+; 
+; [State 0, level 3]
+; type = PlaySnd
+; trigger1 = power > 2975 && power < 3000
+; value = 13,3
+; channel = 8
+; volume = 255
+; 
+; [State 0, level 3 (sweep)]
+; type = PlaySnd
+; trigger1 = power > 2975 && power < 3000
+; trigger2 = command != "holdB"
+; value = 13,5
+; channel = 9
+; volume = 255
+; persistent=0
+; 
+; [State 0, release]
+; type = PlaySnd
+; trigger1 = power < 3000
+; trigger1 = command != "holdB"
+; value = 13,3
+; channel = 7
+; persistent=0
+; 
+; [State 0, Charge Dust Top]
+; type = Explod
+; triggerall = power < 2989
+; trigger1 = command="holdB"
+; trigger1 = numexplod(11016)=0
+; anim = 11016
+; ID = 11016
+; pos = 0,0
+; postype = p1
+; removetime = -1
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = 5
+; 
+; [State 0, Charge Dust Top Output]
+; type = Explod
+; triggerall = numexplod(11016)=1
+; triggerall = numexplod(11018)=0
+; trigger1 = command!="holdB"
+; trigger2 = power > 2989
+; anim = 11018
+; ID = 11018
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = 5
+; persistent=0
+; 
+; [State 0, Remove Charge Dust Top]
+; type = RemoveExplod
+; trigger1 = command!="holdB"
+; trigger2 = power > 2989
+; id =11016
+; 
+; [State 0, Charge Dust Bac]
+; type = Explod
+; triggerall = power < 2989
+; trigger1 = command="holdB"
+; trigger1 = numexplod(11017)=0
+; anim = 11017
+; ID = 11017
+; pos = 0,0
+; postype = p1
+; removetime = -1
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = -3
+; 
+; [State 0, Charge Dust Bac Output]
+; type = Explod
+; triggerall = numexplod(11018)=1
+; triggerall = numexplod(11019)=0
+; trigger1 = command!="holdB"
+; trigger2 = power > 2989
+; anim = 11019
+; ID = 11019
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = -3
+; 
+; [State 0, Remove Charge Dust Bac]
+; type = RemoveExplod
+; trigger1 = command!="holdB"
+; trigger2 = power > 2989
+; id =11017
+; 
+; [State 0, Dust Ring Top]
+; type = Explod
+; triggerall = numexplod(11016)=1 || numexplod(11018) = 1
+; triggerall = numexplod(11020)=0
+; trigger1 = power > 1000 && power < 1200
+; trigger2 = power > 2000 && power < 2200
+; trigger3 = power = 3000
+; anim = 11020
+; ID = 11020
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = 7
+; 
+; [State 0, Dust Ring Back]
+; type = Explod
+; triggerall = numexplod(11016)=1 || numexplod(11018) = 1
+; triggerall = numexplod(11020)=0
+; trigger1 = power > 1000 && power < 1200
+; trigger2 = power > 2000 && power < 2200
+; trigger3 = power = 3000
+; anim = 11021
+; ID = 11021
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = -3
+; 
+; [State 999, sound]
+; type=playSnd
+; trigger1=animelem=1
+; value = 87,10
+; 
+; [State 999, sound]
+; type=playSnd
+; trigger1=animtime=0
+; value = 87, 10
+; 
+; [State 999, sound]
+; type=playSnd
+; ;trigger1=command="c"||command="z"
+; trigger1=command="holdB"
+; value = 1,2
+; 
+; [State 400, power]
+; type=poweradd
+; triggerall=anim=7&&power<3000
+; trigger1=var(59)<=0&&(command="holdB")
+; trigger2=var(59)>=1
+; value=ifelse(time>=12,12,ceil(time/7))
+; 
+; [State 400, shake]
+; type=envshake
+; triggerall=power<3000
+; trigger1=anim=7&&!(time%4)
+; trigger1=time>9
+; time=4
+; freq=80
+; ampl=4
+; 
+; [State 0, EnvColor]
+; type = EnvColor
+; trigger1 = power>2987
+; value = 255,255,255
+; time = 5
+; under = 1
+; ignorehitpause = 1
+; persistent = 0
+; 
+; [State 400, end]
+; type=changestate
+; trigger1 = time > 26
+; trigger1 = command != "holdB"
+; trigger2 = power=3000
+; ;trigger2 = command = "holdB"
+; value=0
+; ctrl=1
+; 
+; ;--------------------------------------------------
+; ;Overdrive Charge
+; [Statedef 8075]
+; type=S
+; physics=S
+; movetype=I
+; anim=7
+; ctrl=0
+; velset=0,0
+; 
+; [state 0, pal 10%]
+; type = PalFX
+; trigger1 = fvar(10) < 0.10*(fvar(11))
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 50,0,0,30
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [state 0, pal 20%]
+; type = PalFX
+; trigger1 = fvar(10) >= 0.10*(fvar(11))  &&  fvar(10) < 0.20*(fvar(11))
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 55,0,0,28
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [state 0, pal 30%]
+; type = PalFX
+; trigger1 = fvar(10) >= 0.20*(fvar(11))  &&  fvar(10) < 0.30*(fvar(11))
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 60,0,0,26
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [state 0, pal 40%]
+; type = PalFX
+; trigger1 = fvar(10) >= 0.30*(fvar(11))  &&  fvar(10) < 0.40*(fvar(11))
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 65,0,0,24
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [state 0, pal 50%]
+; type = PalFX
+; trigger1 = fvar(10) >= 0.40*(fvar(11))  &&  fvar(10) < 0.50*(fvar(11))
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 70,0,0,22
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [state 0, pal 60%]
+; type = PalFX
+; trigger1 = fvar(10) >= 0.50*(fvar(11))  &&  fvar(10) < 0.60*(fvar(11))
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 75,0,0,20
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [state 0, pal 70%]
+; type = PalFX
+; trigger1 = fvar(10) >= 0.60*(fvar(11))  &&  fvar(10) < 0.70*(fvar(11))
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 80,0,0,18
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [state 0, pal 80%]
+; type = PalFX
+; trigger1 = fvar(10) >= 0.70*(fvar(11))  &&  fvar(10) < 0.80*(fvar(11))
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 85,0,0,16
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [state 0, pal 90%]
+; type = PalFX
+; trigger1 = fvar(10) >= 0.80*(fvar(11))  &&  fvar(10) < 0.90*(fvar(11))
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 90,0,0,14
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [State 0, vox charge]
+; type = PlaySnd
+; trigger1 = animelem = 1
+; value = 6,19
+; channel = 0
+; volume=255
+; 
+; [State 0, start]
+; type = PlaySnd
+; trigger1 = animelem = 1
+; value = 13,4
+; channel = 7
+; persistent=0
+; 
+; [State 0, start (whirr)]
+; type = PlaySnd
+; trigger1 = animelem = 1
+; value = 13,6
+; volume = 125
+; channel = 10
+; persistent=0
+; loop=-1
+; 
+; [State 0, StopSnd]
+; type = StopSnd
+; trigger1 = fvar(10)=fvar(11)
+; trigger2 = command != "holdB"
+; channel = 10
+; 
+; [State 0, level 1,2,3 (base)]
+; type = PlaySnd
+; trigger1 = fvar(10)=fvar(12)
+; trigger2 = fvar(10)=fvar(13)
+; trigger3 = fvar(10)=fvar(14)
+; value = 13,2
+; channel = 7
+; volume = 255
+; 
+; [State 0, level 4]
+; type = PlaySnd
+; trigger1 = fvar(10)=fvar(15)
+; value = 13,1
+; channel = 7
+; volume = 255
+; 
+; [State 0, level 1,2]
+; type = PlaySnd
+; trigger1 = fvar(10)=fvar(12)
+; trigger2 = fvar(10)=fvar(13)
+; trigger3 = fvar(10)=fvar(14)
+; value = 13,3
+; channel = 8
+; volume = 255
+; 
+; [State 0, level 3]
+; type = PlaySnd
+; trigger1 = fvar(10)=fvar(15)
+; value = 13,3
+; channel = 8
+; volume = 255
+; 
+; [State 0, level 3 (sweep)]
+; type = PlaySnd
+; trigger1 = fvar(10)=fvar(15)
+; value = 13,5
+; channel = 9
+; volume = 255
+; 
+; [State 0, release]
+; type = PlaySnd
+; ;trigger1 = power < 3000
+; trigger1 = command != "holdB"
+; value = 13,3
+; channel = 7
+; persistent=0
+; 
+; [State 0, Charge Dust Top]
+; type = Explod
+; triggerall = fvar(10) < fvar(11)
+; trigger1 = command="holdB"
+; trigger1 = numexplod(11016)=0
+; anim = 11016
+; ID = 11016
+; pos = 0,0
+; postype = p1
+; removetime = -1
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = 5
+; ignorehitpause=1
+; 
+; [State 0, Charge Dust Top Output]
+; type = Explod
+; triggerall = numexplod(11016)=1
+; triggerall = numexplod(11018)=0
+; trigger1 = command!="holdB"
+; trigger2 = fvar(10) = fvar(11)
+; anim = 11018
+; ID = 11018
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = 5
+; persistent=0
+; ignorehitpause=1
+; supermove=1
+; 
+; [State 0, Remove Charge Dust Top]
+; type = RemoveExplod
+; trigger1 = command!="holdB"
+; trigger2 = fvar(10) = fvar(11)
+; id =11016
+; 
+; [State 0, Charge Dust Bac]
+; type = Explod
+; triggerall = fvar(10)< fvar(11)
+; trigger1 = command="holdB"
+; trigger1 = numexplod(11017)=0
+; anim = 11017
+; ID = 11017
+; pos = 0,0
+; postype = p1
+; removetime = -1
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = -3
+; supermove=1
+; 
+; [State 0, Charge Dust Bac Output]
+; type = Explod
+; triggerall = numexplod(11018)=1
+; triggerall = numexplod(11019)=0
+; trigger1 = command!="holdB"
+; trigger2 = fvar(10) = fvar(11)
+; anim = 11019
+; ID = 11019
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = -3
+; ignorehitpause=1
+; supermove=1
+; 
+; [State 0, Remove Charge Dust Bac]
+; type = RemoveExplod
+; trigger1 = command!="holdB"
+; trigger2 = fvar(10) = fvar(11)
+; id =11017
+; 
+; [State 0, Dust Ring Top]
+; type = Explod
+; triggerall = numexplod(11016)=1 || numexplod(11018) = 1
+; triggerall = numexplod(11020)=0
+; trigger1 = fvar(10)=fvar(12)
+; trigger2 = fvar(10)=fvar(13)
+; trigger3 = fvar(10)=fvar(14)
+; trigger4 = fvar(10)=fvar(15)
+; anim = 11020
+; ID = 11020
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = 7
+; ignorehitpause=1
+; supermove=1
+; 
+; [State 0, Dust Ring Back]
+; type = Explod
+; triggerall = numexplod(11016)=1 || numexplod(11018) = 1
+; triggerall = numexplod(11020)=0
+; trigger1 = fvar(10)=fvar(12)
+; trigger2 = fvar(10)=fvar(13)
+; trigger3 = fvar(10)=fvar(14)
+; trigger4 = fvar(10)=fvar(15)
+; anim = 11021
+; ID = 11021
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; bindtime=-1
+; scale = 0.5,0.5
+; sprpriority = -3
+; ignorehitpause=1
+; supermove=1
+; 
+; [State 400, power]
+; type=varadd
+; triggerall=anim=7&&power<powermax
+; trigger1=var(59)<=0&&(command="holdB")
+; trigger2=var(59)>=1
+; fv=10
+; value=ifelse(time>=12,1,ceil(time/7))
+; 
+; [State 400, shake]
+; type=envshake
+; triggerall=fvar(10)< fvar(11)
+; trigger1=anim=7&&!(time%4)
+; trigger1=time>9
+; time=4
+; freq=80
+; ampl=4
+; 
+; [State 0, EnvColor]
+; type = EnvColor
+; trigger1 = fvar(10)>fvar(15)
+; value = 255,255,255
+; time = 5
+; under = 1
+; ignorehitpause = 1
+; persistent = 0
+; 
+; [State 400, overdrive sucess]
+; type=changestate
+; triggerall = fvar(17)=0
+; triggerall = fvar(16)=0
+; trigger1 = time > 26
+; trigger1 = command != "holdB"
+; ;trigger1 = fvar(10) > fvar(15) && fvar(10) < fvar(11)
+; ;trigger2 = power>2998
+; ;trigger2 = command = "holdB"
+; value=0
+; ctrl=1
+; 
+; [State 400, end]
+; type=changestate
+; triggerall = fvar(17)=1
+; triggerall = fvar(16)=0
+; trigger1 = time > 26
+; trigger1 = command != "holdB"
+; ;trigger2 = power>2998
+; ;trigger2 = command = "holdB"
+; value=8076
+; ctrl=1
+; 
+; [State 400, end]
+; type=changestate
+; trigger1 = fvar(16)=1
+; ;trigger1 = time > 26
+; ;trigger1 = command != "holdB"
+; ;trigger2 = power>2998
+; ;trigger2 = command = "holdB"
+; value=8077
+; ctrl=1
+; ;--------------------------------------------------
+; ;Overdrive Sucess
+; [Statedef 8076]
+; type=S
+; physics=S
+; movetype=I
+; anim=7
+; ctrl=0
+; velset=0,0
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 600
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; 
+; [state 0, pal reset]
+; type = PalFX
+; trigger1 = time=0
+; time =-1
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 0,0,0,30
+; invertall = 0
+; color = 256
+; ignorehitpause=1
+; persistent=0
+; 
+; [state 0, reset]
+; type=varset
+; trigger1=time=10
+; fvar(18)=1
+; 
+; [State 200, vox]
+; type = PlaySnd
+; trigger1 = time=0
+; value = 6,23
+; volume=200
+; channel=0
+; 
+; [state 3000, face crawl]
+; type=explod
+; trigger1=time=0
+; anim=10010
+; ID=10010
+; scale=1.3,1.3
+; postype=back
+; pos=-30,120
+; supermove=1
+; supermovetime=9999
+; pausemovetime=9999
+; 
+; [State 3050, Super A]
+; type = SuperPause
+; trigger1 = time=0
+; time=30
+; pos = -5, -55
+; anim = 100
+; sound = 20, 0
+; 
+; [state 0, overdrive check]
+; type=varset
+; trigger1=time=0
+; trigger2=animtime=0
+; fv=17
+; value=1
+; 
+; [State 400, end]
+; type=changestate
+; trigger1 = animtime=0
+; value=0
+; ctrl=1
+; 
+; ;--------------------------------------------------
+; ;Overdrive Fail Start
+; [Statedef 8077]
+; type=S
+; physics=S
+; movetype=I
+; anim=3700
+; ctrl=0
+; velset=0,0
+; 
+; [State -3, level 0 color test]
+; type = PalFX
+; trigger1=time=0
+; time = 0
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 0,0,0,0
+; invertall = 0
+; color = 256
+; persistent=0
+; ignorehitpause=1
+; 
+; [State 0, StopSnd]
+; type = StopSnd
+; trigger1 = time=0
+; channel = 10
+; 
+; [State 0, release]
+; type = PlaySnd
+; trigger1 = time=0
+; value = 13,3
+; channel = 7
+; persistent=0
+; 
+; [State 0, Charge Dust Top Output]
+; type = Explod
+; trigger1 = time=0
+; anim = 11018
+; ID = 11018
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; scale = 0.5,0.5
+; sprpriority = 5
+; persistent=0
+; ignorehitpause=1
+; supermove=1
+; 
+; [State 0, Charge Dust Bac Output]
+; type = Explod
+; trigger1 = time=0
+; anim = 11019
+; ID = 11019
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; scale = 0.5,0.5
+; sprpriority = -3
+; ignorehitpause=1
+; supermove=1
+; 
+; [State 0, Remove Charge Dust Top]
+; type = RemoveExplod
+; trigger1 = time=0
+; id =11016
+; 
+; [State 0, Remove Charge Dust Bac]
+; type = RemoveExplod
+; trigger1 = time=0
+; id =11017
+; 
+; [State 3050, Super A]
+; type = SuperPause
+; trigger1 = time=2
+; time=15
+; pos = -5, -55
+; anim = 100
+; sound = S6,22
+; 
+; ; [State 0, VelSet]
+; ; type = VelSet
+; ; trigger1 = time=18
+; ; x = -2
+; ; y = -8
+; 
+; [State 400, end]
+; type=changestate
+; trigger1 = time=20
+; value=8078
+; ctrl=1
+; 
+; ;---------------------------------------------------------------------------
+; ; Overdrive Fail Fall Shake
+; [Statedef 8078]
+; type    = A
+; movetype= H
+; physics = N
+; velset = -2,-8
+; 
+; [state 5000, ivan override]
+; type=changestate
+; triggerall=ishelper
+; trigger1=time=0
+; value=stateno+40000
+; 
+; [State 5900: Spawn Kamek's Helper]
+; type = Helper
+; trigger1 = !NumHelper(1338000000) ;&& TeamMode = Single
+; name = "Syshelper"
+; stateno = 1338000000
+; ID = 1338000000
+; 
+; [State 5070, 1]
+; type = ChangeAnim
+; trigger1 = 1
+; value = 5070
+; 
+; [State 5070, 2]
+; type = ChangeState
+; trigger1 = HitShakeOver
+; value = 8079
+; 
+; [State 5070, 3]
+; type = ForceFeedback
+; trigger1 = time = 0
+; time = 12
+; waveform = sinesquare
+; ampl = 140
+; 
+; ;---------------------------------------------------------------------------
+; ; Overdrive Fail Fall Start
+; [Statedef 8079]
+; type    = A
+; movetype= H
+; physics = N
+; 
+; [State 0, VelSet]
+; type = VelSet
+; trigger1 = time=0
+; x = -2
+; y = -8
+; 
+; [state 5000, ivan override]
+; type=changestate
+; triggerall=ishelper
+; trigger1=time=0
+; value=stateno+40000
+; 
+; ; [State 5071, 1]
+; ; type = HitVelSet
+; ; trigger1 = Time = 0
+; ; x = 1
+; ; y = 1
+; 
+; [State 5071, 2] ;Acceleration
+; type = VelAdd
+; trigger1 = 1
+; y = GetHitVar(yaccel)
+; 
+; [State 5071, 3] ;Hit ground
+; trigger1 = Vel Y > 0
+; trigger1 = Pos Y >= 15
+; type = ChangeState
+; value = 5110
+; 
+; ; ;--------------------------------------------------
+; ; ;Overdrive Fail Fall
+; ; [Statedef 8078]
+; ; type=A
+; ; physics=A
+; ; movetype=I
+; ; anim=5070
+; ; ctrl=0
+; ; velset=-2,-8
+; ;
+; ; [State 200, vox]
+; ; type = PlaySnd
+; ; trigger1 = time=0
+; ; value = 6,22
+; ; volume=200
+; ; channel=0
+; ;
+; ; [State 5071, 1]
+; ; type = HitVelSet
+; ; trigger1 = Time = 0
+; ; x = 1
+; ; y = 1
+; ;
+; ; [State 5071, 2] ;Acceleration
+; ; type = VelAdd
+; ; trigger1 = 1
+; ; y = GetHitVar(yaccel)
+; ;
+; ; [State 5071, 3] ;Hit ground
+; ; trigger1 = Vel Y > 0
+; ; trigger1 = Pos Y >= 15
+; ; type = ChangeState
+; ; value = 5110
+; 
+; ;--------------------------------------
+; ;Super armor
+; [Statedef 8100]
+; type=U
+; MoveType = H
+; 
+; [State 8100, PosFreeze]
+; type = PosFreeze
+; trigger1 = 1
+; value = 1
+; 
+; [State 8100, NotHitBy]
+; type = NotHitBy
+; trigger1 = 1
+; value = SCA, AA, AP
+; time = 1
+; 
+; [State 400, power]
+; type=varadd
+; trigger1=command="holdB"
+; trigger1=(gametime%1)=0
+; fv=3
+; value=1
+; 
+; [State 8100, LifeAdd]
+; type = LifeAdd
+; trigger1 = Time = 0
+; value = -(gethitvar(damage))
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 8100, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time < floor(gethitvar(hittime) * 0.8)
+; value = Anim
+; elem? = AnimElemNo(0)
+; 
+; [State 8100, End]
+; type = ChangeState
+; trigger1 = Time >= floor(gethitvar(hittime) * 0.8)
+; value = var(35)
+; 
+; ;-----------------------------
+; ; Dark Focus Charge
+; 
+; [Statedef 10800]
+; type    = S
+; movetype= I
+; physics = S
+; juggle  = 4
+; poweradd= 0
+; velset = (prevstateno = 10800)* 0,(prevstateno = 10800)* 0
+; ;anim = 3800
+; ctrl = 0
+; sprpriority = 2
+; facep2 = !(prevstateno = 10800)
+; 
+; [State 0, PalFXWiz]
+; type = PalFX
+; trigger1 = fvar(5)=1 || fvar(5)=2 || fvar(5)=3 || fvar(5)=4
+; time =10
+; add = 180,180,180
+; mul = 256,256,256
+; sinadd = -80,-80,-80,10
+; invertall = 0
+; color = 256
+; ignorehitpause = 1
+; persistent = 0
+; 
+; [State 0, charge start]
+; type = Explod
+; trigger1 = numexplod(3810)=0
+; trigger1 = animelem=2
+; anim = 3810
+; ID = 3810
+; pos = 0,0
+; postype = p1
+; removetime = -1
+; scale = 0.5,0.5
+; sprpriority = 5
+; ignorehitpause=1
+; 
+; [State 0, dust]
+; type = Explod
+; trigger1 = numexplod(11040)=0
+; trigger1 = time=0
+; anim = 11040
+; ID = 11040
+; pos = 0,0
+; postype = p1
+; removetime = -1
+; scale = 0.5,0.5
+; sprpriority = 7
+; ignorehitpause=1
+; supermove=1
+; 
+; [State 400, power]
+; type=varadd
+; trigger1=command="holdB"
+; trigger1=(gametime%1)=0
+; fv=3
+; value=1
+; 
+; [State 8100, LifeAdd]
+; type = LifeAdd
+; trigger1 = Time = 0
+; value = -(gethitvar(damage))
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; ;trigger1 = fvar(5)<3
+; trigger1 = Time = 0 && Anim != 3800
+; value = 3800
+; 
+; [State 200, vox]
+; type = PlaySnd
+; trigger1 = Time = 0
+; value = 6,2
+; volume=200
+; channel=0
+; 
+; [State 610, 2]
+; type = PlaySnd
+; trigger1 = animelem=3
+; trigger2 = animelem=7
+; value = 5,18
+; volume=50
+; 
+; [State 1000, 7]
+; type = ChangeState
+; trigger1 = command != "holdB"
+; trigger2 = AnimTime = 0
+; value = 10805
+; ctrl = 1
+; 
+; ;-----------------------------
+; ; Dark Focus Swing
+; 
+; [Statedef 10805]
+; type    = S
+; movetype= A
+; physics = S
+; juggle  = 4
+; poweradd= 0
+; velset = (prevstateno = 10805)* 0,(prevstateno = 10805)* 0
+; ;anim = 3800
+; ctrl = 0
+; sprpriority = 2
+; facep2 = !(prevstateno = 10805)
+; 
+; ; [state 0, velset]
+; ; type=velset
+; ; trigger1=animelem=1
+; ; trigger2=animelem=2
+; ; trigger3=animelem=3
+; ; x=13
+; 
+; [State 0, remove dust]
+; type = RemoveExplod
+; trigger1 = time=0
+; id =11040
+; 
+; [State 0, dust out]
+; type = Explod
+; trigger1 = numexplod(11041)=0
+; trigger1 = time=0
+; anim = 11041
+; ID = 11041
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; scale = 0.5,0.5
+; sprpriority = 7
+; ignorehitpause=1
+; supermove=1
+; 
+; [State 0, RemoveExplod]
+; type = RemoveExplod
+; trigger1 = time=0
+; id =3810
+; 
+; [State 0, AssertSpecial]
+; type = AssertSpecial
+; trigger1 = fvar(3)>40
+; flag = unguardable
+; 
+; [State 3050, Super A]
+; type = SuperPause
+; trigger1 = fvar(3)>40
+; trigger1 = time=0
+; time=10
+; pos = -5, -55
+; anim = 100
+; sound = 20, 0
+; 
+; [State 0, charge start]
+; type = Explod
+; trigger1 = time=0
+; anim = 3815
+; ID = 3815
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; scale = 0.5,0.5
+; sprpriority = 5
+; ignorehitpause=1
+; bindtime=-1
+; 
+; [State 8100, LifeAdd]
+; type = LifeAdd
+; trigger1 = Time = 0
+; value = -(gethitvar(damage))
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; ;trigger1 = fvar(5)<3
+; trigger1 = Time = 0 && Anim != 3805
+; value = 3805
+; 
+; [State 200, vox]
+; type = PlaySnd
+; trigger1 = Time = 0
+; value = 6,6
+; volume=200
+; channel=0
+; 
+; [State 610, 2]
+; type = PlaySnd
+; trigger1 = animelem=3
+; trigger2 = animelem=7
+; value = 5,18
+; volume=50
+; 
+; [State 240, 2]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1 = Time = 0
+; trigger1 = fvar(3)<40
+; priority=4,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 2.5*(fvar(3))
+; guardflag = MA
+; pausetime = 14,14
+; sparkno = 1
+; sparkxy = -10,-60
+; hitsound   = 5,3
+; guardsound = 6,0
+; ground.type = low
+; ground.slidetime = 12
+; ground.hittime  = 10+fvar(30)
+; ground.velocity = -9,0
+; air.type = low
+; air.velocity = -9,0
+; air.hittime=35
+; 
+; [State 240, 2]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1 = Time = 0
+; trigger1 = fvar(3)>=40
+; priority=4,hit
+; attr = S, NA
+; animtype  = back
+; damage    = 2.5*(fvar(3))
+; guardflag = MA
+; pausetime = 25,25
+; sparkno = 1
+; sparkxy = -10,-60
+; hitsound   = 5,3
+; guardsound = 6,0
+; ground.type = high
+; ground.slidetime = 12
+; ground.hittime  = 30
+; ground.velocity = -15,-2
+; air.type = high
+; air.velocity = -15,-2
+; air.hittime=35
+; p2stateno=1026
+; fall=1
+; air.fall=1
+; 
+; [State 1000, 7]
+; type = ChangeState
+; trigger1 = AnimTime = 0
+; value = 0
+; ctrl = 1
+; 
+; ;-----------------------------
+; ; Light Shell Activate
+; 
+; [Statedef 10900]
+; type    = S
+; movetype= A
+; physics = S
+; juggle  = 4
+; poweradd= 0
+; ;velset = (prevstateno = 10800)* 0,(prevstateno = 10800)* 0
+; ;anim = 3800
+; ctrl = 0
+; sprpriority = 2
+; facep2 = !(prevstateno = 10800)
+; 
+; [State 0, PalFXWiz]
+; type = PalFX
+; trigger1 =time=0
+; time =10
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = -80,-80,-80,10
+; invertall = 0
+; color = 0
+; 
+; [State 3050, Super A]
+; type = SuperPause
+; trigger1 = time=22
+; time=10
+; pos = -5, -55
+; anim = 100
+; sound = S13,4
+; 
+; [state 0, varset]
+; type=varset
+; trigger1=animtime=0
+; fv=7
+; value=1
+; 
+; [State 0, Charge Dust Top Output]
+; type = Explod
+; trigger1 = numexplod(11018)=0
+; trigger1 = time=0
+; anim = 11018
+; ID = 11018
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; scale = 0.5,0.5
+; sprpriority = 5
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; ;trigger1 = fvar(5)<3
+; trigger1 = Time = 0 && Anim != 8
+; value = 8
+; 
+; [State 8100, LifeAdd]
+; type = LifeAdd
+; trigger1 = Time = 0
+; value = -(gethitvar(damage))
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 200, vox]
+; type = PlaySnd
+; trigger1 = Time = 0
+; value = 6,9
+; volume=200
+; channel=0
+; 
+; [State 610, 2]
+; type = PlaySnd
+; trigger1 = time=0
+; value = 13,2
+; volume=255
+; 
+; [State 210, 2]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1 =time=0
+; priority=3,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 0
+; guardflag = MA
+; pausetime = 10,10
+; sparkno = 1
+; sparkxy = -10,-30
+; hitsound   = 20,1
+; guardsound = 6,0
+; ground.type = High
+; ground.slidetime = 12
+; ground.hittime  = 26
+; ground.velocity = -8,-3
+; air.velocity = -8,-3
+; air.hittime=35
+; 
+; [state 0, light shell palfx]
+; type = PalFX
+; trigger1 = time=20
+; ;time = 60
+; time = (power/3)
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd = 30,30,30,30
+; invertall = 0
+; color = 255
+; ignorehitpause = 1
+; persistent = 0
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=20
+; ;time = 90
+; time = (power/3)
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; 
+; [State 1000, 7]
+; type = ChangeState
+; trigger1 = AnimTime = 0
+; value = 0
+; ctrl = 1
+; 
+; ;-----------------------------
+; ; Light Shell Deactivate
+; 
+; [Statedef 10910]
+; type    = S
+; movetype= A
+; physics = S
+; juggle  = 4
+; poweradd= 0
+; ;velset = (prevstateno = 10800)* 0,(prevstateno = 10800)* 0
+; ;anim = 3800
+; ctrl = 0
+; sprpriority = 2
+; facep2 = !(prevstateno = 10800)
+; 
+; [State 0, PalFXWiz]
+; type = PalFX
+; trigger1 =time=0
+; time =10
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = -80,-80,-80,10
+; invertall = 0
+; color = 0
+; 
+; [State 3050, Super A]
+; type = SuperPause
+; trigger1 = time=13
+; time=3
+; pos = -5, -55
+; anim = 100
+; sound = S13,4
+; 
+; [state 0, varset]
+; type=varset
+; trigger1=time=14
+; fv=7
+; value=0
+; 
+; [State 0, Charge Dust Top Output]
+; type = Explod
+; trigger1 = numexplod(11018)=0
+; trigger1 = time=0
+; anim = 11018
+; ID = 11018
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; scale = 0.5,0.5
+; sprpriority = 5
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; ;trigger1 = fvar(5)<3
+; trigger1 = Time = 0 && Anim != 8
+; value = 8
+; 
+; [State 8100, LifeAdd]
+; type = LifeAdd
+; trigger1 = Time = 0
+; value = -(gethitvar(damage))
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 200, vox]
+; type = PlaySnd
+; trigger1 = Time = 0
+; value = 6,9
+; volume=200
+; channel=0
+; 
+; [State 610, 2]
+; type = PlaySnd
+; trigger1 = time=0
+; value = 13,2
+; volume=255
+; 
+; [State 210, 2]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1 =time=0
+; priority=3,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 0
+; guardflag = MA
+; pausetime = 10,10
+; sparkno = 1
+; sparkxy = -10,-30
+; hitsound   = 20,1
+; guardsound = 6,0
+; ground.type = High
+; ground.slidetime = 12
+; ground.hittime  = 26
+; ground.velocity = -8,-3
+; air.velocity = -8,-3
+; air.hittime=35
+; 
+; [state 0, light shell palfx]
+; type = PalFX
+; trigger1 = time=1
+; ;time = 60
+; time = (power/3)
+; add = 0,0,0
+; mul = 256,256,256
+; sinadd =0,0,0,1
+; invertall = 0
+; color = 255
+; ignorehitpause = 1
+; persistent = 0
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=1
+; ;time = 90
+; time = (power/3)
+; palcolor = 256
+; palbright = 0,0,0
+; palcontrast = 0,0,0
+; paladd = 0,0,0
+; palmul = .65,.65,.65
+; trans=add
+; 
+; [State 1000, 7]
+; type = ChangeState
+; trigger1 = time=14
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Repel Shield SC
+; [Statedef 11000]
+; type = S
+; physics = S
+; movetype = I
+; ctrl = 0
+; anim = 6000
+; poweradd=-100
+; velset=(vel x)/3,0
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [state 6000, (shield spark]
+; type=explod
+; trigger1=time=0
+; sprpriority=7
+; anim=11005
+; ID=11005
+; scale=0.5,0.5
+; postype=p1
+; pos=30,-45
+; supermove=1
+; supermovetime=9999
+; pausemovetime=9999
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [state 0, perfect shield]
+; type = HitOverride
+; trigger1 = animelem=1
+; attr = SCA,NA,HA,SA,NT,ST,HT        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+; slot = 2
+; stateno = 11050
+; time = 2
+; forceair = 0
+; 
+; [state 0, normal shield]
+; type = HitOverride
+; trigger1 = animelem=2
+; attr = SCA,NA,HA,SA,NT,ST,HT       ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+; slot = 3
+; stateno = 11051
+; time = 5
+; forceair = 0
+; 
+; [state 0, projectile shield]
+; type = HitOverride
+; trigger1 = animelem=1
+; trigger2 = animelem=2
+; attr = SCA,NP       ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+; slot = 4
+; stateno = 11052
+; time = 5
+; forceair = 0
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=animtime=0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Repel Shield A
+; [Statedef 11010]
+; type = A
+; physics = A
+; movetype = A
+; ctrl = 0
+; anim = 6001
+; poweradd=-100
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [state 6000, (shield spark]
+; type=explod
+; trigger1=time=0
+; sprpriority=7
+; anim=11005
+; ID=11005
+; scale=0.5,0.5
+; postype=p1
+; pos=30,-45
+; supermove=1
+; supermovetime=9999
+; pausemovetime=9999
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [state 0, perfect shield]
+; type = HitOverride
+; trigger1 = animelem=1
+; attr = SCA,NA,HA,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+; slot = 2
+; stateno = 11060
+; time = 2
+; forceair = 0
+; 
+; [state 0, normal shield]
+; type = HitOverride
+; trigger1 = animelem=2
+; attr = SCA,NA,HA,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+; slot = 3
+; stateno = 11061
+; time = 5
+; forceair = 0
+; 
+; [state 0, projectile shield]
+; type = HitOverride
+; trigger1 = animelem=1
+; trigger2 = animelem=2
+; attr = SCA,NP       ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+; slot = 4
+; stateno = 11062
+; time = 5
+; forceair = 0
+; 
+; ;---------------------------------------------------------------------------
+; ; Shield SCP Final
+; [Statedef 11050]
+; type = S
+; physics = S
+; movetype = A
+; ctrl = 0
+; ;anim = 6000
+; poweradd=-100
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time<=6
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time<=6 && Anim != 6005
+; value = 6005
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [State 210, stun hit]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1=time=0
+; priority=7,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 0
+; guardflag = MA
+; pausetime = 24,50
+; sparkno = 1
+; sparkxy = -10,-30
+; hitsound   = 20,1
+; guardsound = 6,0
+; ground.type = High
+; ground.slidetime = 12
+; ground.hittime  = 26
+; ground.velocity = -4,0
+; air.velocity = -4,-1
+; air.hittime=35
+; palfx.add = 240,50,0
+; palfx.mul = 250,224,120
+; palfx.sinadd = 110,55,85,30
+; palfx.invertall = 0
+; palfx.color = 0
+; palfx.time = 30
+; 
+; [state 0, ctrl reset]
+; type=ctrlset
+; trigger1=movecontact
+; value=1
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=animtime=0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Shield SCN Final
+; [Statedef 11051]
+; type = S
+; physics = S
+; movetype = A
+; ctrl = 0
+; ;anim = 6000
+; poweradd=-100
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time<=6
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time<=6 && Anim != 6005
+; value = 6005
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [State 210, knockdown ]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1=time=0
+; priority=7,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 0
+; guardflag = MA
+; pausetime = 24,40
+; sparkno = 1
+; sparkxy = -10,-30
+; hitsound   = 20,1
+; guardsound = 6,0
+; ground.type = High
+; ground.slidetime = 12
+; ground.hittime  = 26
+; ground.velocity = -4,-1
+; air.velocity = -4,-1
+; air.hittime=35
+; palfx.add = 100,100,180
+; palfx.mul = 256,256,250
+; palfx.sinadd = -80,-80,-80,20
+; palfx.invertall = 0
+; palfx.color = 256
+; palfx.time = 30
+; fall=1
+; air.fall=1
+; 
+; [state 0, ctrl reset]
+; type=ctrlset
+; trigger1=movecontact
+; value=1
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=animtime=0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Shield SC/NP Final
+; [Statedef 11052]
+; type = S
+; physics = S
+; movetype = A
+; ctrl = 0
+; ;anim = 6000
+; poweradd=-100
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time<=6
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time<=6 && Anim != 6020
+; value = 6020
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [State 210, stun hit]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1=time=0
+; priority=7,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 0
+; guardflag = MA
+; pausetime = 24,50
+; sparkno = 1
+; sparkxy = -10,-30
+; hitsound   = 20,1
+; guardsound = 6,0
+; ground.type = High
+; ground.slidetime = 12
+; ground.hittime  = 26
+; ground.velocity = -4,0
+; air.velocity = -4,-1
+; air.hittime=35
+; palfx.add = 240,50,0
+; palfx.mul = 250,224,120
+; palfx.sinadd = 110,55,85,30
+; palfx.invertall = 0
+; palfx.color = 0
+; palfx.time = 30
+; 
+; [state 0, ctrl reset]
+; type=ctrlset
+; trigger1=movecontact
+; value=1
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=animtime=0
+; value = 0
+; ctrl = 1
+; ;---------------------------------------------------------------------------
+; ; Shield AP Final
+; [Statedef 11060]
+; type = A
+; physics = A
+; movetype = A
+; ctrl = 0
+; ;anim = 6000
+; poweradd=-100
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time<=6
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time<=6 && Anim != 6006
+; value = 6006
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [State 210, stun hit]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1=time=0
+; priority=7,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 0
+; guardflag = MA
+; pausetime = 24,50
+; sparkno = 1
+; sparkxy = -10,-30
+; hitsound   = 20,1
+; guardsound = 6,0
+; ground.type = High
+; ground.slidetime = 12
+; ground.hittime  = 26
+; ground.velocity = -4,0
+; air.velocity = -4,-1
+; air.hittime=35
+; palfx.add = 240,50,0
+; palfx.mul = 250,224,120
+; palfx.sinadd = 110,55,85,30
+; palfx.invertall = 0
+; palfx.color = 0
+; palfx.time = 30
+; 
+; [state 0, ctrl reset]
+; type=ctrlset
+; trigger1=movecontact
+; value=1
+; 
+; ; [State 330, 1]
+; ; type = ChangeState
+; ; trigger1=animtime=0
+; ; value = 0
+; ; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Shield AN Final
+; [Statedef 11061]
+; type = A
+; physics = A
+; 
+; movetype = A
+; ctrl = 0
+; ;anim = 6000
+; poweradd=-100
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time<=6
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time<=6 && Anim != 6006
+; value = 6006
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [State 210, knockdown ]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1=time=0
+; priority=7,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 0
+; guardflag = MA
+; pausetime = 24,40
+; sparkno = 1
+; sparkxy = -10,-30
+; hitsound   = 20,1
+; guardsound = 6,0
+; ground.type = High
+; ground.slidetime = 12
+; ground.hittime  = 26
+; ground.velocity = -4,-1
+; air.velocity = -4,-1
+; air.hittime=35
+; palfx.add = 100,100,180
+; palfx.mul = 256,256,250
+; palfx.sinadd = -80,-80,-80,20
+; palfx.invertall = 0
+; palfx.color = 256
+; palfx.time = 30
+; fall=1
+; air.fall=1
+; 
+; [state 0, ctrl reset]
+; type=ctrlset
+; trigger1=movecontact
+; value=1
+; 
+; ; [State 330, 1]
+; ; type = ChangeState
+; ; trigger1=animtime=0
+; ; value = 0
+; ; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Shield A/NP Final
+; [Statedef 11062]
+; type = A
+; physics = A
+; 
+; movetype = A
+; ctrl = 0
+; ;anim = 6000
+; poweradd=-100
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time<=6
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time<=6 && Anim != 6020
+; value = 6020
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [State 210, knockdown ]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1=time=0
+; priority=7,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 0
+; guardflag = MA
+; pausetime = 24,40
+; sparkno = 1
+; sparkxy = -10,-30
+; hitsound   = 20,1
+; guardsound = 6,0
+; ground.type = High
+; ground.slidetime = 12
+; ground.hittime  = 26
+; ground.velocity = -4,-1
+; air.velocity = -4,-1
+; air.hittime=35
+; palfx.add = 100,100,180
+; palfx.mul = 256,256,250
+; palfx.sinadd = -80,-80,-80,20
+; palfx.invertall = 0
+; palfx.color = 256
+; palfx.time = 30
+; fall=1
+; air.fall=1
+; 
+; [state 0, ctrl reset]
+; type=ctrlset
+; trigger1=movecontact
+; value=1
+; 
+; ; [State 330, 1]
+; ; type = ChangeState
+; ; trigger1=animtime=0
+; ; value = 0
+; ; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Barrier Shield S
+; [Statedef 12000]
+; type = S
+; physics = S
+; movetype = I
+; ctrl = 0
+; ;anim = 12000
+; poweradd=-5
+; velset=(vel x)/3,0
+; 
+; [State 400, power]
+; type=poweradd
+; trigger1=gametime%1=0
+; value=-6
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = time=0 && Anim != 12000
+; value = 12000
+; 
+; [state 0, velset]
+; type=velset
+; trigger1=p2movetype=A && time=0
+; x=gethitvar(xvel)
+; 
+; [state 0, shield ring]
+; type=explod
+; trigger1=time=0
+; trigger1=numexplod(19008)=0
+; bindtime=-1
+; removetime=-1
+; sprpriority=7
+; anim=19008
+; ID=19008
+; scale=0.35,0.35
+; postype=p1
+; pos=0,-35
+; 
+; [state 0, shield ring H]
+; type=explod
+; trigger1=time=0
+; trigger1=numexplod(19009)=0
+; bindtime=-1
+; removetime=-1
+; sprpriority=7
+; anim=19009
+; ID=19009
+; scale=0.35,0.35
+; postype=p1
+; pos=0,-35
+; 
+; [State 6000, shine palfx on]
+; type = PalFX
+; trigger1=command="holdB"
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; persistent=0
+; 
+; [State 6000, shine palfx off]
+; type = PalFX
+; trigger1=command!="holdB"
+; time = 0
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 0,0,0,1
+; invertall = 0
+; color = 256
+; persistent=0
+; 
+; ; [state 0, afterimage]
+; ; type=afterimage
+; ; trigger1=time=0
+; ; time = 999
+; ; palcolor = 256
+; ; palbright = 30,30,30
+; ; palcontrast = 120,120,120
+; ; paladd = 10,10,10
+; ; palmul = .65,.65,.65
+; ; trans=add
+; ; length=20
+; ; timegap=1
+; ; framegap=2
+; ;
+; ; [state 0, afterimage]
+; ; type=afterimage
+; ; trigger1=command!="holdB"
+; ; time =1
+; ; palcolor = 256
+; ; palbright = 30,30,30
+; ; palcontrast = 120,120,120
+; ; paladd = 10,10,10
+; ; palmul = .65,.65,.65
+; ; trans=add
+; ; length=20
+; ; timegap=1
+; ; framegap=4
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time>0
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=command!="holdB"
+; trigger2=power=0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Barrier Shield C
+; [Statedef 12001]
+; type = C
+; physics = S
+; movetype = I
+; ctrl = 0
+; ;anim = 12000
+; poweradd=-5
+; velset=(vel x)/3,0
+; 
+; [State 400, power]
+; type=poweradd
+; trigger1=gametime%1=0
+; value=-6
+; 
+; [state 0, velset]
+; type=velset
+; trigger1=p2movetype=A && time=0
+; x=gethitvar(xvel)
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time=0 && Anim != 12001
+; value = 12001
+; 
+; [state 0, shield ring]
+; type=explod
+; trigger1=time=0
+; trigger1=numexplod(19008)=0
+; bindtime=-1
+; removetime=-1
+; sprpriority=7
+; anim=19008
+; ID=19008
+; scale=0.35,0.35
+; postype=p1
+; pos=0,-35
+; 
+; [state 0, shield ring H]
+; type=explod
+; trigger1=time=0
+; trigger1=numexplod(19009)=0
+; bindtime=-1
+; removetime=-1
+; sprpriority=7
+; anim=19009
+; ID=19009
+; scale=0.35,0.35
+; postype=p1
+; pos=0,-35
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time>0
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=command!="holdB"
+; trigger2=power=0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Barrier Shield A
+; [Statedef 12002]
+; type = A
+; physics = A
+; movetype = I
+; ctrl = 0
+; ;anim = 12000
+; poweradd=-5
+; 
+; [State 400, power]
+; type=poweradd
+; trigger1=gametime%1=0
+; value=-6
+; 
+; [state 0, velset]
+; type=velset
+; trigger1=p2movetype=A && time=0
+; x=gethitvar(xvel)
+; y=gethitvar(yvel)
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time=0 && Anim != 12000
+; value = 12000
+; 
+; [state 0, shield ring]
+; type=explod
+; trigger1=time=0
+; trigger1=numexplod(19008)=0
+; bindtime=-1
+; removetime=-1
+; sprpriority=7
+; anim=19008
+; ID=19008
+; scale=0.35,0.35
+; postype=p1
+; pos=0,-35
+; 
+; [state 0, shield ring H]
+; type=explod
+; trigger1=time=0
+; trigger1=numexplod(19009)=0
+; bindtime=-1
+; removetime=-1
+; sprpriority=7
+; anim=19009
+; ID=19009
+; scale=0.35,0.35
+; postype=p1
+; pos=0,-35
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time>0
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=command!="holdB"
+; trigger2=power=0
+; value = 103
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Dodge Neutral
+; [Statedef 13200]
+; type = S
+; physics = S
+; movetype = I
+; ctrl = 0
+; ;anim = 13200
+; poweradd=-5
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time=0 && Anim != 13200
+; value = 13200
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time>0
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=animelem=2
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=animelem=2
+; time = 16
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=animtime=0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Dodge Forward
+; [Statedef 13201]
+; type = S
+; physics = S
+; movetype = I
+; ctrl = 0
+; ;anim = 13200
+; poweradd=-5
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time=0 && Anim != 13201
+; value = 13201
+; 
+; [state 0, velset]
+; type=velset
+; trigger1=animelem=2
+; trigger2=animelem=3
+; x=3.5
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time>0
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=animelem=2
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=animelem=2
+; time = 16
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=animtime=0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Dodge Back
+; [Statedef 13202]
+; type = S
+; physics = S
+; movetype = I
+; ctrl = 0
+; ;anim = 13200
+; poweradd=-5
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time=0 && Anim != 13202
+; value = 13202
+; 
+; [state 0, velset]
+; type=velset
+; trigger1=animelem=2
+; trigger2=animelem=3
+; x=-3.5
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time>0
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=animelem=2
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=animelem=2
+; time = 16
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=animtime=0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Counter Strike Start
+; [Statedef 13500]
+; type = S
+; physics = S
+; movetype = I
+; ctrl = 0
+; ;anim = 6000
+; poweradd=0
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time<=20
+; value = 0
+; 
+; [state 0, hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 10800, ChangeAnim]
+; type = ChangeAnim
+; trigger1 = Time=0 && Anim != 6020
+; value = 6020
+; 
+; [State 0, PlaySnd]
+; type = PlaySnd
+; trigger1 = time=2
+; value = 30,3
+; 
+; ; [state 6000, (shield spark]
+; ; type=explod
+; ; trigger1=time=0
+; ; sprpriority=7
+; ; anim=11005
+; ; ID=11005
+; ; scale=0.5,0.5
+; ; postype=p1
+; ; pos=30,-45
+; ; supermove=1
+; ; supermovetime=9999
+; ; pausemovetime=9999
+; 
+; [State 6000, PalFXWiz]
+; type = PalFX
+; trigger1=time=0
+; time = 8
+; add = 100,100,180
+; mul = 256,256,256
+; sinadd = 50,50,50,30
+; invertall = 0
+; color = 256
+; 
+; [State 0, PowerAdd]
+; type = PowerAdd
+; trigger1 =time>0
+; value = 50*(gethitvar(damage))
+; 
+; ; [state 0, defense up]
+; ; type=defencemulset
+; ; trigger1=time>0
+; ; value=0
+; 
+; [State 0, HitOverride]
+; type = HitOverride
+; trigger1 = time=0
+; attr = SCA,NA,HA,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+; slot = 1
+; stateno = 13505
+; time = 10
+; forceair = 0
+; 
+; ; [State 0, HitOverride]
+; ; type = HitOverride
+; ; trigger1 = time=0
+; ; attr = SCA,AP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+; ; slot = 1
+; ; stateno = 13500
+; ; time = 20
+; ; forceair = 0
+; 
+; ; [State 330, 1]
+; ; type = ChangeState
+; ; trigger1=p2movetype=A && time=0
+; ; trigger1
+; ; value = 13505
+; ; ctrl = 1
+; 
+; [State 330, 1]
+; type = ChangeState
+; trigger1=animtime=0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Counter
+; 
+; [Statedef 13505]
+; type    = S
+; movetype= A
+; physics = S
+; juggle  = 10
+; poweradd= 0
+; ctrl = 0
+; ;velset = 0,0
+; ;anim = 13505
+; sprpriority = -1
+; facep2=1
+; 
+; [State 3000, Super A]
+; type = SuperPause
+; trigger1=time=0
+; time=15
+; pos = 25, -57
+; anim = 100
+; sound = 20, 0
+; poweradd = 0
+; 
+; [state 0, velset]
+; type=velset
+; trigger1=animelem=3
+; trigger2=animelem=4
+; x=15
+; 
+; [state 0, velset]
+; type=velset
+; trigger1=time>10
+; x=(vel x)*0.8
+; 
+; [state 8100, damage negator]
+; type = lifeadd
+; trigger1 = time=0
+; value = 0
+; 
+; [state 0, super armor anim change]
+; type = ChangeAnim
+; trigger1 = Time = 0 && Anim != 13505
+; value = 13505
+; 
+; [state 0, super armor hitcounter]
+; type=varadd
+; trigger1=enemynear,movetype=A
+; trigger1=enemynear,movecontact
+; fv=5
+; value=1
+; persistent=0
+; 
+; [State 610, 2]
+; type = PlaySnd
+; trigger1 = animelem=5
+; value = 5,20
+; volume=50
+; 
+; [State 200, vox]
+; type = PlaySnd
+; trigger1 = Time = 0
+; trigger1 = random>500
+; value = 6,2
+; volume=200
+; channel=0
+; 
+; [State 210, 2]
+; type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+; trigger1 =time=0
+; priority=3,hit
+; attr = S, NA
+; animtype  = High
+; damage    = 3*(gethitvar(damage))
+; guardflag = MA
+; pausetime = 4,7
+; sparkno = 1
+; sparkxy = -10,-30
+; hitsound   = 20,1
+; guardsound = 6,0
+; ground.type = High
+; ground.slidetime = 12
+; ground.hittime  = 26
+; ground.velocity = 1,-6
+; air.velocity = 1,-6
+; air.hittime=35
+; fall=1
+; air.fall=1
+; 
+; [state 210, jump cancel]
+; type=changestate
+; trigger1=command="holdup"
+; trigger1=movecontact
+; value=40
+; ctrl=1
+; 
+; ;Speed Mode
+; [State -3, speed definition]
+; type = ChangeAnim
+; triggerall = time<14
+; trigger1 = AnimElemTime(AnimElemNo(0) + 1) < 0
+; trigger1 = AnimElemTime(AnimElemNo(0)) > floor ((AnimElemTime(AnimElemNo(0)) - AnimElemTime(AnimElemNo(0) + 1))/2)
+; ignorehitpause = 1
+; value = anim
+; elem = AnimElemNo(0) + 1
+; 
+; [state 0, defense up]
+; type=defencemulset
+; trigger1=animtime=0
+; value=1
+; 
+; [State 210, 5]
+; type = ChangeState
+; trigger1 = AnimTime = 0
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Rapid Cancel SC
+; 
+; [Statedef 14000]
+; type    = S
+; movetype= A
+; physics = S
+; poweradd= ifelse(fvar(17)=1,0,-500)
+; ctrl = 0
+; ;velset = 0,0
+; ;anim = 13505
+; sprpriority = -1
+; facep2=1
+; 
+; [state 0, nojugglecheck set]
+; type = VarSet
+; trigger1 = time=0
+; fv = 13    ;fv = 10
+; value = 180
+; 
+; [State 0, Explod]
+; type = Explod
+; trigger1 = time=0
+; anim =0
+; ID =9009
+; pos = 0,0
+; postype = p1
+; removetime = 5
+; bindtime= -1
+; scale = 0.6,0.6
+; sprpriority = 0
+; ontop = 0
+; shadow = 0,0,0
+; ownpal = 0
+; removeongethit = 0
+; trans=add
+; 
+; [State 0, ModifyExplod]
+; type = ModifyExplod
+; trigger1 =time=1
+; ID =9009
+; pos = 0,0
+; postype = p1
+; bindtime = -1
+; removetime = 4
+; scale = 0.70,0.70
+; 
+; [State 0, ModifyExplod]
+; type = ModifyExplod
+; trigger1 =time=2
+; ID =9009
+; pos = 0,0
+; postype = p1
+; bindtime = -1
+; removetime = 3
+; scale = 0.78,0.78
+; 
+; [State 0, ModifyExplod]
+; type = ModifyExplod
+; trigger1 =time=3
+; ID =9009
+; pos = 0,0
+; postype = p1
+; bindtime = -1
+; removetime = 2
+; scale = 0.88,0.88
+; 
+; [State 0, ModifyExplod]
+; type = ModifyExplod
+; trigger1 =time=4
+; ID =9009
+; pos = 0,0
+; postype = p1
+; bindtime = -1
+; removetime = 1
+; scale = 1.04,1.04
+; 
+; [State 0, PalFXWiz]
+; type = PalFX
+; trigger1 = time=0
+; time =5
+; add = 200,0,200
+; mul = 256,256,256
+; sinadd = 80,80,80,5
+; invertall = 0
+; color = 255
+; 
+; [state 0, ctrl reset]
+; type=ctrlset
+; trigger1=time=0
+; value=1
+; 
+; [State 210, 5]
+; type = ChangeState
+; trigger1 = time=1
+; value = 0
+; ctrl = 1
+; 
+; ;---------------------------------------------------------------------------
+; ; Rapid Cancel A
+; 
+; [Statedef 14005]
+; type    = A
+; movetype= A
+; physics = A
+; poweradd= ifelse(fvar(17)=1,0,-500)
+; ctrl = 0
+; velset = vel x, ((vel y)-1)
+; ;anim = 13505
+; sprpriority = -1
+; facep2=1
+; 
+; [state 0, nojugglecheck set]
+; type = VarSet
+; trigger1 = time=0
+; fv = 13    ;fv = 10
+; value = 180
+; 
+; [State 0, Explod]
+; type = Explod
+; trigger1 = time=0
+; anim =0
+; ID =9009
+; pos = 0,0
+; postype = p1
+; removetime = 5
+; bindtime= -1
+; scale = 0.6,0.6
+; sprpriority = 0
+; ontop = 0
+; shadow = 0,0,0
+; ownpal = 0
+; removeongethit = 0
+; trans=add
+; 
+; [State 0, ModifyExplod]
+; type = ModifyExplod
+; trigger1 =time=1
+; ID =9009
+; pos = 0,0
+; postype = p1
+; bindtime = -1
+; removetime = 4
+; scale = 0.70,0.70
+; 
+; [State 0, ModifyExplod]
+; type = ModifyExplod
+; trigger1 =time=2
+; ID =9009
+; pos = 0,0
+; postype = p1
+; bindtime = -1
+; removetime = 3
+; scale = 0.78,0.78
+; 
+; [State 0, ModifyExplod]
+; type = ModifyExplod
+; trigger1 =time=3
+; ID =9009
+; pos = 0,0
+; postype = p1
+; bindtime = -1
+; removetime = 2
+; scale = 0.88,0.88
+; 
+; [State 0, ModifyExplod]
+; type = ModifyExplod
+; trigger1 =time=4
+; ID =9009
+; pos = 0,0
+; postype = p1
+; bindtime = -1
+; removetime = 1
+; scale = 1.04,1.04
+; 
+; [State 0, PalFXWiz]
+; type = PalFX
+; trigger1 = time=0
+; time =5
+; add = 200,0,200
+; mul = 256,256,256
+; sinadd = 80,80,80,5
+; invertall = 0
+; color = 255
+; 
+; [state 0, ctrl reset]
+; type=ctrlset
+; trigger1=time=0
+; value=1
+; 
+; [State 210, 5]
+; type = ChangeState
+; trigger1 = time=1
+; value = 50
+; ctrl = 1
+; 
+; ;------------------
+; ;Flame 1
+; [statedef 20010]
+; type=S
+; anim=20010
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [State 0, second flame]
+; type = Explod
+; trigger1 = time=10
+; anim =20010
+; ID =20010
+; pos = 0,0
+; postype = p1  ;p2,front,back,left,right
+; facing = 1
+; vfacing = 1
+; bindtime = 1
+; removetime = -2
+; scale = 0.5,0.5
+; 
+; [State 0, Charge Dust Bac Output]
+; type = Explod
+; triggerall=parent,statetype!=A
+; trigger1 = time=0
+; trigger1 = numexplod(11119)=0
+; anim = 11019
+; ID = 11119
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; scale = 0.5,0.5
+; sprpriority = -3
+; ignorehitpause=1
+; supermove=1
+; 
+; [State 0, Charge Dust Top Output]
+; type = Explod
+; triggerall=parent,statetype!=A
+; trigger1 = time=0
+; trigger1 = numexplod(11118)=0
+; anim = 11018
+; ID = 11118
+; pos = 0,0
+; postype = p1
+; removetime = -2
+; scale = 0.5,0.5
+; sprpriority = 5
+; persistent=0
+; ignorehitpause=1
+; supermove=1
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = animtime=0
+; 
+; ;------------------
+; ;Flame 2
+; [statedef 20011]
+; type=S
+; anim=20011
+; 
+; [State 0, second flame]
+; type = Explod
+; trigger1 = time=13
+; anim =20011
+; ID =20011
+; pos = 0,0
+; postype = p1  ;p2,front,back,left,right
+; facing = 1
+; vfacing = 1
+; bindtime = 1
+; removetime = -2
+; scale = 0.5,0.5
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = animtime=0
+; 
+; ;------------------
+; ;Flame 3
+; [statedef 20012]
+; type=S
+; anim=20012
+; 
+; [State 0, second flame]
+; type = Explod
+; trigger1 = time=16
+; anim =20012
+; ID =20012
+; pos = 0,0
+; postype = p1  ;p2,front,back,left,right
+; facing = 1
+; vfacing = 1
+; bindtime = 1
+; removetime = -2
+; scale = 0.5,0.5
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = animtime=0
+; 
+; ;------------------
+; ;Flame 4
+; [statedef 20013]
+; type=S
+; anim=20013
+; 
+; [State 0, second flame]
+; type = Explod
+; trigger1 = time=19
+; anim =20013
+; ID =20013
+; pos = 0,0
+; postype = p1  ;p2,front,back,left,right
+; facing = 1
+; vfacing = 1
+; bindtime = 1
+; removetime = -2
+; scale = 0.5,0.5
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = animtime=0
+; 
+; ;------------------
+; ;Flame 5
+; [statedef 20014]
+; type=S
+; anim=20014
+; 
+; [State 0, second flame]
+; type = Explod
+; trigger1 = time=21
+; anim =20014
+; ID =20014
+; pos = 0,0
+; postype = p1  ;p2,front,back,left,right
+; facing = 1
+; vfacing = 1
+; bindtime = 1
+; removetime = -2
+; scale = 0.5,0.5
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = animtime=0
+; 
+; ;------------------
+; ;Flame 6
+; [statedef 20015]
+; type=S
+; anim=20015
+; 
+; [State 0, second flame]
+; type = Explod
+; trigger1 = time=24
+; anim =20015
+; ID =20015
+; pos = 0,0
+; postype = p1  ;p2,front,back,left,right
+; facing = 1
+; vfacing = 1
+; bindtime = 1
+; removetime = -2
+; scale = 0.5,0.5
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = animtime=0
+; 
+; ;------------------
+; ;Midnight P1
+; [statedef 300000]
+; type=S
+; anim=300000
+; sprpriority=7
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=sub
+; length=1
+; timegap=2
+; framegap=6
+; ;
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = var(27)!=0
+; 
+; ;------------------
+; ;Dawn P1
+; [statedef 300001]
+; type=S
+; anim=300001
+; sprpriority=7
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=sub
+; length=1
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = var(27)!=1
+; 
+; ;------------------
+; ;Twilight P1
+; [statedef 300002]
+; type=S
+; anim=300002
+; sprpriority=7
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=sub
+; length=1
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = var(27)!=2
+; 
+; ;------------------
+; ;Soul P1
+; [statedef 300003]
+; type=S
+; anim=300003
+; sprpriority=7
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=sub
+; length=1
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = var(27)!=3
+; 
+; ;------------------
+; ;Midnight P2
+; [statedef 300010]
+; type=S
+; anim=300010
+; sprpriority=7
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = var(27)!=0
+; 
+; ;------------------
+; ;Dawn P2
+; [statedef 300011]
+; type=S
+; anim=300011
+; sprpriority=7
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = var(27)!=1
+; 
+; ;------------------
+; ;Twilight P2
+; [statedef 300012]
+; type=S
+; anim=300012
+; sprpriority=7
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = var(27)!=2
+; 
+; ;------------------
+; ;Soul P2
+; [statedef 300013]
+; type=S
+; anim=300013
+; sprpriority=7
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=10
+; timegap=2
+; framegap=6
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = var(27)!=3
+; 
+; ;------------------
+; ;Timer
+; [statedef 300100]
+; type=S
+; anim=300100
+; sprpriority=7
+; 
+; [state 0, gear clock]
+; type = Explod
+; trigger1 = time=0
+; anim = 300110
+; ID = 300110
+; pos = 0,0
+; postype = p1
+; facing = 1
+; vfacing = 1
+; bindtime = 1
+; vel = 0,0
+; accel = 0,0
+; random = 0,0
+; removetime = -1
+; scale = 0.075,0.075
+; ontop=1
+; 
+; [state 0, afterimage]
+; type=afterimage
+; trigger1=time=0
+; time = 999
+; palcolor = 256
+; palbright = 30,30,30
+; palcontrast = 120,120,120
+; paladd = 10,10,10
+; palmul = .65,.65,.65
+; trans=add
+; length=20
+; timegap=1
+; framegap=4
+; 
+; [state 0, destroyself]
+; type = destroyself
+; trigger1 = animtime=0
+; trigger2 = parent,stateno=0

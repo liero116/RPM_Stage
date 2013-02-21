@@ -1,0 +1,46 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Oliver"
+displayname = "OLIVER"
+versiondate = 10/10/11
+mugenversion = 1.0
+author = "Liero"
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite = oliver.sff
+anim = oliver.air
+sound = oliver.snd
+cmd = oliver.cmd
+cns = oliver.cns
+stcommon = common1.cns
+st = oliver.cns
+st1 = decimal.cns
+st2 = binary.cns
+st3 = throw.cns
+st4 = pause.cns
+pal1 = oliverp1.act
+pal2 = oliverp2.act
+pal3 = oliverp3.act
+pal4 = oliverp4.act
+pal5 = oliverp5.act
+pal6 = oliverp6.act
+pal7 = oliverp7.act
+pal8 = oliverp8.act
+pal9 = oliverp9.act
+pal10 = oliverp10.act
+pal11 = oliverp11.act
+pal12 = oliverp12.act
+
+[Arcade]
+;intro.storyboard = intro.def
+;ending.storyboard = ending.def
+
+[Option]
+filename = chars/oliver/oliver.sff
+sprite.compress.5 = lz5
+;sprite.compress.8 = rle8

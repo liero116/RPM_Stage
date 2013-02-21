@@ -1,0 +1,78 @@
+# sample macro for autoit keysender script
+
+#2C,214A
+_2C,W10,*,2.24.4A.A,
+
+#LINK TIME
+W42,
+
+#2C,214EX
+_2C,W10,*,2.24.4AB.AB,
+
+#LINK TIME
+W70,
+
+#2C,214C
+_2C,W10,*,2.24.4C.C,
+
+#LINK TIME
+W50,
+
+#623C,236S
+6.2.26C,W20,2.26.6Z.Z,
+
+#LINK TIME
+W115,
+
+#623C,236S
+6.2.26C,W20,2.26.6Z.Z,
+
+#LINK TIME
+W125,
+
+#2C,214C
+_2C,W10,*,2.24.4C.C,
+
+#LINK TIME
+W55,
+
+#2C,214C
+_2C,W10,*,2.24.4C.C,
+
+#LINK TIME
+W55,
+
+#2C,214C
+_2C,W10,*,2.24.4C.C,
+
+#LINK TIME
+W55,
+
+#2C,214C
+_2C,W10,*,2.24.4C.C,
+
+#LINK TIME
+W55,
+
+#2C,214C
+_2C,W10,*,2.24.4C.C,
+
+#LINK TIME
+W55,
+
+#2C,214C
+_2C,W10,*,2.24.4C.C,
+
+#LINK TIME
+W55,
+
+#2C,214C
+_2C,W10,*,2.24.4C.C,
+
+#LINK TIME
+W55,
+
+#2C,214C
+_2C,W10,*,2.24.4C.C.
+
+! end of script

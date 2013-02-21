@@ -1,0 +1,43 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Endora"
+displayname ="XNDXRV"
+versiondate =04/07/12
+mugenversion =1.0
+author ="Liero"
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite =endora.sff
+anim =endora.air
+sound =endora.snd
+cmd =endora.cmd
+cns =endora.cns
+stcommon =common1.cns
+st =endora.cns
+pal1=endora01.act
+pal2=endora02.act
+pal3=endora03.act
+pal4=endora04.act
+pal5=endora05.act
+pal6=endora06.act
+pal7=endora07.act
+pal8=endora08.act
+pal9=endora09.act
+pal10=endora10.act
+pal11=endora11.act
+pal12=endora12.act
+st1=binary.cns
+st2=throw.cns
+st3=pause.cns
+st4=pause.cns
+
+[Arcade]
+;intro.storyboard = intro.def
+ending.storyboard =ending.def
+intro.storyboard=
+

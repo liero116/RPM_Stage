@@ -1,0 +1,394 @@
+﻿;---------------------------------------------------------------------------
+; Pause Helper
+[Statedef 194]
+type = S
+ctrl = 0
+;anim = 0
+velset = 0,0
+sprpriority = 7
+
+;---------------------------------------------------------------------------
+;---   STAND SET   ---------------------------------------------------------
+;---------------------------------------------------------------------------
+
+[State 0, set hex]
+type = ChangeAnim
+triggerall = parent,var(27) = 0
+trigger1 = time = 0
+value = 0
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, set decimal]
+type = ChangeAnim
+triggerall = parent,var(27) = 2
+trigger1 = time = 0
+value = 2
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, set binary]
+type = ChangeAnim
+triggerall = parent,var(27) = 1
+trigger1 = time = 0
+value = 1
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+;---------------------------------------------------------------------------
+;---   HEX  ATTACK SET   ---------------------------------------------------
+;---------------------------------------------------------------------------
+
+[State 0, attack hex]
+type = ChangeAnim
+trigger1 = parent,var(27) = 0
+trigger1 = parent,command = "236A"
+value = 1002
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack hex]
+type = ChangeAnim
+trigger1 = parent,var(27) = 0
+trigger1 = parent,command = "236B"
+value = 1002
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack hex]
+type = ChangeAnim
+trigger1 = parent,var(27) = 0
+trigger1 = parent,command = "236C"
+value = 1002
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack hex]
+type = ChangeAnim
+trigger1 = parent,var(27) = 0
+trigger1 = parent,command = "236EX"
+value = 1002
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack hex]
+type = ChangeAnim
+trigger1 = parent,var(27) = 0
+trigger1 = parent,command = "214"
+value = 1100
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+;---------------------------------------------------------------------------
+;---   DECIMAL  ATTACK SET   -----------------------------------------------
+;---------------------------------------------------------------------------
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "623A"
+value = 1120
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "623B"
+value = 1121
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "623C"
+value = 1120
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "236A"
+value = 1010
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "236B"
+value = 1010
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "236C"
+value = 1010
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "236EX"
+value = 1010
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "214A"
+value = 1020
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "214B"
+value = 1020
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "214C"
+value = 1020
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack decimal]
+type = ChangeAnim
+trigger1 = parent,var(27) = 2
+trigger1 = parent,command = "214EX"
+value = 1020
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+;---------------------------------------------------------------------------
+;---   BINARY ATTACK SET   -------------------------------------------------
+;---------------------------------------------------------------------------
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "623A"
+value = 1050
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "623B"
+value = 1050
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "623C"
+value = 1050
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "623EX"
+value = 1050
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "236A"
+value = 10011
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "236B"
+value = 1011
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "236C"
+value = 1011
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "236EX"
+value = 1011
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "214A"
+value = 1004
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "214B"
+value = 1050
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "214C"
+value = 1154
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, attack binary]
+type = ChangeAnim
+trigger1 = parent,var(27) = 1
+trigger1 = parent,command = "214EX"
+value = 1004
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+;---------------------------------------------------------------------------
+;---   EX FX  --------------------------------------------------------------
+;---------------------------------------------------------------------------
+
+[State 0, EX Palfx]
+type = PalFX
+trigger1 = parent,command = "623EX"
+trigger2 = parent,command = "214EX"
+trigger3 = parent,command = "236EX"
+time = 15
+add = 30,200,-255
+mul = 256,256,256
+sinadd = 30,200,-255,5
+invertall = 0
+color = 0
+ignorehitpause = 1
+persistent = 1
+
+[State 0, EX sound]
+type = PlaySnd
+trigger1 = time = 0
+value = F29,5
+volume = 255
+channel = -1
+
+;---------------------------------------------------------------------------
+;---   RESET   -------------------------------------------------------------
+;---------------------------------------------------------------------------
+
+[State 0, reset hex]
+type = ChangeAnim
+triggerall = parent,var(27) = 0
+triggerall = animtime = 0 
+trigger1  = anim = 1002
+trigger2  = anim = 1100
+value = 0
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, reset decimal]
+type = ChangeAnim
+triggerall = parent,var(27) = 2
+triggerall = animtime = 0 
+trigger1  = anim = 1010
+trigger2  = anim = 1020
+trigger3  = anim = 1120
+trigger4  = anim = 1121
+value = 2
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, reset binary]
+type = ChangeAnim
+triggerall = parent,var(27) = 1
+triggerall = animtime = 0 
+trigger1  = anim = 10011
+trigger2  = anim = 1011
+trigger3  = anim = 1051
+trigger4  = anim = 1004
+trigger5  = anim = 665
+trigger6  = anim = 1154
+value = 1
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, binary cont]
+type = ChangeAnim
+triggerall = parent,var(27) = 1
+triggerall = animtime = 0 
+trigger1  = anim = 1050
+value = 1051
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 181, 1]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 0, DestroySelf]
+type = DestroySelf
+triggerall = time > 10
+trigger1 = parent,command = "start"
+ignorehitpause = 1
+persistent = 1

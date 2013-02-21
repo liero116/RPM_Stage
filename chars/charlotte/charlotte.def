@@ -1,0 +1,47 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Charlotte"
+displayname = "CHARLOTTE"
+versiondate = 08/17/2011
+mugenversion = 1.0
+author = "Liero"
+pal.defaults = 2,3,7,9,10,4,8,5,6
+
+[Files]
+sprite = charlotte.sff
+anim = charlotte.air
+sound = charlotte.snd
+cmd = charlotte.cmd
+cns = charlotte.cns
+stcommon = common1.cns
+st = charlotte.cns
+st1 = hex.cns
+st2 = decimal.cns
+st3 = binary.cns
+st4 = throw.cns
+st5 = pause.cns
+pal1 = charlotte1.act
+pal2 = charlotte2.act
+pal3 = charlotte3.act
+pal4 = charlotte4.act
+pal5 = charlotte5.act
+pal6 = charlotte6.act
+pal7 = charlotte7.act
+pal8 = charlotte8.act
+pal9 = charlotte9.act
+pal10 = charlotte10.act
+pal11 = charlotte11.act
+pal12 = charlotte12.act
+
+[Arcade]
+;intro.storyboard = charlotte_intro.def
+;ending.storyboard = charlotte_end.def
+
+[Option]
+filename = chars/charlotte/charlotte.sff
+sprite.compress.5 = lz5
+;sprite.compress.8 = rle8

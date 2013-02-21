@@ -1,0 +1,44 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Lil' Slugger"
+displayname = "Lil' Slugger"
+versiondate = 3/17/2009
+mugenversion = 1.0
+author = "Liero"
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+sprite = shounen.sff
+anim = shounen.air
+sound = shounen.snd
+cmd = shounen.cmd
+cns = shounen.cns
+stcommon = common1.cns
+st = shounen.cns
+st1 = air.cns
+st2 = stand.cns
+st3 = crouch.cns
+st4 = special.cns
+st5 = throw.cns
+st6 = hyper.cns
+st7 = alignment.cns
+pal1 = 1.act
+pal2 = 2.act
+pal3 = 3.act
+pal4 = 4.act
+pal5 = 5.act
+pal6 = 6.act
+pal7 = 7.act
+pal8 = 8.act
+pal9 = 9.act
+pal10 = 10.act
+pal11 = 11.act
+pal12 = 12.act
+
+[Arcade]
+intro.storyboard = intro.def
+ending.storyboard = end.def

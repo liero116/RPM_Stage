@@ -1,0 +1,290 @@
+[Statedef 800]
+type = S
+movetype= A
+physics = S
+juggle = 0
+velset = 0,0
+ctrl = 0
+anim = 800
+
+[State 200, vox]
+type = PlaySnd
+trigger1 = Time = 0
+value = 6,12
+volume=200
+channel=0
+
+[State 800, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+Trigger1 = Time = 0
+attr = S, NT
+hitflag = M
+priority = 1, Miss
+sparkxy = -10,-37
+hitsound = 0,0
+p1facing = ifelse (command = "holdfwd", -1, 1)
+p2facing = 1
+p1stateno = 810
+p2stateno = 820
+; fall = 1
+numhits=0
+
+[State 800, 2]
+type = ChangeState
+Trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;----------------------------------------------------------------------
+[Statedef 810]
+type = S
+movetype= A
+physics = N
+anim = 810
+;poweradd = 60
+ctrl=0
+
+[State 0, PowerAdd]
+type = PowerAdd
+triggerall = fvar(17)= 0
+triggerall = fvar(7) = 0
+triggerall = var(40) = 0
+trigger1 = time = 0
+value = 250
+
+[State 200, vox]
+type = PlaySnd
+trigger1 = animelem=6
+value = 6,6
+volume=200
+channel=0
+
+[State 810, Bind 1]
+type = TargetBind
+trigger1 = AnimElem = 1
+pos = 35, 0
+
+[State 810, Bind 2]
+type = TargetBind
+trigger1 = AnimElem = 2
+pos = 35, 0
+
+[State 810, Bind 3]
+type = TargetBind
+trigger1 = AnimElem = 3
+pos = 35, 0
+
+; [State 810, Hurt]
+; type = TargetLifeAdd
+; trigger1 = AnimElem = 5
+; value = -78
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 = time=0
+priority = 4, Hit
+attr = S, NA
+animtype  = High
+damage    = 70
+guardflag = MA
+hitflag = MAFD
+pausetime = 8,5
+sparkno = 0
+sparkxy = -10,-37
+hitsound = 5,12
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 3
+ground.hittime  = 20
+ground.velocity = -7,-5
+air.velocity = -7,-5
+air.hittime = 20
+air.fall=1
+fall=1
+fall.recovertime=-1
+down.bounce=1
+fall.xvelocity=-3
+fall.yvelocity=-4
+
+; [State 810, Throw]
+; type = TargetState
+; trigger1 = AnimElem = 6
+; value = 821
+
+[State 810, State End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;----------------------------------------------------------------------
+[Statedef 820]
+type = A
+movetype = H
+physics = N
+velset = 0,0
+
+[State 600, break window]
+type = PalFX
+trigger1=time=0
+time = 10
+add = 100,100,180
+mul = 256,256,256
+sinadd = -80,-80,-80,10
+invertall = 0
+color = 0
+ignorehitpause = 1
+persistent = 1
+
+[state 820, grab break]
+type=changestate
+trigger1=command="a" || command="b" || command="c" || command="x" || command="y" || command="z"
+trigger1=time<10
+value=830
+
+[State 820, 1]
+type = ChangeAnim2
+Trigger1 = Time = 0
+value = 820
+
+;----------------------------------------------------------------------
+[Statedef 821]
+type = A
+movetype = H
+physics = N
+velset = -3,-3
+;poweradd = 40
+
+[State 821, 1] ;Gravity
+type = VelAdd
+Trigger1 = 1
+y = .4
+
+[State 821, 2] ; Recover near ground (use ChangeState)
+type = ChangeState
+triggerall = Vel Y > 0
+triggerall = Pos Y >= -20
+triggerall = alive
+triggerall = CanRecover
+trigger1 = Command = "recovery"
+value = 5200 ;HITFALL_RECOVER
+
+[State 821, 3] ; Recover in mid air (use SelfState)
+type = SelfState
+triggerall = Vel Y > 0
+triggerall = alive
+triggerall = CanRecover
+trigger1 = Command = "recovery"
+value = 5210 ;HITFALLAIRRECOVER
+
+[State 821, 4] ;Hit ground
+type = SelfState
+trigger1 = Vel Y > 0
+trigger1 = Pos Y >= 0
+value = 5100 ;Hit ground
+
+;---------------------------------------------------------------------------
+; Grab Break
+[Statedef 830]
+type    = S
+movetype= A
+physics = S
+juggle  = 1
+;velset = 0,0
+ctrl = 0
+anim = 830
+;poweradd = 20
+sprpriority = 2
+facep2=1
+
+;======================================
+[State 600, just frame]
+type = PalFX
+trigger1=time=0
+time = 3
+add = 100,100,180
+mul = 256,256,256
+sinadd = -80,-80,-80,10
+invertall = 0
+color = 0
+ignorehitpause = 1
+persistent = 1
+
+[State 600, EnvColor]
+type = EnvColor
+trigger1=time=0
+value = 255,255,255
+time = 1
+under = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 600, EnvShake]
+type = EnvShake
+trigger1=time=0
+time = 10
+freq = 60
+ampl = -4
+phase = 90
+ignorehitpause =1
+persistent =1
+
+[State 200, sfx]
+type = PlaySnd
+trigger1 = Time = 0
+value = 20,0
+volume=200
+
+;[state 200, 1]
+;type=projectile
+;trigger1=animelem=2
+;ProjID = 1
+;projanim = 201
+;projremovetime = 35
+
+[State 210, 2]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+trigger1 =time=0
+priority = 4, Hit
+attr = S, NA
+animtype  = High
+damage    = 0
+hitflag = MAFD
+guardflag = MA
+pausetime = 5,5
+sparkno = 0
+sparkxy = -10,-37
+hitsound   = 0,0
+guardsound = 6,0
+ground.type = High
+ground.slidetime = 3
+ground.hittime  = 20
+ground.velocity = -5,-3
+air.velocity = -5,-3
+air.hittime  = 20
+
+[State 600, 1]
+type = PlaySnd
+trigger1 = Time = 1
+value = 5,22
+
+[State 200, vox]
+type = PlaySnd
+trigger1 = Time = 0
+value = 6,19
+volume=200
+channel=0
+
+[state 200, ctrl reset]
+type=ctrlset
+trigger1=time=10
+value=1
+
+[State 200, 7]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
