@@ -163,11 +163,7 @@ pip-log.txt
 .DS_Store
 
 #MUGEN image/sounds
-*.act
-*.sff
 *.snd
-*.mp3
-*.wav
 *.zip
 *.flp
 *.ogg
