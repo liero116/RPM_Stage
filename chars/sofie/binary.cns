@@ -69,9 +69,9 @@ sparkxy = -10, -20 ; = -10, -20               ;X-offset for the "hit spark" rel.
 hitsound = 5, 1                  ;Sound to play on hit
 guardsound = 6, 0                ;Sound to play on guard
 ground.type = High               ;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 20            ;Time that the opponent slides back
-ground.hittime  = 20
-guard.hittime = 19     ;ent is in hit state
+ground.slidetime = 21            ;Time that the opponent slides back
+ground.hittime  = 21
+guard.hittime = 20     ;ent is in hit state
 ground.velocity = -8      
 guard.velocity = -5
 airguard.velocity = -1.9,-.8     ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
@@ -158,9 +158,9 @@ sparkxy = -10, -20 ; = -10,-30
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = High
-ground.slidetime = 19
-ground.hittime  = 19
-guard.hittime = 17
+ground.slidetime = 20
+ground.hittime  = 20
+guard.hittime = 18
 ground.velocity = -6,0
 air.velocity = -3,-3
 air.hittime=35
@@ -238,9 +238,9 @@ sparkxy = -10, -20 ; = -10,-60
 hitsound   = 5,3
 guardsound = 6,0
 ground.type = low
-ground.slidetime = 17
-ground.hittime  = 17
-guard.hittime = 16
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = 17
 ground.velocity = -8.5,0
 air.type = high
 air.fall
@@ -532,11 +532,11 @@ ground.type = high
 ground.slidetime = 17
 ground.hittime  = 17
 guard.hittime = 7
-ground.velocity = 0,-12
-air.velocity = 0,-12
+ground.velocity = -0.5,-12
+air.velocity = -0.5,-12
 down. velocity = 0,-12
 air.type=high
-guard.velocity = 0
+guard.velocity = -10
 fall = 1
 air.fall=1
 fall.recovertime=30
@@ -1099,9 +1099,9 @@ sparkno = 10
 hitsound   = 5,4
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 24
-ground.hittime  = 24
-guard.hittime = 23
+ground.slidetime = 25
+ground.hittime  = 25
+guard.hittime = 24
 ground.velocity = -3,0
 air.velocity = -2,-3
 air.hittime = 25
@@ -1182,8 +1182,8 @@ sparkno = 10
 hitsound   = 5,4
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 24
-ground.hittime  = 24
+ground.slidetime = 25
+ground.hittime  = 25
 guard.hittime = 21
 ground.velocity = -3,0
 air.velocity = -2,-3
@@ -1265,9 +1265,9 @@ sparkno = 10
 hitsound   = 5,4
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 24
-ground.hittime  = 24
-guard.hittime = 19
+ground.slidetime = 25
+ground.hittime  = 25
+guard.hittime = 20
 ground.velocity = -3,0
 air.velocity = -2,-3
 air.hittime = 25
@@ -1348,9 +1348,9 @@ sparkno = 11
 hitsound   = 5,4
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 24
-ground.hittime  = 24
-guard.hittime = 16
+ground.slidetime = 25
+ground.hittime  = 25
+guard.hittime = 17
 ground.velocity = -19,0
 guard.velocity = -19
 air.velocity = -4,-2
@@ -1449,9 +1449,9 @@ sparkno = 12
 hitsound   = 5,4
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 24
-ground.hittime  = 24
-guard.hittime = 9
+ground.slidetime = 25
+ground.hittime  = 25
+guard.hittime = 10
 ground.velocity = -4,-4
 guard.velocity = -20
 air.velocity = -4,-4
@@ -1468,7 +1468,7 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;214+A - Prime Iris
+;214+AT - Prime Iris
 [Statedef 10311]
 type    = S
 movetype= A
@@ -1514,6 +1514,21 @@ type = AfterImage
 trigger1 = time=9
 time = 30
 
+[State 0, VarSet]
+type = VarSet
+trigger1 = command = "214A" 
+var(21) = 1
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = command = "214B" 
+var(21) = 2
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = command = "214C" 
+var(21) = 3
+
 [State 0, Helper]
 type = Helper
 trigger1 = animelem=5
@@ -1521,7 +1536,7 @@ helpertype = normal ;player
 name = "Prime Flower"
 ID = 10321
 stateno = 10321
-pos = -25,0
+pos = 0,-10
 postype = p1
 facing = 1
 sprpriority=5
@@ -1531,101 +1546,69 @@ keyctrl=0
 
 [state 600,5]
 type=changestate
-trigger1=animtime=0
+trigger1 = animtime = 0
 value=0
-ctrl=1
-
-; ;---------------------------------------------------------------------------
-
-; 214+A - Prime Iris
-[Statedef 10341]
-type    = A
-movetype= A
-physics = A
-juggle  = 3
-;poweradd= ifelse(power!=3000,ifelse(fvar(17)=0,20,0),0)
-ctrl = 0
-anim = 102111
-sprpriority = 2
-velset=Vel X/3,0
-facep2=1
-
-[State 0, PowerAdd]
-type = PowerAdd
-triggerall = fvar(17)= 0
-triggerall = fvar(7) = 0
-triggerall = var(40) = 0
-trigger1 = time = 0
-value = 100
-
-[State 0, VelSet]
-type = VelSet
-trigger1 = time>0
-x = vel x/2
-y = vel y/2
-
-[State 200, vox]
-type = PlaySnd
-trigger1 = Time = 0
-value = 6,29
-volume=200
-channel=0
-
-[State 1000, 1]
-type = AfterImage
-trigger1 = time=9
-time = 30
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=5
-helpertype = normal ;player
-name = "Prime Flower"
-ID = 10321
-stateno = 10321
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[state 600,5]
-type=changestate
-trigger1=animelem=8
-value=10000
 ctrl=1
 
 ;---------------------------------------------------------------------------
 
-;=Flower
+;= Flower
 [Statedef 10321]
 type = U
 movetype=A
 physics=N
 ctrl = 0
 anim = 1122
-velset = 10
 sprpriority=5
 ;poweradd=0
 
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=parent,fvar(13)*fvar(13)
-;persistent = 0
-;
-;[state 0, damage scaling reset]
-;type = varset
-;trigger1=1
-;fvar(13)=1
-;
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
+[State 0, VelSet]
+type = VelSet
+triggerall = parent,var(21) = 1
+trigger1 = time = 0
+x = 6
+
+[State 0, VelSet]
+type = VelSet
+triggerall = parent,var(21) = 2
+trigger1 = time = 0
+x = 6
+
+[State 0, VelSet]
+type = VelSet
+triggerall = parent,var(21) = 3
+trigger1 = time = 0
+x = 6
+
+[State 0, VelSet]
+type = VelSet
+triggerall = parent,var(21) = 4
+trigger1 = time = 0
+x = 3
+
+[State 0, VelMul]
+type = VelMul
+triggerall = parent,var(21) = 1
+trigger1 = time >= 25
+x = 0.90
+
+[State 0, VelMul]
+type = VelMul
+triggerall = parent,var(21) = 2
+trigger1 = time >= 15
+x = 0.90
+
+[State 0, VelMul]
+type = VelMul
+triggerall = parent,var(21) = 3
+trigger1 = time >= 5
+x = 0.90
+
+[State 0, VelMul]
+type = VelMul
+triggerall = parent,var(21) = 4
+trigger1 = time >= 30
+x = 0.96
 
 [state 0, damage counter set]
 type = parentvaradd
@@ -1633,37 +1616,6 @@ trigger1 = (movehit)
 var(3) = ((enemynear, gethitvar(damage))/1)
 persistent = 1
 ignorehitpause = 1
-
-[State 0, VelMul]
-type = VelMul
-trigger1 = time>=0
-x = 0.95
-
-[State 0, VarSet]
-type = VarSet
-trigger1 = time = 0
-trigger1 = random < 500
-v = 32
-value = 0
-
-[State 0, VarSet]
-type = VarSet
-trigger1 = time = 0
-trigger1 = random >= 500
-v = 32
-value = 1
-
-[State 0, VelSet]
-type = VelSet
-trigger1=var(32)=0
-trigger1=time%1=0
-y=3*sin(time*25)
-
-[State 0, VelSet]
-type = VelSet
-trigger1=var(32)=1
-trigger1=time%1=0
-y=3*cos(time*25)
 
 [State 0, AfterImage]
 type = AfterImage
@@ -1692,7 +1644,7 @@ trigger1 = Time = 0
 priority=1,hit
 attr = SCA, AP
 animtype  = low
-damage    = floor(parent,fvar(13)*20),3
+damage    = floor(parent,fvar(13)*40),3
 guardflag = MA
 pausetime = 1,1
 sparkno = 1
@@ -1700,9 +1652,9 @@ sparkxy = -10, -20 ; = -10,-60
 hitsound   = 5,3
 guardsound = 6,0
 ground.type = low
-ground.slidetime = 24
-ground.hittime  = 24
-guard.hittime = 14
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = 15
 ground.velocity = -13.5,0
 air.type = high
 air.fall = 1
@@ -1711,553 +1663,35 @@ air.velocity = -1,-3.5
 air.hittime=35
 
 [State 0, DestroySelf]
-type = DestroySelf
-trigger1 = animtime=0
-;ignorehitpause =
-;persistent =
+type = changestate
+trigger1 = vel x = [0,0.05] ;animtime=0
+trigger2 = movecontact 
+value = 10329
 
 ;---------------------------------------------------------------------------
-;214+B - Dual Iris
-[Statedef 10211]
-type    = S
-movetype= A
-physics = S
-juggle  = 3
-;poweradd= ifelse(power!=3000,ifelse(fvar(17)=0,20,0),0)
-ctrl = 0
-anim = 102121
-sprpriority = 2
-facep2=1
-
-[State 0, PowerAdd]
-type = PowerAdd
-triggerall = fvar(17)= 0
-triggerall = fvar(7) = 0
-triggerall = var(40) = 0
-trigger1 = time = 0
-value = 160
-
-[State 0, Explod]
-type = Explod
-trigger1 = animelem = 5
-anim = 11015
-ID = 11015
-pos = 0,0
-postype = p1
-facing = 1
-vfacing = 1
-bindtime = -1
-scale = 0.5,0.5
-ontop = 1
-sprpriority = 7
-
-[State 200, vox]
-type = PlaySnd
-trigger1 = Time = 0
-value = 6,29
-volume=200
-channel=0
-
-[State 1000, 1]
-type = AfterImage
-trigger1 = time=9
-time = 30
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=5
-helpertype = normal ;player
-name = "Dual Flower A"
-ID = 10221
-stateno = 10221
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=7
-helpertype = normal ;player
-name = "Dual Flower B"
-ID = 10222
-stateno = 10222
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[state 600,5]
-type=changestate
-trigger1=animtime=0
-value=0
-ctrl=1
-
-; ;---------------------------------------------------------------------------
-
-; 214+B - Dual iris
-[Statedef 10241]
-type    = A
-movetype= A
-physics = A
-juggle  = 3
-;poweradd= ifelse(power!=3000,ifelse(fvar(17)=0,20,0),0)
-ctrl = 0
-anim = 102121
-sprpriority = 2
-velset=Vel X/3,0
-facep2=1
-
-[State 0, PowerAdd]
-type = PowerAdd
-triggerall = fvar(17)= 0
-triggerall = fvar(7) = 0
-triggerall = var(40) = 0
-trigger1 = time = 0
-value = 160
-
-[State 0, VelSet]
-type = VelSet
-trigger1 = time>0
-x = vel x/2
-y = vel y/2
-
-[State 200, vox]
-type = PlaySnd
-trigger1 = Time = 0
-value = 6,29
-volume=200
-channel=0
-
-[State 1000, 1]
-type = AfterImage
-trigger1 = time=9
-time = 30
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=5
-helpertype = normal ;player
-name = "Dual Flower A"
-ID = 10223
-stateno = 10221
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=7
-helpertype = normal ;player
-name = "Dual Flower B"
-ID = 10224
-stateno = 10222
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[state 600,5]
-type=changestate
-trigger1=animelem=8
-value=10000
-ctrl=1
-
-;---------------------------------------------------------------------------
-
-;=Flower A
-[Statedef 10221]
+; = Flower Remove
+[Statedef 10329]
 type = U
 movetype=A
 physics=N
 ctrl = 0
-anim = 1122
-velset= 8
+anim = 11229
+velset = 0,0
 sprpriority=5
 ;poweradd=0
-
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=parent,fvar(13)*fvar(13)
-;persistent = 0
-;
-;[state 0, damage scaling reset]
-;type = varset
-;trigger1=1
-;fvar(13)=1
-;
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
-
-[state 0, damage counter set]
-type = parentvaradd
-trigger1 = (movehit)
-var(3) = ((enemynear, gethitvar(damage))/1)
-persistent = 1
-ignorehitpause = 1
-
-[State 0, VelMul]
-type = VelMul
-trigger1 = time>=0
-x = 0.97
-
-[State 0, VelSet]
-type=velset
-trigger1=time%1=0
-y=3*sin(time*25)
-
-[State 0, AfterImage]
-type = AfterImage
-trigger1 =time=0
-time = 9999
-palcolor = 256
-palbright = 30,30,30
-palcontrast = 120,120,120
-paladd = 10,10,10
-palmul = .65,.65,.65
-trans=add
-ignorehitpause=1
-persistent=1
-
-[State 200, flower]
-type = PlaySnd
-trigger1 = time=0
-value = 5,14
-volume=200
-
-[State 240, 2]
-type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-fall.yvelocity = 0
-trigger1 = Time = 0
-priority=1,hit
-attr = SCA, AP
-animtype  = low
-damage    = floor(parent,fvar(13)*20),3
-guardflag = MA
-pausetime = 1,1
-sparkno = 1
-sparkxy = -10, -20 ; = -10,-60
-hitsound   = 5,3
-guardsound = 6,0
-ground.type = low
-ground.slidetime = 28
-ground.hittime  = 28
-guard.hittime = 17
-ground.velocity = -13.5,0
-air.type = high
-air.fall = 1
-fall.recover = 1
-air.velocity = -5,-3.5
-
-[State 0, DestroySelf]
-type = DestroySelf
-trigger1 = animtime=0
-;ignorehitpause =
-;persistent =
-
-;---------------------------------------------------------------------------
-;=Flower B
-[Statedef 10222]
-type = U
-movetype=A
-physics=N
-ctrl = 0
-anim = 1122
-velset= 8
-sprpriority=5
-;poweradd=0
-
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=parent,fvar(13)*fvar(13)
-;persistent = 0
-;
-;[state 0, damage scaling reset]
-;type = varset
-;trigger1=1
-;fvar(13)=1
-;
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
-
-[state 0, damage counter set]
-type = parentvaradd
-trigger1 = (movehit)
-var(3) = ((enemynear, gethitvar(damage))/1)
-persistent = 1
-ignorehitpause = 1
-
-[State 0, VelMul]
-type = VelMul
-trigger1 = time>=0
-x = 0.97
-
-[State 0, VelSet]
-type=velset
-trigger1=time%1=0
-y=3*cos(time*25)
-
-[State 0, AfterImage]
-type = AfterImage
-trigger1 =time=0
-time = 9999
-palcolor = 256
-palbright = 30,30,30
-palcontrast = 120,120,120
-paladd = 10,10,10
-palmul = .65,.65,.65
-trans=add
-ignorehitpause=1
-persistent=1
-
-[State 200, flower]
-type = PlaySnd
-trigger1 = time=0
-value = 5,14
-volume=200
-
-[State 240, 2]
-type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-fall.yvelocity = 0
-trigger1 = Time = 0
-priority=1,hit
-attr = SCA, AP
-animtype  = low
-damage    = floor(parent,fvar(13)*20),3
-guardflag = MA
-pausetime = 1,1
-sparkno = 1
-sparkxy = -10, -20 ; = -10,-60
-hitsound   = 5,3
-guardsound = 6,0
-ground.type = low
-ground.slidetime = 28
-ground.hittime  = 28
-guard.hittime = 17
-ground.velocity = -13.5,0
-air.type = high
-air.fall = 1
-fall.recover = 1
-air.velocity = -5,-3.5
-
-[State 0, DestroySelf]
-type = DestroySelf
-trigger1 = animtime=0
-;ignorehitpause =
-;persistent =
-
-;---------------------------------------------------------------------------
-;214+C - Triple Iris
-[Statedef 10411]
-type    = S
-movetype= A
-physics = S
-juggle  = 3
-;poweradd= ifelse(power!=3000,ifelse(fvar(17)=0,20,0),0)
-ctrl = 0
-anim = 102131
-sprpriority = 2
-facep2=1
-
-[State 0, PowerAdd]
-type = PowerAdd
-triggerall = fvar(17)= 0
-triggerall = fvar(7) = 0
-triggerall = var(40) = 0
-trigger1 = time = 0
-value = 180
 
 [State 0, Explod]
 type = Explod
-trigger1 = animelem = 5
-anim = 11015
-ID = 11015
-pos = 0,0
-postype = p1
-facing = 1
-vfacing = 1
-bindtime = -1
-scale = 0.5,0.5
-ontop = 1
-sprpriority = 7
-
-[State 200, vox]
-type = PlaySnd
-trigger1 = Time = 0
-value = 6,29
-volume=200
-channel=0
-
-[State 1000, 1]
-type = AfterImage
-trigger1 = time=9
-time = 30
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=5
-helpertype = normal ;player
-name = "Dual Flower A"
-ID = 10221
-stateno = 10221
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=6
-helpertype = normal ;player
-name = "Dual Flower B"
-ID = 10222
-stateno = 10222
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=7
-helpertype = normal ;player
-name = "Prime Flower"
-ID = 10321
-stateno = 10321
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[state 600,5]
-type=changestate
-trigger1=animtime=0
-value=0
-ctrl=1
-
-; ;---------------------------------------------------------------------------
-
-; 214+C - Triple iris
-[Statedef 10441]
-type    = A
-movetype= A
-physics = A
-juggle  = 3
-;poweradd= ifelse(power!=3000,ifelse(fvar(17)=0,20,0),0)
-ctrl = 0
-anim = 102131
-sprpriority = 2
-velset=Vel X/3,0
-facep2=1
-
-[State 0, PowerAdd]
-type = PowerAdd
-triggerall = fvar(17)= 0
-triggerall = fvar(7) = 0
-triggerall = var(40) = 0
 trigger1 = time = 0
-value = 180
+anim = 11229
+ID = 11229
+scale = 0.13,0.13
+sprpriority = 7
+ontop = 1
 
-[State 0, VelSet]
-type = VelSet
-trigger1 = time>0
-x = vel x/2
-y = vel y/2
-
-[State 200, vox]
-type = PlaySnd
-trigger1 = Time = 0
-value = 6,29
-volume=200
-channel=0
-
-[State 1000, 1]
-type = AfterImage
-trigger1 = time=9
-time = 30
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=5
-helpertype = normal ;player
-name = "Dual Flower A"
-ID = 10223
-stateno = 10221
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=6
-helpertype = normal ;player
-name = "Dual Flower B"
-ID = 10224
-stateno = 10222
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=7
-helpertype = normal ;player
-name = "Prime Flower"
-ID = 10321
-stateno = 10321
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[state 600,5]
-type=changestate
-trigger1=animelem=8
-value=10000
-ctrl=1
+[State 0, DestroySelf]
+type = destroyself
+trigger1 = time = 1
 
 ;---------------------------------------------------------------------------
 ; 623+A - Bullet Wave
@@ -2368,9 +1802,9 @@ sparkxy = -10, -20 ; = 0,0
 hitsound = 5, 0
 guardsound = 6, 0
 ground.type = High
-ground.slidetime =20
-ground.hittime  = 20
-guard.hittime = 2
+ground.slidetime =21
+ground.hittime  = 21
+guard.hittime = 3
 ground.velocity = -8,0
 airguard.velocity = -1.9,-.8
 air.type = high
@@ -2501,9 +1935,9 @@ sparkxy = -10, -20 ; = 0,0
 hitsound = 5, 0
 guardsound = 6, 0
 ground.type = High
-ground.slidetime =20
-ground.hittime  = 20
-guard.hittime = 2
+ground.slidetime =21
+ground.hittime  = 21
+guard.hittime = 3
 ground.velocity = -8,0
 airguard.velocity = -1.9,-.8
 air.type = high
@@ -2633,9 +2067,9 @@ sparkxy = -10, -20 ; = 0,0
 hitsound = 5, 0
 guardsound = 6, 0
 ground.type = High
-ground.slidetime =20
-ground.hittime  = 20
-guard.hittime = 2
+ground.slidetime =21
+ground.hittime  = 21
+guard.hittime = 3
 ground.velocity = -8,0
 airguard.velocity = -1.9,-.8
 air.type = high
@@ -2861,9 +2295,9 @@ sparkno = 10
 hitsound   = 5,4
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 23
-ground.hittime  = 23
-guard.hittime = 23
+ground.slidetime = 24
+ground.hittime  = 24
+guard.hittime = 24
 ground.velocity = -3,0
 air.velocity = -2,-3
 air.hittime = 25
@@ -2940,14 +2374,19 @@ type = AfterImage
 trigger1 = time=9
 time = 30
 
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+var(21) = 4
+
 [State 0, Helper]
 type = Helper
 trigger1 = animelem=5
 helpertype = normal ;player
-name = "EX Flower"
-ID = 10471
-stateno = 10471
-pos = -25,0
+name = "Prime Flower"
+ID = 10321
+stateno = 10321
+pos = 0,-10
 postype = p1
 facing = 1
 sprpriority=5
@@ -2957,230 +2396,9 @@ keyctrl=0
 
 [state 600,5]
 type=changestate
-trigger1=animtime=0
+trigger1 = animtime = 0
 value=0
 ctrl=1
-
-; ;---------------------------------------------------------------------------
-
-; 214+EX - EX Iris
-[Statedef 10461]
-type    = A
-movetype= A
-physics = A
-juggle  = 3
-;poweradd= ifelse(power!=3000,ifelse(fvar(17)=0,20,0),0)
-ctrl = 0
-anim = 1021
-sprpriority = 2
-velset=Vel X/3,0
-facep2=1
-
-;-EX FX--------------------------
-[State 0, EX Palfx]
-type = PalFX
-trigger1 = time = 0
-time = 20
-add = 30,200,-255
-mul = 256,256,256
-sinadd = 30,200,-255,5
-invertall = 0
-color = 0
-
-[State 0, EX sound]
-type = PlaySnd
-trigger1 = time = 0
-value = F29,5
-volume = 255
-channel = -1
-
-[State 0, PowerAdd]
-type = PowerAdd
-trigger1 = time = 0
-value = -500
-
-;--------------------------------
-
-[State 0, VelSet]
-type = VelSet
-trigger1 = time>0
-x = vel x/2
-y = vel y/2
-
-[State 200, vox]
-type = PlaySnd
-trigger1 = Time = 0
-value = 6,29
-volume=200
-channel=0
-
-[State 1000, 1]
-type = AfterImage
-trigger1 = time=9
-time = 30
-
-[State 0, Helper]
-type = Helper
-trigger1 = animelem=3
-helpertype = normal ;player
-name = "EX Flower"
-ID = 10471
-stateno = 10471
-pos = -25,0
-postype = p1
-facing = 1
-sprpriority=5
-size.xscale=0.13
-size.yscale=0.13
-keyctrl=0
-
-[state 600,5]
-type=changestate
-trigger1=animelem=8
-value=10000
-ctrl=1
-
-;= EX Flower
-[Statedef 10471]
-type = U
-movetype=A
-physics=N
-ctrl = 0
-anim = 1122
-velset = 13
-sprpriority=5
-;poweradd=0
-
-[state 0, damage scaling change]
-type = parentvarset
-trigger1 = movehit = 1
-fvar(13)=parent,fvar(13)*fvar(13)
-persistent = 0
-
-[state 0, damage scaling reset]
-type = varset
-trigger1=1
-fvar(13)=1
-
-[state 0, damage scaling change]
-type = parentvarset
-trigger1 = movehit = 1
-fvar(13)=fvar(13)*fvar(14)
-persistent = 0
-
-[state 0, damage counter set]
-type = parentvaradd
-trigger1 = (movehit)
-var(3) = ((enemynear, gethitvar(damage))/1)
-persistent = 1
-ignorehitpause = 1
-
-[State 0, VelMul]
-type = VelMul
-trigger1 = time>=0
-x = 0.97
-
-[State 0, VarSet]
-type = VarSet
-trigger1 = time = 0
-trigger1 = random < 500
-v = 32
-value = 0
-
-[State 0, VarSet]
-type = VarSet
-trigger1 = time = 0
-trigger1 = random >= 500
-v = 32
-value = 1
-
-[State 0, VelSet]
-type = VelSet
-trigger1=var(32)=0
-trigger1=time%1=0
-y=3*sin(time*25)
-
-[State 0, VelSet]
-type = VelSet
-trigger1=var(32)=1
-trigger1=time%1=0
-y=3*cos(time*25)
-
-[State 0, AfterImage]
-type = AfterImage
-trigger1 =time=0
-time = 9999
-palcolor = 256
-palbright = 30,30,30
-palcontrast = 120,120,120
-paladd = 10,10,10
-palmul = .65,.65,.65
-trans=add
-ignorehitpause=1
-persistent=1
-
-[State 200, flower]
-type = PlaySnd
-trigger1 = time=0
-value = 5,14
-volume=200
-
-[State 240, 2]
-type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-fall.yvelocity = 0
-trigger1 = hitcount < 2
-trigger1 = time%3=0
-priority=1,hit
-attr = SCA, AP
-animtype  = low
-damage    = floor(fvar(13)*10),3
-guardflag = MA
-pausetime = 8,8
-sparkno = 1
-sparkxy = -10, -20 ; = -10,-60
-hitsound   = 5,3
-guardsound = 6,0
-ground.type = low
-ground.slidetime = 24
-ground.hittime  = 24
-guard.hittime = 14
-ground.velocity = -13.5,0
-air.type = trip
-air.velocity = -1,-3.5
-air.hittime=35
-
-[State 240, 2]
-type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-fall.yvelocity = 0
-trigger1 = hitcount = 2
-priority=1,hit
-attr = SCA, AP
-animtype  = low
-damage    = floor(fvar(13)*10),3
-guardflag = MA
-pausetime = 8,8
-sparkno = 1
-sparkxy = -10, -20 ; = -10,-60
-hitsound   = 5,3
-guardsound = 6,0
-ground.type = low
-ground.slidetime = 24
-ground.hittime  = 24
-guard.hittime = 14
-ground.velocity = -4,-1
-air.type = high
-air.velocity = -4,-1
-air.hittime=35
-fall = 1
-air.fall = 1
-
-[State 0, DestroySelf]
-type = DestroySelf
-trigger1 = animtime=0
-;ignorehitpause =
-;persistent =
 
 ;---------------------------------------------------------------------------
 ; 623+EX - EX Wave
@@ -3701,13 +2919,13 @@ value = 1
 type = VelSet
 trigger1=var(32)=0
 trigger1=time%1=0
-y=3*sin(time*25)
+y=1.5*sin(time*25)
 
 [State 0, VelSet]
 type = VelSet
 trigger1=var(32)=1
 trigger1=time%1=0
-y=3*cos(time*25)
+y=1.5*cos(time*25)
 
 [state 0, damage scaling change]
 type = parentvarset
@@ -3836,13 +3054,13 @@ value = 1
 type = VelSet
 trigger1=var(32)=0
 trigger1=time%1=0
-y=3*sin(time*25)
+y=1.5*sin(time*25)
 
 [State 0, VelSet]
 type = VelSet
 trigger1=var(32)=1
 trigger1=time%1=0
-y=3*cos(time*25)
+y=1.5*cos(time*25)
 
 [state 0, damage scaling change]
 type = parentvarset

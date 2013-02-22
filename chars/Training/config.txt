@@ -1,5 +1,12 @@
 [StateDef -2]
 
+[State 0, wall crossup request]
+type = VelSet
+trigger1 = (p2dist y < 20) && (p2dist x < 1)
+trigger1 = backedgebodydist < 1
+x = 2
+persistent = 1
+
 ;===== COUNTER CHECK =====
 ;==========================
 

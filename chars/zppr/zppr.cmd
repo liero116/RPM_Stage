@@ -749,6 +749,16 @@ command = $D,UF
 
 [Statedef -1]
 
+[State -1, Throw 800]
+type = ChangeState
+value = 800
+triggerall = command = "throw"
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 101 || stateno = 109
+trigger3 = stateno = [200,499]
+trigger3 = time = [0,2]
+
 [State -1, tag]
 type = ChangeState
 value = 4510
@@ -1486,15 +1496,8 @@ triggerall = movetype = I
 triggerall = ctrl = 1
 trigger1 = command = "taunt"
 
-[State -1, Throw 800]
-type = ChangeState
-value = 800
-triggerall = command = "throw"
-trigger1 = statetype = S
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = [200,499]
-trigger3 = time = [0,2]
+
+
 [State -1, ]
 type = Null
 trigger1=1

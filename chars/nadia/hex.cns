@@ -48,7 +48,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 2
 attr = S, NA
-damage = floor(fvar(13)*12),0
+damage = floor(fvar(13)*15),0
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -140,7 +140,7 @@ trigger1 = time=0
 attr = S, NA
 priority = 5,hit
 animtype  = low
-damage    = floor(fvar(13)*17),0
+damage    = floor(fvar(13)*20),0
 guardflag = MA
 pausetime = 8,8
 sparkno = 80
@@ -148,9 +148,9 @@ sparkxy = -10,-60
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
-ground.slidetime = 25
-ground.hittime  = 25
-guard.hittime = 25
+ground.slidetime = 26
+ground.hittime  = 26
+guard.hittime = 26
 ground.velocity = -5,0
 guard.velocity = -5
 air.velocity = -1.0,-4.2
@@ -223,7 +223,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*23), 0
+damage = floor(fvar(13)*25), 0
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -234,9 +234,9 @@ sparkxy = -10, -60
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 25
-ground.hittime  = 25
-guard.hittime = 23
+ground.slidetime = 23
+ground.hittime  = 23
+guard.hittime = 20
 ground.velocity = -8
 guard.velocity = -8
 airguard.velocity = -.5,-.8
@@ -346,7 +346,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = Time = 0
 attr = C, NA
-damage    = floor(fvar(13)*12)
+damage    = floor(fvar(13)*15)
 priority  = 5,hit
 animtype  = Light
 hitflag = MAFD
@@ -411,7 +411,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 priority=5,hit
 attr = S, NA
-damage    = floor(fvar(13)*15)
+damage    = floor(fvar(13)*18)
 hitflag = MAF
 guardflag = L
 pausetime = 8, 8  
@@ -485,7 +485,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 priority=4,hit
 attr = S, NA
-damage    = floor(fvar(13)*24)
+damage    = floor(fvar(13)*22)
 hitflag = MAF
 guardflag = M
 pausetime = 16,16
@@ -839,7 +839,6 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
-trigger1 = p2movetype != H
 attr = S, NT
 damage = 0,0
 animtype = Light
@@ -921,7 +920,6 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
-trigger1 = p2movetype != H
 attr = S, NT
 damage = 0,0
 animtype = Light
@@ -1003,7 +1001,6 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
-trigger1 = p2movetype != H
 attr = S, NT
 damage = 0,0
 animtype = Light
@@ -1164,7 +1161,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 10
 attr = S, NA
-damage = floor(fvar(13)*60),0
+damage = floor(fvar(13)*80),0
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1321,7 +1318,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 10
 attr = S, NA
-damage = floor(fvar(13)*60),0
+damage = floor(fvar(13)*100),0
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1478,7 +1475,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 10
 attr = S, NA
-damage = floor(fvar(13)*60),0
+damage = floor(fvar(13)*90),0
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1800,7 +1797,7 @@ var(5)=1
 ;---------------------------------------------------------------------------
 ;Jump Kick A Land
 [Statedef 12151]
-type    = S
+type    = A
 movetype= A
 physics = S
 juggle  = 3
@@ -1818,12 +1815,12 @@ y = 0
 
 [State 200, 1]
 type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+ground.cornerpush.veloff = -17 ;ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = var(5) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*50),5
+damage = floor(fvar(13)*60),5
 animtype = Light
 guardflag = HA
 hitflag = MAF
@@ -1834,11 +1831,11 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 15
-ground.hittime  = 15
+ground.slidetime = 17
+ground.hittime  = 17
 guard.hittime = 13
-ground.velocity = -6, 0
-guard.velocity = -6
+ground.velocity = -9, 0
+guard.velocity = -15
 airguard.velocity = -.5,-.8
 air.type = High
 air.velocity = -6, 30
@@ -1860,7 +1857,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;Jump Kick B Land
 [Statedef 12161]
-type    = S
+type    = A
 movetype= A
 physics = S
 juggle  = 3
@@ -1878,12 +1875,12 @@ y = 0
 
 [State 200, 1]
 type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+ground.cornerpush.veloff = -16 ;ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = var(5) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*55),5
+damage = floor(fvar(13)*65),5
 animtype = Light
 guardflag = HA
 hitflag = MAF
@@ -1896,9 +1893,9 @@ guardsound = 6, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime  = 16
-guard.hittime = 12
-ground.velocity = -6, 0
-guard.velocity = -6
+guard.hittime = 14
+ground.velocity = -9, 0
+guard.velocity = -15
 airguard.velocity = -.5,-.8
 air.type = High
 air.velocity = -6, 30
@@ -1920,7 +1917,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;Jump Kick C Land
 [Statedef 12171]
-type    = S
+type    = A
 movetype= A
 physics = S
 juggle  = 3
@@ -1938,12 +1935,12 @@ y = 0
 
 [State 200, 1]
 type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+ground.cornerpush.veloff = -10 ;ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = var(5) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*60),5
+damage = floor(fvar(13)*70),5
 animtype = Light
 guardflag = HA
 hitflag = MAF
@@ -1956,9 +1953,9 @@ guardsound = 6, 0
 ground.type = High
 ground.slidetime = 17
 ground.hittime  = 17
-guard.hittime = 11
-ground.velocity = -6, 0
-guard.velocity = -6
+guard.hittime = 12
+ground.velocity = -9, 0
+guard.velocity = -15
 airguard.velocity = -.5,-.8
 air.type = High
 air.velocity = -6, 30
@@ -2149,7 +2146,7 @@ fall.yvelocity = 0
 trigger1 = var(6) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*55),5
+damage = floor(fvar(13)*70),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2236,7 +2233,7 @@ fall.yvelocity = 0
 trigger1 = var(6) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*60),5
+damage = floor(fvar(13)*80),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2323,7 +2320,7 @@ fall.yvelocity = 0
 trigger1 = var(6) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*65),5
+damage = floor(fvar(13)*90),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2334,10 +2331,10 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 12
-ground.hittime  = 12
+ground.slidetime = 15
+ground.hittime  = 15
+guard.velocity = -9
 ground.velocity = -6, -6
-guard.velocity = -6
 airguard.velocity = -.5,-.8
 air.type = High
 air.velocity = -6, -11
@@ -2641,7 +2638,7 @@ fall.yvelocity = 0
 trigger1 = var(5) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*55),5
+damage = floor(fvar(13)*70),5
 animtype = Light
 guardflag = HA
 hitflag = MAF
@@ -2790,7 +2787,7 @@ trigger1 = time = 0
 trigger2 = time = 1
 trigger3 = time = 2
 attr = S, NA
-damage = floor(fvar(13)*20),5
+damage = floor(fvar(13)*30),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -3055,7 +3052,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 10
 attr = S, NA
-damage = floor(fvar(13)*60),0
+damage = floor(fvar(13)*90),0
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -3076,7 +3073,7 @@ air.velocity = -8,-4
 air.hittime = 30
 fall=1
 air.fall=1
-fall.recovertime=-1
+fall.recover = 0
 palfx.time=24
 palfx.add=100,100,180
 palfx.mul=256,256,256

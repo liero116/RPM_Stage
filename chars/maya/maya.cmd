@@ -796,6 +796,14 @@ command = $D,UF
 
 [Statedef -1]
 
+[State -1, Throw 800]
+type = ChangeState
+value = 800
+triggerall = command = "throw";ommand="x"
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 101 || stateno = 109
+
 [State -1, tag]
 type = ChangeState
 value = 4510
@@ -805,6 +813,12 @@ triggerall = partner, life > 0
 ;triggerall = power >= 1000
 trigger1 = (StateType != A) && (Ctrl = 1)
 trigger2 = movehit
+
+;[State -1, intro tag]
+;type = ChangeState
+;value = 4510
+;triggerall = command = "start"
+;trigger1 = stateno = 192
 
 [State -1, ]
 type = Null
@@ -1649,13 +1663,7 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Throw 800]
-type = ChangeState
-value = 800
-triggerall = command = "throw";ommand="x"
-trigger1 = statetype = S
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
+
 
 
 [State -1, ==Hyper Moves==]
@@ -2042,14 +2050,14 @@ triggerall = command != "holddown"
 trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = 202
-trigger3 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 412
-trigger4 = movecontact
-trigger4 = p2stateno != [12000,12002]
-trigger4 = p2stateno != [11000,11010]
+;trigger3 = stateno = 202
+;trigger3 = movecontact
+;trigger3 = p2stateno != [12000,12002]
+;trigger3 = p2stateno != [11000,11010]
+;trigger4 = stateno = 412
+;trigger4 = movecontact
+;trigger4 = p2stateno != [12000,12002]
+;trigger4 = p2stateno != [11000,11010]
 
 [State -1, 5B 212]
 type = ChangeState
@@ -2239,14 +2247,6 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Throw 800]
-type = ChangeState
-value = 661
-triggerall = var(27) = 1
-triggerall = command = "throw";ommand="x"
-trigger1 = statetype = A
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
 
 ;===========================================================================
 [State -1, ]
@@ -2860,6 +2860,8 @@ trigger4 = stateno = [400,499]
 trigger4 = movecontact
 trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]
+trigger5 = stateno = [1100,1130]
+trigger5 = movecontact
 
 [State -1, 236 EX Hittoo-Ken]
 type = ChangeState
@@ -2905,7 +2907,7 @@ type = ChangeState
 value = 1300
 triggerall = var(27) = 0
 triggerall = !(ishelper)
-triggerall = command = "EX" ;|| command = "z"
+triggerall = command = "EX" && command != "623EX"
 triggerall = statetype != A
 triggerall = power >= 500
 triggerall = stateno != [3000,3999]
@@ -2938,6 +2940,8 @@ trigger4 = stateno = [400,499]
 trigger4 = movecontact
 trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]
+trigger5 = stateno = [1100,1130]
+trigger5 = movecontact
 
 [State -1, 623 B Show-you-can]
 type = ChangeState
@@ -2956,6 +2960,8 @@ trigger4 = stateno = [400,499]
 trigger4 = movecontact
 trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]
+trigger5 = stateno = [1100,1130]
+trigger5 = movecontact
 
 [State -1, 623 C Show-you-can]
 type = ChangeState
@@ -2974,6 +2980,8 @@ trigger4 = stateno = [400,499]
 trigger4 = movecontact
 trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]
+trigger5 = stateno = [1100,1130]
+trigger5 = movecontact
 
 
 ;---------------------------------------------------------------------------

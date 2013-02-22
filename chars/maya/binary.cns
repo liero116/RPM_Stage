@@ -61,9 +61,9 @@ sparkxy = -10, -25 ; = -10, -70 ; = -10, -70
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
-ground.slidetime = 22
-ground.hittime  = 22
-guard.hittime = 22
+ground.slidetime = 12
+ground.hittime  = 12
+guard.hittime = 8
 ground.velocity = -5.0
 airguard.velocity = -.1,-.8
 air.type = Low
@@ -144,9 +144,9 @@ sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
-ground.slidetime = 22
-ground.hittime  = 22
-guard.hittime = 22
+ground.slidetime = 23
+ground.hittime  = 23
+guard.hittime = 23
 ground.velocity = -9.0,0
 air.velocity = -1.0,-1.2
 air.hittime  = 44
@@ -224,9 +224,9 @@ sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 28
-ground.hittime  = 28
-guard.hittime = 26
+ground.slidetime = 21
+ground.hittime  = 21
+guard.hittime = 19
 ground.velocity = -11,0
 down.velocity = -3,-3
 airguard.velocity = -.5,-.8
@@ -1696,7 +1696,7 @@ value= 1081
 ;---------------------------------------------------------------------------
 ; 236 A Land
 [Statedef 1061]
-type    = S
+type    = A
 movetype= A
 physics = S
 ;juggle  = 0
@@ -1780,7 +1780,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; 236 B Land
 [Statedef 1071]
-type    = S
+type    = A
 movetype= A
 physics = S
 ;juggle  = 0
@@ -1864,7 +1864,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; 236 C Land
 [Statedef 1081]
-type    = S
+type    = A
 movetype= A
 physics = S
 ;juggle  = 0
@@ -3108,7 +3108,7 @@ value= 1093
 ;---------------------------------------------------------------------------
 ; 236 EX Land
 [Statedef 1093]
-type    = S
+type    = A
 movetype= A
 physics = S
 ;juggle  = 0

@@ -5,6 +5,17 @@ type = S
 physics = S
 sprpriority = 0
 
+[State 0, CtrlSet]
+type = CtrlSet
+trigger1 = enemy,var(47) > 0
+trigger1 = time = 0
+value = 0
+
+[State 0, CtrlSet]
+type = CtrlSet
+trigger1 = time = 1
+value = 1
+
 ;===HS
 
 [State 0, 1]
@@ -419,19 +430,14 @@ facep2=1
 
 ;===HS
 
-;[State 0, Explod]
-;type = Explod
-;trigger1 =animtime=0
-;anim =11021
-;ID =11021
-;pos = 0,10
-;postype = p1
-;facing = 1
-;vfacing = 1
-;bindtime = 1
-;removetime = -2
-;scale = 0.3,0.3
-;sprpriority = 0
+[State 0, HitBy]
+type = HitBy
+trigger1 = 1
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+time = 1
+;ignorehitpause = 
+;persistent = 
+
 
 [State 40, 1]
 type = VarSet
@@ -2031,69 +2037,294 @@ trigger1 = Time = 0
 value = 191
 
 ;---------------------------------------------------------------------------
-; Introduction
+; INTRO
 [Statedef 191]
 type = S
 ctrl = 0
 anim = 190
 velset = 0,0
 
-; [state 190, debug overdrive]
-; type = Varset
-; trigger1 = command="a"
-; fv = 8
-; value=200
+[State 191, 2] ;Assert this until you want "round 1, fight" to begin
+type = AssertSpecial
+trigger1 = 1
+flag = Intro
+flag2 = nobardisplay
 
-[state 190, choose var]
-type = varset
-triggerall=roundsexisted=0
-trigger1 = roundstate=0
-v = 27
-value = 2
+[State 190, 2] ;Go straight to intro.
+type = ChangeState
+trigger1 = animtime = 0
+value = 192
 
-;===CONTROLS==============
+;---------------------------------------------------------------------------
+ ;Style Select
+[Statedef 192]
+type = S
+ctrl = 0
+anim = 0
+velset = 0,0
+
+;===PARTNER TOGGLE========
 ;=========================
-[state 190 decimal-hex]
+[state 190, point player]
 type = varset
-trigger1 = command = "up"
-trigger1 = var(27)=2
-v=27
-value = 0
+triggerall = teammode = simul
+trigger1 = command = "fwd"
+var(28) = 0
 
-[state 190 decimal-binary]
+[state 190, anchor player]
 type = varset
-trigger1 = command = "down"
-trigger1 = var(27)=2
-v=27
-value = 1
+triggerall = teammode = simul
+trigger1 = command = "back"
+var(28) = 1
 
-[state 190 binary-decimal]
+[State 0, point flash]
+type = PalFX
+triggerall = teammode = simul
+trigger1 = var(28) = 0 
+time = 1
+add = 80,80,80
+mul = 255,255,255
+sinadd = 0,0,0,10
+invertall = 0
+color = 255
+
+;===LOCKED STYLES=========
+;=========================
+
+[State 0, lock hex p1]
+type = Explod
+triggerall = name = "Oliver" || name = "Petra" || name = "Roy" ||name = "Tsukiko"
+trigger1 = teamside=1
+trigger1 =numexplod(191000)=0
+anim = 290002
+ID = 191000
+pos = -30,-133
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock hex p2]
+type = Explod
+triggerall = name = "Oliver" || name = "Petra" || name = "Roy" || name = "Tsukiko"
+trigger1 = teamside!=1
+trigger1 =numexplod(191000)=0
+anim = 290002
+ID = 191000
+pos = -28,-133
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock decimal p1]
+type = Explod
+triggerall = name = "Taeko" || name = "Yoko"
+trigger1 = teamside=1
+trigger1 =numexplod(191001)=0
+anim = 290002
+ID = 191001
+pos = -30,-120
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock decimal p2]
+type = Explod
+triggerall = name = "Taeko" || name = "Yoko"
+trigger1 = teamside!=1
+trigger1 =numexplod(191001)=0
+anim = 290002
+ID = 191001
+pos = -28,-120
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock binary p1]
+type = Explod
+triggerall = name = "Petra" || name = "Taeko" || name = "Yoko"
+trigger1 = teamside=1
+trigger1 =numexplod(191002)=0
+anim = 290002
+ID = 191002
+pos = -30,-107
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock binary p2]
+type = Explod
+triggerall = name = "Petra" || name = "Taeko" || name = "Yoko"
+trigger1 = teamside!=1
+trigger1 =numexplod(191002)=0
+anim = 290002
+ID = 191002
+pos = -28,-107
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+;=== DEFAULT ====================
+;================================
+
+[state 190, decimal set]
 type = varset
-trigger1 = command = "up"
+triggerall = name != "Yoko"
+triggerall = name != "Taeko"
+trigger1 = time = 0
+var(27) = 2
+
+[state 190, decimal set]
+type = varset
+triggerall = name != "Yoko"
+triggerall = name != "Taeko"
+trigger1 = time = 0
+var(26) = 2
+
+[state 190, hex set]
+type = varset
+triggerall = name = "Yoko"
+triggerall = name = "Taeko"
+trigger1 = time = 0
+var(27) = 0
+
+[state 190, hex set]
+type = varset
+triggerall = name = "Yoko"
+triggerall = name = "Taeko"
+trigger1 = time = 0
+var(26) = 0
+
+;=== POINT CONTROLS==============
+;================================
+[state 190, decimal-hex]
+type = varset
+triggerall = name != "Oliver"
+triggerall = name != "Petra" 
+triggerall = name != "Roy" 
+triggerall = name != "Tsukiko"
+triggerall = var(28) = 0
+trigger1 = command = "up" ;&& command != "holdS"
+trigger1 = var(27)=2
+var(27) = 0
+
+[state 190, decimal-binary]
+type = varset
+triggerall = var(28) = 0
+triggerall = name != "Petra" 
+triggerall = name != "Taeko" 
+triggerall = name != "Yoko"
+trigger1 = command = "down" ;&& command != "holdS"
+trigger1 = var(27)=2
+var(27) = 1
+
+[state 190, binary-decimal]
+type = varset
+triggerall = var(28) = 0
+triggerall = name != "Taeko"
+triggerall = name != "Yoko"
+trigger1 = command = "up" ;&& command != "holdS"
 trigger1 = var(27)=1
-v=27
-value = 2
+var(27) = 2
 
-[state 190 hex-decimal]
+[state 190, hex-decimal]
 type = varset
-trigger1 = command = "down"
+triggerall = var(28) = 0
+triggerall = name != "Taeko"
+triggerall = name != "Yoko"
+trigger1 = command = "down" ;&& command != "holdS"
 trigger1 = var(27)=0
-v=27
-value = 2
+var(27) = 2
 
-; [state 190 hex-binary]
-; type = varset
-; trigger1 = command = "up"
-; trigger1 = var(27)=0
-; v=27
-; value = 1
+;=== ANCHOR CONTROLS==============
+;================================
+[state 190, decimal-hex]
+type = varset
+triggerall = var(28) = 1
+triggerall = partner,name != "Oliver"
+triggerall = partner,name != "Petra" 
+triggerall = partner,name != "Roy" 
+triggerall = partner,name != "Tsukiko"
+trigger1 = command = "up"  && var(26)=2
+var(26) = 0
 
-; [state 190 binary-hex]
-; type = varset
-; trigger1 = command = "down"
-; trigger1 = var(27)=1
-; v=27
-; value = 0
+[state 190, decimal-binary]
+type = varset
+triggerall = var(28) = 1
+triggerall = partner,name != "Petra" 
+triggerall = partner,name != "Taeko" 
+triggerall = partner,name != "Yoko"
+trigger1 = command = "down" && var(26)=2
+var(26) = 1
+
+[state 190, binary-decimal]
+type = varset
+triggerall = var(28) = 1
+triggerall = partner,name != "Taeko"
+triggerall = partner,name != "Yoko"
+trigger1 = command = "up"   && var(26)=1
+var(26) = 2
+
+[state 190, hex-decimal]
+type = varset
+triggerall = var(28) = 1
+triggerall = partner,name != "Taeko"
+triggerall = partner,name != "Yoko"
+trigger1 = command = "down" && var(26)=0
+var(26) = 2
+
+;===AI CONTROLS==============
+;=========================
+;[state 190, decimal-hex]
+;type = varset
+;trigger1 = enemy,command = "up" &&  enemy,command = "holdS"
+;trigger1 = var(27)=2
+;v=27
+;value = 0
+;
+;[state 190, decimal-binary]
+;type = varset
+;trigger1 = enemy,command = "down" &&  enemy,command = "holdS"
+;trigger1 = var(27)=2
+;v=27
+;value = 1
+;
+;[state 190, binary-decimal]
+;type = varset
+;trigger1 = enemy,command = "up" &&  enemy,command = "holdS"
+;trigger1 = var(27)=1
+;v=27
+;value = 2
+;
+;[state 190, hex-decimal]
+;type = varset
+;trigger1 = enemy,command = "down" &&  enemy,command = "holdS"
+;trigger1 = var(27)=0
+;v=27
+;value = 2
 
 ;=========================
 ;=========================
@@ -2119,7 +2350,7 @@ id = 300002
 [state 0, scale set]
 type=varset
 trigger1=time=0
-fvar(9)=0.125
+fvar(9)=0.62
 
 ;=======================
 ;Dawn (Hex) Style
@@ -2130,30 +2361,30 @@ type = Explod
 trigger1 = teamside=1
 trigger1 =var(27)=0
 trigger1 =numexplod(300001)=0
-anim = 300001
+anim = F300001
 ID = 300001
-pos = 0,-120;141
+pos = -35,-141;141
 postype = p1  ;p2,front,back,left,right
 facing = 1
 removetime = -1
 scale = fvar(9),fvar(9)
-sprpriority = 7
-ontop = 1
+sprpriority = 6
+ontop = 0
 
 [state 0, dawn p2]
 type = Explod
 trigger1 = teamside!=1
 trigger1 =var(27)=0
 trigger1 =numexplod(300001)=0
-anim = 300001
+anim = F300001
 ID = 300001
-pos = 60,-120;141
+pos = 25,-141;141
 postype = p1  ;p2,front,back,left,right
 facing = -1
 removetime = -1
 scale = fvar(9),fvar(9)
-sprpriority = 7
-ontop = 1
+sprpriority = 6
+ontop = 0
 
 ;=======================
 ;Midnight (Binary) Style
@@ -2164,30 +2395,30 @@ type = Explod
 trigger1 = teamside=1
 trigger1 =var(27)=1
 trigger1 =numexplod(300000)=0
-anim = 300000
+anim = F300000
 ID = 300000
-pos = 0,-120;141
+pos = -35,-141;141
 postype = p1  ;p2,front,back,left,right
 facing = 1
 removetime = -1
 scale = fvar(9),fvar(9)
-sprpriority = 7
-ontop = 1
+sprpriority = 6
+ontop = 0
 
 [state 0, midnight p2]
 type = Explod
 trigger1 = teamside!=1
 trigger1 =var(27)=1
 trigger1 =numexplod(300000)=0
-anim = 300000
+anim = F300000
 ID = 300000
-pos = 60,-120;141
+pos = 25,-141;141
 postype = p1  ;p2,front,back,left,right
 facing = -1
 removetime = -1
 scale = fvar(9),fvar(9)
-sprpriority = 7
-ontop = 1
+sprpriority = 6
+ontop = 0
 
 ;=======================
 ;Twilight (Decimal) Style
@@ -2198,42 +2429,769 @@ type = Explod
 trigger1 = teamside=1
 trigger1 =var(27)=2
 trigger1 =numexplod(300002)=0
-anim = 300002
+anim = F300002
 ID = 300002
-pos = 0,-120;141
+pos = -35,-141;141
 postype = p1  ;p2,front,back,left,right
 facing = 1
 removetime = -1
 scale = fvar(9),fvar(9)
-sprpriority = 7
-ontop = 1
+sprpriority = 6
+ontop = 0
 
 [state 0, twilight p2]
 type = Explod
 trigger1 = teamside!=1
 trigger1 =var(27)=2
 trigger1 =numexplod(300002)=0
-anim = 300002
+anim = F300002
 ID = 300002
-pos = 60,-120;141
+pos = 25,-141;141
 postype = p1  ;p2,front,back,left,right
 facing = -1
 removetime = -1
 scale = fvar(9),fvar(9)
-sprpriority = 7
-ontop = 1
-;=====================
+sprpriority = 6
+ontop = 0
+
 ;=====================
 [State 191, 2] ;Assert this until you want "round 1, fight" to begin
 type = AssertSpecial
 trigger1 = 1
-flag = Intro
+flag = nobardisplay
+flag2 = Intro
 
-[State 191, 3] ;Change to stand state when done
-type = ChangeState
-trigger1 = AnimTime = 0
+;===ANIM CHANGE========
+[State 0, change to decimal anim]
+type = ChangeAnim
+trigger1 = anim!=2
+trigger1 = var(27)=2
+value = 2
+
+[State 0, change to hex anim]
+type = ChangeAnim
+trigger1 = anim!=0
+trigger1 = var(27)=0
 value = 0
 
+[State 0, change to binary anim]
+type = ChangeAnim
+trigger1 = anim!=1
+trigger1 = var(27)=1
+value = 1
+
+[State 0, ChangeState]
+type = ChangeState
+trigger1 = var(49) = 1
+trigger2 = enemy,var(49) = 1
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; TAG START
+[Statedef 4500]
+type = S
+movetype = I
+physics = S
+anim = 100	; <- You can use the standard running animation or put another one
+sprpriority = 2
+ctrl = 0
+
+[State 4500, 1]
+type = ChangeAnim
+trigger1 = Partner, Life <= 0
+trigger1 = Anim != 4500
+value = 4500
+
+[State 4500, position]
+type = PosSet
+trigger1 = time = 0
+x = -243*facing
+y = 0
+
+[State 4500, velocity]
+type = VelSet
+trigger1 = Anim != 4500
+x = 16
+
+[State 4500, velocity2]
+type = VelSet
+trigger1 = Anim = 4500
+trigger1 = AnimElem = 2, >= 0
+x = 10
+
+;[State 4500, position]
+;type = PosSet
+;trigger1 = time = 0
+;x = -30*facing
+;y = -200
+;
+;[State 4500, velocity]
+;type = VelSet
+;trigger1 = time = 0
+;x = 1
+
+[State 4500, invincibility] ; the character cannot be hit until he has fully entered on the stage
+type = NotHitBy
+trigger1 = BackEdgeBodyDist <= 0
+value = SCA
+time = 2
+
+[State 4500, invincibility] ; if partner was KOed, appear being invincible
+type = NotHitBy
+trigger1 = Partner, Life <= 0
+value = SCA
+time = 6
+
+[State 4500, screen bound] ; Prevents the camera from following the char
+type = ScreenBound
+trigger1 = 1
+value = 0
+
+;[State 4500, attack state] ; the character attacks his opponent when :
+;type = ChangeState
+;triggerall = BackEdgeBodyDist >= 0	; he is on the stage
+;triggerall = selfanimexist (4000)					; <--- change this...
+;trigger1 = partner, life > 0		; and his partner is alive
+;trigger1 = P2BodyDist X = [0, 50]           ; and his enemy is close
+;trigger1 = !Win && !Lose
+;trigger1 = power >= 2000
+;value = 4000								; <--- and this for the alternate super move!
+;
+;[State 4500, attack state] ; the character attacks his opponent when :
+;type = ChangeState
+;triggerall = BackEdgeBodyDist >= 0	; he is on the stage
+;triggerall = selfanimexist (3000)					; <--- change this...
+;trigger1 = partner, life > 0		; and his partner is alive
+;trigger1 = P2BodyDist X = [0, 50]           ; and his enemy is close
+;trigger1 = !Win && !Lose
+;trigger1 = power >= 2000
+;value = 3000								; <--- and this for the super move!
+;
+;[State 4500, attack state] ; the character attacks his opponent when :
+;type = ChangeState
+;triggerall = BackEdgeBodyDist >= 0	; he is on the stage
+;triggerall = selfanimexist (2000)					; <--- change this...
+;trigger1 = partner, life > 0		; and his partner is alive
+;trigger1 = P2BodyDist X = [0, 50]           ; and his enemy is close
+;trigger1 = !Win && !Lose
+;trigger1 = power >= 1000
+;value = 2000								; <--- and this for the alternate lv.2 move!
+;
+;[State 4500, attack state] ; the character attacks his opponent when :
+;type = ChangeState
+;triggerall = BackEdgeBodyDist >= 0	; he is on the stage
+;triggerall = selfanimexist (1010)					; <--- change this...
+;trigger1 = partner, life > 0		; and his partner is alive
+;trigger1 = P2BodyDist X = [0, 50]           ; and his enemy is close
+;trigger1 = !Win && !Lose
+;trigger1 = power >= 1000
+;value = 1010								; <--- and this for the lv.2 move!
+;
+;[State 4500, attack state] ; the character attacks his opponent when :
+;type = ChangeState
+;triggerall = BackEdgeBodyDist >= 0	; he is on the stage
+;triggerall = selfanimexist (1000)					; <--- change this...
+;trigger1 = partner, life > 0		; and his partner is alive
+;trigger1 = P2BodyDist X = [0, 50]           ; and his enemy is close
+;trigger1 = !Win && !Lose
+;trigger1 = power >= 0
+;value = 1000								; <--- and this for the alternate lv.1 move!
+;
+;[State 4500, attack state] ; the character attacks his opponent when :
+;type = ChangeState
+;triggerall = BackEdgeBodyDist >= 0	; he is on the stage
+;triggerall = selfanimexist (500)					; <--- change this...
+;trigger1 = partner, life > 0		; and his partner is alive
+;trigger1 = P2BodyDist X = [0, 50]           ; and his enemy is close
+;trigger1 = !Win && !Lose
+;trigger1 = power >= 0
+;value = 500								; <--- and this for the lv.1 move!
+
+;[State 4500, 3]
+;type = VelSet
+;triggerall = BackEdgeBodyDist >= 0
+;trigger1 = FrontEdgeBodyDist <= 0	; he has reached the other side of the screen
+;trigger2 = partner, life <= 0		; his partner has just died
+;trigger2 = (Time >= 50) || (P2BodyDist X = [-100, 100])
+;trigger3 = P2Dist X < 0                 ; his enemy is behind him
+;trigger4 = P2BodyDist X = [-100, 100]
+;trigger4 = Win
+;trigger5 = Win
+;trigger5 = Time >= 20
+;x = 0
+;y = 0
+;
+;[State 4500, end state] ; the character does not attack his opponent if:
+;type = ChangeState
+;triggerall = BackEdgeBodyDist >= 0
+;trigger1 = FrontEdgeBodyDist <= 0	; he has reached the other side of the screen
+;trigger2 = Partner, Life <= 0           ; his partner has just died
+;trigger2 = (Time >= 50) || (P2BodyDist X = [-100, 100])
+;trigger3 = P2Dist X < 0                 ; his enemy is behind him
+;trigger4 = P2BodyDist X = [-100, 100]
+;trigger4 = Win
+;trigger5 = Win
+;trigger5 = Time >= 20
+;value = 0
+;ctrl = 1
+
+[State 4500, end state] ; cancel if:
+type = ChangeState
+trigger1 = Time >= 18
+value = 0
+ctrl = 1
+
+;----------------------------------------------------
+; = Leaving Taunt
+[Statedef 4510] ; Define your own taunt here
+type = S
+movetype = I
+physics = S
+anim = 195
+sprpriority = -2
+velset = 0,0
+ctrl = 0
+
+;[state 4510, poweradd]
+;type = poweradd
+;trigger1 = partner, life
+;trigger1 = life
+;trigger1 = time = 0
+;value = -1000
+
+[State 4510, invincibility] ; the character cannot be hit since he is leaving
+type = NotHitBy
+trigger1 = 1
+value = SCA
+
+[State 4510, ghost] ; Prevents the camera from following the char
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 4510, end state]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 4511
+
+
+; = Leave the stage
+[Statedef 4511]
+type = S
+movetype = I
+physics = N
+anim = 40	; <- Jump Start animation
+sprpriority = -2
+ctrl = 0
+
+[State 4511, anim]
+type = ChangeAnim
+trigger1 = Anim = 40 && AnimTime = 0 ; <- plays the jump back animation when the jump start animation is finished
+value = 43
+
+[State 4511, state type]
+type = StateTypeSet
+trigger1 = Anim = 43 && AnimElem = 1
+statetype = A
+
+[State 4511, velocity]
+type = VelSet
+trigger1 = Anim = 43 && AnimElem = 1 ; <- jumping back animation
+x = -12
+y = -7.5
+
+[State 4511, invincibility]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+
+[State 4511, ghost]
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 4511, screen bound]
+type = ScreenBound
+trigger1 = 1
+value = 0
+
+[State 4511, wait outside state]
+type = ChangeState
+trigger1 = backedgedist < -30
+value = 4512
+
+;===================================================
+; = Wait
+[Statedef 4512]
+type = A
+movetype = I
+physics = N
+anim = 0
+velset = 0,0
+ctrl = 0
+
+[State 4512, invincibility]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+
+[State 4512, ghost]
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 4512, screen bound] ; Prevents the camera from following the char
+type = ScreenBound
+trigger1 = 1
+value = 0
+
+[State 4512, life add] ; Gains life (optional)
+type = LifeAdd
+trigger1 = (gametime%10) = 0
+value = 2
+
+[State 4512, turn] ; always face the same direction as partner
+type = turn
+trigger1 = facing != partner,facing
+
+[State 4512, position] ; always stay behind and at the same distance of the char on the stage
+type = posset
+triggerall = partner, stateno = 192
+trigger1 = 1
+x = (partner, pos x) - 55*facing
+y = 0
+
+[State 4512, position] ; always stay behind and at the same distance of the char on the stage
+type = posset
+triggerall = partner, stateno != 192
+trigger1 = 1
+x = (partner, pos x) - 1000*facing
+y = -150
+
+;===STYLE SELECT BLOCK========================
+
+[State 0, anchor flash]
+type = PalFX
+trigger1 = partner,var(28) = 1
+time = 5
+add = 80,80,80
+mul = 255,255,255
+sinadd = 0,0,0,10
+invertall = 0
+color = 255
+
+;===LOCKED STYLES=========
+;=========================
+
+[State 0, lock hex p1]
+type = Explod
+triggerall = name = "Oliver" || name = "Petra" || name = "Roy" ||name = "Tsukiko"
+trigger1 = teamside=1
+trigger1 =numexplod(191000)=0
+anim = 290002
+ID = 191000
+pos = -30,-133
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock hex p2]
+type = Explod
+triggerall = name = "Oliver" || name = "Petra" || name = "Roy" || name = "Tsukiko"
+trigger1 = teamside!=1
+trigger1 =numexplod(191000)=0
+anim = 290002
+ID = 191000
+pos = -28,-133
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock decimal p1]
+type = Explod
+triggerall = name = "Taeko" || name = "Yoko"
+trigger1 = teamside=1
+trigger1 =numexplod(191001)=0
+anim = 290002
+ID = 191001
+pos = -30,-120
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock decimal p2]
+type = Explod
+triggerall = name = "Taeko" || name = "Yoko"
+trigger1 = teamside!=1
+trigger1 =numexplod(191001)=0
+anim = 290002
+ID = 191001
+pos = -28,-120
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock binary p1]
+type = Explod
+triggerall = name = "Petra" || name = "Taeko" || name = "Yoko"
+trigger1 = teamside=1
+trigger1 =numexplod(191002)=0
+anim = 290002
+ID = 191002
+pos = -30,-107
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[State 0, lock binary p2]
+type = Explod
+triggerall = name = "Petra" || name = "Taeko" || name = "Yoko"
+trigger1 = teamside!=1
+trigger1 =numexplod(191002)=0
+anim = 290002
+ID = 191002
+pos = -28,-107
+postype = p1
+facing = 1
+bindtime = -1
+removetime = -1
+scale = 0.25,0.25
+sprpriority = 7
+ontop = 1
+
+[state -2, remove lock bar]
+type = removeexplod
+trigger1 = roundstate=3
+id = 191000
+
+[state -2, remove lock bar]
+type = removeexplod
+trigger1 = roundstate=3
+id = 191001
+
+[state -2, remove lock bar]
+type = removeexplod
+trigger1 = roundstate=3
+id = 191002
+
+;===CONTROLS==============
+;=========================
+
+[state 190, style capture]
+type = varset
+trigger1 = 1
+var(27) = partner,var(26)
+
+;=========================
+;=========================
+
+[state -2, remove dawn (hex) icon]
+type = removeexplod
+trigger1 = var(27)!=0
+trigger2 = roundstate=3
+id = 300001
+
+[state -2, remove midnight (binary) icon]
+type = removeexplod
+trigger1 = var(27)!=1
+trigger2 = roundstate=3
+id = 300000
+
+[state -2, remove twilight (decimal) icon]
+type = removeexplod
+trigger1 = var(27)!=2
+trigger2 = roundstate=3
+id = 300002
+
+[state 0, scale set]
+type=varset
+trigger1=time=0
+fvar(9)=0.62
+
+;=======================
+;Dawn (Hex) Style
+;=======================
+
+[state 0, dawn p1]
+type = Explod
+triggerall = partner, stateno = 192
+trigger1 = teamside=1
+trigger1 =var(27)=0
+trigger1 =numexplod(300001)=0
+anim = F300001
+ID = 300001
+pos = -35,-141;141
+postype = p1  ;p2,front,back,left,right
+facing = 1
+removetime = -1
+scale = fvar(9),fvar(9)
+sprpriority = 6
+ontop = 0
+
+[state 0, dawn p2]
+type = Explod
+triggerall = partner, stateno = 192
+trigger1 = teamside!=1
+trigger1 =var(27)=0
+trigger1 =numexplod(300001)=0
+anim = F300001
+ID = 300001
+pos = 25,-141;141
+postype = p1  ;p2,front,back,left,right
+facing = -1
+removetime = -1
+scale = fvar(9),fvar(9)
+sprpriority = 6
+ontop = 0
+
+;=======================
+;Midnight (Binary) Style
+;=======================
+
+[state 0, midnight p1]
+type = Explod
+triggerall = partner, stateno = 192
+trigger1 = teamside=1
+trigger1 =var(27)=1
+trigger1 =numexplod(300000)=0
+anim = F300000
+ID = 300000
+pos = -35,-141;141
+postype = p1  ;p2,front,back,left,right
+facing = 1
+removetime = -1
+scale = fvar(9),fvar(9)
+sprpriority = 6
+ontop = 0
+
+[state 0, midnight p2]
+type = Explod
+triggerall = partner, stateno = 192
+trigger1 = teamside!=1
+trigger1 =var(27)=1
+trigger1 =numexplod(300000)=0
+anim = F300000
+ID = 300000
+pos = 25,-141;141
+postype = p1  ;p2,front,back,left,right
+facing = -1
+removetime = -1
+scale = fvar(9),fvar(9)
+sprpriority = 6
+ontop = 0
+
+;=======================
+;Twilight (Decimal) Style
+;=======================
+
+[state 0, twilight p1]
+type = Explod
+triggerall = partner, stateno = 192
+trigger1 = teamside=1
+trigger1 =var(27)=2
+trigger1 =numexplod(300002)=0
+anim = F300002
+ID = 300002
+pos = -35,-141;141
+postype = p1  ;p2,front,back,left,right
+facing = 1
+removetime = -1
+scale = fvar(9),fvar(9)
+sprpriority = 6
+ontop = 0
+
+[state 0, twilight p2]
+type = Explod
+triggerall = partner, stateno = 192
+trigger1 = teamside!=1
+trigger1 =var(27)=2
+trigger1 =numexplod(300002)=0
+anim = F300002
+ID = 300002
+pos = 25,-141;141
+postype = p1  ;p2,front,back,left,right
+facing = -1
+removetime = -1
+scale = fvar(9),fvar(9)
+sprpriority = 6
+ontop = 0
+
+;=====================
+[State 191, 2] ;Assert this until you want "round 1, fight" to begin
+type = AssertSpecial
+triggerall = partner, stateno = 192
+triggerall = partner,var(28) = 1
+trigger1 = 1
+flag = nobardisplay
+flag2 = Intro
+
+;===ANIM CHANGE========
+[State 0, change to decimal anim]
+type = ChangeAnim
+triggerall = partner, stateno = 192
+triggerall = partner,var(28) = 1
+trigger1 = anim!=2
+trigger1 = var(27)=2
+value = 2
+
+[State 0, change to hex anim]
+type = ChangeAnim
+triggerall = partner, stateno = 192
+triggerall = partner,var(28) = 1
+trigger1 = anim!=0
+trigger1 = var(27)=0
+value = 0
+
+[State 0, change to binary anim]
+type = ChangeAnim
+triggerall = partner, stateno = 192
+triggerall = partner,var(28) = 1
+trigger1 = anim!=1
+trigger1 = var(27)=1
+value = 1
+
+; PAL FLASH ===========
+
+;[State 0, binary]
+;type = PalFX
+;triggerall = partner, stateno = 192
+;triggerall = partner,var(28) = 1
+;trigger1 = var(27)=1 && animelem = 1
+;time = 5
+;add = 256,0,0
+;mul = 256,0,0
+;sinadd = 256,0,0,5
+;invertall = 0
+;color = 200
+;persistent = 1
+;
+;[State 0, decimal]
+;type = PalFX
+;triggerall = partner, stateno = 192
+;triggerall = partner,var(28) = 1
+;trigger1 = var(27)=2 && animelem = 1
+;time = 5
+;add = 0,256,0
+;mul = 0,256,0
+;sinadd = 0,256,0,5
+;invertall = 0
+;color = 200
+;persistent = 1
+;
+;[State 0, hex]
+;type = PalFX
+;triggerall = partner, stateno = 192
+;triggerall = partner,var(28) = 1
+;trigger1 = var(27)=0 && animelem = 1
+;time = 5
+;add = 0,0,256
+;mul = 0,0,256
+;sinadd = 0,0,256,5
+;invertall = 0
+;color = 200
+;persistent = 1
+;=======================
+
+
+;---------------------------------------------------------------------------
+; = Jumping in
+[Statedef 4520]
+type = S
+movetype = I
+physics = N
+anim = 42
+sprpriority = 2
+ctrl = 0
+
+[State 4520, 0]
+type = PosSet
+trigger1 = AnimElem = 2, < 0
+x = -243*Facing
+y = 0
+
+[State 4520, 1]
+type = VelSet
+trigger1 = AnimElem = 2, = 0
+x = 4 ;.5
+y = -8.75
+
+[State 4520, 2]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 6
+
+[State 4520, 3]
+type = ScreenBound
+trigger1 = 1
+value = 0
+
+[State 4520, 8]
+type = Gravity
+trigger1 = AnimElem = 2, >= 0
+
+[State 4520, 9]
+type = VelSet
+trigger1 = Vel Y >= 0
+trigger1 = Pos Y > 0
+trigger1 = AnimElem = 2, >= 0
+x = 0
+y = 0
+
+[State 4520, 10]
+type = ChangeState
+trigger1 = Vel Y >= 0
+trigger1 = Pos Y > 0
+trigger1 = AnimElem = 2, >= 0
+value = 4521
+
+;---------------------------------------------------------------------------
+; = Landing
+[Statedef 4521]
+type = S
+movetype = I
+physics = N
+anim = 47
+sprpriority = 2
+ctrl = 0
+
+[State 4520, 0]
+type = PosSet
+trigger1 = Time = 0
+y = 0
+
+[State 4520, 5]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 6
+
+[State 4520, 10]
+type = ChangeState
+trigger1 = AnimTime >= 0
+value = 0
+ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Pause
@@ -3908,6 +4866,78 @@ trigger1=animtime=0
 value=5050
 ctrl=1
 
+
+;***************************************************************************************************;
+;***************************************************************************************************;
+
+;
+; **********************
+; **  State overides  **
+; **********************
+;
+; Overides for common, -2, and -3 states
+; PLEASE READ CAREFULLY: IF THE CHARACTER DOES NOT HAVE THESE STATES, FOLLOW
+; THE HINTS (MARKED WITH THE FOLLOWING: -!!!->) TO OVERIDE THE CHARACTERS
+; STATES.
+;
+; PLEASE GIVE CREDIT IF MODIFYING THIS!!!
+
+;***************************************************************************************************;
+;***************************************************************************************************;
+
+
+
+
+
+
+;---------------------------------------------------------------------------
+; Initialize (at the start of the round)
+[Statedef 5900]
+type = S
+
+[State 5900, 0] ;Clear all int variables
+type = VarRangeSet
+trigger1 = roundno = 1
+value = 0
+last = 49
+
+[State 5900, 1] ;Clear all float variables
+type = VarRangeSet
+trigger1 = roundno = 1
+fvalue = 0
+
+
+;-!!!-> ADD THESE AT THE BOTTOM IF THIS STATEDEF ALREADY EXISTS IN THE CHARACTER (NOT IN COMMON1.CNS);
+;	REMEMBER TO DELETE ANY "CHANGESTATES" ALREADY IN THE STATEDEF. <-!!!-;
+
+
+[State 5900, 7]
+type = VarSet
+triggerall = NumPartner
+trigger1 = RoundState < 2
+trigger1 = Var(53) = 0
+v = 53
+value = 1
+
+[State 5900, 10] ;Intro W/Partner
+type = TagIn
+triggerall = partner, stateno != [4510,4512]	; Partner not waiting outside the screen (thus on stage)
+triggerall = NumPartner
+triggerall = ID > Partner,ID
+trigger1 = roundno = 1
+trigger1 = Time = [0, 1]
+trigger1 = RoundState <= 2
+trigger1 = Partner, Life > 0
+trigger1 = StateNo != [4510, 4512]
+stateno = 4510
+partnerstateno = 190
+
+[State 5900, 11] ;Intro
+type = ChangeState
+trigger1 = roundno = 1
+trigger1 = !NumPartner ; partner does not exist
+value = 190
+
 ;---------------------------------------------------------------------------
 ; HITG_SHAKE
 [Statedef 5000]
@@ -3915,6 +4945,13 @@ type    = S
 movetype= H
 physics = N
 velset = 0,0
+
+[State 0, CtrlSet]
+type = CtrlSet
+trigger1 = 1
+value = 0
+ignorehitpause = 1
+persistent = 1
 
 [state 5000, ivan override]
 type=null
@@ -12567,41 +13604,59 @@ var(53) = ifelse(EnemyNear, MoveType = A, 1, 0)
 
 ;==============================================================================
 ; Counter Helper
-; PotS-style counter flash.
 ;==============================================================================
 [Statedef 295010]
 type = S
 movetype = I
 physics = N
 
-[State 1338: Invisibo]
+[State 0, PosSet]
+type = PosSet
+trigger1 = 1
+x = 0
+y = -3000
+
+[State 0, NotHitBy]
+type = NotHitBy
+trigger1 = 1
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+time = 1
+
+[State 0, AssertSpecial]
 type = AssertSpecial
 trigger1 = 1
 flag = invisible
 ignorehitpause = 1
 
-[State 1338: Invincibo]
-type = NotHitBy
-trigger1 = 1
-value = SCA
+[State -2, COUNTER CHECK]
+type = ParentVarSet
+trigger1 = enemy, movetype = A
+var(46) = 1
 ignorehitpause = 1
 
-[State 1338: Leet FX]
-type = BGPalFX
-trigger1 = !Time
-add = 255, 255, 255
-sinadd = -255, -255, -255, 20
-time = 5
+[State -2, IDLE STATUS RESET]
+type = ParentVarSet
+trigger1 = enemy, movetype = I 
+var(46) = 0
+ignorehitpause = 1
 
-[State 1338: Pause]
-type = Pause
-trigger1 = Time < 5
-time = 2
-pausebg = 0
+[State -2, COUNTER HIT SUCCESS]
+type = ParentVarSet
+trigger1 = parent,var(46) = 1 && parent,movehit 
+trigger1 = parent,stateno != [190,199] 
+trigger1 = parent,stateno != [800,820] 
+trigger2 = parent,var(46) = 1
+var(47) = 1
+ignorehitpause = 1
 
-[State 1338: Done]
-type = DestroySelf
-trigger1 = Time >= 5
+[State -2, COUNTER RESET]
+type = ParentVarSet
+trigger1 = enemynear, ctrl = 1
+trigger2 = parent,moveguarded
+var(47) = 0
+ignorehitpause = 1
+
+
 
 ;---------------------------------------------------------------------------
 ; = = Death FX
@@ -12743,6 +13798,8 @@ type = DestroySelf
 trigger1 = parent,stateno = 7000
 ignorehitpause = 1
 persistent = 0
+
+
 
 ;==============================================================================
 ;==============================================================================

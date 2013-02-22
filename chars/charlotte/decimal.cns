@@ -45,6 +45,7 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 80
 trigger1 = var(6) = [0,1]
 trigger1 = time=0
 attr = S, NA
@@ -59,9 +60,9 @@ sparkxy = -10, -60 ;= -10, -26
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 17
-ground.hittime  = 17
-guard.hittime = 16
+ground.slidetime = 19
+ground.hittime  = 19
+guard.hittime = 17
 ground.velocity = -6
 airguard.velocity = -.5,-.8
 air.type = High
@@ -130,6 +131,7 @@ x = 6
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 80 
 trigger1 = animelem = 3 
 trigger2 = animelem = 8
 attr = S, NA
@@ -143,9 +145,9 @@ sparkxy = -10, -60 ;= -10,-37
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = High
-ground.slidetime = 16
-ground.hittime  = 16
-guard.hittime = 14
+ground.slidetime = 17
+ground.hittime  = 17
+guard.hittime = 15
 ground.velocity = -4,0
 air.velocity = -.5,-4.2
 air.hittime  = 27
@@ -222,9 +224,9 @@ sparkxy = -10, -45 ;= -10, -26
 hitsound = 5, 4
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 14
-ground.hittime  = 14
-guard.hittime = 11
+ground.slidetime = 15
+ground.hittime  = 15
+guard.hittime = 13
 ground.velocity = -4
 airguard.velocity = -.5,-.8
 air.type = High
@@ -441,6 +443,7 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 80
 trigger1 = Time = 0
 attr = C, NA
 damage    =floor(fvar(13)*12)
@@ -454,8 +457,8 @@ sparkxy = -10, -5 ;= -10,-42
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 12
-ground.hittime  = 12
+ground.slidetime = 14
+ground.hittime  = 14
 guard.hittime = 10
 ground.velocity = -7
 air.velocity = -1.5,-3
@@ -512,6 +515,7 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 110
 trigger1 = time=0
 priority=5,hit
 attr = S, NA
@@ -595,6 +599,7 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 130
 trigger1 = time=0
 attr = S, NA
 damage    = floor(fvar(13)*25)
@@ -613,7 +618,7 @@ guard.hittime = 17
 ground.velocity = -12,0
 air.velocity = -0.5,-5
 air.type=high
-guard.velocity = 0
+guard.velocity = -12
 air.fall=1
 fall.recover = 1
 animtype=hard
@@ -727,6 +732,7 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 100
 trigger1 = time=0
 attr = A, NA
 damage    = floor(fvar(13)*16)
@@ -798,6 +804,7 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 120
 trigger1 = animelem=5
 attr = A, NA
 damage    = floor(fvar(13)*20)
@@ -885,6 +892,7 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 110
 trigger1 = time=0
 attr = A, NA
 damage = floor(fvar(13)*28)
@@ -1424,9 +1432,9 @@ sparkxy = -10, -35 ; = -10,-60
 ;hitsound   = 5,3
 guardsound = 6,0
 ground.type = high
-ground.slidetime = 20
-ground.hittime  = 20
-guard.hittime = 15
+ground.slidetime = 17
+ground.hittime  = 17
+guard.hittime = 16
 ground.velocity =-(vel x),0
 guard.velocity = -0
 air.type = high
@@ -1575,9 +1583,9 @@ sparkxy = -10, -35 ; = -10,-60
 ;hitsound   = 5,3
 guardsound = 6,0
 ground.type = high
-ground.slidetime = 24
-ground.hittime  = 24
-guard.hittime = 12
+ground.slidetime = 17
+ground.hittime  = 17
+guard.hittime = 16
 ground.velocity = -(vel x),0
 guard.velocity = -8
 air.type = high
@@ -1725,9 +1733,9 @@ sparkxy = -10, -35 ; = -10,-60
 ;hitsound   = 5,3
 guardsound = 6,0
 ground.type = high
-ground.slidetime = 28
-ground.hittime  = 28
-guard.hittime = 9
+ground.slidetime = 17
+ground.hittime  = 17
+guard.hittime = 16
 ground.velocity = -(vel x),0
 guard.velocity = -8
 air.type = high
@@ -1903,6 +1911,7 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 130
 trigger1 = time = 0
 attr = S, NA
 damage = floor(fvar(13)*20),2
@@ -1918,7 +1927,7 @@ guardsound = 6, 0
 ground.type = High
 ground.slidetime = 14
 ground.hittime  = 14
-guard.hittime = 12
+guard.hittime = 13
 ground.velocity = -9,0
 airguard.velocity = -.5,-.8
 air.type = High
@@ -2008,7 +2017,7 @@ guardsound = 6, 0
 ground.type = High
 ground.slidetime = 17
 ground.hittime  = 17
-guard.hittime = 12
+guard.hittime = 13
 ground.velocity = -9,0
 airguard.velocity = -.5,-.8
 air.type = High
@@ -2105,7 +2114,7 @@ guardsound = 6, 0
 ground.type = High
 ground.slidetime = 20
 ground.hittime  = 20
-guard.hittime = 12
+guard.hittime = 13
 ground.velocity = -9,0
 airguard.velocity = -.5,-.8
 air.type = High
@@ -2444,6 +2453,7 @@ y = 0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 130
 trigger1 = time=0
 attr = S, NA
 damage = floor(fvar(13)*60),10
@@ -2529,6 +2539,7 @@ y = 0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 130
 trigger1 = time=0
 attr = S, NA
 damage = floor(fvar(13)*70),10
@@ -2646,6 +2657,7 @@ y = 0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 130
 trigger1 = time = 3
 trigger2 = time = 7
 attr = S, NA
@@ -2678,6 +2690,7 @@ fall.recover = 1
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 130
 trigger1 = time = 9
 attr = S, NA
 damage = floor(fvar(13)*20),5
@@ -3013,9 +3026,9 @@ sparkxy = -10, -35 ; = -10,-60
 ;hitsound   = 5,3
 guardsound = 6,0
 ground.type = high
-ground.slidetime = 25
-ground.hittime  = 25
-guard.hittime = 20
+ground.slidetime = 15
+ground.hittime  = 15
+guard.hittime = 12
 ground.velocity =-(vel x),0
 guard.velocity = -0
 air.type = high
@@ -3171,6 +3184,7 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
+guard.dist = 160
 trigger1 = animelem = 4
 trigger2 = animelem = 9
 trigger3 = animelem = 16
@@ -3201,6 +3215,7 @@ air.fall=1
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+guard.dist = 160
 fall.yvelocity = 0
 trigger1 = animelem = 22
 attr = S, NA

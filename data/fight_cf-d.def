@@ -97,29 +97,29 @@ p1.front.offset = 0,0
 p1.front.scale = 1,1 
 p1.range.x  = 427,36
 
-;Player 2
-p2.pos    = 140,5
-p2.front.facing = 1
+;Player 3
+p2.pos    = 1140,35
+p2.bg0.spr = 11,4
+p2.bg0.facing = -1
+p2.bg1.anim = 11
+p2.bg1.offset = 2,1
+p2.bg1.facing = -1
+p2.mid.facing = -1
+p2.mid.spr = 12,0
+p2.mid.offset = 4,0
+p2.front.facing = -1
 p2.front.spr = 13,0
-p2.front.offset = 0,0
-p2.front.scale = 1,1
-p2.range.x  = 427,36
+p2.front.offset = 4,0
+p2.front.scale = 1,1 
+p2.range.x  = -425,-32
 
 ;Player 3
-p3.pos    = 1140,35
-p3.bg0.spr = 11,4
-p3.bg0.facing = -1
-p3.bg1.anim = 11
-p3.bg1.offset = 2,1
-p3.bg1.facing = -1
-p3.mid.facing = -1
-p3.mid.spr = 12,0
-p3.mid.offset = 4,0
-p3.front.facing = -1
+p3.pos    = 140,5
+p3.front.facing = 1
 p3.front.spr = 13,0
-p3.front.offset = 4,0
-p3.front.scale = 1,1 
-p3.range.x  = -425,-32
+p3.front.offset = 0,0
+p3.front.scale = 1,1
+p3.range.x  = 427,36
 
 ;Player 4
 p4.pos    = 1140,5
@@ -215,21 +215,29 @@ p1.pos    = 20,20
 p1.bg0.spr = 50,0
 p1.bg1.anim = 51
 p1.face.spr = 9000,19
+p1.face.scale = 0.25,0.25
+p1.face.facing = 1
+p1.face.offset = -38,-29
+
 ;Player 2
-p2.pos    = 9999,20
+p2.pos    = 1260,20
 p2.bg0.spr = 50,0
 p2.bg0.facing = -1
 p2.bg1.anim = 51
 p2.bg1.facing = -1
-p2.face.spr = 9000,9
+p2.face.spr = 9000,19
+p2.face.scale = 0.25,0.25
 p2.face.facing = -1
+p2.face.offset = 38,-29
+
 ;Player 3
-p3.pos    = 144,80
+p3.pos    = 9999,80
 p3.bg0.spr = 70,0
 p3.bg1.anim = 71
-p3.face.spr = 9000,19
+p3.face.spr = 9000,9
 p3.face.scale = 0.4,0.4
 p3.face.facing = 1
+
 ;Player 4
 p4.pos    = 9999,80
 p4.bg0.spr = 70,0

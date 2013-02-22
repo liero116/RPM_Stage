@@ -1939,14 +1939,13 @@ value = 1141
 triggerall = var(27)=0
 triggerall = power >= 1000
 triggerall = command = "623S"
-triggerall = statetype != A
+trigger1 = statetype != A
 trigger1 = ctrl
-trigger1 = var(1)
 trigger2 = stateno = 101
-;trigger3 = stateno = [200,240]
-trigger3 = movecontact && !ishelper
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
+trigger3 = stateno = [200,499]
+trigger3 = movecontact 
+trigger4 = stateno = [1130,1135]
+trigger4 = movecontact  
 
 ;===========================================================================
 [State -1, 623 A 1140]
@@ -2244,17 +2243,6 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Dracula Blood Slash 12000]
-type = ChangeState
-value = 12000
-triggerall = var(27) = 1
-triggerall = command = "z"
-triggerall = var(25)=300
-trigger1 = statetype = S
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
-;trigger3 = stateno = 600 || stateno = 610
-;trigger3 = movecontact
 
 ;===========================================================================
 [State -1, ]

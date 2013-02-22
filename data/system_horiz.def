@@ -16,7 +16,7 @@ snd = system.snd
 logo.storyboard = logo.def        
 intro.storyboard = intro.def       
 select = select.def       
-fight = fight_cf-d.def 
+fight = fight_cf-d_inftime.def 
 ;fight = fight_cf.def         
 ;fight = mugen1/fight.def
 
@@ -62,9 +62,9 @@ menu.item.active.font = 8,1,1
 menu.item.spacing = 0, 72
 
 menu.itemname.arcade = "ARCADE"
-menu.itemname.versus = "VERSUS"
+menu.itemname.versus = ;"VERSUS"
 menu.itemname.teamarcade = ;"TEAM ARCADE"
-menu.itemname.teamversus = "TEAM VERSUS"
+menu.itemname.teamversus = "VERSUS"
 menu.itemname.teamcoop = "CO-OP ARCADE"
 menu.itemname.survival = "SURVIVAL"
 menu.itemname.survivalcoop = ;"SURVIVAL TEAM"

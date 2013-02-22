@@ -775,6 +775,18 @@ command = $D,UF
 
 [Statedef -1]
 
+[State -1, Throw 800]
+type = ChangeState
+value = 800
+triggerall = command = "throw"
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 101 || stateno = 109
+trigger3 = stateno = 1005 || stateno = 210
+trigger3 = movecontact
+trigger4 = stateno = [200,499]
+trigger4 = time = [0,2]
+
 [State -1, tag]
 type = ChangeState
 value = 4510
@@ -1623,7 +1635,7 @@ trigger1 = random < 300
 trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = random < 50
-trigger2 = stateno = 200 && time > 6
+trigger2 = stateno = 200 && time > 3
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -1686,12 +1698,12 @@ trigger1 = p2statetype = S
 trigger1 = statetype = C
 trigger1 = ctrl
 trigger2 = random < 80
-trigger2 = stateno = 400 && time > 5
+trigger2 = stateno = 400 && time > 3
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger3 = random < 50
-trigger3 = stateno = 200 && time > 9
+trigger3 = stateno = 200 && time > 3
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -2591,17 +2603,7 @@ size.yscale = 0.24
 ignorehitpause = 1
 
 
-[State -1, Throw 800]
-type = ChangeState
-value = 800
-triggerall = command = "throw"
-trigger1 = statetype = S
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = 1005 || stateno = 210
-trigger3 = movecontact
-trigger4 = stateno = [200,499]
-trigger4 = time = [0,2]
+
 
 [State -1, Taunt 195]
 type = ChangeState
@@ -3763,7 +3765,7 @@ triggerall = command != "holddown"
 trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = 200 && time > 6
+trigger3 = stateno = 200 ;&& time > 6
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3876,11 +3878,11 @@ triggerall = command = "holddown"
 trigger1 = statetype = C
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = 400 && time > 5
+trigger3 = stateno = 400 ;&& time > 5
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 200 && time > 9 
+trigger4 = stateno = 200 ;&& time > 9 
 trigger4 = movecontact
 trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]

@@ -816,6 +816,14 @@ buffer.time=1
 
 [Statedef -1]
 
+[State -1, Throw 800]
+type = ChangeState
+value = 800
+triggerall = command = "a" && command="x"
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 101 || stateno = 109
+
 ;===========================================================================
 [State -1, tag]
 type = ChangeState
@@ -2723,13 +2731,7 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Throw 800]
-type = ChangeState
-value = 800
-triggerall = command = "a" && command="x"
-trigger1 = statetype = S
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
+
 
 ;===========================================================================
 [State -1, Omega Beam 3000]

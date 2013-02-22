@@ -1,5 +1,5 @@
 [Data]
-life = 800
+life = 1600
 power = 3000
 attack = 100
 defence = 100
@@ -21,7 +21,7 @@ ground.front = 10   ;Player width (front, ground)
 air.back = 10        ;Player width (back, air)
 air.front = 10       ;Player width (front, air)
 height = 30        ;Height of player (for opponent to jump over)
-attack.dist = 120    ;Default attack distance
+attack.dist = 160    ;Default attack distance
 proj.attack.dist = 300 ;Default attack distance for projectiles
 proj.doscale = 0     ;Set to 1 to scale projectiles too
 head.pos = 0, -43   ;Approximate position of head
@@ -484,239 +484,239 @@ time = 1
 
 ;---------------------------------------------------------------------------
 ; Introduction
-[Statedef 191]
-type = S
-ctrl = 0
-anim = 190
-velset = 0,0
-
-; [state 190, debug overdrive]
-; type = Varset
-; trigger1 = command="a"
-; fv = 8
-; value=200
-
-[state 190, choose var]
-type = varset
-triggerall=roundsexisted=0
-trigger1 = roundstate=0
-v = 27
-value = 2
-
-;===CONTROLS==============
-;=========================
-[state 190, decimal-hex]
-type = varset
-trigger1 = command = "up" && command != "holdS"
-trigger1 = var(27)=2
-v=27
-value = 0
-
-[state 190, decimal-binary]
-type = varset
-trigger1 = command = "down" && command != "holdS"
-trigger1 = var(27)=2
-v=27
-value = 1
-
-[state 190, binary-decimal]
-type = varset
-trigger1 = command = "up" && command != "holdS"
-trigger1 = var(27)=1
-v=27
-value = 2
-
-[state 190, hex-decimal]
-type = varset
-trigger1 = command = "down" && command != "holdS"
-trigger1 = var(27)=0
-v=27
-value = 2
-
-;===AI CONTROLS==============
-;=========================
-[state 190, decimal-hex]
-type = varset
-trigger1 = enemy,command = "up" &&  enemy,command = "holdS"
-trigger1 = var(27)=2
-v=27
-value = 0
-
-[state 190, decimal-binary]
-type = varset
-trigger1 = enemy,command = "down" &&  enemy,command = "holdS"
-trigger1 = var(27)=2
-v=27
-value = 1
-
-[state 190, binary-decimal]
-type = varset
-trigger1 = enemy,command = "up" &&  enemy,command = "holdS"
-trigger1 = var(27)=1
-v=27
-value = 2
-
-[state 190, hex-decimal]
-type = varset
-trigger1 = enemy,command = "down" &&  enemy,command = "holdS"
-trigger1 = var(27)=0
-v=27
-value = 2
-
-;=========================
-;=========================
-
-[state -2, remove dawn (hex) icon]
-type = removeexplod
-trigger1 = var(27)!=0
-trigger2 = roundstate=3
-id = 300001
-
-[state -2, remove midnight (binary) icon]
-type = removeexplod
-trigger1 = var(27)!=1
-trigger2 = roundstate=3
-id = 300000
-
-[state -2, remove twilight (decimal) icon]
-type = removeexplod
-trigger1 = var(27)!=2
-trigger2 = roundstate=3
-id = 300002
-
-[state 0, scale set]
-type=varset
-trigger1=time=0
-fvar(9)=0.62
-
-;=======================
-;Dawn (Hex) Style
-;=======================
-
-[state 0, dawn p1]
-type = Explod
-trigger1 = teamside=1
-trigger1 =var(27)=0
-trigger1 =numexplod(300001)=0
-anim = F300001
-ID = 300001
-pos = -35,-141;141
-postype = p1  ;p2,front,back,left,right
-facing = 1
-removetime = -1
-scale = fvar(9),fvar(9)
-sprpriority = 6
-ontop = 0
-
-[state 0, dawn p2]
-type = Explod
-trigger1 = teamside!=1
-trigger1 =var(27)=0
-trigger1 =numexplod(300001)=0
-anim = F300001
-ID = 300001
-pos = 25,-141;141
-postype = p1  ;p2,front,back,left,right
-facing = -1
-removetime = -1
-scale = fvar(9),fvar(9)
-sprpriority = 6
-ontop = 0
-
-;=======================
-;Midnight (Binary) Style
-;=======================
-
-[state 0, midnight p1]
-type = Explod
-trigger1 = teamside=1
-trigger1 =var(27)=1
-trigger1 =numexplod(300000)=0
-anim = F300000
-ID = 300000
-pos = -35,-141;141
-postype = p1  ;p2,front,back,left,right
-facing = 1
-removetime = -1
-scale = fvar(9),fvar(9)
-sprpriority = 6
-ontop = 0
-
-[state 0, midnight p2]
-type = Explod
-trigger1 = teamside!=1
-trigger1 =var(27)=1
-trigger1 =numexplod(300000)=0
-anim = F300000
-ID = 300000
-pos = 25,-141;141
-postype = p1  ;p2,front,back,left,right
-facing = -1
-removetime = -1
-scale = fvar(9),fvar(9)
-sprpriority = 6
-ontop = 0
-
-;=======================
-;Twilight (Decimal) Style
-;=======================
-
-[state 0, twilight p1]
-type = Explod
-trigger1 = teamside=1
-trigger1 =var(27)=2
-trigger1 =numexplod(300002)=0
-anim = F300002
-ID = 300002
-pos = -35,-141;141
-postype = p1  ;p2,front,back,left,right
-facing = 1
-removetime = -1
-scale = fvar(9),fvar(9)
-sprpriority = 6
-ontop = 0
-
-[state 0, twilight p2]
-type = Explod
-trigger1 = teamside!=1
-trigger1 =var(27)=2
-trigger1 =numexplod(300002)=0
-anim = F300002
-ID = 300002
-pos = 25,-141;141
-postype = p1  ;p2,front,back,left,right
-facing = -1
-removetime = -1
-scale = fvar(9),fvar(9)
-sprpriority = 6
-ontop = 0
-;=====================
-;=====================
-[State 191, 2] ;Assert this until you want "round 1, fight" to begin
-type = AssertSpecial
-trigger1 = 1
-flag = Intro
-flag2 = nobardisplay
-
-;======================
-;===ANIM CHANGE========
-[State 0, change to decimal anim]
-type = ChangeAnim
-trigger1 = anim!=2
-trigger1 = var(27)=2
-value = 2
-
-[State 0, change to hex anim]
-type = ChangeAnim
-trigger1 = anim!=0
-trigger1 = var(27)=0
-value = 0
-
-[State 0, change to binary anim]
-type = ChangeAnim
-trigger1 = anim!=1
-trigger1 = var(27)=1
-value = 1
+;[Statedef 191]
+;type = S
+;ctrl = 0
+;anim = 190
+;velset = 0,0
+;
+;; [state 190, debug overdrive]
+;; type = Varset
+;; trigger1 = command="a"
+;; fv = 8
+;; value=200
+;
+;[state 190, choose var]
+;type = varset
+;triggerall=roundsexisted=0
+;trigger1 = roundstate=0
+;v = 27
+;value = 2
+;
+;;===CONTROLS==============
+;;=========================
+;[state 190, decimal-hex]
+;type = varset
+;trigger1 = command = "up" && command != "holdS"
+;trigger1 = var(27)=2
+;v=27
+;value = 0
+;
+;[state 190, decimal-binary]
+;type = varset
+;trigger1 = command = "down" && command != "holdS"
+;trigger1 = var(27)=2
+;v=27
+;value = 1
+;
+;[state 190, binary-decimal]
+;type = varset
+;trigger1 = command = "up" && command != "holdS"
+;trigger1 = var(27)=1
+;v=27
+;value = 2
+;
+;[state 190, hex-decimal]
+;type = varset
+;trigger1 = command = "down" && command != "holdS"
+;trigger1 = var(27)=0
+;v=27
+;value = 2
+;
+;;===AI CONTROLS==============
+;;=========================
+;[state 190, decimal-hex]
+;type = varset
+;trigger1 = enemy,command = "up" &&  enemy,command = "holdS"
+;trigger1 = var(27)=2
+;v=27
+;value = 0
+;
+;[state 190, decimal-binary]
+;type = varset
+;trigger1 = enemy,command = "down" &&  enemy,command = "holdS"
+;trigger1 = var(27)=2
+;v=27
+;value = 1
+;
+;[state 190, binary-decimal]
+;type = varset
+;trigger1 = enemy,command = "up" &&  enemy,command = "holdS"
+;trigger1 = var(27)=1
+;v=27
+;value = 2
+;
+;[state 190, hex-decimal]
+;type = varset
+;trigger1 = enemy,command = "down" &&  enemy,command = "holdS"
+;trigger1 = var(27)=0
+;v=27
+;value = 2
+;
+;;=========================
+;;=========================
+;
+;[state -2, remove dawn (hex) icon]
+;type = removeexplod
+;trigger1 = var(27)!=0
+;trigger2 = roundstate=3
+;id = 300001
+;
+;[state -2, remove midnight (binary) icon]
+;type = removeexplod
+;trigger1 = var(27)!=1
+;trigger2 = roundstate=3
+;id = 300000
+;
+;[state -2, remove twilight (decimal) icon]
+;type = removeexplod
+;trigger1 = var(27)!=2
+;trigger2 = roundstate=3
+;id = 300002
+;
+;[state 0, scale set]
+;type=varset
+;trigger1=time=0
+;fvar(9)=0.62
+;
+;;=======================
+;;Dawn (Hex) Style
+;;=======================
+;
+;[state 0, dawn p1]
+;type = Explod
+;trigger1 = teamside=1
+;trigger1 =var(27)=0
+;trigger1 =numexplod(300001)=0
+;anim = F300001
+;ID = 300001
+;pos = -35,-141;141
+;postype = p1  ;p2,front,back,left,right
+;facing = 1
+;removetime = -1
+;scale = fvar(9),fvar(9)
+;sprpriority = 6
+;ontop = 0
+;
+;[state 0, dawn p2]
+;type = Explod
+;trigger1 = teamside!=1
+;trigger1 =var(27)=0
+;trigger1 =numexplod(300001)=0
+;anim = F300001
+;ID = 300001
+;pos = 25,-141;141
+;postype = p1  ;p2,front,back,left,right
+;facing = -1
+;removetime = -1
+;scale = fvar(9),fvar(9)
+;sprpriority = 6
+;ontop = 0
+;
+;;=======================
+;;Midnight (Binary) Style
+;;=======================
+;
+;[state 0, midnight p1]
+;type = Explod
+;trigger1 = teamside=1
+;trigger1 =var(27)=1
+;trigger1 =numexplod(300000)=0
+;anim = F300000
+;ID = 300000
+;pos = -35,-141;141
+;postype = p1  ;p2,front,back,left,right
+;facing = 1
+;removetime = -1
+;scale = fvar(9),fvar(9)
+;sprpriority = 6
+;ontop = 0
+;
+;[state 0, midnight p2]
+;type = Explod
+;trigger1 = teamside!=1
+;trigger1 =var(27)=1
+;trigger1 =numexplod(300000)=0
+;anim = F300000
+;ID = 300000
+;pos = 25,-141;141
+;postype = p1  ;p2,front,back,left,right
+;facing = -1
+;removetime = -1
+;scale = fvar(9),fvar(9)
+;sprpriority = 6
+;ontop = 0
+;
+;;=======================
+;;Twilight (Decimal) Style
+;;=======================
+;
+;[state 0, twilight p1]
+;type = Explod
+;trigger1 = teamside=1
+;trigger1 =var(27)=2
+;trigger1 =numexplod(300002)=0
+;anim = F300002
+;ID = 300002
+;pos = -35,-141;141
+;postype = p1  ;p2,front,back,left,right
+;facing = 1
+;removetime = -1
+;scale = fvar(9),fvar(9)
+;sprpriority = 6
+;ontop = 0
+;
+;[state 0, twilight p2]
+;type = Explod
+;trigger1 = teamside!=1
+;trigger1 =var(27)=2
+;trigger1 =numexplod(300002)=0
+;anim = F300002
+;ID = 300002
+;pos = 25,-141;141
+;postype = p1  ;p2,front,back,left,right
+;facing = -1
+;removetime = -1
+;scale = fvar(9),fvar(9)
+;sprpriority = 6
+;ontop = 0
+;;=====================
+;;=====================
+;[State 191, 2] ;Assert this until you want "round 1, fight" to begin
+;type = AssertSpecial
+;trigger1 = 1
+;flag = Intro
+;flag2 = nobardisplay
+;
+;;======================
+;;===ANIM CHANGE========
+;[State 0, change to decimal anim]
+;type = ChangeAnim
+;trigger1 = anim!=2
+;trigger1 = var(27)=2
+;value = 2
+;
+;[State 0, change to hex anim]
+;type = ChangeAnim
+;trigger1 = anim!=0
+;trigger1 = var(27)=0
+;value = 0
+;
+;[State 0, change to binary anim]
+;type = ChangeAnim
+;trigger1 = anim!=1
+;trigger1 = var(27)=1
+;value = 1
 
 ; [State 191, 3] ;Change to stand state when done
 ; type = ChangeState
@@ -752,6 +752,21 @@ value = 0
 ;---------------------------------------------------------------------------
 
 [statedef -2]
+
+[state -2, remove lock bar]
+type = removeexplod
+trigger1 = roundstate=3
+id = 191000
+
+[state -2, remove lock bar]
+type = removeexplod
+trigger1 = roundstate=3
+id = 191001
+
+[state -2, remove lock bar]
+type = removeexplod
+trigger1 = roundstate=3
+id = 191002
 
 ;===== COUNTER CHECK =====
 ;==========================
@@ -790,9 +805,9 @@ value = 4500
 
 [State 0, damage scaling rate]
 type = VarSet
-trigger1 = roundstate = 1
+trigger1 = 1
 fv = 14
-value = ifelse((var(47) = 0), 0.94, 0.98)
+value = ifelse((var(47) = 0), 0.94, 0.97)
 
 [state 0, damage scaling change]
 type = varset
@@ -803,11 +818,14 @@ triggerall = stateno != 1015
 triggerall = stateno != 1016
 triggerall = stateno != 1033
 triggerall = stateno != 610
+triggerall = stateno != 10056
+triggerall = stateno != 10057
 triggerall = stateno != 10501
 triggerall = stateno != 10551
 triggerall = stateno != 10561
 triggerall = stateno != 10571
 triggerall = stateno != 3051
+triggerall = stateno != [30002,30042]
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1 ;|| helper,movehit = 1
 fvar(13)=fvar(13)*fvar(14)
@@ -852,8 +870,8 @@ params = fvar(20), fvar(13), var(51), var(22)
 
 [State 0, wall crossup request]
 type = VelSet
-trigger1 = (p2dist y < 4) && (p2dist x < 2)
-trigger1 = backedgebodydist < 3
+trigger1 = (p2dist y < 20) && (p2dist x < 1)
+trigger1 = backedgebodydist < 1
 x = 2
 persistent = 1
 
@@ -1959,11 +1977,11 @@ ignorehitpause = 1
 ;;;====== DAMAGE SCALE =====
 ;;;=========================
 
-[State -3]
-Type=Attackmulset
-Trigger1=1
-value=fvar(13)
-ignorehitpause=1
+;[State -3]
+;Type=Attackmulset
+;Trigger1=1
+;value=fvar(13)
+;ignorehitpause=1
 
 ;;;=========================
 ;;;=========================
@@ -2049,7 +2067,7 @@ pausemovetime=9999
 
 ; var(1):= -1
 ; var(2):= -3
-; var(3):= -3, 202, 212, 242, 402, 412, 442, 445, 602, 612, 642, 10052, 10057, 10060, 10070, 10323, 10712, 10732, 10752, 10772, 10080, 30002, 30003, 30012, 30022, 30032, 30042, 200, 210, 240, 400, 410, 440, 600, 610, 630, 640, 650, 1000, 1010, 1015, 10001, 10002, 1050, 1060, 1070, 1016, 1048, 3002, 3050, 3100, 201, 211, 241, 401, 411, 441, 601, 611, 631, 641, 1001, 1002, 1003, 1005, 1006, 10321, 10221, 10222, 10601, 1004, 10471, 10701, 30101, 30102, 31051, 30501
+; var(3):= -3, 202, 212, 242, 402, 412, 442, 445, 602, 612, 642, 10052, 10057, 10060, 10070, 10323, 10712, 10732, 10752, 10772, 10080, 30002, 30003, 30012, 30022, 30032, 30042, 200, 210, 240, 400, 410, 440, 600, 610, 630, 640, 650, 1000, 1010, 1015, 10001, 10002, 1050, 1060, 1070, 1016, 1048, 3002, 3050, 3100, 201, 211, 241, 401, 411, 441, 601, 611, 631, 641, 1001, 1002, 1003, 1005, 1006, 10321, 10601, 1004, 10701, 30101, 30102, 31051, 30501
 ; var(4):= -3
 ; var(5):= -2, 650, 1080, 1090
 ; var(6):= -2, 10712, 10732, 10752
@@ -2060,10 +2078,10 @@ pausemovetime=9999
 ;var(16):= -1
 ;var(19):= -2
 ;var(20):= -3
+;var(21):= 10311, 10451
 ;var(25):= 1000, 1010, 1015, 1050, 1060, 1070, 1016, 1090
-;var(27):= 191
 ;var(30):= -2
-;var(32):= 10321, 10471, 30101, 30102
+;var(32):= 30101, 30102
 ;var(35):= -2
 ;var(38):= -2
 ;var(40):= -2
@@ -2072,6 +2090,7 @@ pausemovetime=9999
 ;var(43):= 10322
 ;var(49):= -2
 ;var(51):= -2
+;var(53):= -2
 ;var(56):= -2
 
 ;---------------------- Float variable list ----------------------
@@ -2082,14 +2101,10 @@ pausemovetime=9999
 ; fvar(3):= -2, 10322
 ; fvar(5):= 109, 10057
 ; fvar(7):= -2
-; fvar(9):= 191
-;fvar(13):= -2, 10323, 610, 1000, 1010, 1015, 1016, 1045, 10501, 10551, 10561, 10471, 10571, 10701, 30101, 30102, 31051, 30501
+;fvar(13):= -2, 10323, 610, 1000, 1010, 1015, 1016, 1045, 10501, 10551, 10561, 10571, 10701, 30101, 30102, 31051, 30501
 ;fvar(14):= -2
 ;fvar(16):= -3
-;fvar(20):= -2, 202, 212, 242, 402, 412, 442, 445, 602, 612, 642, 10052, 10056, 10057, 10060, 10070, 10323, 410, 600, 610, 630
-
-
-
+;fvar(20):= -2, 202, 212, 242, 402, 412, 442, 445, 602, 612, 642, 10052, 10056, 10057, 10060, 10070, 10323, 410, 600, 610, 630, 201, 211, 241, 401, 411
 
 
 

@@ -730,6 +730,14 @@ command = $D,UF
 
 [Statedef -1]
 
+[State -1, Throw 800]
+type = ChangeState
+value = 800
+triggerall = command = "throw";ommand="x"
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 101 || stateno = 109
+
 ;===========================================================================
 [State -1, tag]
 type = ChangeState
@@ -2411,23 +2419,23 @@ trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241 || stateno = 411 || stateno = 1003
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 
 ;---------------------------------------------------------------------------
-[State -1, Midnight Ultra Bullet 31001]
-type = ChangeState
-value = 31001
-triggerall = var(27) = 1
-triggerall = fvar(16)=0
-triggerall = command="623S" || command="623S"
-triggerall = power = 3000 || fvar(17)=1
-triggerall = statetype != A
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241 || stateno = 411
-trigger2 = movecontact
+;[State -1, Midnight Ultra Bullet 31001]
+;type = ChangeState
+;value = 31001
+;triggerall = var(27) = 1
+;triggerall = fvar(16)=0
+;triggerall = command="623S" || command="623S"
+;triggerall = power = 3000 || fvar(17)=1
+;triggerall = statetype != A
+;trigger1 = ctrl
+;trigger2 = p2stateno != [12000,12002]
+;trigger2 = p2stateno != [11000,11010]
+;trigger2 = stateno = 241 || stateno = 411
+;trigger2 = movecontact
 
 ;---------------------------------------------------------------------------
 [State -1, Midnight Storm Iris SC 30001]
@@ -2441,30 +2449,12 @@ triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241 || stateno = 411
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
 trigger3 = stateno = 10211
 
-;---------------------------------------------------------------------------
-[State -1, Midnight Storm Iris A 30051]
-type = ChangeState
-value = 30051
-triggerall = var(27) = 1
-triggerall = fvar(16)=0
-triggerall = command="214S"
-triggerall = power >= 1000 || fvar(17)=1
-triggerall = statetype = A
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 601 || stateno = 611 || stateno = 641
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 10241
-trigger4 = stateno = 102 || stateno = 103
 
 ;---------------------------------------------------------------------------
 [State -1, Twilight Ultra Bullet 3100]
@@ -2533,17 +2523,13 @@ trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 242 || stateno = 442 || stateno = 10052 || stateno = 10056 || stateno = 10057 || stateno = 10060 || stateno = 11000
+trigger2 = stateno = 10052 || stateno = 10056 || stateno = 10057 || stateno = 10060 || stateno = 11000
 trigger2 = movecontact
+trigger3 = stateno = [200,499]
+trigger3 = movecontact  
 
 
-[State -1, Throw 800]
-type = ChangeState
-value = 800
-triggerall = command = "throw";ommand="x"
-trigger1 = statetype = S
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
+
 
 [State 0, Pause]
 type = Helper
@@ -2751,6 +2737,7 @@ triggerall = var(27) = 0
 triggerall = command = "214A" ;|| command="z"
 triggerall = stateno != 1020
 triggerall = numhelper(10322)=0 && numhelper(10422)=0 && numhelper(10522)=0
+triggerall = stateno < 3000
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -2765,6 +2752,7 @@ triggerall = var(27) = 0
 triggerall = command = "214B";|| command="z"
 triggerall = stateno != 1020
 triggerall = numhelper(10322)=0 && numhelper(10422)=0 && numhelper(10522)=0
+triggerall = stateno < 3000
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -2779,6 +2767,7 @@ triggerall = var(27) = 0
 triggerall = command = "214C" ;|| command="z"
 triggerall = stateno != 1020
 triggerall = numhelper(10322)=0 && numhelper(10422)=0 && numhelper(10522)=0
+triggerall = stateno < 3000
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -3192,32 +3181,14 @@ trigger3 = stateno = 101 || stateno = 109
 type = ChangeState
 value = 10451
 triggerall = var(27) = 1
-triggerall = command = "214EX" 
-triggerall = stateno != 1020
-triggerall = statetype != A
-triggerall = power >= 500
-trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
-
-[State -1, Prime Iris Air 10341]
-type = ChangeState
-value = 10461
-triggerall = var(27) = 1
 triggerall = command = "214EX"
-triggerall = stateno != 10200
-triggerall = power >= 500
-trigger1 = statetype = A
+triggerall = statetype != A
+triggerall = numhelper(10321) = 0 
+triggerall = power >= 500 
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 601 || stateno = 611
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3278,100 +3249,17 @@ trigger3 = stateno = 10551 && time > 35
 type = ChangeState
 value = 10311
 triggerall = var(27) = 1
-triggerall = command = "214A" 
-triggerall = stateno != 1020
+triggerall = command = "214A" || command = "214B" || command = "214C"
 triggerall = statetype != A
-trigger1 = var(1)
+triggerall = numhelper(10321) = 0 
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
 trigger3 = stateno = 101 || stateno = 109
-
-[State -1, Dual Iris 10211]
-type = ChangeState
-value = 10211
-triggerall = var(27) = 1
-triggerall = command = "214B"
-triggerall = statetype != A
-trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 10311
-trigger4 = stateno = 101 || stateno = 109
-
-[State -1, Triple Iris 10411]
-type = ChangeState
-value = 10411
-triggerall = var(27) = 1
-triggerall = command = "214C"
-triggerall = statetype != A
-trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 10311
-trigger4 = stateno = 101 || stateno = 109
-
-[State -1, Prime Iris Air 10341]
-type = ChangeState
-value = 10341
-triggerall = var(27) = 1
-triggerall = command = "214A"
-triggerall = stateno != 10200
-trigger1 = statetype = A
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 601 || stateno = 611
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 102 || stateno = 103
-
-[State -1, Dual Iris Air 10241]
-type = ChangeState
-value = 10241
-triggerall = var(27) = 1
-triggerall = command = "214B"
-trigger1 = statetype = A
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 601 || stateno = 611
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 10341
-trigger4 = stateno = 102 || stateno = 103
-
-[State -1, Triple Iris Air 10241]
-type = ChangeState
-value = 10441
-triggerall = var(27) = 1
-triggerall = command = "214C"
-trigger1 = statetype = A
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 601 || stateno = 611
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 10341
-trigger4 = stateno = 102 || stateno = 103
 
 ;---------------------------------------------------------------------------
 [State -1, Whip 1 1001]

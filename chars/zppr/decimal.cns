@@ -56,9 +56,9 @@ sparkxy = -10, -40 ; = -10, -40              ;X-offset for the "hit spark" rel. 
 hitsound = 5,4                ;Sound to play on hit
 guardsound = 6, 0                ;Sound to play on guard
 ground.type = High               ;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 16            ;Time that the opponent slides back
-ground.hittime  = 16             ;Time opponent is in hit state
-guard.hittime = 13
+ground.slidetime = 17            ;Time that the opponent slides back
+ground.hittime  = 17             ;Time opponent is in hit state
+guard.hittime = 14
 ground.velocity = -3           ;Velocity at which opponent is pushed
 airguard.velocity = -.5,-.8     ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
 air.type = High                  ;Type: High, Low, Trip (def: same as ground.type)
@@ -169,9 +169,9 @@ sparkxy = -10, -40 ; = -10,-37
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = High
-ground.slidetime = 22
-ground.hittime  = 22
-guard.hittime = 20
+ground.slidetime = 23
+ground.hittime  = 23
+guard.hittime = 21
 ground.velocity = -10,0
 air.velocity = -3,-4.3
 air.hittime  = 37
@@ -271,9 +271,9 @@ sparkxy = -10, -40 ; = -10,-60
 hitsound   = 5,3
 guardsound = 6,0
 ground.type = High
-ground.slidetime = 23
-ground.hittime  = 23
-guard.hittime = 20
+ground.slidetime = 24
+ground.hittime  = 24
+guard.hittime = 21
 ground.velocity = -9,0
 air.type = high
 air.fall = 1
@@ -511,7 +511,6 @@ guard.hittime = 9
 ground.velocity = -2,0
 air.velocity = -.5,-3
 air.type=low
-guard.velocity = 0
 nochainid=1
 fall.yvelocity = 0
 
@@ -536,7 +535,7 @@ guard.hittime = 10
 ground.velocity = -8,0
 air.velocity = -4,-2
 air.type=low
-guard.velocity = 0
+guard.velocity = -12
 nochainid=1
 fall.yvelocity = 0
 
@@ -638,7 +637,7 @@ ground.velocity = -0.05,const(velocity.jump.y)-2
 air.velocity = -0.05,const(velocity.jump.y)-2
 down.velocity = -0.05,-const(velocity.jump.y)-2
 air.type=high
-guard.velocity = 0
+guard.velocity = -10
 fall = 1
 air.fall=1
 fall.recovertime=30
@@ -1924,6 +1923,7 @@ postype = p1         ;p2,front,back,left,right
 [State 1020, Hiedef]
 type = hitdef 
 ground.cornerpush.veloff = -6
+guard.dist = 70
 trigger1 = time = 0
 attr = S,SP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAFD        ;HLAFD+-
@@ -2026,6 +2026,7 @@ postype = p1         ;p2,front,back,left,right
 [State 1020, Hiedef]
 type = hitdef 
 ground.cornerpush.veloff = -6
+guard.dist = 140
 trigger1 = time = 0
 attr = S,SP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAFD        ;HLAFD+-
@@ -2129,6 +2130,7 @@ postype = p1         ;p2,front,back,left,right
 [State 1020, Hiedef]
 type = hitdef 
 ground.cornerpush.veloff = -6
+guard.dist = 150
 trigger1 = time = 0
 attr = S,SP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAFD        ;HLAFD+-
@@ -2272,9 +2274,9 @@ sparkxy = -10, -40 ; = -10,-37
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = High
-ground.slidetime = 35
-ground.hittime  = 35
-guard.hittime = 35
+ground.slidetime = 21
+ground.hittime  = 21
+guard.hittime = 21
 ground.velocity = -10,0
 air.velocity = -3,-4.3
 air.hittime  = 37
@@ -2509,7 +2511,7 @@ sparkxy = -10, -40 ; = 0,0
 hitsound = 5,4
 guardsound = 6,0
 ground.type = High
-ground.slide = 0
+ground.slide = 27
 ground.hittime = 27
 guard.hittime = 25
 air.type=high
@@ -2731,9 +2733,9 @@ sparkxy = -10, -40 ; = -10,-37
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = High
-ground.slidetime = 25
-ground.hittime  = 25
-guard.hittime = 20
+ground.slidetime = 10
+ground.hittime  = 10
+guard.hittime = 10
 ground.velocity = -4,0
 air.velocity = -.5,-3.4
 air.hittime  = 27
@@ -2853,6 +2855,7 @@ supermovetime = 0
 [State 1020, Hiedef]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+guard.dist = 999
 trigger1 = time = 0
 attr = S,SP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAFD        ;HLAFD+-

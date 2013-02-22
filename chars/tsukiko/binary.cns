@@ -52,9 +52,9 @@ sparkxy = -10, -60
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
-ground.slidetime = 19
-ground.hittime  = 19
-guard.hittime = 18
+ground.slidetime = 20
+ground.hittime  = 20
+guard.hittime = 19
 ground.velocity = -8
 airguard.velocity = -.1,-.8
 air.type = Low
@@ -90,6 +90,14 @@ var(3) = ((enemynear, gethitvar(damage))/1)
 persistent = 1
 ignorehitpause = 1
 
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.20
+ignorehitpause = 1
+persistent = 0
+
 [State 200, 1]
 type = PlaySnd
 trigger1 = Time = 1
@@ -120,9 +128,9 @@ sparkxy = -10,-20
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
-ground.slidetime = 21
-ground.hittime  = 21
-guard.hittime = 20
+ground.slidetime = 22
+ground.hittime  = 22
+guard.hittime = 21
 ground.velocity = -7,0
 guard.velocity = -3
 air.velocity = -1.0,-4.2
@@ -198,9 +206,9 @@ sparkxy = -10, -30
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 23
-ground.hittime  = 23
-guard.hittime = 21
+ground.slidetime = 24
+ground.hittime  = 24
+guard.hittime = 22
 ground.velocity = -13,0
 guard.velocity = -10
 down.velocity = -1.5,40
@@ -448,6 +456,14 @@ trigger1 = (movehit)
 var(3) = ((enemynear, gethitvar(damage))/1)
 persistent = 1
 ignorehitpause = 1
+
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.20
+ignorehitpause = 1
+persistent = 0
 
 [State 610, 2]
 type = PlaySnd
@@ -1073,9 +1089,9 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 15
-ground.hittime  = 15
-guard.hittime = 14
+ground.slidetime = 16
+ground.hittime  = 16
+guard.hittime = 15
 ground.velocity = -12, 0
 guard.velocity = -3
 airguard.velocity = -.5,-.8
@@ -1175,9 +1191,9 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 16
-ground.hittime  = 16
-guard.hittime = 15
+ground.slidetime = 17
+ground.hittime  = 17
+guard.hittime = 14
 ground.velocity = -12, 0
 guard.velocity = -3
 airguard.velocity = -.5,-.8
@@ -1277,9 +1293,9 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 19
-ground.hittime  = 19
-guard.hittime = 18
+ground.slidetime = 20
+ground.hittime  = 20
+guard.hittime = 14
 ground.velocity = -12, 0
 guard.velocity = -3
 airguard.velocity = -.5,-.8
@@ -2182,9 +2198,9 @@ sparkxy = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 10
-ground.hittime  = 10
-guard.hittime = 10
+ground.slidetime = 11
+ground.hittime  = 11
+guard.hittime = 11
 ground.velocity = -3,-3
 guard.velocity = -19
 down.velocity = -1.5,40
@@ -2195,9 +2211,8 @@ air.hittime = 36
 fall = 1
 air.fall=1
 fall.recover=0
-down.bounce=1
-fall.xvelocity=-1.1
-fall.yvelocity=-2
+down.bounce=0
+fall.yvelocity=0
 nochainid=1
 
 [State 1000, 7]
@@ -2274,9 +2289,9 @@ sparkxy = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 8
-ground.hittime  = 8
-guard.hittime = 8
+ground.slidetime = 9
+ground.hittime  = 9
+guard.hittime = 9
 ground.velocity = -4,-3
 guard.velocity = -19
 down.velocity = -1.5,40
@@ -2287,9 +2302,8 @@ air.hittime = 36
 fall = 1
 air.fall=1
 fall.recover=0
-down.bounce=1
-fall.xvelocity=-1.1
-fall.yvelocity=-2
+down.bounce=0
+fall.yvelocity=0
 nochainid=1
 
 [State 1000, 7]
@@ -2366,9 +2380,9 @@ sparkxy = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 5
-ground.hittime  = 5
-guard.hittime = 5
+ground.slidetime = 6
+ground.hittime  = 6
+guard.hittime = 6
 ground.velocity = -5,-3
 guard.velocity = -19
 down.velocity = -1.5,40
@@ -2379,9 +2393,8 @@ air.hittime = 36
 fall = 1
 air.fall=1
 fall.recover=0
-down.bounce=1
-fall.xvelocity=-1.1
-fall.yvelocity=-2
+down.bounce=0
+fall.yvelocity=0
 nochainid=1
 
 [State 1000, 7]
@@ -2512,9 +2525,9 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 11
-ground.hittime  = 11
-guard.hittime = 10
+ground.slidetime = 12
+ground.hittime  = 12
+guard.hittime = 11
 ground.velocity = -10, 0
 guard.velocity = -17
 airguard.velocity = -.5,-.8
@@ -2714,9 +2727,9 @@ sparkxy = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 22
-ground.hittime  = 22
-guard.hittime = 13
+ground.slidetime = 23
+ground.hittime  = 23
+guard.hittime = 14
 ground.velocity = -10,0
 guard.velocity = -19
 down.velocity = -1.5,40
@@ -2891,6 +2904,14 @@ sprpriority = 2
 facep2=1
 hitcountpersist=1
 
+[State 0, NotHitBy]
+type = NotHitBy
+trigger1 = 1
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+time = 1
+ignorehitpause = 1
+persistent = 1
+
 [State 0, TargetBind]
 type = TargetBind
 trigger1 = time = 0	
@@ -2999,6 +3020,14 @@ sprpriority = 2
 facep2=1
 velset = 2.0,-9
 
+[State 0, NotHitBy]
+type = NotHitBy
+trigger1 = 1
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+time = 1
+ignorehitpause = 1
+persistent = 1
+
 [State 0, PlaySnd]
 type = PlaySnd
 trigger1 = time = 0
@@ -3032,6 +3061,14 @@ sprpriority = 2
 facep2=0
 hitcountpersist=1
 velset = 0,0
+
+[State 0, NotHitBy]
+type = NotHitBy
+trigger1 = 1
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+time = 1
+ignorehitpause = 1
+persistent = 1
 
 ;[state 0, damage scaling change]
 ;type = varset
@@ -3093,6 +3130,14 @@ anim = 1260
 sprpriority = 2
 facep2=0
 hitcountpersist=1
+
+[State 0, NotHitBy]
+type = NotHitBy
+trigger1 = 1
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+time = 1
+ignorehitpause = 1
+persistent = 1
 
 [State 0, AfterImage]
 type = AfterImage
@@ -3204,6 +3249,14 @@ sprpriority = 2
 facep2=1
 velset = -2,-4
 
+[State 0, NotHitBy]
+type = NotHitBy
+trigger1 = 1
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+time = 1
+ignorehitpause = 1
+persistent = 1
+
 [State 0, PlaySnd]
 type = PlaySnd
 trigger1 = time = 0
@@ -3232,12 +3285,20 @@ movetype= A
 physics = S
 ;juggle  = 0
 ;poweradd= 0
-anim = 1000
+anim = 3161
 ctrl = 0
 sprpriority = 2
 facep2=1
 velset = 0,0
 hitcountpersist=1
+
+[State 0, NotHitBy]
+type = NotHitBy
+trigger1 = 1
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+time = 1
+ignorehitpause = 1
+persistent = 1
 
 [State 0, AssertSpecial]
 type = AssertSpecial
@@ -3325,6 +3386,14 @@ anim = 1030
 sprpriority = 2
 facep2=1
 hitcountpersist=1
+
+[State 0, NotHitBy]
+type = NotHitBy
+trigger1 = 1
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+time = 1
+ignorehitpause = 1
+persistent = 1
 
 [State 0, AssertSpecial]
 type = AssertSpecial

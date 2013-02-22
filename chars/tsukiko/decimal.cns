@@ -59,9 +59,9 @@ sparkxy = -10, -70 ; = -10, -70 ; = -10, -70
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
-ground.slidetime = 17
-ground.hittime  = 17
-guard.hittime = 15
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = 16
 ground.velocity = -8
 airguard.velocity = -.1,-.8
 air.type = Low
@@ -134,9 +134,9 @@ sparkxy = -10, -70 ; = -10, -70 ; = -10,-37
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
-ground.slidetime = 18
-ground.hittime  = 18
-guard.hittime = 17
+ground.slidetime = 19
+ground.hittime  = 19
+guard.hittime = 18
 ground.velocity = -1.7,0
 air.velocity = -1.0,-4.2
 air.hittime  = 44
@@ -207,9 +207,9 @@ sparkxy = -10, -70 ; = -10, -70 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 25
-ground.hittime  = 25
-guard.hittime = 23
+ground.slidetime = 26
+ground.hittime  = 26
+guard.hittime = 24
 ground.velocity = -2,0
 down.velocity = -1.5,40
 airguard.velocity = -.5,-.8
@@ -220,7 +220,7 @@ air.fall=1
 fall.recover=0
 down.bounce=1
 fall.xvelocity=-1.1
-fall.yvelocity=-9
+fall.yvelocity=-8
 nochainid=1
 
 [State 230, 3]
@@ -523,7 +523,7 @@ priority=4,hit
 attr = S, NA
 animtype=up
 damage    = floor(fvar(13)*33),0
-hitflag = MAF
+hitflag = MAFD
 guardflag = MA
 pausetime = 16,16
 sparkno = 2
