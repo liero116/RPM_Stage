@@ -165,3 +165,5 @@ pip-log.txt
 #MUGEN image/sounds
 *.log
 mugen.log
+stderr.txt
+stdout.txt
