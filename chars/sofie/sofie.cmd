@@ -738,7 +738,6 @@ trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 
-;===========================================================================
 [State -1, tag]
 type = ChangeState
 value = 4510

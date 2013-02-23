@@ -2653,6 +2653,12 @@ sprpriority = -2
 velset = 0,0
 ctrl = 0
 
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+var(55) = 0
+ignorehitpause = 1
+
 ;[state 4510, poweradd]
 ;type = poweradd
 ;trigger1 = partner, life
@@ -2768,6 +2774,16 @@ triggerall = partner, stateno != 192
 trigger1 = 1
 x = (partner, pos x) - 1000*facing
 y = -150
+
+[State 0, ChangeState]
+type = ChangeState
+trigger1 = partner,var(55)=1
+value = 4520
+ctrl = 0
+;anim =
+ignorehitpause = 1
+persistent = 1
+
 
 ;===STYLE SELECT BLOCK========================
 

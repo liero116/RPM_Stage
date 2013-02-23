@@ -4082,8 +4082,8 @@ type = Helper
 trigger1 = time = 0
 helpertype = normal
 name = "Ivan"
-ID = 4000
-stateno = 4000
+ID = 7000
+stateno = 7000
 pos = 0,0
 
 [State 0, RemoveExplod]
@@ -4234,11 +4234,11 @@ trigger1 = parent,stateno != [12300,12301]
 
 ;---------------------------------------------------------------------------
 ; Stand 
-[Statedef 4000]
+[Statedef 7000]
 type = S
 physics = S
 sprpriority = 0
-anim = 4000
+anim = 7000
 facep2 = 1
 ctrl =1
 
@@ -4253,7 +4253,7 @@ type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
 trigger2 = parent,command = "FFe"
-value = 4005
+value = 7005
 persistent = 1
 ignorehitpause = 1
 
@@ -4263,46 +4263,46 @@ triggerall = parent,command != "holdfwd"
 triggerall = parent,command != "holdback"
 triggerall = parent,command != "FFe"
 trigger1 = parent,command = "holddown"
-value = 4009
+value = 7009
 ;
 [State 0, walk fwd]
 type = ChangeState
 trigger1 = parent,command = "holdfwd"
-value = 4001
+value = 7001
 
 [State 0, walk back]
 type = ChangeState
 trigger1 = parent,command = "holdback"
-value = 4002
+value = 7002
 
 [State 0, a]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 4200
+value = 7200
 
 [State 0, b]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 4210
+value = 7210
 
 [State 0, c]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 4230
+value = 7230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 101
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ; Stand to Crouch 
-[Statedef 4009]
+[Statedef 7009]
 type = S
 physics = S
 sprpriority = 0
-anim = 4009
+anim = 7009
 facep2 = 1
 ctrl =1
 
@@ -4317,27 +4317,27 @@ type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
 trigger2 = parent,command = "FFe"
-value = 4005
+value = 7005
 persistent = 1
 ignorehitpause = 1
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = animtime = 0
-value = 4010
+value = 7010
 
 ;---------------------------------------------------------------------------
 ; Crouch 
-[Statedef 4010]
+[Statedef 7010]
 type = S
 physics = S
 sprpriority = 0
-anim = 4010
+anim = 7010
 facep2 = 1
 ctrl =1
 
@@ -4352,7 +4352,7 @@ type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
 trigger2 = parent,command = "FFe"
-value = 4005
+value = 7005
 persistent = 1
 ignorehitpause = 1
 
@@ -4361,36 +4361,36 @@ type = ChangeState
 trigger1 = parent,command != "holddown"
 trigger2 = parent,command = "holdfwd"
 trigger3 = parent,command = "holdback"
-value = 4011
+value = 7011
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 4200
+value = 7200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 4210
+value = 7210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 4230
+value = 7230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ; Crouch to Stand
-[Statedef 4011]
+[Statedef 7011]
 type = S
 physics = S
 sprpriority = 0
-anim = 4011
+anim = 7011
 facep2 = 1
 ctrl =1
 
@@ -4405,27 +4405,27 @@ type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
 trigger2 = parent,command = "FFe"
-value = 4005
+value = 7005
 persistent = 1
 ignorehitpause = 1
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = animtime = 0
-value = 4000
+value = 7000
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ; Walk Fwd
-[Statedef 4001]
+[Statedef 7001]
 type = S
 physics = S
 sprpriority = 0
-anim = 4001
+anim = 7001
 facep2 = 1
 
 [State 20, 3]
@@ -4433,7 +4433,7 @@ type = ChangeAnim
 triggerall = vel x > 0
 trigger1 = time = 0
 trigger2 = animtime = 0
-value = 4001
+value = 7001
 
 [State 20, 1]
 type = VelSet
@@ -4444,7 +4444,7 @@ x = 1.5*(const(velocity.walk.fwd.x))
 type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
-value = 4005
+value = 7005
 persistent = 1
 ignorehitpause = 1
 
@@ -4452,36 +4452,36 @@ ignorehitpause = 1
 type = ChangeState
 trigger1 = parent,command != "holdfwd"
 trigger1 = parent,command != "holdback"
-value = 4000
+value = 7000
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 4200
+value = 7200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 4210
+value = 7210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 4230
+value = 7230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ; Walk Back
-[Statedef 4002]
+[Statedef 7002]
 type = S
 physics = S
 sprpriority = 0
-anim = 4002
+anim = 7002
 facep2 = 1
 
 [State 20, 3]
@@ -4489,7 +4489,7 @@ type = ChangeAnim
 triggerall = vel x > 0
 trigger1 = time = 0
 trigger2 = animtime = 0
-value = 4002
+value = 7002
 
 [State 20, 2]
 type = VelSet
@@ -4500,7 +4500,7 @@ x = 1.5*(const(velocity.walk.back.x))
 type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
-value = 4005
+value = 7005
 persistent = 1
 ignorehitpause = 1
 
@@ -4508,36 +4508,36 @@ ignorehitpause = 1
 type = ChangeState
 trigger1 = parent,command != "holdfwd"
 trigger1 = parent,command != "holdback"
-value = 4000
+value = 7000
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 4200
+value = 7200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 4210
+value = 7210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 4230
+value = 7230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ; Dash
-[Statedef 4005]
+[Statedef 7005]
 type = S
 physics = S
 sprpriority = 0
-anim = 4101
+anim = 7101
 facep2 = 1
 
 [State 0, 2]
@@ -4549,38 +4549,38 @@ y = 0
 [State 1000, Land]
 type= changestate
 trigger1 = animtime = 0
-value= 4000
+value= 7000
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 4200
+value = 7200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 4210
+value = 7210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 4230
+value = 7230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ;A
-[Statedef 4200]
+[Statedef 7200]
 type    = S
 movetype= A
 physics = S
 juggle  = 3
 ctrl = 0
-anim = 4200
+anim = 7200
 ;poweradd= ifelse(fvar(17)=0,21,0)
 sprpriority = 2
 facep2=1
@@ -4636,50 +4636,50 @@ nochainid=1
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 4000
+value = 7000
 ctrl = 1
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "a"
-value = 4200
+value = 7200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "b"
-value = 4210
+value = 7210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 4230
+value = 7230
 
 [State 0, jump]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "FFe"
-value = 4005
+value = 7005
 persistent = 1
 ignorehitpause = 1
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ;B
-[Statedef 4210]
+[Statedef 7210]
 type    = S
 movetype= A
 physics = S
 juggle  = 3
 ctrl = 0
-anim = 4210
+anim = 7210
 ;poweradd= ifelse(fvar(17)=0,21,0)
 sprpriority = 2
 facep2=1
@@ -4736,7 +4736,7 @@ air.hittime = 35
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 4000
+value = 7000
 ctrl = 1
 
 [State 0, ChangeState]
@@ -4744,30 +4744,30 @@ type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 4230
+value = 7230
 
 [State 0, jump]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "FFe"
-value = 4005
+value = 7005
 persistent = 1
 ignorehitpause = 1
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ;C
-[Statedef 4230]
+[Statedef 7230]
 type    = S
 movetype= A
 physics = S
 juggle  = 3
 ctrl = 0
-anim = 4230
+anim = 7230
 ;poweradd= ifelse(fvar(17)=0,21,0)
 sprpriority = 2
 facep2=1
@@ -4869,21 +4869,21 @@ fall.recover = 0
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 4000
+value = 7000
 ctrl = 1
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ; Hit
-[Statedef 4500]
+[Statedef 7500]
 type = S
 physics = S
 sprpriority = 0
-anim = 4500
+anim = 7500
 facep2 = 1
 ctrl =1
 
@@ -4896,20 +4896,20 @@ y = 0
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = animtime = 0
-value = 4000
+value = 7000
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 4900
+value = 7900
 
 ;---------------------------------------------------------------------------
 ; Destroy
-[Statedef 4900]
+[Statedef 7900]
 type = A
 physics = U
 sprpriority = 0
-anim = 4040
+anim = 7040
 facep2 = 1
 ctrl =1
 
