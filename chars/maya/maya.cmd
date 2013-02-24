@@ -2731,6 +2731,18 @@ trigger1=1
 type = Null
 trigger1=1
 
+[State -1, Air Grab 640]
+type = ChangeState
+value = 661
+triggerall = var(27) = 1
+triggerall = !(ishelper)
+triggerall = command = "throw" 
+triggerall = statetype = A
+trigger1 = ctrl
+trigger2 = stateno = 102 || stateno = 103
+trigger3 = statetype = A && p2movetype = H && movetype != H && var(40)=1 && stateno != 640
+
+
 [State -1, 8A 601]
 type = ChangeState
 value = 601
@@ -3315,24 +3327,13 @@ type = Null
 trigger1=1
 
 ;---------------------------------------------------------------------------
-;[State -1, Air Grab 640]
-;type = ChangeState
-;value = 640
-;triggerall = var(27) = 2
-;triggerall = !(ishelper)
-;triggerall = command = "grab" 
-;triggerall = command = "236A"
-;triggerall = statetype = A
-;trigger1 = ctrl
-;trigger2 = stateno = 102 || stateno = 103
-;trigger3 = statetype = A && p2movetype = H && movetype != H && var(40)=1 && stateno != 640
 
 [State -1, Light 600]
 type = ChangeState
 value = 600
 triggerall = var(27) = 0
 ;triggerall = !(ishelper)
-triggerall = command = "a" || command = "y"
+triggerall = command = "a" ;|| command = "y"
 trigger1 = statetype = A
 trigger1 = ctrl
 trigger2 =  stateno = 102 || stateno = 103

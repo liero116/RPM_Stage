@@ -8713,7 +8713,7 @@ value= 53
 ;==========================================
 [Statedef 9000]
 type = S
-movetype = I
+movetype = A
 physics = S
 anim = 9000
 ctrl = 0
