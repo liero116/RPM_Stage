@@ -7,6 +7,7 @@
 name = "Charlotte"
 displayname = "CHARLOTTE"
 versiondate = 08/17/2011
+currentdate = 02/27/2013
 mugenversion = 1.0
 author = "Liero"
 pal.defaults = 2,3,7,9,10,4,8,5,6
