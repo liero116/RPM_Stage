@@ -54,7 +54,7 @@ fall.yvelocity = 0
 guard.dist = 70
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*15),0
+damage = floor(fvar(13)*20),0
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -138,7 +138,7 @@ trigger1 = time =0
 attr = S, NA
 priority = 6,hit
 animtype  = hard
-damage    = floor(fvar(13)*19)
+damage    = floor(fvar(13)*30)
 guardflag = MA
 pausetime = 8,8
 sparkno = 1
@@ -212,7 +212,7 @@ fall.yvelocity = 0
 guard.dist = 140
 trigger1 = time = 0
 attr = S, NA
-damage = floor(fvar(13)*30), 0
+damage = floor(fvar(13)*40), 0
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -339,7 +339,7 @@ fall.yvelocity = 0
 guard.dist = 80
 trigger1 = Time = 0
 attr = C, NA
-damage    = floor(fvar(13)*13)
+damage    = floor(fvar(13)*20)
 priority  = 6,hit
 animtype  = Light
 hitflag = MAF
@@ -413,7 +413,7 @@ guard.dist = 100
 trigger1 = time=0
 priority=5,hit
 attr = S, NA
-damage    = floor(fvar(13)*20)
+damage    = floor(fvar(13)*30)
 hitflag = MAFD
 animtype = light
 guardflag = L
@@ -486,7 +486,7 @@ guard.dist = 120
 trigger1 = time=0
 priority=5,hit
 attr = S, NA
-damage    = floor(fvar(13)*31)
+damage    = floor(fvar(13)*40)
 hitflag = MAF
 guardflag = L
 pausetime = 8,8
@@ -556,7 +556,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage    = floor(fvar(13)*35)
+damage    = floor(fvar(13)*40)
 hitflag = MAF
 guardflag = MA
 pausetime = 10,10
@@ -699,7 +699,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = A, NA
-damage    = floor(fvar(13)*12)
+damage    = floor(fvar(13)*15)
 guardflag = HA
 priority = 1,hit
 pausetime = 8,8
@@ -769,7 +769,7 @@ fall.yvelocity = 0
 guard.dist = 120
 trigger1 = animelem=5
 attr = A, NA
-damage    = floor(fvar(13)*20)
+damage    = floor(fvar(13)*25)
 guardflag = HA
 priority = 1,hit
 pausetime = 8,8
@@ -922,7 +922,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = A, NA
-damage = floor(fvar(13)*28)
+damage = floor(fvar(13)*35)
 guardflag = HA
 priority = 1,hit
 pausetime = 8,8
@@ -1328,15 +1328,18 @@ var(14)=11004
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = parent,var(29)>=1
+trigger1 = parent,var(31) = 1
+trigger2 = parent,var(31) = 2
+trigger3 = parent,var(31) = 3
+trigger4 = parent,var(31) = 4
 priority=1,miss
 attr = SCA, NP
 ;attr = SCA, NA
 animtype  = light
-damage = floor(parent,fvar(13)*30),5
+damage = floor(parent,fvar(13)*60),10
 hitflag = MAF
 guardflag = MA
-pausetime = 3,3
+pausetime = 8,8
 sparkno = -1
 sparkxy = -10, -35 ; = -10,-60
 ;hitsound   = 5,3
@@ -1376,22 +1379,22 @@ time = -1
 [State 0, ParentVarSet]
 type = parentvaradd
 trigger1 = time = 0
-var(29)= 1
+var(31)= 1
 ignorehitpause = 1
 persistent = 1
 
 [State 0, ParentVarSet]
 type = parentvaradd
-trigger1 = parent,var(29) > 1
+trigger1 = parent,var(31) > 1
 trigger1 = movecontact = 1
-var(29)=-1
+var(31) = -1
 ignorehitpause = 1
 persistent = 1
 
 [State 0, DestroySelf]
 type = changestate
 value= 11004
-trigger1 = parent,var(29) <= 1
+trigger1 = parent,var(31) <= 1
 trigger1 = movecontact
 trigger2 = animtime = 0
 trigger3 = enemynear,var(58)=1
@@ -1478,15 +1481,15 @@ var(14)=10399
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = parent,var(29)>=1
+trigger1 = parent,var(31)>=1
 priority=1,miss
 attr = SCA, NP
 ;attr = SCA, NA
 animtype  = light
-damage = floor(parent,fvar(13)*20),10
+damage = floor(parent,fvar(13)*70),20
 hitflag = MAF
 guardflag = MA
-pausetime = 0,2
+pausetime = 8,8
 sparkno = -1
 sparkxy = -10, -35 ; = -10,-60
 ;hitsound   = 5,3
@@ -1526,22 +1529,22 @@ time = -1
 [State 0, ParentVarSet]
 type = parentvaradd
 trigger1 = time = 0
-var(29)= 1
+var(31)= 1
 ignorehitpause = 1
 persistent = 1
 
 [State 0, ParentVarSet]
 type = parentvaradd
-trigger1 = parent,var(29) > 1
+trigger1 = parent,var(31) > 1
 trigger1 = movecontact = 1
-var(29)=-1
+var(31)=-1
 ignorehitpause = 1
 persistent = 1
 
 [State 0, DestroySelf]
 type = changestate
 value= 11004
-trigger1 = parent,var(29) <= 1
+trigger1 = parent,var(31) <= 1
 trigger1 = movecontact
 trigger2 = animtime = 0
 trigger3 = enemynear,var(58)=1
@@ -1627,15 +1630,15 @@ var(14)=10399
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = parent,var(29)>=1
+trigger1 = parent,var(31)>=1
 priority=1,miss
 attr = SCA, NP
 ;attr = SCA, NA
 animtype  = light
-damage = floor(parent,fvar(13)*32),12
+damage = floor(parent,fvar(13)*80),30
 hitflag = MAF
 guardflag = MA
-pausetime = 0,2
+pausetime = 8,8
 sparkno = -1
 sparkxy = -10, -35 ; = -10,-60
 ;hitsound   = 5,3
@@ -1675,22 +1678,22 @@ time = -1
 [State 0, ParentVarSet]
 type = parentvaradd
 trigger1 = time = 0
-var(29)= 1
+var(31)= 1
 ignorehitpause = 1
 persistent = 1
 
 [State 0, ParentVarSet]
 type = parentvaradd
-trigger1 = parent,var(29) > 1
+trigger1 = parent,var(31) > 1
 trigger1 = movecontact = 1
-var(29)=-1
+var(31)=-1
 ignorehitpause = 1
 persistent = 1
 
 [State 0, DestroySelf]
 type = changestate
 value= 11004
-trigger1 = parent,var(29) <= 1
+trigger1 = parent,var(31) <= 1
 trigger1 = movecontact
 trigger2 = animtime = 0
 trigger3 = enemynear,var(58)=1
@@ -1731,14 +1734,14 @@ value = 0
 [State 0, ParentVarSet]
 type = parentvarset
 trigger1 = 1
-var(29)= 0
+var(31)= 0
 ignorehitpause = 1
 persistent = 1
 
 [State 0, ParentVarSet]
 type = varset
 trigger1 = 1
-var(29)= 0
+var(31)= 0
 ignorehitpause = 1
 persistent = 1
 
@@ -1830,7 +1833,7 @@ channel=0
 
 [state 0, damage scaling change]
 type = varset
-triggerall = var(29) = [0,1]
+triggerall = var(31) = [0,1]
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
@@ -1838,7 +1841,7 @@ persistent = 0
 
 [state 0, damage scaling change]
 type = varset
-triggerall = var(29) = 2 && time = 10
+triggerall = var(31) = 2 && time = 10
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
@@ -1846,22 +1849,31 @@ persistent = 0
 
 [state 0, damage scaling change]
 type = varset
-triggerall = var(29) >= 3 && time >= 11
+triggerall = var(31) >= 3 && time >= 11
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
 persistent = 0
+
+[State 0, TargetBind]
+type = TargetBind
+trigger1 = movehit = 1 && p2statetype = A
+time = 1
+id = -1
+pos = 100,-20
+;ignorehitpause = 
+;persistent = 
 
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = -8
 guard.dist = 100
-trigger1 = var(29) >= 1
+trigger1 = var(31) >= 1
 trigger1 = time = 9
-trigger2 = var(29) >= 2
+trigger2 = var(31) >= 2
 trigger2 = time = 10
 attr = S, NA
-damage = floor(fvar(13)*60),8
+damage = floor(fvar(13)*60),5
 animtype = Light
 guardflag = HA
 hitflag = MAF
@@ -1891,10 +1903,10 @@ fall.yvelocity=-3
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = -8
-trigger1 = var(29) >= 3
+trigger1 = var(31) >= 3
 trigger1 = time = 11
 attr = S, NA
-damage = floor(fvar(13)*60),8
+damage = floor(fvar(13)*60),5
 animtype = Light
 guardflag = HA
 hitflag = MAF
@@ -1924,7 +1936,7 @@ fall.yvelocity=-5
 [State 0, VarSet]
 type = varadd
 trigger1 = animtime = 0
-var(29) = -99
+var(31) = -99
 
 [state 600,5]
 type=changestate
@@ -2012,7 +2024,7 @@ channel=0
 
 [state 0, damage scaling change]
 type = varset
-triggerall = var(29) = [0,1]
+triggerall = var(31) = [0,1]
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
@@ -2020,7 +2032,7 @@ persistent = 0
 
 [state 0, damage scaling change]
 type = varset
-triggerall = var(29) = 2 && time = 16
+triggerall = var(31) = 2 && time = 16
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
@@ -2028,19 +2040,28 @@ persistent = 0
 
 [state 0, damage scaling change]
 type = varset
-triggerall = var(29) >= 3 && time >= 17
+triggerall = var(31) >= 3 && time >= 17
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
 persistent = 0
+
+[State 0, TargetBind]
+type = TargetBind
+trigger1 = movehit = 1 && p2statetype = A
+time = 1
+id = -1
+pos = 100,-20
+;ignorehitpause = 
+;persistent = 
 
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = -8
 guard.dist = 100
-trigger1 = var(29) >= 1
+trigger1 = var(31) >= 1
 trigger1 = time = 15
-trigger2 = var(29) >= 2
+trigger2 = var(31) >= 2
 trigger2 = time = 16
 attr = S, NA
 damage = floor(fvar(13)*70),10
@@ -2073,7 +2094,7 @@ fall.yvelocity=-3
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = -8
-trigger1 = var(29) >= 3
+trigger1 = var(31) >= 3
 trigger1 = time = 17
 attr = S, NA
 damage = floor(fvar(13)*70),10
@@ -2106,7 +2127,7 @@ fall.yvelocity=-5
 [State 0, VarSet]
 type = varadd
 trigger1 = animtime = 0
-var(29) = -99
+var(31) = -99
 
 [state 600,5]
 type=changestate
@@ -2194,7 +2215,7 @@ channel=0
 
 [state 0, damage scaling change]
 type = varset
-triggerall = var(29) = [0,1]
+triggerall = var(31) = [0,1]
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
@@ -2202,7 +2223,7 @@ persistent = 0
 
 [state 0, damage scaling change]
 type = varset
-triggerall = var(29) = 2 && time = 22
+triggerall = var(31) = 2 && time = 22
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
@@ -2210,24 +2231,34 @@ persistent = 0
 
 [state 0, damage scaling change]
 type = varset
-triggerall = var(29) >= 3 && time >= 23
+triggerall = var(31) >= 3 && time >= 23
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
 persistent = 0
+
+[State 0, TargetBind]
+type = TargetBind
+trigger1 = movehit = 1 && p2statetype = A
+time = 1
+id = -1
+pos = 100,-20
+;ignorehitpause = 
+;persistent = 
+
 
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = -8
 guard.dist = 100
-trigger1 = var(29) >= 1
+trigger1 = var(31) >= 1
 trigger1 = time = 21
-trigger2 = var(29) >= 2
+trigger2 = var(31) >= 2
 trigger2 = time = 22
-trigger3 = var(29) >= 3
+trigger3 = var(31) >= 3
 trigger3 = time = 23
 attr = S, NA
-damage = floor(fvar(13)*85),15
+damage = floor(fvar(13)*80),15
 animtype = Light
 guardflag = HA
 hitflag = MAF
@@ -2257,7 +2288,7 @@ fall.yvelocity=-4
 [State 0, VarSet]
 type = varadd
 trigger1 = animtime = 0
-var(29) = -99
+var(31) = -99
 
 [state 600,5]
 type=changestate
@@ -2280,9 +2311,9 @@ facep2=1
 
 [State 0, VarSet]
 type = Varadd
-trigger1 = var(29) < 4
+trigger1 = var(31) < 4
 trigger1 = time = 4
-var(29) = 1
+var(31) = 1
 
 [State 0, EnvShake]
 type = EnvShake
@@ -2356,7 +2387,7 @@ time=40
 [State 0, VarSet]
 type = Varadd
 trigger1 = time = 4
-var(29) = 3
+var(31) = 3
 
 [State 0, EnvShake]
 type = EnvShake
@@ -2586,15 +2617,15 @@ var(14)=11004
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = parent,var(29)>=1
+trigger1 = parent,var(31)>=1
 priority=1,miss
 attr = SCA, NP
 ;attr = SCA, NA
 animtype  = light
-damage = floor(parent,fvar(13)*30),5
+damage = floor(parent,fvar(13)*70),10
 hitflag = MAF
 guardflag = MA
-pausetime = 0,2
+pausetime = 8,8
 sparkno = -1
 sparkxy = -10, -35 ; = -10,-60
 ;hitsound   = 5,3
@@ -2634,22 +2665,22 @@ time = -1
 [State 0, ParentVarSet]
 type = parentvaradd
 trigger1 = time = 0
-var(29)= 1
+var(31)= 1
 ignorehitpause = 1
 persistent = 1
 
 [State 0, ParentVarSet]
 type = parentvaradd
-trigger1 = parent,var(29) > 1
+trigger1 = parent,var(31) > 1
 trigger1 = movecontact = 1
-var(29)=-1
+var(31)=-1
 ignorehitpause = 1
 persistent = 1
 
 [State 0, DestroySelf]
 type = changestate
 value= 11004
-trigger1 = parent,var(29) <= 1
+trigger1 = parent,var(31) <= 1
 trigger1 = movecontact
 trigger2 = animtime = 0
 trigger3 = enemynear,var(58)=1
@@ -2755,18 +2786,18 @@ channel=0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 guard.dist = 100
-trigger1 = var(29) >= 1
+trigger1 = var(31) >= 1
 trigger1 = animelem = 5
-trigger2 = var(29) >= 2
+trigger2 = var(31) >= 2
 trigger2 = animelem = 6
-trigger3 = var(29) >= 3
+trigger3 = var(31) >= 3
 trigger3 = animelem = 7
-trigger4 = var(29) >= 4
+trigger4 = var(31) >= 4
 trigger4 = animelem = 8
-trigger5 = var(29) >= 5
+trigger5 = var(31) >= 5
 trigger5 = animelem = 9
 attr = S, NA
-damage = floor(fvar(13)*60),5
+damage = floor(fvar(13)*70),5
 animtype = Light
 guardflag = HA
 hitflag = MAFD
@@ -2796,10 +2827,10 @@ fall.yvelocity=-3
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-trigger1 = var(29) >= 6
+trigger1 = var(31) >= 6
 trigger1 = animelem = 10
 attr = S, NA
-damage = floor(fvar(13)*60),5
+damage = floor(fvar(13)*70),5
 animtype = Light
 guardflag = HA
 hitflag = MAFD
@@ -2829,7 +2860,7 @@ fall.yvelocity=-5
 [State 0, VarSet]
 type = varadd
 trigger1 = animtime = 0
-var(29) = -99
+var(31) = -99
 
 [state 600,5]
 type=changestate
@@ -2877,9 +2908,9 @@ value = -500
 
 [State 0, VarSet]
 type = Varadd
-trigger1 = var(29) < 4
+trigger1 = var(31) < 4
 trigger1 = time = 4
-var(29) = 2
+var(31) = 2
 
 [State 0, EnvShake]
 type = EnvShake
