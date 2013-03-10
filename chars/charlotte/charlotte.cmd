@@ -1434,7 +1434,6 @@ triggerall = var(27)=1
 triggerall = command = "46A" 
 triggerall = statetype != A
 trigger1 = ctrl
-trigger1 = var(1)
 trigger2 = stateno = 101
 trigger3 = stateno = [200,499]
 trigger3 = movecontact
@@ -1450,7 +1449,6 @@ triggerall = var(27)=1
 triggerall = command = "46B" 
 triggerall = statetype != A
 trigger1 = ctrl
-trigger1 = var(1)
 trigger2 = stateno = 101
 trigger3 = stateno = [200,499]
 trigger3 = movecontact
@@ -1466,7 +1464,6 @@ triggerall = var(27)=1
 triggerall = command = "46C" 
 triggerall = statetype != A
 trigger1 = ctrl
-trigger1 = var(1)
 trigger2 = stateno = 101
 trigger3 = stateno = [200,499]
 trigger3 = movecontact
@@ -1534,7 +1531,6 @@ value = 1200
 triggerall = var(27)=1
 triggerall = command = "421A"
 triggerall = statetype != A
-trigger1 = var(1)
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = [200,499]
@@ -1552,7 +1548,7 @@ value = 1210
 triggerall = var(27)=1
 triggerall = command = "421B"
 triggerall = statetype != A
-trigger1 = var(1)
+trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = [200,499]
 trigger3 = movecontact
@@ -1569,7 +1565,7 @@ value = 1215
 triggerall = var(27)=1
 triggerall = command = "421C"
 triggerall = statetype != A
-trigger1 = var(1)
+trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = [200,499]
 trigger3 = movecontact
