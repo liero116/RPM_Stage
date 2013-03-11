@@ -1106,16 +1106,16 @@ id = 10519
 ;;===== OVERDRIVE FX + DAMAGE =====
 ;;=================================
 
-[State 0, damage]
-type = TargetLifeAdd
-trigger1 = stateno = 3502
-trigger1 = movehit=1
-value = floor(fvar(13)*-25)
-ID = -1
-kill = 1
-absolute = 1
-;ignorehitpause = 
-;persistent = 
+;[State 0, damage]
+;type = TargetLifeAdd
+;trigger1 = stateno = 3502
+;trigger1 = movehit=1
+;value = floor(fvar(13)*-25)
+;ID = -1
+;kill = 1
+;absolute = 1
+;;ignorehitpause = 
+;;persistent = 
 
 
 ;;===== PAUSE REMOVAL =====

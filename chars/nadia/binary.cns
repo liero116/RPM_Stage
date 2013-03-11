@@ -3685,7 +3685,7 @@ trigger1 = time=0
 attr = S, NA
 priority = 5,hit
 animtype  = hard
-damage    = floor(fvar(13)*105),10
+damage    = floor(fvar(13)*150),10
 hitflag = MAFD
 guardflag = LA
 pausetime = 15,15
@@ -3903,7 +3903,7 @@ fall.yvelocity = 0
 guard.dist = 999
 trigger1 = time = 0
 attr = S, NA
-damage = floor(fvar(13)*30),10
+damage = floor(fvar(13)*50),10
 animtype = Light
 guardflag = L
 hitflag = MAFD
@@ -3943,7 +3943,7 @@ fall.yvelocity = 0
 guard.dist = 999
 trigger1 = time = 1
 attr = S, NA
-damage = floor(fvar(13)*30),10
+damage = floor(fvar(13)*50),10
 animtype = Light
 guardflag = L
 hitflag = MAFD
@@ -3988,7 +3988,7 @@ trigger4 = time = 9
 trigger5 = time = 11
 trigger6 = time = 13
 attr = S, NA
-damage = floor(fvar(13)*30),10
+damage = floor(fvar(13)*50),10
 animtype = Light
 guardflag = L
 hitflag = MAFD
@@ -4027,7 +4027,7 @@ fall.yvelocity = 0
 guard.dist = 999
 trigger1 = time = 15
 attr = S, NA
-damage = floor(fvar(13)*30),10
+damage = floor(fvar(13)*50),10
 animtype = Light
 guardflag = L
 hitflag = MAFD
