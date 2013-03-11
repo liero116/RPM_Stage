@@ -3378,11 +3378,13 @@ anim = 3050
 ctrl = 0
 sprpriority = -2
 
-;[state 0, damage scaling change]
-;type = varset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.10
+ignorehitpause = 1
+persistent = 0
 
 [state 0, damage counter set]
 type = varadd
