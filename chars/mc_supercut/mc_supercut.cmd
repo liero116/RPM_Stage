@@ -2890,7 +2890,7 @@ trigger2 = stateno = [200,299]
 trigger2 = movehit
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 410 || stateno = 10209  || stateno = 270
+trigger3 = stateno = 410 || stateno = 270;|| stateno = 10209  || stateno = 270
 trigger3 = movehit
 ; trigger4 = p2stateno != [12000,12002]
 ; trigger4 = p2stateno != [11000,11010]
@@ -4309,34 +4309,13 @@ type = Null
 trigger1=1
 
 ;---------------------------------------------------------------------------
-[State -1, Flying Blade 3000]
-type = ChangeState
-value = 3000
-triggerall = var(27)=2
-triggerall = command = "214S"
-triggerall = power >= 1000
-triggerall = statetype != A
-trigger1 = ctrl
-trigger2 = stateno != [3050,3100)
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 240 || stateno = 1000 || stateno = 1010
-trigger3 = movecontact
-trigger4 = p2stateno != [12000,12002]
-trigger4 = p2stateno != [11000,11010]
-trigger4 = stateno = 1020 || stateno = 1021
-trigger4 = time > 13
-trigger5 = stateno = 101 || stateno = 109
-
-;---------------------------------------------------------------------------
 [State -1, Flame 623cut 1050]
 type = ChangeState
 value = 3050
 triggerall = var(27)=2
-triggerall = command = "623S" 
+triggerall = command = "623S" || command = "236S"
 triggerall = power >= 1000
-;trigger1 = statetype = S
+trigger1 = statetype != A
 trigger1 = ctrl
 trigger2 = statetype != A
 trigger2 = hitdefattr = SC, NA, SA, HA
@@ -4345,7 +4324,7 @@ trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]
-trigger4 = stateno = 230 || stateno = 240 || stateno = 410 || stateno = 430 || stateno = 1050 || stateno = 1060 || stateno =1000 || stateno = 1010
+trigger4 = stateno = [200,1999]
 trigger4 = movecontact
 
 [State -1, ]
@@ -4357,74 +4336,54 @@ trigger1=1
 
 ;===========================================================================
 
-[State -1, Snipe C 1010]
+[State -1, Flame Upper A 1050]
 type = ChangeState
-value = 1016
-triggerall = statetype != A
+value = 1150
 triggerall = var(27)=2
-triggerall = power >= 500
+triggerall = command = "623EX" 
+triggerall = statetype=S
+triggerall = power >= 500 
+;trigger1 = var(1)
+trigger1 = ctrl
+trigger2 = p2stateno != [12000,12002]
+trigger2 = p2stateno != [11000,11010]
+trigger2 = stateno = [200,439]
+trigger2 = movecontact
+trigger3 = stateno = 101 || stateno = 109
+trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
+
+[State -1, Fireburst EX 1000]
+type = ChangeState
+value = 1100
+triggerall = var(27)=2
 triggerall = command = "236EX"
-;trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410 || stateno=440 ;|| stateno=1000
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno=1000 || stateno=1001 || stateno=1010 || stateno=1015
-trigger3 = movehit
-trigger4 = stateno = 101 || stateno = 109
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1016
-
-[State -1, Flame 623cut A 1050]
-type = ChangeState
-value = 1062
 triggerall = statetype != A
-triggerall = var(27)=2
-triggerall = power >= 500
-triggerall = command = "623EX"
-;triggerall = statetype=S
+triggerall = power >= 500 
 ;trigger1 = var(1)
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410 || stateno=440 ;|| stateno=1000
+trigger2 = stateno = [200,439]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1062
+trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
 
-[State -1, Flying Blade SC C 1021]
+[State -1, Flying Blade EX 1020]
 type = ChangeState
-value = 1024
+value = 1120
 triggerall = var(27)=2
-triggerall = power >= 500
 triggerall = command = "214EX"
+triggerall = stateno != 1020
 triggerall = statetype != A
+triggerall = power >= 500 
 trigger1 = ctrl
 ;trigger1 = var(1)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410|| stateno = 1010 || stateno = 1015 || stateno = 270
+trigger2 = stateno = [200,429]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1024
-
-[State -1, Flying Blade A A 10200]
-type = ChangeState
-value = 10216
-triggerall = var(27)=2
-triggerall = power >= 500
-triggerall = command = "214EX"
-triggerall = stateno != 10200
-trigger1 = ctrl
-trigger1 = statetype = A
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [600,699]
-trigger2 = movecontact
-trigger3 = statetype = S && p2movetype = H && var(40)=1 && stateno != 10216
-trigger4 = stateno = 102 || stateno = 103
+trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
 
 [State -1, ]
@@ -4435,207 +4394,52 @@ type = Null
 trigger1=1
 
 ;===========================================================================
-[State -1, Flame 623cut A 1050]
+[State -1, Flame Upper A 1050]
 type = ChangeState
 value = 1050
 triggerall = var(27)=2
-triggerall = command = "623A"
+triggerall = command = "623A" || command = "623B" || command = "623C"
 triggerall = statetype=S
 ;trigger1 = var(1)
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410 || stateno=440 ;|| stateno=1000
+trigger2 = stateno = [200,439]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
 
-[State -1, Flame 623cut C 1060]
-type = ChangeState
-value = 1055
-triggerall = var(27)=2
-triggerall = command = "623B" 
-triggerall = statetype=S
-;trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410 || stateno=440 ;|| stateno=1000
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 1050 && time>18
-trigger4 = stateno = 101 || stateno = 109
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1055
-
-[State -1, Flame 623cut B 1060]
-type = ChangeState
-value = 1060
-triggerall = var(27)=2
-triggerall = command = "623C" 
-triggerall = statetype=S
-;trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410 || stateno=440 ;|| stateno=1000
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 1050 && time>18
-trigger4 = stateno = 101 || stateno = 109
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1060
-
-;===========================================================================
-
-[State -1, Snipe A 1000]
+[State -1, Fireburst AT 1000]
 type = ChangeState
 value = 1000
 triggerall = var(27)=2
-triggerall = command = "236A"
+triggerall = command = "236A" || command = "236B" || command = "236C"
 triggerall = statetype != A
 ;trigger1 = var(1)
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410 || stateno=440
+trigger2 = stateno = [200,439]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
 
-
-[State -1, Snipe B 1010]
-type = ChangeState
-value = 1010
-triggerall = var(27)=2
-triggerall = command = "236B"
-triggerall = statetype != A
-;trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410 || stateno=440 ;|| stateno=1000
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno=1000 || stateno=1001
-trigger3 = movehit
-trigger4 = stateno = 101 || stateno = 109
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1010
-
-
-[State -1, Snipe C 1010]
-type = ChangeState
-value = 1015
-triggerall = var(27)=2
-triggerall = command = "236C"
-triggerall = statetype != A
-;trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410 || stateno=440 ;|| stateno=1000
-trigger2 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno=1000 || stateno=1001
-trigger3 = movehit
-trigger4 = stateno = 101 || stateno = 109
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1015
-
-;===========================================================================
 [State -1, Flying Blade SC A 1020]
 type = ChangeState
 value = 1020
 triggerall = var(27)=2
-triggerall = command = "214A"
+triggerall = command = "214A" || command = "214B" || command = "214C"
 triggerall = stateno != 1020
 triggerall = statetype != A
 trigger1 = ctrl
 ;trigger1 = var(1)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410 || stateno = 1010 || stateno = 1015 || stateno = 270
+trigger2 = stateno = [200,429]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
-[State -1, Flying Blade SC B 1021]
-type = ChangeState
-value = 1021
-triggerall = var(27)=2
-triggerall = command = "214B"
-triggerall = statetype != A
-trigger1 = ctrl
-;trigger1 = var(1)
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410|| stateno = 1010 || stateno = 1015 || stateno = 270
-trigger2 = movecontact
-trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1021
-
-[State -1, Flying Blade SC C 1021]
-type = ChangeState
-value = 1023
-triggerall = var(27)=2
-triggerall = command = "214C" ;|| command = "z"
-triggerall = statetype != A
-trigger1 = ctrl
-;trigger1 = var(1)
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 240 || stateno = 210 || stateno = 410|| stateno = 1010 || stateno = 1015 || stateno = 270
-trigger2 = movecontact
-trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1023
-
-[State -1, Flying Blade A A 10200]
-type = ChangeState
-value = 10200
-triggerall = var(27)=2
-triggerall = command = "214A"
-triggerall = stateno != 10200
-trigger1 = ctrl
-trigger1 = statetype = A
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [600,699]
-trigger2 = movecontact
-trigger3 = statetype = A && p2movetype = H && var(40)=1 && stateno != 10200
-trigger4 = stateno = 102 || stateno = 103
-
-[State -1, Flying Blade A B 10210]
-type = ChangeState
-value = 10210
-triggerall = var(27)=2
-triggerall = command = "214B"
-trigger1 = ctrl
-trigger1 = statetype = A
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [600,699]
-trigger2 = movecontact
-trigger3 = stateno = 10200
-trigger3 = movecontact
-trigger4 = statetype = A && p2movetype = H && var(40)=1 && stateno != 10210
-trigger5 = stateno = 102 || stateno = 103
-
-[State -1, Flying Blade A C 10210]
-type = ChangeState
-value = 10215
-triggerall = var(27)=2
-triggerall = command = "214C"
-trigger1 = ctrl
-trigger1 = statetype = A
-trigger2 = p2stateno != [12000,12002]
-trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [600,699]
-trigger2 = movecontact
-trigger3 = stateno = 10200
-trigger3 = movecontact
-trigger4 = statetype = A && p2movetype = H && var(40)=1 && stateno != 10215
-trigger5 = stateno = 102 || stateno = 103
 
 [State -1, ]
 type = Null
@@ -4875,7 +4679,7 @@ trigger2 = stateno = [200,299]
 trigger2 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 410 || stateno = 10209  || stateno = 270
+trigger3 = stateno = 410 || stateno = 270;|| stateno = 10209  || stateno = 270
 trigger3 = movecontact
 ; trigger4 = p2stateno != [12000,12002]
 ; trigger4 = p2stateno != [11000,11010]
