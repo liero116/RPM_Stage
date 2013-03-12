@@ -42,7 +42,7 @@ trigger1 = Time = 0
 priority = 6
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*9)
+damage    = floor(fvar(13)*10)
 guardflag = MA
 hitflag = MAF
 pausetime = 8,8
@@ -112,7 +112,7 @@ trigger1 = animelem = 5
 priority = 5
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*4)
+damage    = floor(fvar(13)*5)
 guardflag = MA
 hitflag = MAF
 pausetime = 8,8
@@ -145,7 +145,7 @@ trigger1 = animelem = 9
 priority = 3
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*8)
+damage    = floor(fvar(13)*10)
 guardflag = HA
 hitflag = MAF
 pausetime = 8,8
@@ -329,7 +329,7 @@ trigger1 = time = 0
 priority = 4
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*14)
+damage    = floor(fvar(13)*15)
 guardflag = LA
 hitflag = MAFD
 pausetime = 8,8
@@ -409,7 +409,7 @@ trigger1 = time = 0
 priority = 4
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*15)
+damage    = floor(fvar(13)*20)
 guardflag = LA
 hitflag = MAF
 pausetime = 8,8
@@ -537,7 +537,7 @@ trigger2 = animelem = 7
 priority = 1
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*8)
+damage    = floor(fvar(13)*10)
 guardflag = HA
 hitflag = MAF
 pausetime = 8,8
@@ -647,7 +647,7 @@ trigger7 = animelem = 18
 priority = 1
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*2)
+damage    = floor(fvar(13)*8)
 guardflag = HA
 hitflag = MAF
 pausetime = 4,4
@@ -1127,7 +1127,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(parent,fvar(13)*80),50
+damage = floor(parent,fvar(13)*150),80
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1777,7 +1777,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(parent,fvar(13)*80),50
+damage = floor(parent,fvar(13)*150),80
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2151,7 +2151,7 @@ trigger1 = time%5 = 0
 priority = 6
 attr = S, NA
 animtype  = Medium
-damage    = floor(parent,fvar(13)*20),10
+damage    = floor(parent,fvar(13)*40),10
 guardflag = MA
 hitflag = MAF
 pausetime = 0,0

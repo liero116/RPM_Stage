@@ -159,7 +159,7 @@ trigger1 = AnimElem = 2
 priority = 5,hit
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*15)
+damage    = floor(fvar(13)*20)
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
@@ -299,7 +299,7 @@ trigger1 = Time = 0
 priority = 6,hit
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*20)
+damage    = floor(fvar(13)*30)
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
@@ -416,7 +416,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = animelem=5
 attr = A, NA
-damage    = floor(fvar(13)*10)
+damage    = floor(fvar(13)*30)
 guardflag = MA
 hitflag = MAF
 priority = 1,hit;6
@@ -448,7 +448,7 @@ fall.yvelocity = 0
 ;trigger1 = p2statetype=A
 trigger1 = animelem=8
 attr = A, NA
-damage    = floor(fvar(13)*10)
+damage    = floor(fvar(13)*30)
 guardflag = MA
 hitflag = MAF
 priority = 1,hit;6
@@ -552,7 +552,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time = 0
 attr = A, NA
-damage    = floor(fvar(13)*22)
+damage    = floor(fvar(13)*30)
 guardflag = HA
 priority = 1,hit;4
 pausetime = 10,10
@@ -876,7 +876,7 @@ trigger1 = time=0
 ;trigger1 = p2stateno != [5050,5250]
 priority=5,hit
 attr = S, NA
-damage    = floor(fvar(13)*25)
+damage    = floor(fvar(13)*20)
 hitflag = MAF
 guardflag = MA
 pausetime = 15,15
@@ -955,7 +955,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = Time = 0
 attr = C, NA
-damage    = floor(fvar(13)*17)
+damage    = floor(fvar(13)*20)
 animtype  = Light
 hitflag = MAF
 guardflag = L
@@ -1042,7 +1042,7 @@ fall.yvelocity = 0
 trigger1 = Time = 0
 priority = 5
 attr = C, NA
-damage    = floor(fvar(13)*15)
+damage    = floor(fvar(13)*30)
 hitflag = MAFD
 guardflag = L
 pausetime = 10,10
@@ -1278,7 +1278,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = animelem=3
 attr = A, NA
-damage = floor(fvar(13)*15)
+damage = floor(fvar(13)*20)
 guardflag = HA
 priority = 1,hit;5
 pausetime = 10,10
@@ -1364,7 +1364,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = animelem=5
 attr = A, NA
-damage    = floor(fvar(13)*20)
+damage    = floor(fvar(13)*30)
 guardflag = HA
 priority = 1,hit;4
 pausetime = 10,10
@@ -1592,7 +1592,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*50), 5
+damage    = floor(fvar(13)*80), 20
 priority  = 5
 guardflag = MA
 hitflag = MAF
@@ -1724,7 +1724,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*50), 5
+damage    = floor(fvar(13)*80), 20
 priority  = 5
 guardflag = MA
 hitflag = MAF
@@ -1863,7 +1863,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*50), 5
+damage    = floor(fvar(13)*80), 20
 priority  = 5
 guardflag = MA
 hitflag = MAF
@@ -2461,7 +2461,7 @@ trigger1 = Time = 0
 priority = 6,hit
 attr = S, NA
 animtype  = Medium
-damage    = 10
+damage    = 20
 guardflag = MA
 hitflag = MAF
 pausetime = 15,45
@@ -2535,7 +2535,7 @@ trigger1 = Time = 0
 priority = 6,hit
 attr = S, NA
 animtype  = Medium
-damage    = 10
+damage    = 20
 guardflag = MA
 hitflag = MAF
 pausetime = 15,45
@@ -2609,7 +2609,7 @@ trigger1 = Time = 0
 priority = 6,hit
 attr = S, NA
 animtype  = Medium
-damage    = 10
+damage    = 20
 guardflag = MA
 hitflag = MAF
 pausetime = 15,45
@@ -2708,7 +2708,7 @@ trigger1 = Time = 0
 priority = 6,hit
 attr = S, NA
 animtype  = Medium
-damage    = 60
+damage    = 180
 guardflag = MA
 hitflag = MAF
 pausetime = 5,5
@@ -3299,7 +3299,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NT
-damage = 0,0
+damage = 20,0
 animtype = Light
 guardflag = MA
 hitflag = MA-
@@ -3445,7 +3445,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*30), 5
+damage    = floor(fvar(13)*40), 10
 priority  = 5
 guardflag = MA
 hitflag = MAFD
@@ -3552,7 +3552,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = Time = 0
 attr = A, NA
-damage = floor(fvar(13)*30),5
+damage = floor(fvar(13)*40),10
 guardflag = MA
 hitflag = MAF
 priority = 6
@@ -3736,7 +3736,7 @@ fall.yvelocity = 0
 trigger1 = AnimElem = 3
 attr = S, HA
 animtype  = Hard
-damage    = floor(fvar(13)*120),30
+damage    = floor(fvar(13)*250),60
 getpower  = 0
 priority  = 2
 guardflag = MAFD

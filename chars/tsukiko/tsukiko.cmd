@@ -2230,7 +2230,7 @@ type = ChangeState
 value = 1100
 triggerall = var(27) = 2
 triggerall = !(ishelper)
-triggerall = command = "214A"
+triggerall = command = "214A" || command = "214B" || command = "214C"
 triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
@@ -2243,46 +2243,6 @@ trigger4 = movecontact
 trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]
 trigger5 = statetype = S && p2movetype = H && movetype != H && var(40)=1 && stateno != 1100
-
-;---------------------------------------------------------------------------
-[State -1, 214 B Tornado]
-type = ChangeState
-value = 1110
-triggerall = var(27) = 2
-triggerall = !(ishelper)
-triggerall = command = "214B" ;|| command = "214C"
-triggerall = statetype != A
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = 210 || stateno = 230
-trigger3 = movecontact
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 400 || stateno = 410
-trigger4 = movecontact
-trigger4 = p2stateno != [12000,12002]
-trigger4 = p2stateno != [11000,11010]
-trigger5 = statetype = S && p2movetype = H && movetype != H && var(40)=1 && stateno != 1110
-
- ;---------------------------------------------------------------------------
- [State -1, 214 C Tornado]
- type = ChangeState
- value = 1120
- triggerall = var(27) = 2
- triggerall = !(ishelper)
- triggerall = command = "214C"
- triggerall = statetype != A
- trigger1 = ctrl
- trigger2 = stateno = 101 || stateno = 109
- trigger3 = stateno = 210 || stateno = 230
- trigger3 = movecontact
- trigger3 = p2stateno != [12000,12002]
- trigger3 = p2stateno != [11000,11010]
- trigger4 = stateno = 400 || stateno = 410
- trigger4 = movecontact
- trigger4 = p2stateno != [12000,12002]
- trigger4 = p2stateno != [11000,11010]
- trigger5 = statetype = S && p2movetype = H && movetype != H && var(40)=1 && stateno != 1120
 
 ;===========================================================================
 

@@ -1102,6 +1102,7 @@ value = ifelse((var(47) = 0), 0.94, 0.97)
 [state 0, damage scaling change]
 type = varset
 triggerall = enemy,gethitvar(hitcount)>=3
+triggerall = stateno != [12000,12999] 
 triggerall = stateno != [3000,3999]
 triggerall = stateno != 1071
 triggerall = stateno != 1081
@@ -1313,16 +1314,16 @@ type = AssertSpecial
 trigger1 = 1
 flag = nojugglecheck
 
-[State 0, damage]
-type = TargetLifeAdd
-trigger1 = stateno = 12302
-trigger1 = movehit=1
-value = floor(fvar(13)*-25)
-ID = -1
-kill = 1
-absolute = 1
-;ignorehitpause = 
-;persistent = 
+;[State 0, damage]
+;type = TargetLifeAdd
+;trigger1 = stateno = 12302
+;trigger1 = movehit=1
+;value = floor(fvar(13)*-25)
+;ID = -1
+;kill = 1
+;absolute = 1
+;;ignorehitpause = 
+;;persistent = 
 
 ;;===== PAUSE REMOVAL =====
 ;;=========================

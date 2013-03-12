@@ -45,7 +45,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = AnimElem = 2
 attr = S, NA                     ;Attribute: Standing, Normal Attack
-damage = floor(fvar(13)*11), 0                   ;Damage that move inflicts, guard damage
+damage = floor(fvar(13)*15), 0                   ;Damage that move inflicts, guard damage
 animtype = Light                 ;Animation type: Light, Medium, Heavy, Back (def: Light)
 guardflag = MA                   ;Flags on how move is to be guarded against
 hitflag = MAF                    ;Flags of conditions that move can hit
@@ -133,7 +133,7 @@ trigger1 = time = 0
 attr = S, NA
 priority = 4,hit
 animtype  = hard
-damage    = floor(fvar(13)*17)
+damage    = floor(fvar(13)*25)
 guardflag = MA
 pausetime = 8,8
 sparkno = ifelse(random>500,14,15)
@@ -204,7 +204,7 @@ trigger1 = time = 0
 priority=3,hit
 attr = S, NA
 animtype  = hard
-damage    = floor(fvar(13)*24)
+damage    = floor(fvar(13)*40)
 guardflag = MA
 pausetime = 10,10
 sparkno = ifelse(random>500,14,15)
@@ -278,7 +278,7 @@ trigger1 = time = 0
 priority=3,hit
 attr = S, NA
 animtype  = hard
-damage    = floor(fvar(13)*26)
+damage    = floor(fvar(13)*40)
 guardflag = MA
 pausetime = 10,10
 sparkno = ifelse(random>500,14,15)
@@ -521,7 +521,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = Time = 0
 attr = C, NA
-damage    = floor(fvar(13)*10)
+damage    = floor(fvar(13)*15)
 priority  = 6,hit
 animtype  = Light
 hitflag = MAF
@@ -594,7 +594,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = time = 0
 priority=4,hit
 attr = S, NA
-damage    = floor(fvar(13)*22)
+damage    = floor(fvar(13)*25)
 hitflag = MAFD
 guardflag = L
 pausetime = 8,8
@@ -682,7 +682,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = Time = 0
 attr = S, NA
-damage    = floor(fvar(13)*30),0
+damage    = floor(fvar(13)*35),0
 hitflag = MAFD
 guardflag = L
 pausetime =12,12
@@ -976,7 +976,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1=time = 0
 attr = A, NA
-damage    = floor(fvar(13)*23)
+damage    = floor(fvar(13)*25)
 guardflag = HA
 hitflag = MAF
 priority = 4,hit;2,hit
@@ -1028,7 +1028,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = Time = 0
 attr = A, NA
-damage = floor(fvar(13)*31)
+damage = floor(fvar(13)*15)
 guardflag = HA
 priority = 3,hit;3,hit
 pausetime = 10,10
@@ -1119,7 +1119,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = time = 0
 attr = A, NA
-damage    = floor(fvar(13)*31)
+damage    = floor(fvar(13)*35)
 guardflag = HA
 priority = 1,hit;2,hit
 pausetime = 10,10
@@ -1479,7 +1479,7 @@ trigger1=time=0
 attr = SCA, NP
 priority = 2,hit
 animtype  = hard
-damage    = 8,1
+damage = floor(parent,fvar(13)*30),5
 guardflag = MA
 pausetime = 2,2
 sparkno = -1
@@ -1671,7 +1671,7 @@ trigger1=time=0
 attr = SCA, NP
 priority = 2,hit
 animtype  = hard
-damage    =  8,1
+damage = floor(parent,fvar(13)*30),5
 guardflag = MA
 pausetime = 2,2
 sparkno = -1
@@ -1863,7 +1863,7 @@ trigger1=time=0
 attr = SCA, NP
 priority = 2,hit
 animtype  = hard
-damage    =  8,1
+damage = floor(parent,fvar(13)*30),5
 guardflag = MA
 pausetime = 2,2
 sparkno = -1
@@ -1983,7 +1983,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = Time = 0
 attr = S, NA
-damage    = floor(fvar(13)*40),8
+damage    = floor(fvar(13)*30),15
 hitflag = MAFD
 guardflag = M
 pausetime =10,10
@@ -2083,7 +2083,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = Time = 0
 attr = S, NA
-damage    = floor(fvar(13)*40),8
+damage    = floor(fvar(13)*30),15
 hitflag = MAFD
 guardflag = M
 pausetime =10,10
@@ -2193,7 +2193,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = Time = 0
 attr = S, NA
-damage    = floor(fvar(13)*40),8
+damage    = floor(fvar(13)*30),15
 hitflag = MAFD
 guardflag = M
 pausetime =10,10
@@ -2663,9 +2663,14 @@ palmul = .65,.65,.65
 
 [State 0, VelSet]
 type = VelSet
-trigger1 = time = [0,1]
-x = 1
+trigger1 = time = [0,3]
+x = 3
 y = -6
+
+[State 0, VelMul]
+type = VelMul
+trigger1 = time > 7
+x = 0.8
 
 [State 200, 1]
 type = PlaySnd
@@ -2679,7 +2684,7 @@ fall.yvelocity = 0
 ;trigger1 = var(6) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*35),10
+damage = floor(fvar(13)*100),20
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2765,9 +2770,14 @@ palmul = .65,.65,.65
 
 [State 0, VelSet]
 type = VelSet
-trigger1 = time = [0,1]
-x = 1.25
-y = -7.5
+trigger1 = time = [0,3]
+x = 5
+y = -7
+
+[State 0, VelMul]
+type = VelMul
+trigger1 = time > 7
+x = 0.8
 
 [State 200, 1]
 type = PlaySnd
@@ -2781,7 +2791,7 @@ fall.yvelocity = 0
 ;trigger1 = var(6) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*35),10
+damage = floor(fvar(13)*120),20
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2867,9 +2877,14 @@ palmul = .65,.65,.65
 
 [State 0, VelSet]
 type = VelSet
-trigger1 = time = [0,1]
-x = 1.5
-y = -9
+trigger1 = time = [0,3]
+x = 6
+y = -8
+
+[State 0, VelMul]
+type = VelMul
+trigger1 = time > 7
+x = 0.8
 
 [State 200, 1]
 type = PlaySnd
@@ -2883,7 +2898,7 @@ fall.yvelocity = 0
 ;trigger1 = var(6) = [0,1]
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*35),10
+damage = floor(fvar(13)*140),20
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -3781,7 +3796,7 @@ trigger1=time=0
 attr = SCA, NP
 priority = 2,hit
 animtype  = hard
-damage    = floor(fvar(13)*20),8
+damage = floor(parent,fvar(13)*30),5
 guardflag = MA
 pausetime = 2,2
 sparkno = -1
@@ -3969,7 +3984,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = Time = 0
 attr = S, NA
-damage    = floor(parent,fvar(13)*55),5
+damage    = floor(parent,fvar(13)*30),15
 hitflag = MAFD
 guardflag = M
 pausetime =10,10
@@ -4146,7 +4161,7 @@ trigger1 = time = 0
 trigger2 = time = 2
 trigger3 = time = 4
 attr = S, NA
-damage = floor(fvar(13)*16),3
+damage = floor(fvar(13)*40),10
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -4270,7 +4285,7 @@ trigger3 = time = 8
 trigger4 = time = 9
 trigger5 = time = 10
 attr = S, NA
-damage    = floor(fvar(13)*10),5
+damage    = floor(fvar(13)*40),20
 hitflag = MAFD
 guardflag = M
 pausetime = 6,6
@@ -4300,7 +4315,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = time = 11
 attr = S, NA
-damage    = floor(fvar(13)*60),5
+damage    = floor(fvar(13)*40),20
 hitflag = MAFD
 guardflag = M
 pausetime =12,12

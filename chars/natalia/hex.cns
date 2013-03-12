@@ -47,7 +47,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*10),0
+damage = floor(fvar(13)*15),0
 animtype = hard
 fall.animtype = back
 guardflag = MA
@@ -145,7 +145,7 @@ attr = S, NA
 priority = 5,hit
 animtype  = light
 fall.animtype = back
-damage    = floor(fvar(13)*14),0
+damage    = floor(fvar(13)*20),0
 guardflag = MA
 hitflag = MAF
 pausetime = 8,8
@@ -225,7 +225,7 @@ fall.yvelocity = 0
 trigger1 = p2stateno != 5110
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*27), 0
+damage = floor(fvar(13)*25), 0
 animtype = back
 fall.animtype = back
 guardflag = MA
@@ -364,7 +364,7 @@ ground.cornerpush.veloff = -4
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*38), 5
+damage = floor(fvar(13)*40), 5
 animtype = back
 fall.animtype = back
 guardflag = MA
@@ -500,7 +500,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = Time = 0
 attr = C, NA
-damage    = floor(fvar(13)*11)
+damage    = floor(fvar(13)*15)
 priority  = 5,hit
 animtype  = Light
 hitflag = MAF
@@ -583,7 +583,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 priority=5,hit
 attr = S, NA
-damage    = floor(fvar(13)*16)
+damage    = floor(fvar(13)*20)
 hitflag = MAFD
 guardflag = L
 pausetime = 8, 8  
@@ -658,7 +658,7 @@ trigger1 = time=0
 priority=5,hit
 attr = S, NA
 animtype=up
-damage    = floor(fvar(13)*28)
+damage    = floor(fvar(13)*35)
 hitflag = MAF
 guardflag = MA
 pausetime = 12,12
@@ -686,7 +686,7 @@ nochainid=1
 type=changestate
 triggerall=command="holdup"
 trigger1=movecontact
-value=7000
+value=40
 ctrl=1
 
 [State 410, 4]
@@ -809,7 +809,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = A, NA
-damage    = floor(fvar(13)*9)
+damage    = floor(fvar(13)*20)
 hitflag = MAF
 animtype = light
 fall.animtype = back
@@ -893,7 +893,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = A, NA
-damage    = floor(fvar(13)*16)
+damage    = floor(fvar(13)*30)
 animtype = light
 fall.animtype = back
 hitflag = MAF
@@ -978,7 +978,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = A, NA
-damage    = floor(fvar(13)*27)
+damage    = floor(fvar(13)*40)
 hitflag = MAF
 guardflag = HA
 animtype = light
@@ -1174,7 +1174,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*65), 8
+damage = floor(fvar(13)*80), 5
 animtype = back
 fall.animtype = back
 guardflag = MA
@@ -1297,7 +1297,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*50), 5
+damage = floor(fvar(13)*80), 5
 animtype = back
 fall.animtype = back
 guardflag = LA
@@ -1433,7 +1433,7 @@ trigger1 = var(5)=0
 trigger1 = time = 0
 numhits=1
 attr = S, NA
-damage = floor(fvar(13)*45), 5
+damage = floor(fvar(13)*110), 5
 animtype = back
 fall.animtype = back
 guardflag = HA
@@ -1621,7 +1621,7 @@ hitcountpersist=1
 type = VelSet
 trigger1 = time=[0,4]
 x = 1
-y = -5
+y = -4.5
 
 ;[state 0, damage scaling change]
 ;type = varset
@@ -1658,7 +1658,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 numhits=1
 attr = S, NA
-damage = floor(fvar(13)*31), 7
+damage = floor(fvar(13)*120), 10
 animtype = back
 fall.animtype = back
 guardflag = MA
@@ -1785,7 +1785,7 @@ hitcountpersist=1
 type = VelSet
 trigger1 = time=[0,4]
 x = 1.5
-y = -7
+y = -6
 
 ;[state 0, damage scaling change]
 ;type = varset
@@ -1822,7 +1822,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 numhits=1
 attr = S, NA
-damage = floor(fvar(13)*41), 8
+damage = floor(fvar(13)*130), 10
 animtype = back
 fall.animtype = back
 guardflag = MA
@@ -1949,7 +1949,7 @@ hitcountpersist=1
 type = VelSet
 trigger1 = time=[0,4]
 x = 2
-y = -10
+y = -7.5
 
 [State 0, TargetBind]
 type = TargetBind
@@ -1996,7 +1996,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 numhits=1
 attr = S, NA
-damage = floor(fvar(13)*41), 8
+damage = floor(fvar(13)*140), 10
 animtype = back
 fall.animtype = back
 guardflag = MA
@@ -2115,7 +2115,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*75), 8
+damage = floor(fvar(13)*80), 10
 animtype = back
 fall.animtype = back
 guardflag = MA
@@ -2272,7 +2272,7 @@ time = 2
 type = VelSet
 trigger1 = time=[0,4]
 x = 1
-y = -5
+y = -7.5
 
 ;[State 0, TargetBind]
 ;type = TargetBind
@@ -2321,7 +2321,7 @@ trigger2 = time=2
 trigger3 = time=4
 numhits=1
 attr = S, NA
-damage = floor(fvar(13)*20), 3
+damage = floor(fvar(13)*30), 15
 animtype = back
 fall.animtype = back
 guardflag = MA
@@ -2407,7 +2407,7 @@ value= 55
 [Super]
 
 ;---------------------------------------------------------------------------
-; 28 C (Flash Kick)
+; 28 C (Flash Kick 1)
 [Statedef 3250]
 type    = S
 movetype= A
@@ -2486,7 +2486,75 @@ value = 3255
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; = Jump
+; 28 C (Flash Kick 2)
+[Statedef 3251]
+type    = S
+movetype= A
+physics = S
+juggle  = 0
+velset = 0,0
+ctrl = 0
+anim = 3255
+sprpriority = 2
+hitcountpersist=1
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = time = 0
+y = 0
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = time=3
+time = 5
+add = 200,255,255
+mul = 256,256,256
+sinadd = 0,0,0,3
+invertall = 0
+color = 256
+
+[State 230, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 3256
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; 28 C (Flash Kick 3)
+[Statedef 3252]
+type    = S
+movetype= A
+physics = S
+juggle  = 0
+velset = 0,0
+ctrl = 0
+anim = 3256
+sprpriority = 2
+hitcountpersist=1
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = time = 0
+y = 0
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = time=3
+time = 5
+add = 200,255,255
+mul = 256,256,256
+sinadd = 0,0,0,3
+invertall = 0
+color = 256
+
+[State 230, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 3257
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; = Jump 1
 [Statedef 3255]
 type    = A
 movetype= A
@@ -2496,14 +2564,149 @@ juggle  = 0
 ctrl = 0
 anim = 12512
 sprpriority = 2
-facep2=0
 hitcountpersist=1
 
 [State 0, VelSet]
 type = VelSet
+triggerall = command = "holdfwd" && command != "holdback" 
 trigger1 = time=[0,4]
-x = 4
-y = -12
+x = 3
+y = -5
+
+[State 0, VelSet]
+type = VelSet
+triggerall = command != "holdfwd" && command != "holdback" 
+trigger1 = time=[0,4]
+x = 2
+y = -5
+
+[State 0, VelSet]
+type = VelSet
+triggerall = command != "holdfwd" && command = "holdback" 
+trigger1 = time=[0,4]
+x = 1
+y = -5
+
+[State 0, TargetBind]
+type = TargetBind
+trigger1 = time=0
+trigger1 = movehit
+time = 1
+id = -1
+pos = 20,-10
+ignorehitpause = 1
+persistent = 0
+
+[State 0, gravity off]
+type = varset
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20) = 0
+ignorehitpause = 1
+persistent = 0
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+value = 5,7
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<449
+value = 6,5
+volume=200
+channel=0
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = time=3
+time = 5
+add = 200,255,255
+mul = 256,256,256
+sinadd = 0,0,0,3
+invertall = 0
+color = 256
+
+[State 200, 1]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+fall.yvelocity = 0
+trigger1 = time = 0
+numhits=1
+attr = S, NA
+damage = floor(fvar(13)*50),10
+animtype = back
+fall.animtype = back
+guardflag = MA
+hitflag = MAFD
+priority = 7, Hit
+pausetime = 10,10
+sparkno = 30
+sparkxy = -10, -60 ; = -10, -26
+hitsound = 5, 3
+guardsound = 6, 0
+ground.type = High
+ground.slidetime = 27
+ground.hittime  = 27
+guard.hittime = 10
+ground.velocity = -1,-8
+guard.velocity = -5
+airguard.velocity = -.5,-.8
+air.type = high
+air.velocity = -1,-8
+air.hittime = 36
+air.fall=1
+fall=1
+;yaccel=const(movement.yaccel)
+;snap = 15,-10
+
+[State 1000, Land]
+type= changestate
+trigger1= vel y > 0
+trigger1= pos y > -vel y
+value= 3251
+
+;---------------------------------------------------------------------------
+; = Jump 2
+[Statedef 3256]
+type    = A
+movetype= A
+physics = A
+juggle  = 0
+;poweradd =  0; ifelse(fvar(7)=0,78,0)
+ctrl = 0
+anim = 12512
+sprpriority = 2
+hitcountpersist=1
+
+[State 0, VelSet]
+type = VelSet
+triggerall = command = "holdfwd" && command != "holdback" 
+trigger1 = time=[0,4]
+x = 3
+y = -5
+
+[State 0, VelSet]
+type = VelSet
+triggerall = command != "holdfwd" && command != "holdback" 
+trigger1 = time=[0,4]
+x = 2
+y = -5
+
+[State 0, VelSet]
+type = VelSet
+triggerall = command != "holdfwd" && command = "holdback" 
+trigger1 = time=[0,4]
+x = 1
+y = -5
 
 [State 0, TargetBind]
 type = TargetBind
@@ -2555,16 +2758,16 @@ color = 256
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = time=[0,2]
+trigger1 = time = 0
 numhits=1
 attr = S, NA
-damage = floor(fvar(13)*30),6
+damage = floor(fvar(13)*50),10
 animtype = back
 fall.animtype = back
 guardflag = MA
 hitflag = MAFD
 priority = 7, Hit
-pausetime = 14,14
+pausetime = 10,10
 sparkno = 30
 sparkxy = -10, -60 ; = -10, -26
 hitsound = 5, 3
@@ -2573,53 +2776,164 @@ ground.type = High
 ground.slidetime = 27
 ground.hittime  = 27
 guard.hittime = 10
-ground.velocity = -0.1,(vel y)
+ground.velocity = -1,-8
 guard.velocity = -5
 airguard.velocity = -.5,-.8
 air.type = high
-air.velocity = -0.1,(vel y)
+air.velocity = -1,-8.5
 air.hittime = 36
 air.fall=1
 fall=1
-yaccel=const(movement.yaccel)
+;yaccel=const(movement.yaccel)
 ;snap = 15,-10
+
+[State 1000, Land]
+type= changestate
+trigger1= vel y > 0
+trigger1= pos y > -vel y
+value= 3252
+
+;---------------------------------------------------------------------------
+; = Jump 3
+[Statedef 3257]
+type    = A
+movetype= A
+physics = A
+juggle  = 0
+;poweradd =  0; ifelse(fvar(7)=0,78,0)
+ctrl = 0
+anim = 12513
+sprpriority = 2
+hitcountpersist=1
+
+[State 0, VelSet]
+type = VelSet
+triggerall = command = "holdfwd" && command != "holdback" 
+trigger1 = time=[0,4]
+x = 4
+y = -7
+
+[State 0, VelSet]
+type = VelSet
+triggerall = command != "holdfwd" && command != "holdback" 
+trigger1 = time=[0,4]
+x = 2
+y = -7
+
+[State 0, VelSet]
+type = VelSet
+triggerall = command != "holdfwd" && command = "holdback" 
+trigger1 = time=[0,4]
+x = 0
+y = -7
+
+[State 0, TargetBind]
+type = TargetBind
+trigger1 = time=0
+trigger1 = movehit
+time = 1
+id = -1
+pos = 20,-10
+ignorehitpause = 1
+persistent = 0
+
+;[state 0, damage scaling change]
+;type = varset
+;trigger1 = movehit = 1
+;fvar(13)=fvar(13)*fvar(14)
+;persistent = 0
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = ((enemynear, gethitvar(damage))/1)
+persistent = 1
+ignorehitpause = 1
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+value = 5,7
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+trigger1 = random<449
+value = 6,5
+volume=200
+channel=0
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = time=3
+time = 5
+add = 200,255,255
+mul = 256,256,256
+sinadd = 0,0,0,3
+invertall = 0
+color = 256
 
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = time=3
+trigger1 = time = 0
 numhits=1
 attr = S, NA
-damage = floor(fvar(13)*100),6
+damage = floor(fvar(13)*100),25
 animtype = back
 fall.animtype = back
 guardflag = MA
 hitflag = MAFD
 priority = 7, Hit
-pausetime = 19,19
+pausetime = 25,25
 sparkno = 30
 sparkxy = -10, -60 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 7
+ground.slidetime = 27
 ground.hittime  = 27
 guard.hittime = 10
-ground.velocity = -8.1,-13
+ground.velocity = -3,-7
 guard.velocity = -5
 airguard.velocity = -.5,-.8
 air.type = high
-air.velocity = -8.1,-13
+air.velocity = -3,-7
 air.hittime = 36
 air.fall=1
 fall=1
 fall.recover = 0
-yaccel=const(movement.yaccel)
+;yaccel=const(movement.yaccel)
+;snap = 15,-10
 
 
 [State 1000, Land]
 type= changestate
 trigger1= vel y > 0
 trigger1= pos y > -vel y
-value= 54
+value= 3259
+
+;---------------------------------------------------------------------------
+; 28 C Recover
+[Statedef 3259]
+type    = S
+movetype= A
+physics = S
+juggle  = 0
+velset = 0,0
+ctrl = 0
+anim = 3259
+sprpriority = 2
+hitcountpersist=1
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = time = 0
+y = 0
+
+[State 230, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1

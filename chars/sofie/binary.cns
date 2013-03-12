@@ -150,7 +150,7 @@ trigger1 =time=0
 priority=3,hit
 attr = S, NA
 animtype  = High
-damage    = floor(fvar(13)*17)
+damage    = floor(fvar(13)*20)
 guardflag = MA
 pausetime = 10,10
 sparkno = 1
@@ -230,7 +230,7 @@ trigger1 = Time = 0
 priority=4,hit
 attr = S, NA
 animtype  = High
-damage    = floor(fvar(13)*25)
+damage    = floor(fvar(13)*30)
 guardflag = MA
 pausetime = 10,10
 sparkno = 2
@@ -374,7 +374,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = Time = 0
 attr = C, NA
-damage    = floor(fvar(13)*9)
+damage    = floor(fvar(13)*15)
 priority  = 5,hit
 animtype  = Light
 hitflag = MAFD
@@ -448,7 +448,7 @@ fall.yvelocity = 0
 trigger1 =time=0
 priority=3,hit
 attr = C, NA
-damage    = floor(fvar(13)*14)
+damage    = floor(fvar(13)*25)
 animtype  = Medium
 hitflag = MAFD
 guardflag = L
@@ -519,7 +519,7 @@ fall.yvelocity = 0
 trigger1 = Time = 0
 priority = 5,hit
 attr = S, NA
-damage    = floor(fvar(13)*24)
+damage    = floor(fvar(13)*35)
 hitflag = MAF
 guardflag = MA
 animtype=up
@@ -674,7 +674,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = animelem = 3
 attr = A, NA
-damage    = floor(fvar(13)*12)
+damage    = floor(fvar(13)*10)
 guardflag = HA
 priority = 1,hit;5,hit
 pausetime = 8,8
@@ -744,7 +744,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = A, NA
-damage = floor(fvar(13)*19)
+damage = floor(fvar(13)*20)
 guardflag = HA
 priority = 1,hit;4,miss
 pausetime = 10,10
@@ -807,7 +807,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = Time = 0
 attr = A, NA
-damage = floor(fvar(13)*20)
+damage = floor(fvar(13)*10)
 guardflag = HA
 priority = 1,hit;5,hit
 pausetime = 8,5
@@ -878,7 +878,7 @@ fall.yvelocity = 0
 trigger1 = animelem=4
 trigger1 = p2statetype=A
 attr = A, NA
-damage    = floor(fvar(13)*27)
+damage    = floor(fvar(13)*30)
 guardflag = HA
 priority = 1,hit;3,hit
 pausetime = 10,10
@@ -908,7 +908,7 @@ fall.yvelocity = 0
 trigger1 = animelem=4
 trigger1 = p2statetype!=A
 attr = A, NA
-damage    = floor(fvar(13)*27)
+damage    = floor(fvar(13)*30)
 guardflag = HA
 priority = 1,hit;3,hit
 pausetime = 10,10
@@ -1089,7 +1089,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*50),9
+damage    = floor(fvar(13)*70),10
 priority  = 4,hit
 guardflag = MA
 hitflag = MAF
@@ -1172,7 +1172,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*65),11
+damage    = floor(fvar(13)*80),15
 priority  = 4,hit
 guardflag = MA
 hitflag = MAF
@@ -1255,7 +1255,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*80),16
+damage    = floor(fvar(13)*90),20
 priority  = 4,hit
 guardflag = MA
 hitflag = MAF
@@ -1338,7 +1338,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*50),10
+damage    = floor(fvar(13)*70),15
 priority  = 4,hit
 guardflag = MA
 hitflag = MAF
@@ -1439,7 +1439,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*80),16
+damage    = floor(fvar(13)*70),15
 priority  = 4,hit
 guardflag = MA
 hitflag = MAF
@@ -1644,7 +1644,7 @@ trigger1 = Time = 0
 priority=1,hit
 attr = SCA, AP
 animtype  = low
-damage    = floor(parent,fvar(13)*40),3
+damage    = floor(parent,fvar(13)*60),10
 guardflag = MA
 pausetime = 1,1
 sparkno = 1
@@ -1791,7 +1791,7 @@ trigger2 = animelem = 10
 trigger3 = animelem = 13
 priority=3,hit
 attr = SCA, AP
-damage = floor(parent,fvar(13)*15),5
+damage = floor(parent,fvar(13)*30),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1924,7 +1924,7 @@ trigger2 = animelem = 10
 trigger3 = animelem = 13
 priority=3,hit
 attr = SCA, AP
-damage = floor(parent,fvar(13)*15),5
+damage = floor(parent,fvar(13)*30),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2056,7 +2056,7 @@ trigger2 = animelem = 10
 trigger3 = animelem = 13
 priority=3,hit
 attr = SCA, AP
-damage = floor(parent,fvar(13)*15),5
+damage = floor(parent,fvar(13)*30),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2172,7 +2172,7 @@ fall.yvelocity = 0
 trigger1 = Time = 0
 priority=4,hit
 attr = SCA, AP
-damage = floor(parent,fvar(13)*12),6
+damage = floor(parent,fvar(13)*30),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2285,7 +2285,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*30),9
+damage    = floor(fvar(13)*65),15
 priority  = 4,hit
 guardflag = MA
 hitflag = MAF
@@ -2535,7 +2535,7 @@ trigger4 = animelem = 13
 trigger5 = animelem = 15
 priority=3,hit
 attr = SCA, AP
-damage = floor(parent,fvar(13)*15),5
+damage = floor(parent,fvar(13)*20),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2995,7 +2995,7 @@ trigger1 = Time = 0
 priority=1,hit
 attr = SCA, AP
 animtype  = low
-damage = floor(fvar(13)*20),5
+damage = floor(fvar(13)*10),10
 guardflag = MA
 pausetime = 0,0
 sparkno = 1
@@ -3130,7 +3130,7 @@ trigger1 = Time = 0
 priority=1,hit
 attr = SCA,AP
 animtype  = light
-damage    = floor(fvar(13)*50),10
+damage    = floor(fvar(13)*10),10
 guardflag = MA
 pausetime = 18,18
 sparkno = 1
@@ -3467,7 +3467,7 @@ fall.yvelocity = 0
 trigger1 = AnimElem = 3
 attr = S, HA
 animtype  = Hard
-damage    = floor(fvar(13)*30), 15
+damage    = floor(fvar(13)*150), 50
 priority  = 5
 guardflag = MA
 hitflag = MAF
@@ -3494,7 +3494,7 @@ fall.yvelocity = 0
 trigger1 = AnimElem = 7
 attr = S, HA
 animtype  = Hard
-damage    = floor(fvar(13)*90), 25
+damage    = floor(fvar(13)*150), 50
 priority  = 5
 guardflag = MA
 hitflag = MAF

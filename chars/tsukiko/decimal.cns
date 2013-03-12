@@ -47,7 +47,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time = 0
 attr = S, NA
-damage = floor(fvar(13)*11),0
+damage = floor(fvar(13)*15),0
 animtype = Light
 fall.animtype = back
 guardflag = MA
@@ -125,7 +125,7 @@ attr = S, NA
 priority = 5,hit
 animtype  = light
 fall.animtype = back
-damage    = floor(fvar(13)*19),0
+damage    = floor(fvar(13)*25),0
 guardflag = MA
 hitflag = MAF
 pausetime = 8,8
@@ -195,7 +195,7 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*31),0
+damage = floor(fvar(13)*35),0
 animtype = back
 fall.animtype = back
 guardflag = MA
@@ -335,7 +335,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = Time = 0
 attr = C, NA
-damage    = floor(fvar(13)*18),0
+damage    = floor(fvar(13)*15),0
 priority  = 4,hit
 animtype  = Light
 hitflag = MAF
@@ -424,7 +424,7 @@ fall.yvelocity = 0
 trigger1 = animelem=6
 priority=3,hit
 attr = S, NA
-damage    = floor(fvar(13)*10)
+damage    = floor(fvar(13)*15)
 hitflag = MAFD
 guardflag = L
 pausetime = 8,8
@@ -449,7 +449,7 @@ fall.yvelocity = 0
 trigger1 = animelem=17
 priority=3,hit
 attr = S, NA
-damage    = floor(fvar(13)*18)
+damage    = floor(fvar(13)*15)
 hitflag = MAFD
 guardflag = L
 pausetime = 8,8
@@ -460,7 +460,7 @@ guardsound = 6,0
 ground.type = low
 ground.slidetime = 16
 ground.hittime  = 16
-ground.velocity = -10,-5
+ground.velocity = -2,-5
 air.velocity = -1,-7
 air.type=low
 fall=1
@@ -522,7 +522,7 @@ trigger1 = time=0
 priority=4,hit
 attr = S, NA
 animtype=up
-damage    = floor(fvar(13)*33),0
+damage    = floor(fvar(13)*40),0
 hitflag = MAFD
 guardflag = MA
 pausetime = 16,16
@@ -668,7 +668,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = A, NA
-damage    = floor(fvar(13)*11),0
+damage    = floor(fvar(13)*15),0
 hitflag = MAF
 guardflag = HA
 animtype = light
@@ -739,7 +739,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = A, NA
-damage    = floor(fvar(13)*21),0
+damage    = floor(fvar(13)*25),0
 animtype = light
 fall.animtype = back
 hitflag = MAF
@@ -810,7 +810,7 @@ fall.yvelocity = 0
 triggerall = p2statetype = A
 trigger1 = time=0
 attr = A, NA
-damage    = floor(fvar(13)*30),0
+damage    = floor(fvar(13)*80),0
 hitflag = MAF
 guardflag = HA
 animtype = light
@@ -843,7 +843,7 @@ fall.yvelocity = 0
 triggerall= p2statetype = S || p2statetype = C
 trigger1 = time=0
 attr = A, NA
-damage    = floor(fvar(13)*30),0
+damage    = floor(fvar(13)*80),0
 hitflag = MAF
 guardflag = HA
 animtype = light
@@ -1722,8 +1722,8 @@ fall.yvelocity = 0
 trigger1 = enemy,var(50)!=1
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*60),0
-fall.damage = floor(fvar(13)*10)
+damage = floor(fvar(13)*80),0
+fall.damage = floor(fvar(13)*20)
 animtype = Light
 guardflag = MA
 hitflag = MAFD
@@ -1851,8 +1851,8 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*65),0
-fall.damage = floor(fvar(13)*10)
+damage = floor(fvar(13)*80),0
+fall.damage = floor(fvar(13)*20)
 animtype = Light
 guardflag = MA
 hitflag = MAFD
@@ -1996,8 +1996,8 @@ type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 trigger1 = time=0
 attr = S, NA
-damage = floor(fvar(13)*75),0
-fall.damage = floor(fvar(13)*10)
+damage = floor(fvar(13)*80),0
+fall.damage = floor(fvar(13)*20)
 animtype = Light
 guardflag = MA
 hitflag = MAFD
@@ -2122,7 +2122,7 @@ value = 0
 ctrl=1
 
 ;---------------------------------------------------------------------------
-;214 A Tornado
+;214 AT Tornado
 [Statedef 1100]
 type    = S
 movetype= A
@@ -2208,11 +2208,20 @@ value = 6,26
 volume=200
 channel=0
 
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+fvar(10) = 5
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time > 0
+fvar(10) = fvar(10) * 0.95
+
 [State 0, VelSet]
 type = VelSet
-trigger1 = time=[11,38]
-x = 2
-y = 0
+trigger1 = time < 35
+x = fvar(10)
 
 [State 200, 1]
 type = hitdef 
@@ -2220,7 +2229,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 7
 attr = S, NA
-damage = floor(fvar(13)*10),1
+damage = floor(fvar(13)*30),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
@@ -2234,7 +2243,7 @@ guardsound = 6, 0
 ground.type = Low
 ground.slidetime = 25
 ground.hittime  = 25
-ground.velocity = -4,-7
+ground.velocity = -2,-7
 down.velocity = -2,-9
 airguard.velocity = -.1,-.8
 air.type = Low
@@ -2252,7 +2261,7 @@ fall.yvelocity = 0
 trigger1 = AnimElem = 8
 trigger2 = AnimElem = 12
 attr = S, NA
-damage = floor(fvar(13)*20),1
+damage = floor(fvar(13)*30),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
@@ -2266,11 +2275,11 @@ guardsound = 6, 0
 ground.type = Low
 ground.slidetime = 25
 ground.hittime  = 25
-ground.velocity = -3.5,-2
+ground.velocity = -2,-2
 guard.velocity = -6
 airguard.velocity = -.1,-.8
 air.type = Low
-air.velocity = -3.5,-2
+air.velocity = -2,-2
 air.hittime = 35
 fall=1
 air.fall=1
@@ -2282,7 +2291,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 16
 attr = S, NA
-damage = floor(fvar(13)*20),3
+damage = floor(fvar(13)*30),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
@@ -2296,10 +2305,10 @@ guardsound = 6, 0
 ground.type = Low
 ground.slidetime = 25
 ground.hittime  = 25
-ground.velocity = -3,-3
+ground.velocity = -2,-3
 airguard.velocity = -.1,-.8
 air.type = Low
-air.velocity = -3,-3
+air.velocity = -2,-3
 air.hittime = 35
 fall=1
 air.fall=1
@@ -2339,15 +2348,14 @@ triggerall = fvar(17)= 0
 triggerall = fvar(7) = 0
 triggerall = var(40) = 0
 trigger1 = time = 0
-value = 150
+value = 100
 
-[State 0, single loop] ;remove and reset to 1110 if necessary
-type = ChangeAnim
-trigger1 = animelem=15
-value = 1100
-elem = 8
-ignorehitpause = 1
-persistent=0
+[State 0, startup frames]
+type = NotHitBy
+trigger1 = time = 8
+value = SCA
+time = 25
+ignorehitpause =1
 
 [state 0, damage scaling change]
 type = varset
@@ -2357,7 +2365,6 @@ trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
 persistent = 0
 
-
 [state 0, damage counter set]
 type = varadd
 trigger1 = (movehit)
@@ -2365,12 +2372,16 @@ var(3) = ((enemynear, gethitvar(damage))/1)
 persistent = 1
 ignorehitpause = 1
 
-[State 0, startup frames]
-type = NotHitBy
-trigger1 = time = 8
-value = SCA
-time = 25
-ignorehitpause =1
+[State 0, AfterImage]
+type = AfterImage
+trigger1 =time=0
+time = 77
+palcolor = 256
+palbright = 30,30,30
+palcontrast = 120,120,120
+paladd = 10,10,10
+palmul = .65,.65,.65
+trans=add
 
 [State 0, PalFXWiz]
 type = PalFX
@@ -2383,17 +2394,6 @@ invertall = 0
 color = 256
 ;ignorehitpause = 0
 ;persistent = 1
-
-[State 0, AfterImage]
-type = AfterImage
-trigger1 =time=0
-time = 93
-palcolor = 256
-palbright = 30,30,30
-palcontrast = 120,120,120
-paladd = 10,10,10
-palmul = .65,.65,.65
-trans=add
 
 [State 200, 1]
 type = PlaySnd
@@ -2409,8 +2409,8 @@ channel=0
 
 [State 0, VelSet]
 type = VelSet
-trigger1 = time=[11,51]
-x = 2.5
+trigger1 = time=[11,38]
+x = 1.5
 y = 0
 
 [State 200, 1]
@@ -2419,25 +2419,25 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 7
 attr = S, NA
-damage = floor(fvar(13)*10),1
+damage = floor(fvar(13)*30),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = MAF
 priority = 5, Hit
-pausetime = 5, 5
+pausetime = 5,5
 sparkno = 1
 sparkxy = -10, -70 ; = -10, -80
 hitsound = 5, 1
 guardsound = 6, 0
-ground.type = high
+ground.type = Low
 ground.slidetime = 25
 ground.hittime  = 25
-ground.velocity = -3,-7
-down.velocity = -3,-9
+ground.velocity = -4,-7
+down.velocity = -2,-9
 airguard.velocity = -.1,-.8
-air.type = high
-air.velocity = -1,-5
+air.type = Low
+air.velocity = -4,-5
 air.hittime = 35
 forcestand = 1
 fall=1
@@ -2450,16 +2450,14 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 8
 trigger2 = AnimElem = 12
-trigger3 = AnimElem = 16
-trigger4 = AnimElem = 20
 attr = S, NA
-damage = floor(fvar(13)*10),1
+damage = floor(fvar(13)*30),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
-pausetime = 5, 5
+pausetime = 5,5
 sparkno = 2
 sparkxy = -10, -70 ; = -10, -80
 hitsound = 5, 1
@@ -2481,15 +2479,15 @@ fall.recover = 0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = AnimElem = 24
+trigger1 = AnimElem = 16
 attr = S, NA
-damage = floor(fvar(13)*30),4
+damage = floor(fvar(13)*30),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
-pausetime = 10, 10
+pausetime = 10,10
 sparkno = 2
 sparkxy = -10, -70 ; = -10, -80
 hitsound = 5, 1
@@ -2497,10 +2495,10 @@ guardsound = 6, 0
 ground.type = Low
 ground.slidetime = 25
 ground.hittime  = 25
-ground.velocity = -4,-3
+ground.velocity = -3,-3
 airguard.velocity = -.1,-.8
 air.type = Low
-air.velocity = -4,-3
+air.velocity = -3,-3
 air.hittime = 35
 fall=1
 air.fall=1
@@ -2540,15 +2538,14 @@ triggerall = fvar(17)= 0
 triggerall = fvar(7) = 0
 triggerall = var(40) = 0
 trigger1 = time = 0
-value = 200
+value = 100
 
-[State 0, single loop] ;remove and reset to 1110 if necessary
-type = ChangeAnim
-trigger1 = animelem=15
-value = 1100
-elem = 8
-ignorehitpause = 1
-persistent=0
+[State 0, startup frames]
+type = NotHitBy
+trigger1 = time = 8
+value = SCA
+time = 25
+ignorehitpause =1
 
 [state 0, damage scaling change]
 type = varset
@@ -2565,12 +2562,16 @@ var(3) = ((enemynear, gethitvar(damage))/1)
 persistent = 1
 ignorehitpause = 1
 
-[State 0, startup frames]
-type = NotHitBy
-trigger1 = time = 8
-value = SCA
-time = 12
-ignorehitpause =1
+[State 0, AfterImage]
+type = AfterImage
+trigger1 =time=0
+time = 77
+palcolor = 256
+palbright = 30,30,30
+palcontrast = 120,120,120
+paladd = 10,10,10
+palmul = .65,.65,.65
+trans=add
 
 [State 0, PalFXWiz]
 type = PalFX
@@ -2583,17 +2584,6 @@ invertall = 0
 color = 256
 ;ignorehitpause = 0
 ;persistent = 1
-
-[State 0, AfterImage]
-type = AfterImage
-trigger1 =time=0
-time = 109
-palcolor = 256
-palbright = 30,30,30
-palcontrast = 120,120,120
-paladd = 10,10,10
-palmul = .65,.65,.65
-trans=add
 
 [State 200, 1]
 type = PlaySnd
@@ -2609,8 +2599,8 @@ channel=0
 
 [State 0, VelSet]
 type = VelSet
-trigger1 = time=[11,51]
-x = 3.0
+trigger1 = time=[11,38]
+x = 3
 y = 0
 
 [State 200, 1]
@@ -2619,26 +2609,27 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 7
 attr = S, NA
-damage = floor(fvar(13)*10),1
+damage = floor(fvar(13)*30),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = MAF
 priority = 5, Hit
-pausetime = 5, 5
-sparkno = 0
+pausetime = 5,5
+sparkno = 1
 sparkxy = -10, -70 ; = -10, -80
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
-ground.slidetime = 15
-ground.hittime  = 15
+ground.slidetime = 25
+ground.hittime  = 25
 ground.velocity = -4,-7
-down.velocity = -4,-9
+down.velocity = -2,-9
 airguard.velocity = -.1,-.8
 air.type = Low
-air.velocity = -3,-5
+air.velocity = -4,-5
 air.hittime = 35
+forcestand = 1
 fall=1
 air.fall=1
 fall.recover = 0
@@ -2649,30 +2640,26 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 8
 trigger2 = AnimElem = 12
-trigger3 = AnimElem = 16
-trigger4 = AnimElem = 20
-trigger5 = AnimElem = 24
-trigger6 = AnimElem = 28
 attr = S, NA
-damage = floor(fvar(13)*10),1
+damage = floor(fvar(13)*30),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
-pausetime = 5, 5
-sparkno = 0
+pausetime = 5,5
+sparkno = 2
 sparkxy = -10, -70 ; = -10, -80
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
-ground.slidetime = 15
-ground.hittime  = 15
-ground.velocity = -2.5,-2
+ground.slidetime = 25
+ground.hittime  = 25
+ground.velocity = -3.5,-2
 guard.velocity = -6
 airguard.velocity = -.1,-.8
 air.type = Low
-air.velocity = -2.5,-2
+air.velocity = -3.5,-2
 air.hittime = 35
 fall=1
 air.fall=1
@@ -2682,26 +2669,26 @@ fall.recover = 0
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = AnimElem = 32
+trigger1 = AnimElem = 16
 attr = S, NA
-damage = floor(fvar(13)*30),6
+damage = floor(fvar(13)*30),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
-pausetime = 10, 10
-sparkno = 0
+pausetime = 10,10
+sparkno = 2
 sparkxy = -10, -70 ; = -10, -80
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
-ground.slidetime = 15
-ground.hittime  = 15
-ground.velocity = -5,-3
+ground.slidetime = 25
+ground.hittime  = 25
+ground.velocity = -3,-3
 airguard.velocity = -.1,-.8
 air.type = Low
-air.velocity = -5,-3
+air.velocity = -3,-3
 air.hittime = 35
 fall=1
 air.fall=1
@@ -2802,8 +2789,13 @@ trans=add
 [State 0, VelSet]
 type = VelSet
 trigger1 = time=[0,7]
-x = 0.5
+x = 2
 y = -5
+
+[State 0, VelMul]
+type = VelMul
+trigger1 = time > 7
+x = 0.8
 
 [State 200, 1]
 type = hitdef 
@@ -2855,7 +2847,7 @@ channel=0
 [State 200, 7]
 type = ChangeState
 trigger1 = movehit
-value = 1240
+value = 3240
 ctrl = 0
 
 [State 1000, Land]
@@ -2955,8 +2947,13 @@ trans=add
 [State 0, VelSet]
 type = VelSet
 trigger1 = time=[0,7]
-x = 1.5
+x = 4
 y = -6
+
+[State 0, VelMul]
+type = VelMul
+trigger1 = time > 7
+x = 0.8
 
 [State 200, 1]
 type = hitdef 
@@ -3008,7 +3005,7 @@ channel=0
 [State 200, 7]
 type = ChangeState
 trigger1 = movehit
-value = 1240
+value = 3240
 ctrl = 0
 
 [State 1000, Land]
@@ -3108,8 +3105,13 @@ trans=add
 [State 0, VelSet]
 type = VelSet
 trigger1 = time=[0,7]
-x = 3.5
+x = 6
 y = -7
+
+[State 0, VelMul]
+type = VelMul
+trigger1 = time > 7
+x = 0.8
 
 [State 200, 1]
 type = hitdef 
@@ -3161,12 +3163,12 @@ channel=0
 [State 200, 7]
 type = ChangeState
 trigger1 = movehit
-value = 1240
+value = 3240
 ctrl = 0
 
 ;---------------------------------------------------------------------------
 ;623 Grab
-[Statedef 1240]
+[Statedef 3240]
 type    = A
 movetype= A
 physics = A
@@ -3309,12 +3311,12 @@ type= changestate
 trigger1 = movecontact && time > 30
 ;trigger1= vel y > 0
 ;trigger1= pos y > -vel y
-value= 1245
+value= 3245
 ;value=632
 
 ;-----------------
 ;= Air lock
-[statedef 1245]
+[statedef 3245]
 type=A
 movetype=A
 physics=A
@@ -3356,11 +3358,11 @@ type= changestate
 ;trigger1 = time = 20
 trigger1= vel y > 0
 trigger1= pos y > -vel y
-value= 1250
+value= 3250
 
 ;---------------------------------------------------------------------------
 ;= 623 Flash
-[Statedef 1250]
+[Statedef 3250]
 type    = S
 movetype= A
 physics = S
@@ -3422,12 +3424,12 @@ value = 5,8
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 1260
+value = 3260
 ctrl = 0
 
 ;---------------------------------------------------------------------------
 ;= 623 Stomp
-[Statedef 1260]
+[Statedef 3260]
 type    = S
 movetype= A
 physics = S
@@ -3807,7 +3809,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 7
 attr = S, NA
-damage = floor(fvar(13)*10),2
+damage = floor(fvar(13)*25),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
@@ -3841,7 +3843,7 @@ trigger2 = AnimElem = 10
 trigger3 = AnimElem = 12
 trigger4 = AnimElem = 14
 attr = S, NA
-damage = floor(fvar(13)*10),2
+damage = floor(fvar(13)*25),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
@@ -3870,7 +3872,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = AnimElem = 16
 attr = S, NA
-damage = floor(fvar(13)*20),10
+damage = floor(fvar(13)*25),5
 animtype = Light
 fall.animtype = back
 guardflag = MA
@@ -4153,7 +4155,7 @@ time=60
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 = time > 1
+trigger1 = time = 0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 ;value2 = S,NA
 time = 8
@@ -4188,7 +4190,7 @@ channel=0
 
 [State 200, 7]
 type = ChangeState
-trigger1 = AnimTime = 0
+trigger1 = time = 2
 value = 3105
 ctrl = 0
 
@@ -4235,6 +4237,11 @@ type = VelSet
 trigger1 = time=[0,7]
 x = 7
 y = -9
+
+[State 0, VelMul]
+type = VelMul
+trigger1 = time > 7
+x = 0.8
 
 [State 200, 1]
 type = hitdef 
