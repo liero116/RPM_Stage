@@ -3219,7 +3219,7 @@ fall.yvelocity = 0
 trigger1 = time=0
 attr = S, HA
 animtype  = hard             ;Make p2 use "Up" type animation on hit
-damage    = floor(fvar(13)*250),50
+damage    = floor(fvar(13)*200),50
 getpower  = 0
 priority  = 7
 guardflag = MA
