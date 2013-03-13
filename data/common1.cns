@@ -6110,12 +6110,12 @@ trigger1 = time >= (22 - (2*var(43)))
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 time = 1
 
-[State 0, otg limiter]
-type = NotHitBy
-trigger1 = enemy,prevstateno = [3000,3999]
-trigger2 = enemy,prevstateno = [12000,12999]  
-value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-time = 1
+;[State 0, post super restrictor]
+;type = NotHitBy
+;trigger1 = enemy,prevstateno = [3000,3999]
+;trigger2 = enemy,prevstateno = [12000,12999]  
+;value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+;time = 1
 
 [State 5100, tech]
 type = selfstate
