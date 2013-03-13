@@ -2,12 +2,12 @@
 M.U.G.E.N ver 1.00 (2011.01.18) status log
 ------------------------------------------
 Parsing command line...
-Command line: F:\Cross Fighter\RPM_Stage\mugen.exe
+Command line: D:\Projects\Cross Fighter\RPM_Stage\mugen.exe
 Parse command line OK
 Initializing...
 Allocating game variables
 Reading configuration file...OK
-Initializing timer...performance timer enabled...frequency 2610117...OK
+Initializing timer...performance timer enabled...frequency 1948750...OK
 Initializing keyboard...configuring...OK
 Initializing input engine...OK
 Initializing sound...Using SDL audio driver: dsound
@@ -144,7 +144,7 @@ Loading character chars/mc_supercut/mc_supercut.def...
   Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19971 expressions (6763 on trigger lines)
+  19975 expressions (6765 on trigger lines)
 Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
@@ -163,21 +163,21 @@ Loading character chars/bot_blu/bot_blu.def...
 Character bot_blu.def loaded OK
 attempting load and start...no BGM...Unloading system background data...sprite data...OK
 Initializing stage...
-  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
 Stage initialized OK
-Start of game loop
 prebuffering BGM...
-  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+Start of game loop
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
 Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
   Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
-  Loading cns hex.cns...prebuffering BGM...
+  Loading cns mc_supercut.cns...prebuffering BGM...
 OK
+  Loading cns hex.cns...OK
   Loading cns decimal.cns...OK
   Loading cns binary.cns...OK
   Loading cns throw.cns...OK
@@ -190,7 +190,7 @@ OK
   Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19971 expressions (6763 on trigger lines)
+  19977 expressions (6767 on trigger lines)
 Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
@@ -207,7 +207,7 @@ Loading character chars/bot_blu/bot_blu.def...
   SFF v1.01 palette hack engaged.
   19673 expressions (5769 on trigger lines)
 Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
 Loading character chars/mc_supercut/mc_supercut.def...
@@ -228,7 +228,159 @@ OK
   Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19975 expressions (6765 on trigger lines)
+  19978 expressions (6769 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19673 expressions (5769 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19978 expressions (6769 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19673 expressions (5769 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19978 expressions (6769 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19673 expressions (5769 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19977 expressions (6769 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19673 expressions (5769 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...prebuffering BGM...
+OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19977 expressions (6769 on trigger lines)
 Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
@@ -246,10 +398,10 @@ Loading character chars/bot_blu/bot_blu.def...
   19673 expressions (5769 on trigger lines)
 Character bot_blu.def loaded OK
 End of game loop
-Total time: 1196.48s
-Total frames: 71725 	Skipped frames: 9
-Avg game rate: 59.95
-Avg frame rate: 59.94
+Total time: 620.33s
+Total frames: 37040 	Skipped frames: 15
+Avg game rate: 59.71
+Avg frame rate: 59.69
 
 Reloading system sprite data...Reloading system background data...OK
 Entering character select.
@@ -259,9 +411,9 @@ attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 Returned from main loop
 Deinitializing...
-Frames      : 71725
-Time elapsed: 1214.230 sec
-ticks: 121423, tps: 100, start 124, end 121547
+Frames      : 37040
+Time elapsed: 632.890 sec
+ticks: 63289, tps: 100, start 236, end 63525
 
 Clearing player cache...OK
 Freeing character info...OK
@@ -275,11 +427,11 @@ Deintializing timer...OK
 Deinitializing graphics...OK
 Deinitializing BGM...Cleaning up mixer callback...unhooking mixer callback...
 
-Mixer callback was entered 26120 times
-Mixer callback timing stats (last 26120 calls):
-	5.000000 median, 5.411026 avg, 1.367150 sample std. dev.
-Top 10 slowest times:	74 (2), 60 (1), 50 (2), 49 (1), 41 (1), 40 (1), 37 (1), 33 (1), 32 (2), 31 (2)
-Top 10 fastest times:	1 (24), 2 (44), 3 (34), 4 (3426), 5 (12263), 6 (8013), 7 (1801), 8 (330), 9 (73), 10 (24)
+Mixer callback was entered 13605 times
+Mixer callback timing stats (last 13605 calls):
+	4.000000 median, 4.936126 avg, 8.173980 sample std. dev.
+Top 10 slowest times:	732 (1), 221 (1), 210 (1), 133 (1), 122 (1), 114 (1), 102 (2), 101 (1), 100 (2), 88 (2)
+Top 10 fastest times:	1 (45), 2 (365), 3 (4965), 4 (3910), 5 (908), 6 (475), 7 (1676), 8 (714), 9 (131), 10 (116)
 OK
 Deinitializing sound...OK
 Successful program termination.

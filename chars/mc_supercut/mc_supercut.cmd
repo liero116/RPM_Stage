@@ -4347,7 +4347,7 @@ triggerall = power >= 500
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,439]
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
@@ -4363,7 +4363,7 @@ triggerall = power >= 500
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,439]
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
@@ -4380,7 +4380,7 @@ trigger1 = ctrl
 ;trigger1 = var(1)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,429]
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
@@ -4404,7 +4404,7 @@ triggerall = statetype=S
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,439]
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
@@ -4419,7 +4419,7 @@ triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,439]
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
@@ -4435,7 +4435,7 @@ trigger1 = ctrl
 ;trigger1 = var(1)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,429]
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020

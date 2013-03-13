@@ -599,10 +599,10 @@ ctrl = 1
 type    = C
 movetype= A
 physics = C
-juggle  = 6
-poweradd = 0;= 50
+juggle  = 5
+poweradd = 0; ifelse(power!=3000,ifelse(enemynear,movetype!=H,ifelse(fvar(17)=0,68,0),0),0)
 ctrl = 0
-anim = 410
+anim = 413
 sprpriority = 2
 facep2=1
 
@@ -619,64 +619,64 @@ var(3) = ((enemynear, gethitvar(damage))/1)
 persistent = 1
 ignorehitpause = 1
 
-[State 610, 2]
-type = PlaySnd
-trigger1 = animelem=3
-value = 5,17
-
 [State 200, vox]
 type = PlaySnd
 trigger1 = Time = 0
-value = 6,21
+value = 6,8
 volume=200
 channel=0
 
-[State 410, 3]
+[State 610, 2]
+type = PlaySnd
+trigger1 = animelem=3
+value = 5,20
+
+[state 452, velset]
+type=velset
+trigger1 = animelem = 4
+trigger2 = animelem = 5
+trigger3 = animelem = 6
+trigger4 = animelem = 7
+x=6
+
+[State 440, 3]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = animelem=3
+trigger1 = var(9) <= 2
+trigger1 = Time = 0
 attr = S, NA
-damage    = floor(fvar(13)*35)
-priority = 4,hit
-hitflag = MAF
-guardflag = MA
+damage    = floor(fvar(13)*40)
+hitflag = MAFD
+guardflag = L
 pausetime = 12,12
-sparkno = 13
-sparkxy = -10, -35 ; = -5,-10
-hitsound   = 5,11
+priority = 2,hit
+sparkno = 16
+sparkxy = -10, -5 ; = -5,-5
+hitsound   = 5,13
 guardsound = 6,0
 ground.type = high
-ground.slidetime = 16
-ground.hittime  = 16
-guard.hittime = 7
-ground.velocity = -0.05,-12;-20.5
-air.velocity = -0.05,-12;-20.5
-down.velocity = -0.05, -12;-20
+ground.slidetime = 20
+ground.hittime  = 20
+guard.hittime = 2
+ground.velocity = -3,-4
+air.velocity = -3,-4
 air.type=high
-fall = 1
+guard.velocity = 0
+fall=1
+air.fall=1
 animtype=up
-ground.type=up
-yaccel=const(movement.yaccel)
-;snap = 45,-10
-id=1
 nochainid=1
-;;p2stateno = 5020
-;ground.cornerpush.veloff= -1.2
 
-[state 210, 4]
-type=changestate
-triggerall = movehit
-;triggerall = time>5
-trigger1=command="holdup"
-;trigger2=command="holdC"
-value=7000
-ctrl=1
+[State 0, VarSet]
+type = Varadd
+trigger1 = movehit = 1
+var(9)=1
 
-[State 410, 4]
+[State 440, 4]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 11
+value = 0
 ctrl = 1
 
 
@@ -2005,7 +2005,6 @@ juggle  = 3
 ctrl = 0
 anim = 1028
 sprpriority = 2
-facep2=1
 ;velset = 10,0
 
 [State 0, gravity up]
