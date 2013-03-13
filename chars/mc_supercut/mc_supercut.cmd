@@ -4347,10 +4347,12 @@ triggerall = power >= 500
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,499]
+trigger2 = stateno = [200,439]
 trigger2 = movecontact
-trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
+trigger3 = stateno = 440
+trigger3 = movehit
+trigger4 = stateno = 101 || stateno = 109
+trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
 
 [State -1, Fireburst EX 1000]
 type = ChangeState
@@ -4363,10 +4365,12 @@ triggerall = power >= 500
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,499]
+trigger2 = stateno = [200,439]
 trigger2 = movecontact
-trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
+trigger3 = stateno = 440
+trigger3 = movehit
+trigger4 = stateno = 101 || stateno = 109
+trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
 
 [State -1, Flying Blade EX 1020]
 type = ChangeState
@@ -4380,10 +4384,12 @@ trigger1 = ctrl
 ;trigger1 = var(1)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,499]
+trigger2 = stateno = [200,439]
 trigger2 = movecontact
-trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
+trigger3 = stateno = 440
+trigger3 = movehit
+trigger4 = stateno = 101 || stateno = 109
+trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
 
 [State -1, ]
@@ -4404,10 +4410,12 @@ triggerall = statetype=S
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,499]
+trigger2 = stateno = [200,439]
 trigger2 = movecontact
-trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
+trigger3 = stateno = 440
+trigger3 = movehit
+trigger4 = stateno = 101 || stateno = 109
+trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
 
 [State -1, Fireburst AT 1000]
 type = ChangeState
@@ -4419,10 +4427,12 @@ triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,499]
+trigger2 = stateno = [200,439]
 trigger2 = movecontact
-trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
+trigger3 = stateno = 440
+trigger3 = movehit
+trigger4 = stateno = 101 || stateno = 109
+trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
 
 [State -1, Flying Blade SC A 1020]
 type = ChangeState
@@ -4435,10 +4445,12 @@ trigger1 = ctrl
 ;trigger1 = var(1)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = [200,499]
+trigger2 = stateno = [200,439]
 trigger2 = movecontact
-trigger3 = stateno = 101 || stateno = 109
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
+trigger3 = stateno = 440
+trigger3 = movehit
+trigger4 = stateno = 101 || stateno = 109
+trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
 
 [State -1, ]
