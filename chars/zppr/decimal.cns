@@ -1876,6 +1876,14 @@ triggerall = var(40) = 0
 trigger1 = time = 0
 value = 100
 
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.10
+ignorehitpause = 1
+persistent = 0
+
 [state 0, damage scaling change]
 type = varset
 trigger1 = projhit = 1
@@ -1979,6 +1987,14 @@ triggerall = var(40) = 0
 trigger1 = time = 0
 value = 120
 
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.10
+ignorehitpause = 1
+persistent = 0
+
 [state 0, damage scaling change]
 type = varset
 trigger1 = projhit = 1
@@ -2081,6 +2097,14 @@ triggerall = fvar(7) = 0
 triggerall = var(40) = 0
 trigger1 = time = 0
 value = 140
+
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.10
+ignorehitpause = 1
+persistent = 0
 
 [state 0, damage scaling change]
 type = varset

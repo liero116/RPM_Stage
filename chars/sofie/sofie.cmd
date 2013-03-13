@@ -2400,6 +2400,7 @@ triggerall = fvar(16)=0
 triggerall = command="overdrive"
 triggerall = fvar(17)=1
 triggerall = statetype != A
+triggerall = stateno != [3000,3999]
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -2414,6 +2415,7 @@ triggerall = var(27) = 1
 triggerall = fvar(16)=0
 triggerall = command="236S"
 triggerall = power >= 1000
+triggerall = stateno != [3000,3999]
 trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
@@ -2445,6 +2447,7 @@ triggerall = fvar(16)=0
 triggerall = command="214S"
 triggerall = power >= 1000 || fvar(17)=1
 triggerall = statetype != A
+triggerall = stateno != [3000,3999]
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -2463,6 +2466,7 @@ triggerall = var(27) = 2
 triggerall = command="623S" || command="623S"
 triggerall = power > 3000
 triggerall = statetype != A
+triggerall = stateno != [3000,3999]
 trigger1 = ctrl
 trigger2 = statetype = S && p2movetype = H && var(40)=1 && stateno != 3100
 
@@ -2472,6 +2476,7 @@ type = ChangeState
 value = 3050
 triggerall = var(27) = 2
 triggerall = command="236S"
+triggerall = stateno != [3000,3999]
 triggerall = power >= 1000
 trigger1 = statetype = S
 trigger1 = ctrl
@@ -2488,6 +2493,7 @@ value = 3000
 triggerall = var(27) = 2
 triggerall = command="214S"
 triggerall = power >= 1000
+triggerall = stateno != [3000,3999]
 triggerall = statetype != A
 trigger1 = ctrl
 trigger1= stateno != [10211,10341]
@@ -2502,6 +2508,7 @@ type = ChangeState
 value = 3004
 triggerall = var(27) = 2
 triggerall = command="214S"
+triggerall = stateno != [3000,3999]
 triggerall = power >= 1000
 triggerall = statetype = A
 trigger1 = ctrl
@@ -2518,6 +2525,7 @@ triggerall = var(27) = 0
 ;triggerall = fvar(16)=0
 triggerall = command="236S"
 triggerall = power >= 1000
+triggerall = stateno != [3000,3999]
 trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
