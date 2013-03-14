@@ -1599,14 +1599,14 @@ ignorehitpause=1
 ;trigger1 = command = "x"
 ;ignorehitpause=1
 ;
-[State -1, Burst Dash 13600]
-type = ChangeState
-value = 13600
-triggerall = power>1000
-triggerall = !(ishelper)
-triggerall = var(27) = 2
-trigger1 = command = "x"
-ignorehitpause=1
+;[State -1, Burst Dash 13600]
+;type = ChangeState
+;value = 13600
+;triggerall = power>1000
+;triggerall = !(ishelper)
+;triggerall = var(27) = 2
+;trigger1 = command = "x"
+;ignorehitpause=1
 
 [State 150, 1]
 type = ChangeAnim
@@ -1745,14 +1745,14 @@ ignorehitpause=1
 ;trigger1 = command = "x"
 ;ignorehitpause=1
 
-[State -1, Burst Dash 13600]
-type = ChangeState
-value = 13600
-triggerall = power>1000
-triggerall = !(ishelper)
-triggerall = var(27) = 2
-trigger1 = command = "x"
-ignorehitpause=1
+;[State -1, Burst Dash 13600]
+;type = ChangeState
+;value = 13600
+;triggerall = power>1000
+;triggerall = !(ishelper)
+;triggerall = var(27) = 2
+;trigger1 = command = "x"
+;ignorehitpause=1
 
 [State 152, 1]
 type = ChangeAnim
@@ -1891,14 +1891,14 @@ ignorehitpause=1
 ;trigger1 = command = "x"
 ;ignorehitpause=1
 
-[State -1, Burst Dash 13600]
-type = ChangeState
-value = 13600
-triggerall = power>1000
-triggerall = !(ishelper)
-triggerall = var(27) = 2
-trigger1 = command = "x"
-ignorehitpause=1
+;[State -1, Burst Dash 13600]
+;type = ChangeState
+;value = 13600
+;triggerall = power>1000
+;triggerall = !(ishelper)
+;triggerall = var(27) = 2
+;trigger1 = command = "x"
+;ignorehitpause=1
 
 [State 154, 1]
 type = ChangeAnim
@@ -11654,9 +11654,7 @@ x=0
 
 [State 0, CtrlSet]
 type = CtrlSet
-trigger1 = command!="holdfwd"
-trigger1 = command!="holdback"
-trigger1 = animelem=2
+trigger1 =  time >= 15
 value = 1
 
 [state 101, changestate]
