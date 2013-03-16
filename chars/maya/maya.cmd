@@ -3004,7 +3004,7 @@ triggerall = var(27) = 0
 triggerall = !(ishelper)
 triggerall = command = "236A"
 triggerall = statetype != A
-triggerall = var(31) = 0
+;triggerall = var(31) = 0
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = [200,299]
@@ -3023,7 +3023,7 @@ triggerall = var(27) = 0
 triggerall = !(ishelper)
 triggerall = command = "236B"
 triggerall = statetype != A
-triggerall = var(31) = 0
+;triggerall = var(31) = 0
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = [200,299]
@@ -3042,7 +3042,7 @@ triggerall = var(27) = 0
 triggerall = !(ishelper)
 triggerall = command = "236C"
 triggerall = statetype != A
-triggerall = var(31) = 0
+;triggerall = var(31) = 0
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = [200,299]
