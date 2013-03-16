@@ -16,8 +16,8 @@ snd = system.snd
 logo.storyboard = logo.def        
 intro.storyboard = intro.def       
 select = select.def       
-fight = fight_cf-d_inftime.def 
-;fight = fight_cf.def         
+;fight = fight_cf-d_inftime.def 
+fight = fight_cf.def         
 ;fight = mugen1/fight.def
 
 font1 = font/enter48.def
