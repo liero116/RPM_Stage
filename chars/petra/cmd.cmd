@@ -3022,7 +3022,7 @@ triggerall = command = "a"
 trigger1 = statetype = A
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = 699; 650
+trigger3 = stateno = 650 && p2movetype = H
 trigger4 = stateno = 1100 && statetype = A
 trigger5 = stateno = 1110 && statetype = A
 
@@ -3036,7 +3036,7 @@ trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = 600
 trigger3 = movecontact
-trigger4 = stateno = 699 ;650
+trigger3 = stateno = 650 && p2movetype = H
 trigger5 = stateno = 1100 && statetype = A
 trigger6 = stateno = 1110 && statetype = A
 
@@ -3050,7 +3050,7 @@ trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = 610
 trigger3 = movecontact
-trigger4 = stateno = 699; 650
+trigger3 = stateno = 650 && p2movetype = H
 trigger5 = stateno = 1100 && statetype = A
 trigger6 = stateno = 1110 && statetype = A
 
