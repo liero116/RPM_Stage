@@ -4234,7 +4234,7 @@ trigger1 = parent,stateno != [12300,12301]
 
 ;---------------------------------------------------------------------------
 ; Stand 
-[Statedef 40]
+[Statedef 7000]
 type = S
 physics = S
 sprpriority = 0
