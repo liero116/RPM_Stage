@@ -833,11 +833,11 @@ trigger1 = time = 0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 time = 20
 
-[State -3, Super Jump U 7000]
-type = ChangeState
-value = 7000
-triggerall = var(15) = 1
-trigger1 = stateno = 432
+;[State -3, Super Jump U 7000]
+;type = ChangeState
+;value = 7000
+;triggerall = var(15) = 1
+;trigger1 = stateno = 432
 
 ;===========================================================================
 [state -1,MOTION]
@@ -1377,14 +1377,14 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-;triggerall = var(27) = 2
-triggerall = Command = "SJ"
-triggerall = !(ishelper)
-trigger1 = StateType = S
-trigger1 = ctrl
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;;triggerall = var(27) = 2
+;triggerall = Command = "SJ"
+;triggerall = !(ishelper)
+;trigger1 = StateType = S
+;trigger1 = ctrl
 
 [State -1, ]
 type = Null
@@ -2556,12 +2556,12 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-;triggerall = var(27) = 2
-triggerall = Command = "SJ"
-triggerall = !(ishelper)
-trigger1 = StateType = S
-trigger1 = ctrl
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;;triggerall = var(27) = 2
+;triggerall = Command = "SJ"
+;triggerall = !(ishelper)
+;trigger1 = StateType = S
+;trigger1 = ctrl
 

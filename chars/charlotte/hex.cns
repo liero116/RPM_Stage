@@ -587,7 +587,7 @@ type=changestate
 triggerall=command="holdup"
 trigger1=time>13
 trigger2=movecontact
-value=7000
+value=40
 ctrl=1
 
 [State 410, 4]

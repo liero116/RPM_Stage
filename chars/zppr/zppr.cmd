@@ -1375,15 +1375,15 @@ trigger1=1
 ; trigger1=random > 666
 ; trigger1=anim=5061
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-triggerall = life>0 && p2life>0
-triggerall = var(27) = 0
-triggerall = var(15) = 1
-trigger1 = random < 400
-trigger1 = stateno = 440
-trigger1 = movecontact
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;triggerall = life>0 && p2life>0
+;triggerall = var(27) = 0
+;triggerall = var(15) = 1
+;trigger1 = random < 400
+;trigger1 = stateno = 440
+;trigger1 = movecontact
 
 [State -1, ]
 type = Null
@@ -1985,13 +1985,13 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-triggerall = var(27) = 0
-triggerall = Command = "SJ"
-trigger1 = StateType = S
-trigger1 = ctrl
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;triggerall = var(27) = 0
+;triggerall = Command = "SJ"
+;trigger1 = StateType = S
+;trigger1 = ctrl
 
 [State -1, ]
 type = Null
@@ -2500,13 +2500,13 @@ trigger1=1
 ; triggerall=command!="holdfwd" || command!="holdback"
 ; trigger1=anim=5061
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-triggerall = var(27) = 1
-triggerall = Command = "SJ"
-trigger1 = StateType = S
-trigger1 = ctrl
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;triggerall = var(27) = 1
+;triggerall = Command = "SJ"
+;trigger1 = StateType = S
+;trigger1 = ctrl
 
 [State -1, ]
 type = Null
@@ -3109,13 +3109,13 @@ trigger1=1
 ; triggerall=command!="holdfwd" || command!="holdback"
 ; trigger1=anim=5061
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-triggerall = var(27) = 2
-triggerall = Command = "SJ"
-trigger1 = StateType = S
-trigger1 = ctrl
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;triggerall = var(27) = 2
+;triggerall = Command = "SJ"
+;trigger1 = StateType = S
+;trigger1 = ctrl
 
 ; [State -1, Guard S 130]
 ; type = ChangeState

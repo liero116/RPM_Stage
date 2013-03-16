@@ -2006,16 +2006,16 @@ trigger1=1
 ; trigger1=random > 666
 ; trigger1=anim=5061
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-triggerall = life>0 && p2life>0
-triggerall = var(27) = 0
-triggerall = var(15) = 1
-trigger1 = random < 400
-trigger1 = stateno = 430
-trigger1 = movecontact
-trigger1 = time > 33
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;triggerall = life>0 && p2life>0
+;triggerall = var(27) = 0
+;triggerall = var(15) = 1
+;trigger1 = random < 400
+;trigger1 = stateno = 430
+;trigger1 = movecontact
+;trigger1 = time > 33
 
 ;===========================================================================
 
@@ -4174,13 +4174,13 @@ trigger1=1
 ; triggerall=command!="holdfwd" || command!="holdback"
 ; trigger1=anim=5061
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-triggerall = Command = "SJ"
-;triggerall = !(ishelper)
-trigger1 = StateType = S
-trigger1 = ctrl
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;triggerall = Command = "SJ"
+;;triggerall = !(ishelper)
+;trigger1 = StateType = S
+;trigger1 = ctrl
 
 ;---------------------------------------------------------------------------
 ; [State -1, Guard S 130]

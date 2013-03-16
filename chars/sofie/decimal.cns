@@ -525,7 +525,7 @@ type=changestate
 trigger1=command="holdup"
 trigger1=movehit
 ;trigger1=time>12
-value=7000
+value=40
 ctrl=1
 
 [State 440, 4]

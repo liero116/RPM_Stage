@@ -1599,13 +1599,13 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-;triggerall = var(27) = 2
-triggerall = var(15) = 1 ; = "SJ"
-triggerall = !(ishelper)
-trigger1 = stateno = 430 && movehit
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;;triggerall = var(27) = 2
+;triggerall = var(15) = 1 ; = "SJ"
+;triggerall = !(ishelper)
+;trigger1 = stateno = 430 && movehit
 
 
 
@@ -2727,12 +2727,12 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Super Jump 7000]
-type = ChangeState
-value = 7000
-;triggerall = var(27) = 2
-triggerall = Command = "SJ"
-triggerall = !(ishelper)
-trigger1 = StateType = S
-trigger1 = ctrl
+;[State -1, Super Jump 7000]
+;type = ChangeState
+;value = 7000
+;;triggerall = var(27) = 2
+;triggerall = Command = "SJ"
+;triggerall = !(ishelper)
+;trigger1 = StateType = S
+;trigger1 = ctrl
 

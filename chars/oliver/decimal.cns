@@ -909,7 +909,7 @@ trigger1=command="holdup"
 ;trigger1=time>6
 trigger1=movehit
 ;trigger2=time>8
-value=7000
+value=40
 ctrl=1
 
 [State 210, 5]

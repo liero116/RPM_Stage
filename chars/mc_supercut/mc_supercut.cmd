@@ -4781,13 +4781,13 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Super Jump U 7000]
-type = ChangeState
-value = 7000
-triggerall = ailevel = 0
-triggerall = Command = "SJ"
-trigger1 = StateType = S
-trigger1 = ctrl
+;[State -1, Super Jump U 7000]
+;type = ChangeState
+;value = 7000
+;triggerall = ailevel = 0
+;triggerall = Command = "SJ"
+;trigger1 = StateType = S
+;trigger1 = ctrl
 
 ;[State -1, Super Jump F 7050]
 ;type = ChangeState

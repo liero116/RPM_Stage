@@ -529,7 +529,7 @@ type=changestate
 triggerall=command="holdup"
 trigger1=time>18
 trigger1=movehit
-value=7000
+value=40
 ctrl=1
 
 [State 410, 4]

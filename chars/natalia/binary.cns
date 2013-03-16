@@ -4082,8 +4082,8 @@ type = Helper
 trigger1 = time = 0
 helpertype = normal
 name = "Ivan"
-ID = 7000
-stateno = 7000
+ID = 40
+stateno = 40
 pos = 0,0
 
 [State 0, RemoveExplod]
@@ -4234,11 +4234,11 @@ trigger1 = parent,stateno != [12300,12301]
 
 ;---------------------------------------------------------------------------
 ; Stand 
-[Statedef 7000]
+[Statedef 40]
 type = S
 physics = S
 sprpriority = 0
-anim = 7000
+anim = 40
 facep2 = 1
 ctrl =1
 
@@ -4412,7 +4412,7 @@ ignorehitpause = 1
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = animtime = 0
-value = 7000
+value = 40
 
 [State 0, destroy]
 type = ChangeState
@@ -4452,7 +4452,7 @@ ignorehitpause = 1
 type = ChangeState
 trigger1 = parent,command != "holdfwd"
 trigger1 = parent,command != "holdback"
-value = 7000
+value = 40
 
 [State 0, ChangeState]
 type = ChangeState
@@ -4508,7 +4508,7 @@ ignorehitpause = 1
 type = ChangeState
 trigger1 = parent,command != "holdfwd"
 trigger1 = parent,command != "holdback"
-value = 7000
+value = 40
 
 [State 0, ChangeState]
 type = ChangeState
@@ -4549,7 +4549,7 @@ y = 0
 [State 1000, Land]
 type= changestate
 trigger1 = animtime = 0
-value= 7000
+value= 40
 
 [State 0, ChangeState]
 type = ChangeState
@@ -4636,7 +4636,7 @@ nochainid=1
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 7000
+value = 40
 ctrl = 1
 
 [State 0, ChangeState]
@@ -4736,7 +4736,7 @@ air.hittime = 35
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 7000
+value = 40
 ctrl = 1
 
 [State 0, ChangeState]
@@ -4869,7 +4869,7 @@ fall.recover = 0
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 7000
+value = 40
 ctrl = 1
 
 [State 0, destroy]
@@ -4896,7 +4896,7 @@ y = 0
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = animtime = 0
-value = 7000
+value = 40
 
 [State 0, destroy]
 type = ChangeState
