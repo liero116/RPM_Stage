@@ -2,12 +2,12 @@
 M.U.G.E.N ver 1.00 (2011.01.18) status log
 ------------------------------------------
 Parsing command line...
-Command line: D:\Projects\Cross Fighter\RPM_Stage\mugen.exe
+Command line: F:\Cross Fighter\RPM_Stage\mugen.exe
 Parse command line OK
 Initializing...
 Allocating game variables
 Reading configuration file...OK
-Initializing timer...performance timer enabled...frequency 1948750...OK
+Initializing timer...performance timer enabled...frequency 2610117...OK
 Initializing keyboard...configuring...OK
 Initializing input engine...OK
 Initializing sound...Using SDL audio driver: dsound
@@ -16,12 +16,13 @@ Opened mixer with parameters (44100, 16, 2, 2048)...
 OK
 Initializing BGM...BGMThreadInit returned 0
 OK
-Initializing graphics...gameCoord 1280x720...render mode 0_3...trying 1280x720x16 mode 0x0...success...OK
+Initializing graphics...gameCoord 1280x720...render mode 0_1...trying 1280x720x16 mode 0x0...success...OK
 Setting callbacks...OK
 Initializing font...OK
 Initializing game variables...OK
 Loading system fonts...OK
 Loading options...
+Initializing pads...OK
 Reinitializing input engine...OK
 Remapping keys...OK
 Reinitializing input engine...OK
@@ -46,7 +47,7 @@ Loading system...
   Load [End Credits]...OK
   Load TitleBG...VersusBG...VictoryBG...SelectBG...OptionBG...OK
   Loading fight data
-    Opening fight data file data/fight_cf.def...OK
+    Opening fight data file data/fight_cf-d_inftime.def...OK
     Reading [Files]...OK
     Loading fonts...OK
     Load fight anim...OK
@@ -63,7 +64,7 @@ Playing storyboard logo.def: scene
 attempting load and start...attempting load of data/intro_sc2.mp3...hooking mixer callback...
 success!
 starting BGM...
-Storyboard playback canceled 80:0 k66 p0
+Storyboard playback canceled 10:0 k0 pD
 Finished playing storyboard logo.def: scene
 Initializing character info...OK
 Initializing select screen...finding characters...
@@ -120,404 +121,13 @@ Entering main loop
 Playing storyboard intro.def: scene
 attempting load and start...attempting load of data/title 4.mp3...success!
 starting BGM...
-Storyboard playback canceled 400:0 k31 p0
+Storyboard playback canceled 10:0 k0 pD
 Finished playing storyboard intro.def: scene
 Entering character select.
 attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 attempting load and start...attempting load of sound/select.mp3...success!
 starting BGM...
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17514 expressions (5619 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/petra/petra.def...
-  Loading info...OK
-  Loading cmd command set cmd.cmd...OK
-  Loading cns cns.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry cmd.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff sff.sff...OK
-  Loading anim air.air...OK
-  Loading snd snd.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  10209 expressions (4171 on trigger lines)
-Character petra.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 198.44s
-Total frames: 11909 	Skipped frames: 0
-Avg game rate: 60.01
-Avg frame rate: 60.01
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...OK
-  Allocating helpers...OK
-Stage initialized OK
-attempting load of stages/training2/training2.mp3...success!
-prebuffering BGM...
-Start of game loop
-End of game loop
-Total time: 204.31s
-Total frames: 12261 	Skipped frames: 0
-Avg game rate: 60.01
-Avg frame rate: 60.01
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Entering character select.
-attempting load and start...attempting load of sound/title 4.mp3...success!
-starting BGM...
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19656 expressions (5755 on trigger lines)
-Character bot_blu.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 15.46s
-Total frames: 928 	Skipped frames: 0
-Avg game rate: 60.03
-Avg frame rate: 60.03
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Entering character select.
-attempting load and start...attempting load of sound/title 4.mp3...success!
-starting BGM...
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-  Loading BG...OK
-  Allocating helpers...OK
-Loading character chars/petra/petra.def...
-  Loading info...OK
-  Loading cmd command set cmd.cmd...attempting load of stages/training2/training2.mp3...success!
-prebuffering BGM...
-OK
-  Loading cns cns.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry cmd.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff sff.sff...OK
-  Loading anim air.air...OK
-  Loading snd snd.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  10209 expressions (4171 on trigger lines)
-Character petra.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19656 expressions (5755 on trigger lines)
-Character bot_blu.def loaded OK
-End of game loop
-Total time: 298.30s
-Total frames: 17772 	Skipped frames: 2
-Avg game rate: 59.58
-Avg frame rate: 59.57
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/mc_supercut/mc_supercut.def...
-  Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19967 expressions (6763 on trigger lines)
-Character mc_supercut.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/petra/petra.def...
-  Loading info...OK
-  Loading cmd command set cmd.cmd...OK
-  Loading cns cns.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry cmd.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff sff.sff...OK
-  Loading anim air.air...OK
-  Loading snd snd.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  10209 expressions (4171 on trigger lines)
-Character petra.def loaded OK
-Loading character chars/mc_supercut/mc_supercut.def...
-  Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19967 expressions (6763 on trigger lines)
-Character mc_supercut.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/petra/petra.def...
-  Loading info...OK
-  Loading cmd command set cmd.cmd...OK
-  Loading cns cns.cns...prebuffering BGM...
-OK
-  Loading cns decimal.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry cmd.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff sff.sff...OK
-  Loading anim air.air...OK
-  Loading snd snd.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  10209 expressions (4171 on trigger lines)
-Character petra.def loaded OK
-Loading character chars/mc_supercut/mc_supercut.def...
-  Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19967 expressions (6763 on trigger lines)
-Character mc_supercut.def loaded OK
-End of game loop
-Total time: 656.57s
-Total frames: 39131 	Skipped frames: 8
-Avg game rate: 59.60
-Avg frame rate: 59.59
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Entering character select.
-attempting load and start...attempting load of sound/title 4.mp3...success!
-starting BGM...
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  16374 expressions (5710 on trigger lines)
-Character natalia.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/skypalace/skypalace.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-  Loading BG...attempting load of stages/skypalace/skypalace.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  16374 expressions (5710 on trigger lines)
-Character natalia.def loaded OK
-End of game loop
-Total time: 216.70s
-Total frames: 12886 	Skipped frames: 29
-Avg game rate: 59.46
-Avg frame rate: 59.33
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Entering character select.
-attempting load and start...attempting load of sound/title 4.mp3...success!
-starting BGM...
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 197.83s
-Total frames: 11871 	Skipped frames: 0
-Avg game rate: 60.01
-Avg frame rate: 60.01
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Entering character select.
-attempting load and start...attempting load of sound/title 4.mp3...success!
-starting BGM...
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/charlotte/charlotte.def...
-  Loading info...OK
-  Loading cmd command set charlotte.cmd...OK
-  Loading cns charlotte.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry charlotte.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff charlotte.sff...OK
-  Loading anim charlotte.air...OK
-  Loading snd charlotte.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15986 expressions (5888 on trigger lines)
-Character charlotte.def loaded OK
 Loading character chars/nadia/nadia.def...
   Loading info...OK
   Loading cmd command set nadia.cmd...OK
@@ -535,247 +145,23 @@ Loading character chars/nadia/nadia.def...
   Loading snd nadia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  16846 expressions (5215 on trigger lines)
+  17775 expressions (5386 on trigger lines)
 Character nadia.def loaded OK
-Entering character select.
-attempting load and start...attempting load of sound/title 4.mp3...success!
-starting BGM...
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/mc_supercut/mc_supercut.def...
+Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19967 expressions (6763 on trigger lines)
-Character mc_supercut.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-Loading character chars/taeko/taeko.def...
-  Loading info...OK
-  Loading cmd command set cmd.cmd...OK
-  Loading cns cns.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry cmd.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff sff.sff...OK
-  Loading anim air.air...OK
-  Loading snd snd.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15581 expressions (5744 on trigger lines)
-Character taeko.def loaded OK
-Loading character chars/sofie/sofie.def...
-  Loading info...OK
-  Loading cmd command set sofie.cmd...OK
-  Loading cns sofie.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry sofie.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff sofie.sff...OK
-  Loading anim sofie.air...OK
-  Loading snd sofie.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17562 expressions (6060 on trigger lines)
-Character sofie.def loaded OK
-Loading character chars/yoko/yoko.def...
-  Loading info...OK
-  Loading cmd command set cmd.cmd...OK
-  Loading cns cns.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry cmd.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff sff.sff...OK
-  Loading anim air.air...OK
-  Loading snd snd.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  11962 expressions (4516 on trigger lines)
-Character yoko.def loaded OK
-End of game loop
-Total time: 450.67s
-Total frames: 27045 	Skipped frames: 37
-Avg game rate: 60.01
-Avg frame rate: 59.93
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Entering character select.
-attempting load and start...attempting load of sound/title 4.mp3...success!
-starting BGM...
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 189.94s
-Total frames: 11398 	Skipped frames: 136
-Avg game rate: 60.01
-Avg frame rate: 59.29
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 157.80s
-Total frames: 9470 	Skipped frames: 51
-Avg game rate: 60.01
-Avg frame rate: 59.69
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17514 expressions (5619 on trigger lines)
-Character maya.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-prebuffering BGM...
-Start of game loop
-End of game loop
-Total time: 180.81s
-Total frames: 10850 	Skipped frames: 111
-Avg game rate: 60.01
-Avg frame rate: 59.39
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/oliver/oliver.def...
-  Loading info...OK
-  Loading cmd command set oliver.cmd...OK
-  Loading cns oliver.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry oliver.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff oliver.sff...OK
-  Loading anim oliver.air...OK
-  Loading snd oliver.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15141 expressions (5209 on trigger lines)
-Character oliver.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 172.62s
-Total frames: 10359 	Skipped frames: 17
-Avg game rate: 60.01
-Avg frame rate: 59.91
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 174.47s
-Total frames: 10470 	Skipped frames: 71
-Avg game rate: 60.01
-Avg frame rate: 59.60
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/paintedbridge/paintedbridge.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-prebuffering BGM...
-Start of game loop
-End of game loop
-Total time: 186.89s
-Total frames: 11215 	Skipped frames: 68
-Avg game rate: 60.01
-Avg frame rate: 59.64
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
+  19656 expressions (5755 on trigger lines)
+Character bot_blu.def loaded OK
 attempting load and start...no BGM...Unloading system background data...sprite data...OK
 Initializing stage...
   Loading BG...attempting load of stages/training2/training2.mp3...success!
@@ -784,358 +170,175 @@ OK
 Stage initialized OK
 Start of game loop
 prebuffering BGM...
-End of game loop
-Total time: 293.86s
-Total frames: 17634 	Skipped frames: 0
-Avg game rate: 60.01
-Avg frame rate: 60.01
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/roy/roy.def...
-  Loading info...OK
-  Loading cmd command set roy.cmd...OK
-  Loading cns roy.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry roy.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff roy.sff...OK
-  Loading anim roy.air...OK
-  Loading snd roy.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  13351 expressions (4558 on trigger lines)
-Character roy.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/valley_field/valley.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 295.47s
-Total frames: 17731 	Skipped frames: 0
-Avg game rate: 60.01
-Avg frame rate: 60.01
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/void/void.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 326.43s
-Total frames: 19588 	Skipped frames: 1
-Avg game rate: 60.01
-Avg frame rate: 60.00
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  16374 expressions (5710 on trigger lines)
-Character natalia.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 159.47s
-Total frames: 9570 	Skipped frames: 36
-Avg game rate: 60.01
-Avg frame rate: 59.79
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/zppr/zppr.def...
-  Loading info...OK
-  Loading cmd command set zppr.cmd...OK
-  Loading cns zppr.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry zppr.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff zppr.sff...OK
-  Loading anim zppr.air...OK
-  Loading snd zppr.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  16592 expressions (5310 on trigger lines)
-Character zppr.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/void/void.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 259.52s
-Total frames: 15574 	Skipped frames: 201
-Avg game rate: 60.01
-Avg frame rate: 59.24
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/taeko/taeko.def...
-  Loading info...OK
-  Loading cmd command set cmd.cmd...OK
-  Loading cns cns.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry cmd.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff sff.sff...OK
-  Loading anim air.air...OK
-  Loading snd snd.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15581 expressions (5744 on trigger lines)
-Character taeko.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 269.11s
-Total frames: 16149 	Skipped frames: 59
-Avg game rate: 60.01
-Avg frame rate: 59.79
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/tsukiko/tsukiko.def...
-  Loading info...OK
-  Loading cmd command set tsukiko.cmd...OK
-  Loading cns tsukiko.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry tsukiko.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff tsukiko.sff...OK
-  Loading anim tsukiko.air...OK
-  Loading snd tsukiko.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  13764 expressions (4493 on trigger lines)
-Character tsukiko.def loaded OK
-Loading character chars/charlotte/charlotte.def...
-  Loading info...OK
-  Loading cmd command set charlotte.cmd...OK
-  Loading cns charlotte.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry charlotte.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff charlotte.sff...OK
-  Loading anim charlotte.air...OK
-  Loading snd charlotte.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15986 expressions (5888 on trigger lines)
-Character charlotte.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
   Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 199.12s
-Total frames: 11949 	Skipped frames: 0
-Avg game rate: 60.01
-Avg frame rate: 60.01
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/void/void.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 169.15s
-Total frames: 10151 	Skipped frames: 156
-Avg game rate: 60.01
-Avg frame rate: 59.09
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/petra/petra.def...
+Loading character chars/nadia/nadia.def...
   Loading info...OK
-  Loading cmd command set cmd.cmd...OK
-  Loading cns cns.cns...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
   Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry cmd.cmd...OK
+  Loading cmd state entry nadia.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff sff.sff...OK
-  Loading anim air.air...OK
-  Loading snd snd.snd...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  10209 expressions (4171 on trigger lines)
-Character petra.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+  17775 expressions (5386 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19656 expressions (5755 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 108.40s
-Total frames: 6506 	Skipped frames: 0
-Avg game rate: 60.02
-Avg frame rate: 60.02
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/captain_jack/captain_jack.def...
+Loading character chars/nadia/nadia.def...
   Loading info...OK
-  Loading cmd command set captain_jack.cmd...attempting load and start...no BGM...OK
-  Loading cns captain_jack.cns...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
   Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17775 expressions (5386 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19656 expressions (5755 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17775 expressions (5386 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19656 expressions (5755 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns nadia.cns...OK
   Loading cns decimal.cns...OK
   Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry captain_jack.cmd...OK
+  Loading cmd state entry nadia.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff captain_jack.sff...OK
-  Loading anim captain_jack.air...OK
-  Loading snd captain_jack.snd...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  18435 expressions (5493 on trigger lines)
-Character captain_jack.def loaded OK
-Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/void/void.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
+  17775 expressions (5386 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19656 expressions (5755 on trigger lines)
+Character bot_blu.def loaded OK
 End of game loop
-Total time: 63.24s
-Total frames: 3796 	Skipped frames: 0
-Avg game rate: 60.03
-Avg frame rate: 60.03
+Total time: 373.58s
+Total frames: 22271 	Skipped frames: 0
+Avg game rate: 59.62
+Avg frame rate: 59.62
 
 Reloading system sprite data...Reloading system background data...OK
+Entering character select.
 attempting load and start...attempting load of sound/select.mp3...success!
 starting BGM...
-Loading character chars/oliver/oliver.def...
-  Loading info...OK
-  Loading cmd command set oliver.cmd...OK
-  Loading cns oliver.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry oliver.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff oliver.sff...OK
-  Loading anim oliver.air...OK
-  Loading snd oliver.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15141 expressions (5209 on trigger lines)
-Character oliver.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 201.13s
-Total frames: 12070 	Skipped frames: 0
-Avg game rate: 60.01
-Avg frame rate: 60.01
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...no BGM...attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Entering character select.
 attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 Returned from main loop
 Deinitializing...
-Frames      : 338283
-Time elapsed: 44712.910 sec
-ticks: 4471291, tps: 100, start 281, end 4471572
+Frames      : 22271
+Time elapsed: 387.140 sec
+ticks: 38714, tps: 100, start 121, end 38835
 
 Clearing player cache...OK
 Freeing character info...OK
@@ -1149,11 +352,11 @@ Deintializing timer...OK
 Deinitializing graphics...OK
 Deinitializing BGM...Cleaning up mixer callback...unhooking mixer callback...
 
-Mixer callback was entered 139591 times
-Mixer callback timing stats (last 131072 calls):
-	4.000000 median, 4.122704 avg, 2.941810 sample std. dev.
-Top 10 slowest times:	223 (1), 199 (1), 193 (1), 186 (1), 176 (1), 161 (1), 157 (1), 150 (1), 141 (1), 130 (1)
-Top 10 fastest times:	1 (2786), 2 (7272), 3 (45266), 4 (47658), 5 (9692), 6 (3585), 7 (6891), 8 (5565), 9 (1211), 10 (380)
+Mixer callback was entered 8312 times
+Mixer callback timing stats (last 8312 calls):
+	5.000000 median, 5.483999 avg, 2.745951 sample std. dev.
+Top 10 slowest times:	173 (1), 153 (1), 55 (1), 32 (1), 25 (1), 20 (6), 19 (8), 18 (5), 17 (3), 14 (1)
+Top 10 fastest times:	1 (37), 2 (59), 3 (18), 4 (795), 5 (3742), 6 (2976), 7 (546), 8 (88), 9 (12), 10 (2)
 OK
 Deinitializing sound...OK
 Successful program termination.

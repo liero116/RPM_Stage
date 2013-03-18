@@ -2247,7 +2247,7 @@ removeongethit=1
 [state 0, normal shield]
 type = HitOverride
 trigger1 = animelem=2
-attr = SCA,NA,HA,SA,NT,ST,HT       ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+attr = SC,NA,HA,SA;NT,ST,HT       ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 slot = 6
 stateno = 10510
 time = 10
@@ -2961,7 +2961,7 @@ removeongethit=1
 [state 0, normal shield]
 type = HitOverride
 trigger1 = time = 0
-attr = SCA,NA,HA,SA,NT,ST,HT       ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+attr = SC,NA,HA,SA;,NT,ST,HT       ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 slot = 6
 stateno = 10610
 time = 23

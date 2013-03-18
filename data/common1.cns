@@ -2053,7 +2053,7 @@ flag2 = nobardisplay
 [State 190, 2] ;Go straight to intro.
 type = ChangeState
 trigger1 = animtime = 0
-trigger2 = command = "holddown" 
+trigger2 = command = "holddown" || command = "holdup" || command = "holdfwd" || command = "holdback"
 value = 192
 
 ;---------------------------------------------------------------------------

@@ -107,6 +107,86 @@ name = "623C"
 command = ~DF,$D,$F,c
 buffer.time=3
 
+[Command]
+name = "421S"
+command = ~B,$D,$B,z
+buffer.time=3
+
+[Command]
+name = "421S"
+command = ~DB,$D,$B,z
+buffer.time=3
+
+[Command]
+name = "421S"
+command = ~B,$D,$B,a+b+c
+buffer.time=3
+
+[Command]
+name = "421S"
+command = ~DB,$D,$B,a+b+c
+buffer.time=3
+
+[Command]
+name = "421EX"
+command = ~B,$D,$B,a+b
+buffer.time=3
+
+[Command]
+name = "421EX"
+command = ~B,$D,$B,b+c
+buffer.time=3
+
+[Command]
+name = "421EX"
+command = ~B,$D,$B,a+c
+buffer.time=3
+
+[Command]
+name = "421EX"
+command = ~DB,$D,$B,a+b
+buffer.time=3
+
+[Command]
+name = "421EX"
+command = ~DB,$D,$B,b+c
+buffer.time=3
+
+[Command]
+name = "421EX"
+command = ~DB,$D,$B,a+c
+buffer.time=3
+
+[Command]
+name = "421A"
+command = ~B,$D,$B,a
+buffer.time=3
+
+[Command]
+name = "421A"
+command = ~DB,$D,$B,a
+buffer.time=3
+
+[Command]
+name = "421B"
+command = ~B,$D,$B,b
+buffer.time=3
+
+[Command]
+name = "421B"
+command = ~DB,$D,$B,b
+buffer.time=3
+
+[Command]
+name = "421C"
+command = ~B,$D,$B,c
+buffer.time=3
+
+[Command]
+name = "421C"
+command = ~DB,$D,$B,c
+buffer.time=3
+
 
 ;-| Super Motions |--------------------------------------------------------
 
@@ -197,6 +277,16 @@ buffer.time=7
 
 [Command]
 name = "214S"
+command = ~D,$B,a+b+c
+buffer.time=7
+
+[Command]
+name = "214S"
+command = ~D,$B,z
+buffer.time=7
+
+[Command]
+name = "214S"
 command = ~D,DB,B,z
 buffer.time=7
 
@@ -280,6 +370,21 @@ buffer.time=7
 [Command]
 name = "214EX"
 command = ~D, DB, B, a+c
+buffer.time=7
+
+[Command]
+name = "214EX"
+command = ~D, B, a+b
+buffer.time=7
+
+[Command]
+name = "214EX"
+command = ~D, B, b+c
+buffer.time=7
+
+[Command]
+name = "214EX"
+command = ~D, B, a+c
 buffer.time=7
 
 [Command]
@@ -432,6 +537,24 @@ buffer.time=7
 [Command]
 name = "214C"
 command = ~D, DB, B, c
+buffer.time=7
+;time = 18
+
+[Command]
+name = "214A"
+command = ~D, B, a
+buffer.time=7
+;time = 18
+
+[Command]
+name = "214B"
+command = ~D, B, b
+buffer.time=7
+;time = 18
+
+[Command]
+name = "214C"
+command = ~D, B, c
 buffer.time=7
 ;time = 18
 
@@ -1974,6 +2097,7 @@ triggerall = statetype != A
 triggerall = power >= 1000
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
+trigger3 = stateno = 232 && time < 6
 
 [State -1, ]
 type = Null
@@ -2002,6 +2126,29 @@ trigger1=1
 [State -1, ==Special Moves==]
 type = Null
 trigger1=1
+
+;---------------------------------------------------------------------------
+
+[State -1, 421 EX - Upper Thunder]
+type = ChangeState
+value = 1310
+triggerall = var(27) = 0
+triggerall = command = "421EX"
+triggerall = statetype != A
+triggerall = power >= 500 
+trigger1 = ctrl
+trigger2 = stateno = 101 || stateno = 109
+
+[State -1, 421 AT - Upper Thunder]
+type = ChangeState
+value = 1300
+triggerall = var(27) = 0
+triggerall = command = "421A" || command = "421B" || command = "421C"
+triggerall = statetype != A
+trigger1 = ctrl
+trigger2 = stateno = 101 || stateno = 109
+trigger3 = stateno = 442
+trigger3 = movecontact
 
 ;---------------------------------------------------------------------------
 
@@ -2051,15 +2198,16 @@ trigger3 = stateno = [200,499]
 trigger3 = movecontact
 
 ;---------------------------------------------------------------------------
-[State -1, 214 A - Thundergrab]
+[State -1, 214 EX - Thundergrab]
 type = ChangeState
 value = 1203
 triggerall = var(27) = 0
-triggerall = command = "214EX"
+triggerall = command = "214EX" && command != "214S" 
 triggerall = statetype != A
 triggerall = power >= 500
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
+trigger3 = stateno = 232 && time < 6
 
 [State -1, 214 A - Thundergrab]
 type = ChangeState
@@ -2069,6 +2217,7 @@ triggerall = command = "214A"
 triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
+trigger3 = stateno = 232 && time < 6
 
 [State -1, 214 B - Thundergrab]
 type = ChangeState
@@ -2078,6 +2227,7 @@ triggerall = command = "214B"
 triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
+trigger3 = stateno = 232 && time < 6
 
 [State -1, 214 C - Thundergrab]
 type = ChangeState
@@ -2087,6 +2237,7 @@ triggerall = command = "214C"
 triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
+trigger3 = stateno = 232 && time < 6
 
 ;---------------------------------------------------------------------------
 
@@ -2198,6 +2349,17 @@ trigger1=1
 type = Null
 trigger1=1
 
+[State -1, Strong 230]
+type = ChangeState
+value = 1400
+triggerall = var(27) = 0
+triggerall = command != "214S" 
+triggerall = command = "a" && command = "b" && command = "c"
+;triggerall = command != "holddown"
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 101 || stateno = 109
+
 [State -1, Light 200]
 type = ChangeState
 value = 202
@@ -2281,7 +2443,7 @@ trigger3 = movecontact
 
 [State -1, Strong 430]
 type = ChangeState
-value = 432
+value = 442
 triggerall = var(27) = 0
 triggerall = command = "c"
 triggerall = command = "holddown"
