@@ -82,7 +82,7 @@ trigger1 = time=0
 priority = 4, Hit
 attr = S, NA
 animtype  = High
-damage    = 90
+damage    = 220
 guardflag = MA
 hitflag = MAFD
 pausetime = 8,5

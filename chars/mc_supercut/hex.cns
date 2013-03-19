@@ -37,7 +37,7 @@ guardsound = 6, 0
 ground.type = High
 ground.slidetime = 18
 ground.hittime  = 18
-guard.hittime = 15
+guard.hittime = 16
 ground.velocity = -7,0
 airguard.velocity = -.5,-.8
 air.type = High
@@ -72,7 +72,7 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-[Statedef 212, B]
+[Statedef 212 - B]
 type    = S
 movetype= A
 physics = S
@@ -134,8 +134,8 @@ sparkxy = -10, -35 ; = -10,-37
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = High
-ground.slidetime = 19
-ground.hittime  = 19
+ground.slidetime = 21
+ground.hittime  = 21
 guard.hittime = 19
 ground.velocity = -8
 air.velocity = -5,30
@@ -474,44 +474,6 @@ time = 3
 ID = -1
 pos = 22,-70
 
-;======================================
-[State 600, just frame]
-type = PalFX
-trigger1=time=0
-time = 3
-add = 100,100,180
-mul = 256,256,256
-sinadd = -80,-80,-80,10
-invertall = 0
-color = 0
-ignorehitpause = 1
-persistent = 1
-
-[State 600, EnvColor]
-type = EnvColor
-trigger1=time=0
-value = 255,255,255
-time = 1
-under = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 600, EnvShake]
-type = EnvShake
-trigger1=time=0
-time = 10
-freq = 60
-ampl = -4
-phase = 90
-ignorehitpause =1
-persistent =1
-
-[State 200, sfx]
-type = PlaySnd
-trigger1 = Time = 0
-value = 20,0
-volume=200
-
 [State 200, vox]
 type = PlaySnd
 trigger1 = Time = 0
@@ -597,44 +559,6 @@ y=-4
 type=posset
 trigger1=time=0
 y=target,pos y
-
-;======================================
-[State 600, just frame]
-type = PalFX
-trigger1=time=0
-time = 3
-add = 100,100,180
-mul = 256,256,256
-sinadd = -80,-80,-80,10
-invertall = 0
-color = 0
-ignorehitpause = 1
-persistent = 1
-
-[State 600, EnvColor]
-type = EnvColor
-trigger1=time=0
-value = 255,255,255
-time = 1
-under = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 600, EnvShake]
-type = EnvShake
-trigger1=time=0
-time = 10
-freq = 60
-ampl = -4
-phase = 90
-ignorehitpause =1
-persistent =1
-
-[State 200, sfx]
-type = PlaySnd
-trigger1 = Time = 0
-value = 20,0
-volume=200
 
 [State 200, vox]
 type = PlaySnd
@@ -752,44 +676,6 @@ trigger1=facing=-1
 trigger1=time=0
 x=target,pos x - 60
 y=target,pos y
-
-;======================================
-[State 600, just frame]
-type = PalFX
-trigger1=time=0
-time = 3
-add = 100,100,180
-mul = 256,256,256
-sinadd = -80,-80,-80,10
-invertall = 0
-color = 0
-ignorehitpause = 1
-persistent = 1
-
-[State 600, EnvColor]
-type = EnvColor
-trigger1=time=0
-value = 255,255,255
-time = 1
-under = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 600, EnvShake]
-type = EnvShake
-trigger1=time=0
-time = 10
-freq = 60
-ampl = -4
-phase = 90
-ignorehitpause =1
-persistent =1
-
-[State 200, sfx]
-type = PlaySnd
-trigger1 = Time = 0
-value = 20,0
-volume=200
 
 [State 200, vox]
 type = PlaySnd
@@ -948,9 +834,9 @@ sparkxy = -10, -5 ; = -10,-42
 hitsound   = 5,10
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 16
-ground.hittime  = 16
-guard.hittime = 14
+ground.slidetime = 19
+ground.hittime  = 19
+guard.hittime = 17
 ground.velocity = -6
 air.velocity = -1.5,-3
 nochainid=1
@@ -971,40 +857,9 @@ physics = C
 juggle  = 7
 poweradd = 0; ifelse(fvar(7)=0,54,0)
 ctrl = 0
-;anim = 440
+anim = 412
 sprpriority = 2
 facep2=1
-
-;[state 0, damage scaling change]
-;type = varset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14);;0.95
-;persistent = 0
-
-[state 0, damage counter set]
-type = varadd
-trigger1 = (movehit)
-var(3) = ((enemynear, gethitvar(damage))/1)
-persistent = 1
-ignorehitpause = 1
-
-[state 0, super armor anim change]
-type = ChangeAnim
-trigger1 = Time = 0 && Anim !=440
-value=440
-
-[State 0, super armor damage]
-type = LifeAdd
-trigger1 = Time = 0
-value = -(gethitvar(damage))
-
-[state 0, super armor hitcounter]
-type=varadd
-trigger1=enemynear,movetype=A
-trigger1=enemynear,movecontact
-fv=5
-value=1
-persistent=0
 
 [State 200, vox]
 type = PlaySnd
@@ -1038,7 +893,7 @@ guardsound = 6,0
 ground.type = Low
 ground.slidetime = 24
 ground.hittime  = 24
-guard.hittime = 20
+guard.hittime = 22
 ground.velocity = -8
 air.velocity = -1.5,-3
 nochainid=1
@@ -1091,13 +946,9 @@ value = 5,20
 [state 452, velset]
 type=velset
 trigger1=animelem=4
-x=4
-
-[state 452, velset]
-type=velset
-trigger1=animelem=5
-trigger2=animelem=6
-x=6
+trigger2=animelem=5
+trigger3=animelem=6
+x = 7
 
 [State 440, 3]
 type = hitdef 
@@ -3123,7 +2974,7 @@ movetype= A
 physics = A
 juggle  = 4
 poweradd = 0; ifelse(fvar(7)=0,80,0)
-velset = 2,-7
+velset = 3,-7
 anim = 1051
 ctrl = 0
 sprpriority = 2
@@ -3253,7 +3104,7 @@ movetype= A
 physics = A
 juggle  = 4
 poweradd = 0; ifelse(fvar(7)=0,112,0)
-velset = 2,-9
+velset = 3,-9
 anim = 1051
 ctrl = 0
 sprpriority = 2
@@ -3383,7 +3234,7 @@ movetype= A
 physics = A
 juggle  = 4
 poweradd = 0; ifelse(fvar(7)=0,80,0)
-velset = 3,-11
+velset = 4,-11
 anim = 1051
 ctrl = 0
 sprpriority = 2
@@ -3856,8 +3707,8 @@ guardsound = 6,0
 ground.type = High
 ground.slidetime = 22
 ground.hittime  = 22
-ground.velocity = -6,-2
-air.velocity = -6,-2
+ground.velocity = -4,-2
+air.velocity = -4,-2
 fall=1
 air.fall=1
 fall.recover=0

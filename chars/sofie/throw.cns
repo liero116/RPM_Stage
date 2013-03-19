@@ -34,7 +34,7 @@ trigger1 = p2movetype != H
 priority = 1,miss
 attr = S, NA
 animtype  = Hard
-damage    = 10
+damage    = 100
 guardflag = MA
 hitflag = MAFD
 pausetime = 5,40
@@ -56,7 +56,7 @@ trigger1 = animelem=6
 priority = 4, Hit
 attr = S, NA
 animtype  = Hard
-damage    = 90
+damage    = 150
 guardflag = MA
 hitflag = MAFD
 pausetime = 5,5

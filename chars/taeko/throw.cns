@@ -34,7 +34,7 @@ trigger1 = time=0
 priority = 1,miss
 attr = S, NA
 animtype  = hard
-damage    = 20
+damage    = 180
 guardflag = MA
 hitflag = MAFD
 pausetime = 8,8

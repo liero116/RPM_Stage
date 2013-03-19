@@ -35,7 +35,7 @@ trigger2 = animelem = 4
 priority = 4, Hit
 attr = S, NA
 animtype  =hard
-damage    = 20
+damage    = 25
 guardflag = MA
 hitflag = MAFD
 pausetime = 5,20
@@ -58,7 +58,7 @@ trigger1 = animelem = 6
 priority = 4, Hit
 attr = S, NA
 animtype  =hard
-damage    = 50
+damage    = 150
 guardflag = MA
 hitflag = MAFD
 pausetime = 10,10

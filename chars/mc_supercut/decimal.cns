@@ -45,7 +45,7 @@ guardsound = 6, 0                ;Sound to play on guard
 ground.type = High               ;Type: High, Low, Trip (def: Normal)
 ground.slidetime = 18            ;Time that the opponent slides back
 ground.hittime  = 18
-guard.hittime = 16
+guard.hittime = 14
 ground.velocity = -9           ;Velocity at which opponent is pushed
 ;ground.velocity = 0           ;Velocity at which opponent is pushed
 airguard.velocity = -.5,-.8     ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
@@ -504,7 +504,7 @@ guardsound = 6,0
 ground.type = Low
 ground.slidetime =16
 ground.hittime  = 16
-guard.hittime = 13
+guard.hittime = 14
 ground.velocity = -6
 air.velocity = -1,-4
 nochainid=1
@@ -1370,6 +1370,12 @@ ctrl = 1
 
 [state 600,5]
 type = changestate
+trigger1 = command = "back"
+value = 1008
+ctrl = 0
+
+[state 600,5]
+type = changestate
 trigger1 = animtime = 0
 value = 0
 ctrl = 1
@@ -1779,6 +1785,117 @@ type=changestate
 trigger1=animtime=0
 value=0
 ctrl=1
+
+;---------------------------------------------------------------------------
+; = Back dash
+[Statedef 1008]
+type    = S
+movetype= I
+physics = S
+juggle  = 10
+poweradd = 0; ifelse(power!=3000,ifelse(enemynear,movetype!=H,ifelse(fvar(17)=0,60,0),0),0)
+ctrl = 0
+;velset = 0,0
+anim = 1008
+sprpriority = -1
+
+[State 0, NotHitBy]
+type = NotHitBy
+trigger1 = time = [0,5]
+value = SCA,NA,SA,HA
+
+[State 0, AfterImage]
+type = AfterImage
+trigger1 =time=0
+time = 17
+palcolor = 256
+palbright = 30,30,30
+palcontrast = 120,120,120
+paladd = 10,10,10
+palmul = .65,.65,.65
+trans=add
+
+[State 200, vox]
+type = PlaySnd
+trigger1 = animelem = 3
+value = 6,39
+volume=200
+channel=0
+
+[State 0, Charge Dust Top Output]
+type = Explod
+trigger1 = animelem = 3
+anim = 11041
+ID = 11041
+pos = 0,0
+postype = p1
+removetime = -2
+scale = 0.4,0.4
+sprpriority = 5
+facing = -1
+persistent=0
+ignorehitpause=1
+supermove=1
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = animelem = 1
+trigger2 = animelem = 2
+trigger3 = animelem = 3
+trigger4 = animelem = 4
+x = -10 - (2 * var(25))
+
+[state 600,5]
+type = changestate
+trigger1 = command = "236A" || command = "236B" || command = "236C"
+;trigger2 = command = "fwd" 
+value = 1000
+ctrl = 0
+
+[State 0, VarSet]
+type = VarSet
+triggerall = command = "a"
+trigger1 = time > 2
+var(17) = 1
+
+[State 0, VarSet]
+type = VarSet
+triggerall = command = "b"
+trigger1 = time > 2
+var(17) = 2
+
+[State 0, VarSet]
+type = VarSet
+triggerall = command = "c"
+trigger1 = time > 2
+var(17) = 3
+
+[state 600,5]
+type = changestate
+triggerall = time > 10 
+trigger1 = var(17) = 1
+value = 1005
+ctrl = 1
+
+[state 600,5]
+type = changestate
+triggerall = time > 10
+trigger1 = var(17) = 2
+value = 1006
+ctrl = 1
+
+[state 600,5]
+type = changestate
+triggerall = time > 10 
+trigger1 = var(17) = 3
+value = 1007
+ctrl = 1
+
+[state 600,5]
+type = changestate
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
 
 ;---------------------------------------------------------------------------
 ;214AT (Flying Blade)
