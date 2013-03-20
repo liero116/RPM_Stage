@@ -3187,10 +3187,12 @@ triggerall = var(27) = 2
 triggerall = command = "623A" || command = "623B" || command="623C"
 triggerall = statetype != A
 trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = [200,410]
-trigger3 = movecontact
-trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
+trigger2 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
+trigger3 = stateno = 101 && time <= 3
+trigger4 = stateno = [200,410]
+trigger4 = movecontact
+trigger5 = stateno = 1402
+trigger5 = movecontact  
 
 [State -1, 214 Light 1020]
 type = ChangeState
@@ -3210,6 +3212,18 @@ trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]
 trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
+[State -1, 236AT Jolt combo 1400]
+type = ChangeState
+value = 1400
+triggerall = var(27) = 2
+triggerall = command = "236A" || command = "236B" || command = "236C"
+triggerall = statetype != A
+trigger1 = ctrl
+trigger2 = stateno = [200,410]
+trigger2 = movecontact
+trigger3 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
+trigger4 = stateno = 101 
+
 [State -1, 66AT Thunderpunch Light 1000]
 type = ChangeState
 value = 1000
@@ -3217,10 +3231,13 @@ triggerall = var(27) = 2
 triggerall = command = "66A" || command = "66B" || command = "66C"
 triggerall = statetype != A
 trigger1 = ctrl
-trigger2 = stateno = [200,410]
-trigger2 = movecontact
-trigger3 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
-trigger4 = stateno = 101 && time <= 3
+trigger2 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
+trigger3 = stateno = 101 && time <= 3
+trigger4 = stateno = [200,410]
+trigger4 = movecontact
+trigger5 = stateno = 1402
+trigger5 = movecontact  
+
 
 
 
