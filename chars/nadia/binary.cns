@@ -1736,17 +1736,17 @@ triggerall = var(40) = 0
 trigger1 = time = 0
 value = 100
 
-[State 0, VarSet]
-type = VarSet
-trigger1 = time=0
-fv = 7
-value = 1
-
-[State 0, VarSet]
-type = VarSet
-trigger1 = time=8
-fv = 7
-value = 0
+;[State 0, VarSet]
+;type = VarSet
+;trigger1 = time=0
+;fv = 7
+;value = 1
+;
+;[State 0, VarSet]
+;type = VarSet
+;trigger1 = time=8
+;fv = 7
+;value = 0
 
 ;[state 0, damage scaling change]
 ;type = varset
@@ -1890,17 +1890,17 @@ triggerall = var(40) = 0
 trigger1 = time = 0
 value = 130
 
-[State 0, VarSet]
-type = VarSet
-trigger1 = time=0
-fv = 7
-value = 1
-
-[State 0, VarSet]
-type = VarSet
-trigger1 = time=10
-fv = 7
-value = 0
+;[State 0, VarSet]
+;type = VarSet
+;trigger1 = time=0
+;fv = 7
+;value = 1
+;
+;[State 0, VarSet]
+;type = VarSet
+;trigger1 = time=10
+;fv = 7
+;value = 0
 
 ;[state 0, damage scaling change]
 ;type = varset
@@ -2041,17 +2041,17 @@ triggerall = var(40) = 0
 trigger1 = time = 0
 value = 130
 
-[State 0, VarSet]
-type = VarSet
-trigger1 = time=0
-fv = 7
-value = 1
-
-[State 0, VarSet]
-type = VarSet
-trigger1 = time=10
-fv = 7
-value = 0
+;[State 0, VarSet]
+;type = VarSet
+;trigger1 = time=0
+;fv = 7
+;value = 1
+;
+;[State 0, VarSet]
+;type = VarSet
+;trigger1 = time=10
+;fv = 7
+;value = 0
 
 ;[state 0, damage scaling change]
 ;type = varset

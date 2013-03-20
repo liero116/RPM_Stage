@@ -295,6 +295,11 @@ name = "22S"
 command = ~D,D,z
 buffer.time=7
 
+[Command]
+name = "66S"
+command = ~F,F,z
+buffer.time=7
+
 ;-| EX Motions |-----------------------------------------------------------
 
 [Command]
@@ -400,6 +405,21 @@ buffer.time=7
 [Command]
 name = "22EX"
 command = ~D, D, a+c
+buffer.time=7
+
+[Command]
+name = "66EX"
+command = ~F, F, a+b
+buffer.time=7
+
+[Command]
+name = "66EX"
+command = ~F, F, a+c
+buffer.time=7
+
+[Command]
+name = "66EX"
+command = ~F, F, b+c
 buffer.time=7
 
 ;-| Special Motions |------------------------------------------------------
@@ -575,6 +595,21 @@ name = "22C"
 command = ~D, D, c
 buffer.time=7
 ;time = 18
+
+[Command]
+name = "66A"
+command = ~F, F, a
+buffer.time=7
+
+[Command]
+name = "66B"
+command = ~F, F, b
+buffer.time=7
+
+[Command]
+name = "66C"
+command = ~F, F, c
+buffer.time=7
 
 ;-| Double Tap |-----------------------------------------------------------
 [Command]
@@ -3124,7 +3159,6 @@ trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = 210 || stateno = 230 || stateno = 410 
 trigger3 = movecontact
-
 trigger4 = stateno = 600 || stateno = 610
 trigger4 = movecontact
 trigger4 = p2stateno != [12000,12002]
@@ -3150,15 +3184,13 @@ trigger1 = var(1)
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = [200,410]
 trigger3 = movecontact
-
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
 
-;===========================================================================
 [State -1, 214 Light 1020]
 type = ChangeState
 value = 1020
 triggerall = var(27) = 2
-triggerall = command = "214A"
+triggerall = command = "214A" || command = "214B" || command = "214C"
 triggerall = stateno != 1020
 ;triggerall = statetype != A
 ;trigger1 = var(1)
@@ -3166,92 +3198,24 @@ trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109 || stateno = 102 || stateno = 103
 trigger3 = stateno = 210 || stateno = 230 || stateno = 410 
 trigger3 = movecontact
-
 trigger4 = stateno = 600 || stateno = 610
 trigger4 = movecontact
 trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]
 trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
-[State -1, 214 Mid 1030]
-type = ChangeState
-value = 1030
-triggerall = var(27) = 2
-triggerall = command = "214B"
-;triggerall = statetype != A
-;trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109 || stateno = 102 || stateno = 103
-trigger3 = stateno = 210 || stateno = 230 || stateno = 410 
-trigger3 = movecontact
-
-trigger4 = stateno = 600 || stateno = 610
-trigger4 = movecontact
-trigger4 = p2stateno != [12000,12002]
-trigger4 = p2stateno != [11000,11010]
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1030
-
-[State -1, 214 Strong 1036]
-type = ChangeState
-value = 1036
-triggerall = var(27) = 2
-triggerall = command = "214C"
-;triggerall = statetype != A
-;trigger1 = var(1)
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109 || stateno = 102 || stateno = 103
-trigger3 = stateno = 210 || stateno = 230 || stateno = 410 
-trigger3 = movecontact
-
-trigger4 = stateno = 600 || stateno = 610
-trigger4 = movecontact
-trigger4 = p2stateno != [12000,12002]
-trigger4 = p2stateno != [11000,11010]
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1036
-
-;---------------------------------------------------------------------------
 [State -1, 236 Thunderpunch Light 1000]
 type = ChangeState
 value = 1000
 triggerall = var(27) = 2
-triggerall = command = "236A"
+triggerall = command = "66A" || command = "66B" || command = "66C"
 triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = stateno = [200,410]
 trigger3 = movecontact
-
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
 
-[State -1, 236 Thunderpunch Mid 1010]
-type = ChangeState
-value = 1010
-triggerall = var(27) = 2
-triggerall = command = "236B"
-triggerall = statetype != A
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = [200,410]
-trigger3 = movecontact
-
-trigger4 = stateno = 1000
-trigger4 = movecontact
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1010
-
-[State -1, 236 Thunderpunch Strong 1015]
-type = ChangeState
-value = 1015
-triggerall = var(27) = 2
-triggerall = command = "236C"
-triggerall = statetype != A
-trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = [200,410]
-trigger3 = movecontact
-
-trigger4 = stateno = [1000,1010]
-trigger4 = movecontact
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1015
 
 
 [State -1, ]

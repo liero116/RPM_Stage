@@ -1284,11 +1284,11 @@ trigger1=stateno=1021 || stateno=1031 || stateno = 1041 || stateno = 3010
 fv=7
 value=1
 
-; [state -2, super armor off]
-; type=varset
-; trigger1=movetype=H
-; fv=7
-; value=0
+ [state -2, super armor off]
+ type=varset
+ trigger1=movetype=H
+ fv=7
+ value=0
 
 ;===== AIR COMBO HELPER =====
 ;============================
@@ -1497,11 +1497,11 @@ value=0
 type=varset
 triggerall=var(27)=1
 trigger1=stateno=10800 || stateno=10805
-trigger2=stateno=1021 && time<=8
-trigger3=stateno=1031 && time<=10
-trigger4=stateno=1041 && time<=13
-trigger5=stateno=1141 && time<=13
-trigger6=stateno=3010 && time<=27
+;trigger2=stateno=1021 && time<=8
+;trigger3=stateno=1031 && time<=10
+;trigger4=stateno=1041 && time<=13
+;trigger5=stateno=1141 && time<=13
+;trigger6=stateno=3010 && time<=27
 fv=7
 value=1
 
@@ -1509,11 +1509,11 @@ value=1
 type=varset
 triggerall=var(27)=1
 trigger1=stateno!=10800 && stateno!=10805 && stateno!=1021 && stateno!=1031 && stateno!=1041 && stateno!=1141 && stateno!=3010
-trigger2=stateno=1021 && time>8
-trigger3=stateno=1031 && time>10
-trigger4=stateno=1041 && time>13
-trigger5=stateno=1141 && time>13
-trigger6=stateno=3010 && time>27
+;trigger2=stateno=1021 && time>8
+;trigger3=stateno=1031 && time>10
+;trigger4=stateno=1041 && time>13
+;trigger5=stateno=1141 && time>13
+;trigger6=stateno=3010 && time>27
 fv=7
 value=0
 
@@ -1561,8 +1561,8 @@ sprpriority = 7
 ignorehitpause=1
 supermove=1
 
-;;===== HIT COUNTER =====
-;;=======================
+;===== HIT COUNTER =====
+;=======================
 ;[State -2, hit counter]
 ;type = Helper
 ;trigger1 = numhelper(270005)=0
@@ -1583,9 +1583,9 @@ supermove=1
 ;ignorehitpause = 1
 ;size.xscale=0.5
 ;size.yscale=0.5
-;
-;;===== BONUS COUNTER =====
-;;=========================
+
+;===== BONUS COUNTER =====
+;=========================
 ;[State -2, bouns counter]
 ;type = Helper
 ;trigger1 = numhelper(275001)=0

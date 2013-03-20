@@ -1663,22 +1663,13 @@ trigger1 = 1;me=0
 v = 15
 value = 1
 
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=parent,fvar(13)*fvar(13)
-;persistent = 0
-;
-;[state 0, damage scaling reset]
-;type = varset
-;trigger1=1
-;fvar(13)=1
-;
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
+[State 0, gravity up]
+type = parentvarAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20) = 0.05
+ignorehitpause = 1
+persistent = 0
 
 [state 0, damage counter set]
 type = parentvaradd
@@ -1794,22 +1785,13 @@ trigger1 = 1;me=0
 v = 15
 value = 1
 
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=parent,fvar(13)*fvar(13)
-;persistent = 0
-;
-;[state 0, damage scaling reset]
-;type = varset
-;trigger1=1
-;fvar(13)=1
-;
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
+[State 0, gravity up]
+type = parentvarAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20) = 0.05
+ignorehitpause = 1
+persistent = 0
 
 [state 0, damage counter set]
 type = parentvaradd
@@ -1932,22 +1914,13 @@ trigger1 = 1;me=0
 v = 15
 value = 1
 
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=parent,fvar(13)*fvar(13)
-;persistent = 0
-;
-;[state 0, damage scaling reset]
-;type = varset
-;trigger1=1
-;fvar(13)=1
-;
-;[state 0, damage scaling change]
-;type = parentvarset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
+[State 0, gravity up]
+type = parentvarAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20) = 0.05
+ignorehitpause = 1
+persistent = 0
 ;
 [state 0, damage counter set]
 type = parentvaradd

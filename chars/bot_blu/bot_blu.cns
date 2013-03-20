@@ -210,10 +210,10 @@ physics = S
 ctrl = 0
 anim = 47
 
-[State 52]
-type = PlaySnd
-trigger1 = time = 0
-value = S20, 0
+;[State 52]
+;type = PlaySnd
+;trigger1 = time = 0
+;value = S20, 0
 
 [State 52]
 type = VelSet
@@ -2084,10 +2084,10 @@ type = playsnd
 trigger1 = time = 120
 value = S1,7
 
-[State 400]
-type = playsnd
-trigger1 = time = 120
-value = S10,0
+;[State 400]
+;type = playsnd
+;trigger1 = time = 120
+;value = S10,0
 
 [State 400]
 type = Explod
@@ -2162,10 +2162,10 @@ type = playsnd
 trigger1 = time = 120
 value = S1,7
 
-[State 405]
-type = playsnd
-trigger1 = time = 120
-value = S10,0
+;[State 405]
+;type = playsnd
+;trigger1 = time = 120
+;value = S10,0
 
 [State 405]
 type = Explod
@@ -2238,10 +2238,10 @@ type = playsnd
 trigger1 = time = 120
 value = S1,7
 
-[State 406]
-type = playsnd
-trigger1 = time = 120
-value = S10,0
+;[State 406]
+;type = playsnd
+;trigger1 = time = 120
+;value = S10,0
 
 [State 406]
 type = Explod
@@ -2323,10 +2323,10 @@ ontop = 0
 shadow = 0, 0, 0
 removeongethit = 1
 
-[State 410]
-type = playsnd
-trigger1 = AnimElem = 8
-value = S10,0
+;[State 410]
+;type = playsnd
+;trigger1 = AnimElem = 8
+;value = S10,0
 
 [State 410]
 type = Projectile
@@ -2401,10 +2401,10 @@ ontop = 0
 shadow = 0, 0, 0
 removeongethit = 1
 
-[State 420]
-type = playsnd
-trigger1 = AnimElem = 8
-value = S10,0
+;[State 420]
+;type = playsnd
+;trigger1 = AnimElem = 8
+;value = S10,0
 
 [State 420]
 type = helper
@@ -2609,10 +2609,10 @@ type = Nothitby
 trigger1 = 1
 value = SCA
 
-[State 2000]
-type = PlaySnd
-trigger1 = time = 0
-value = S10, 3
+;[State 2000]
+;type = PlaySnd
+;trigger1 = time = 0
+;value = S10, 3
 
 [State 2000]
 type = Explod
@@ -2687,10 +2687,10 @@ type = Nothitby
 trigger1 = 1
 value = SCA
 
-[State 2001]
-type = PlaySnd
-trigger1 = time = 0
-value = S10, 3
+;[State 2001]
+;type = PlaySnd
+;trigger1 = time = 0
+;value = S10, 3
 
 [State 2001]
 type = Explod
@@ -2765,10 +2765,10 @@ type = Nothitby
 trigger1 = 1
 value = SCA
 
-[State 2002]
-type = PlaySnd
-trigger1 = time = 0
-value = S10, 3
+;[State 2002]
+;type = PlaySnd
+;trigger1 = time = 0
+;value = S10, 3
 
 [State 2002]
 type = Explod
