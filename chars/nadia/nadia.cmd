@@ -3180,7 +3180,7 @@ type = Null
 trigger1=1
 
 ;===========================================================================
-[State -1, 623 Light 1050]
+[State -1, 623 Light 1100]
 type = ChangeState
 value = 1100
 triggerall = var(27) = 2
@@ -3194,23 +3194,18 @@ trigger4 = movecontact
 trigger5 = stateno = 1402
 trigger5 = movecontact  
 
-[State -1, 214 Light 1020]
+[State -1, 214 Light 1500]
 type = ChangeState
-value = 1020
+value = 1500
 triggerall = var(27) = 2
 triggerall = command = "214A" || command = "214B" || command = "214C"
-triggerall = stateno != 1020
-;triggerall = statetype != A
-;trigger1 = var(1)
 trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109 || stateno = 102 || stateno = 103
-trigger3 = stateno = 210 || stateno = 230 || stateno = 410 
-trigger3 = movecontact
-trigger4 = stateno = 600 || stateno = 610
+trigger2 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
+trigger3 = stateno = 101 && time <= 3
+trigger4 = stateno = [200,410]
 trigger4 = movecontact
-trigger4 = p2stateno != [12000,12002]
-trigger4 = p2stateno != [11000,11010]
-trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
+trigger5 = stateno = 1402
+trigger5 = movecontact  
 
 [State -1, 236AT Jolt combo 1400]
 type = ChangeState
