@@ -2,12 +2,12 @@
 M.U.G.E.N ver 1.00 (2011.01.18) status log
 ------------------------------------------
 Parsing command line...
-Command line: D:\Projects\Cross Fighter\RPM_Stage\mugen.exe
+Command line: F:\Cross Fighter\RPM_Stage\mugen.exe
 Parse command line OK
 Initializing...
 Allocating game variables
 Reading configuration file...OK
-Initializing timer...performance timer enabled...frequency 1948750...OK
+Initializing timer...performance timer enabled...frequency 2610117...OK
 Initializing keyboard...configuring...OK
 Initializing input engine...OK
 Initializing sound...Using SDL audio driver: dsound
@@ -16,7 +16,7 @@ Opened mixer with parameters (44100, 16, 2, 2048)...
 OK
 Initializing BGM...BGMThreadInit returned 0
 OK
-Initializing graphics...gameCoord 854x480...render mode 0_1...trying 854x480x16 mode 0x0...success...OK
+Initializing graphics...gameCoord 1280x720...render mode 0_1...trying 1280x720x16 mode 0x0...success...OK
 Setting callbacks...OK
 Initializing font...OK
 Initializing game variables...OK
@@ -64,7 +64,7 @@ Playing storyboard logo.def: scene
 attempting load and start...attempting load of data/intro_sc2.mp3...hooking mixer callback...
 success!
 starting BGM...
-Storyboard playback canceled 10:0 k72 p0
+Storyboard playback finished OK
 Finished playing storyboard logo.def: scene
 Initializing character info...OK
 Initializing select screen...finding characters...
@@ -145,13 +145,8 @@ Loading character chars/nadia/nadia.def...
   Loading snd nadia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  16933 expressions (5240 on trigger lines)
+  17065 expressions (5266 on trigger lines)
 Character nadia.def loaded OK
-Entering character select.
-attempting load and start...attempting load of sound/title 4.mp3...success!
-starting BGM...
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -196,7 +191,7 @@ OK
   Loading snd nadia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  16933 expressions (5240 on trigger lines)
+  17065 expressions (5266 on trigger lines)
 Character nadia.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
@@ -234,843 +229,7 @@ OK
   Loading snd nadia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17095 expressions (5275 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17063 expressions (5260 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17025 expressions (5254 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...prebuffering BGM...
-OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17025 expressions (5254 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17026 expressions (5255 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...prebuffering BGM...
-OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17028 expressions (5256 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17028 expressions (5256 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17028 expressions (5256 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17028 expressions (5256 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17032 expressions (5258 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17032 expressions (5258 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17032 expressions (5258 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17032 expressions (5258 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...prebuffering BGM...
-OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17037 expressions (5259 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...prebuffering BGM...
-OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17037 expressions (5259 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17037 expressions (5259 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17043 expressions (5261 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...prebuffering BGM...
-OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17047 expressions (5263 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17043 expressions (5261 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17043 expressions (5261 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17044 expressions (5262 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17050 expressions (5264 on trigger lines)
-Character nadia.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19629 expressions (5746 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...prebuffering BGM...
-OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17050 expressions (5264 on trigger lines)
+  17065 expressions (5266 on trigger lines)
 Character nadia.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
@@ -1169,10 +328,10 @@ OK
 Loading character chars/nadia/nadia.def...
   Loading info...OK
   Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...prebuffering BGM...
-OK
+  Loading cns nadia.cns...OK
   Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
   Loading cns hex.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
@@ -1185,6 +344,44 @@ OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
   17065 expressions (5266 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5268 on trigger lines)
 Character nadia.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
@@ -1222,7 +419,1299 @@ OK
   Loading snd nadia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17065 expressions (5266 on trigger lines)
+  17067 expressions (5268 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5268 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5268 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5268 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5268 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17066 expressions (5268 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17066 expressions (5268 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17066 expressions (5268 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5269 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5269 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5269 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5269 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17067 expressions (5269 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17068 expressions (5269 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17068 expressions (5269 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17068 expressions (5269 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17079 expressions (5274 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17079 expressions (5274 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17079 expressions (5274 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17102 expressions (5280 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17102 expressions (5280 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...attempting load of stages/training2/training2.mp3...OK
+  Loading cns nadia.cns...success!
+prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17102 expressions (5280 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17146 expressions (5288 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17146 expressions (5288 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17146 expressions (5288 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17327 expressions (5325 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17303 expressions (5303 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17303 expressions (5303 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17302 expressions (5302 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17297 expressions (5300 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17297 expressions (5300 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17431 expressions (5325 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17431 expressions (5325 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17431 expressions (5325 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17441 expressions (5316 on trigger lines)
 Character nadia.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
@@ -1240,10 +1729,716 @@ Loading character chars/bot_blu/bot_blu.def...
   19629 expressions (5746 on trigger lines)
 Character bot_blu.def loaded OK
 End of game loop
-Total time: 11637.80s
-Total frames: 697251 	Skipped frames: 0
-Avg game rate: 59.91
-Avg frame rate: 59.91
+Total time: 13360.15s
+Total frames: 799726 	Skipped frames: 0
+Avg game rate: 59.86
+Avg frame rate: 59.86
+
+Reloading system sprite data...Reloading system background data...OK
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+Entering character select.
+attempting load and start...attempting load of sound/title 4.mp3...success!
+starting BGM...
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17295 expressions (5290 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17295 expressions (5290 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17295 expressions (5290 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17295 expressions (5290 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17295 expressions (5290 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+attempting load of stages/training2/training2.mp3...success!
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17295 expressions (5290 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17295 expressions (5290 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17295 expressions (5290 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17297 expressions (5292 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17299 expressions (5293 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17328 expressions (5302 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17332 expressions (5304 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17332 expressions (5304 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...prebuffering BGM...
+OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17364 expressions (5315 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17364 expressions (5315 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17364 expressions (5315 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17354 expressions (5306 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...OK
+  Allocating helpers...success!
+OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  16931 expressions (5256 on trigger lines)
+Character nadia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5746 on trigger lines)
+Character bot_blu.def loaded OK
+End of game loop
+Total time: 11073.35s
+Total frames: 663094 	Skipped frames: 2
+Avg game rate: 59.88
+Avg frame rate: 59.88
 
 Reloading system sprite data...Reloading system background data...OK
 Entering character select.
@@ -1253,9 +2448,9 @@ attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 Returned from main loop
 Deinitializing...
-Frames      : 697251
-Time elapsed: 11655.620 sec
-ticks: 1165562, tps: 100, start 113, end 1165675
+Frames      : 1462820
+Time elapsed: 24798.590 sec
+ticks: 2479859, tps: 100, start 122, end 2479981
 
 Clearing player cache...OK
 Freeing character info...OK
@@ -1269,11 +2464,11 @@ Deintializing timer...OK
 Deinitializing graphics...OK
 Deinitializing BGM...Cleaning up mixer callback...unhooking mixer callback...
 
-Mixer callback was entered 250969 times
+Mixer callback was entered 533977 times
 Mixer callback timing stats (last 131072 calls):
-	4.000000 median, 5.172501 avg, 7.354823 sample std. dev.
-Top 10 slowest times:	441 (1), 440 (1), 358 (1), 315 (1), 311 (1), 304 (1), 265 (1), 248 (1), 241 (1), 240 (1)
-Top 10 fastest times:	1 (165), 2 (2883), 3 (48386), 4 (36001), 5 (5203), 6 (3310), 7 (19148), 8 (11542), 9 (1297), 10 (687)
+	6.000000 median, 7.281929 avg, 22.096624 sample std. dev.
+Top 10 slowest times:	6278 (1), 1921 (1), 938 (1), 808 (1), 803 (1), 730 (1), 707 (1), 698 (1), 677 (1), 663 (1)
+Top 10 fastest times:	1 (24), 2 (34), 3 (37), 4 (7038), 5 (37243), 6 (47512), 7 (21289), 8 (8016), 9 (3369), 10 (1542)
 OK
 Deinitializing sound...OK
 Successful program termination.

@@ -826,7 +826,7 @@ persistent = 1
 type = DisplayToClipboard
 trigger1 = 1
 text = "GRV = %f, DMG = %f, PB = %d, POSY = %d"
-params = fvar(20), fvar(13), var(51), var(52)
+params = fvar(20), fvar(13), var(51), var(24)
 
 [State 0, wall crossup request]
 type = VelSet
@@ -1280,7 +1280,7 @@ ignorehitpause = 1
 ;=============================
 [state -2, super armor on]
 type=varset
-trigger1=stateno=1021 || stateno=1031 || stateno = 1041 || stateno = 3010
+trigger1=stateno=1021 || stateno=1031 || stateno = 1041 || stateno = 3010 || stateno = 1010
 fv=7
 value=1
 
@@ -1495,9 +1495,9 @@ value=0
 
 [state -2, super armor on]
 type=varset
-triggerall=var(27)=1
+;triggerall=var(27)=1
 trigger1=stateno=10800 || stateno=10805
-;trigger2=stateno=1021 && time<=8
+;trigger2=stateno=1010 && time<=8
 ;trigger3=stateno=1031 && time<=10
 ;trigger4=stateno=1041 && time<=13
 ;trigger5=stateno=1141 && time<=13
@@ -1507,8 +1507,8 @@ value=1
 
 [state -2, super armor off]
 type=varset
-triggerall=var(27)=1
-trigger1=stateno!=10800 && stateno!=10805 && stateno!=1021 && stateno!=1031 && stateno!=1041 && stateno!=1141 && stateno!=3010
+;triggerall=var(27)=1
+trigger1=stateno!=10800 && stateno!=10805 && stateno!=1021 && stateno!=1031 && stateno!=1041 && stateno!=1141 && stateno!=3010 && stateno != 1010
 ;trigger2=stateno=1021 && time>8
 ;trigger3=stateno=1031 && time>10
 ;trigger4=stateno=1041 && time>13
