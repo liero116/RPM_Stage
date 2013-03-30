@@ -3131,6 +3131,7 @@ type = ChangeState
 value = 1500
 triggerall = var(27) = 2
 triggerall = (command = "214EX" && power >= 500) || command = "214A" || command = "214B" || command = "214C" 
+triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000
 trigger3 = stateno = 101 && time <= 3
@@ -3311,7 +3312,8 @@ triggerall = command != "holddown"
 trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = [200,429]
+trigger3 = stateno = [200,429] 
+trigger3 = stateno != 230
 trigger3 = movecontact
 
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 230
@@ -3361,7 +3363,8 @@ triggerall = command = "holddown"
 trigger1 = statetype = C
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
-trigger3 = stateno = [200,429]
+trigger3 = stateno = [200,429] 
+trigger3 = stateno != 430
 trigger3 = movecontact
 
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 430

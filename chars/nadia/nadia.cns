@@ -786,6 +786,8 @@ triggerall = stateno != 1207
 triggerall = stateno != 1228
 triggerall = stateno != 231
 triggerall = stateno != 1301 
+triggerall = stateno != [1401,1405]
+triggerall = stateno != 1110
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1
 fvar(13)=fvar(13)*fvar(14)
