@@ -1317,7 +1317,7 @@ ctrl = 1
 
 [State 1000, 7]
 type = ChangeState
-trigger1 = command = "x"
+trigger1 = command = "down"
 value = 1040
 ctrl = 1
 
@@ -1455,7 +1455,7 @@ ctrl = 1
 
 [State 1000, 7]
 type = ChangeState
-trigger1 = command = "x"
+trigger1 = command = "down"
 value = 1040
 ctrl = 1
 
@@ -1593,7 +1593,7 @@ ctrl = 1
 
 [State 1000, 7]
 type = ChangeState
-trigger1 = command = "x"
+trigger1 = command = "down"
 value = 1040
 ctrl = 1
 

@@ -11695,7 +11695,7 @@ physics = S
 poweradd= -1000
 ctrl = 0
 ;velset = 0,0
-anim = 1
+;anim = 1
 sprpriority = -1
 facep2=1
 
@@ -11782,7 +11782,7 @@ color = 255
 
 [State 210, 5]
 type = ChangeState
-trigger1 = time=1
+trigger1 = 1
 value = 0
 ctrl = 1
 
@@ -11816,7 +11816,7 @@ value=1
 
 [State 210, 5]
 type = ChangeState
-trigger1 = time=1
+trigger1 = 1
 value = 50
 ctrl = 1
 

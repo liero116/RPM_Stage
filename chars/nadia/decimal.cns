@@ -59,9 +59,9 @@ sparkxy = -10, -60 ; = -10, -60
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
-ground.slidetime = 21
-ground.hittime  = 21
-guard.hittime = 20
+ground.slidetime = 15
+ground.hittime  = 15
+guard.hittime = 13
 ground.velocity = -8
 airguard.velocity = -.1,-.8
 air.type = Low
@@ -133,16 +133,16 @@ priority = 5,hit
 animtype  = light
 damage    = floor(fvar(13)*20),0
 hitflag = MAFD
-guardflag = MA
+guardflag = LA
 pausetime = 12,12
 sparkno = 1
-sparkxy = -10, -60 ; = -10,-37
+sparkxy = -10, -20 ; = -10,-37
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
-ground.slidetime = 19
-ground.hittime  = 19
-guard.hittime = 17
+ground.slidetime = 15
+ground.hittime  = 15
+guard.hittime = 11
 ground.velocity = -7,0
 air.velocity = -1.0,-4.2
 air.hittime  = 44
@@ -201,6 +201,20 @@ value = 6,7
 volume=200
 channel=0
 
+[state 1000, spark gfx]
+type = Explod
+trigger1 = time=0
+scale=.35,.35
+anim = 2308
+ID = 230
+pos = 0,0
+postype = p1
+bindtime = 9999999999
+sprpriority=7
+pausemove=0
+ignorehitpause=0
+removeongethit=1
+
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
@@ -218,8 +232,8 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 26
-ground.hittime  = 26
+ground.slidetime = 23
+ground.hittime  = 23
 guard.hittime = 22
 ground.velocity = -12
 airguard.velocity = -.5,-.8
@@ -229,6 +243,12 @@ air.hittime = 36
 air.fall=1
 fall.recovertime=-1
 nochainid=1
+palfx.time=15
+palfx.add=100,100,180
+palfx.mul=256,256,256
+palfx.sinadd=-80,-80,-80,3
+palfx.invertall=0
+palfx.color=64
 
 [state 210, jump cancel]
 type=null
@@ -351,9 +371,9 @@ sparkxy = -10, -10 ; = -10,-42
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 20
-ground.hittime  = 20
-guard.hittime = 20
+ground.slidetime = 15
+ground.hittime  = 15
+guard.hittime = 13
 ground.velocity = -9
 air.type = Low
 air.slidetime = 4
@@ -428,16 +448,13 @@ guardsound = 6,0
 ground.type = high
 ground.slidetime = 25
 ground.hittime  = 25
-guard.hittime = 25
-ground.velocity = -0.5,-5
+guard.hittime = 20
+ground.velocity = -6,0
 air.velocity = -3,-5
 air.type=high
 guard.velocity = -9
-fall = 1
+fall = 0
 air.fall = 1
-;fall.recovertime=35
-animtype=up
-ground.type=up
 nochainid=1
 
 [State 410, 4]
@@ -453,9 +470,9 @@ type    = C
 movetype= A
 physics = C
 juggle  = 6
-;poweradd= 50
+;poweradd= ifelse(power!=3000,ifelse(fvar(17)=0,55,0),0)
 ctrl = 0
-anim = 430
+anim = 442
 sprpriority = 2
 facep2=1
 
@@ -472,60 +489,128 @@ var(3) = ((enemynear, gethitvar(damage))/1)
 persistent = 1
 ignorehitpause = 1
 
-[State 610, 2]
+[State 200, palm swing]
+type = PlaySnd
+trigger1 = animelem=1
+value = 5,5
+
+[State 200, palm hit]
+type = PlaySnd
+trigger1 = animelem=2
+value = 5,1
+freqmul=1.2
+
+[State 200, init spark]
 type = PlaySnd
 trigger1 = animelem=3
-value = 5,19
+value = 5,15
 
-[State 200, vox]
+[State 200, swing spark]
 type = PlaySnd
-trigger1 = Time = 0
+trigger1 = animelem=7
+value = 7,8
+freqmul=1.7
+channel=4
+
+[State 200, 1]
+type = PlaySnd
+trigger1 = Time = 1
+;rigger1 = random<449
 value = 6,9
 volume=200
 channel=0
 
-[State 410, normal]
+[state 1000, spark gfx]
+type = Explod
+trigger1 = time=0
+scale=.35,.35
+anim =4318
+ID =442
+pos = 0,0
+postype = p1
+bindtime = 9999999999
+sprpriority=7
+ontop=0
+pausemove=0
+ignorehitpause=0
+removeongethit=1
+
+[state 1000, bolt gfx]
+type = Explod
+trigger1 = time=0
+scale=.35,.35
+anim =4319
+ID =442
+pos = 0,0
+postype = p1
+bindtime = 9999999999
+sprpriority=7
+pausemove=0
+ignorehitpause=0
+removeongethit=1
+
+[state 0, envshake]
+type = envshake
+trigger1 = animelem=7
+time = 10
+freq = 60
+ampl = -4
+phase = 90
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = animelem=7
+time = 3
+add = 100,100,180
+mul = 256,256,256
+sinadd=-80,-80,-80,3
+invertall=0
+color=64
+ignorehitpause = 1
+
+[State 410, 3]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
+priority=4,hit
 attr = S, NA
-damage    = floor(fvar(13)*40),0
+damage    = floor(fvar(13)*40)
 hitflag = MAF
-guardflag = MA
-priority = 4, Hit
-pausetime = 21,21
-sparkno = 30
-sparkxy = -10, -60 ; = -5,-10
-hitsound   = 5,3
+guardflag = L
+pausetime = 16,16
+sparkno = 81
+sparkxy = -5,-70
+hitsound   = 5,2
 guardsound = 6,0
 ground.type = high
-ground.slidetime = 31
-ground.hittime  = 31
-guard.hittime = 21
-ground.velocity = -0.05,-12
-air.velocity = -0.05,-12
-down.velocity = -0.05, -12
-air.type=high
+ground.slidetime = 20
+ground.hittime  = 20
+ground.velocity = -2,-5
+guard.velocity = -4
+air.velocity = -2,-5
+air.type = high
 guard.velocity = -10
-air.fall=1
+air.fall = 1
 fall = 1
-fall.recovertime=35
+fall.recover = 0
 animtype=up
 ground.type=up
-yaccel=const(movement.yaccel)
-;snap=50,0
-id=1
+yaccel=0.8*const(movement.yaccel)
+palfx.time=35
+palfx.add=100,100,180
+palfx.mul=256,256,256
+palfx.sinadd=-80,-80,-80,3
+palfx.invertall=0
+palfx.color=64
+envshake.time=9
+envshake.freq=60
+envshake.ampl=-4
+envshake.phase=90
 nochainid=1
-;p2stateno = 5020
-
-[state 210, 4]
-type=changestate
-triggerall=command="holdup"
-trigger1=time>18
-trigger1=movehit
-value=40
-ctrl=1
+nochainid=1
+;snap = 45,-10
+;p2stateno=1996
 
 [State 410, 4]
 type = ChangeState
@@ -934,7 +1019,7 @@ value = -500
 [State 0, NotHitBy]
 type = NotHitBy
 triggerall = var(25) = 3
-trigger1 = time = [0,8]
+trigger1 = time = [1,8]
 value = SCA,NA,SA,HA,NP,SP,HP
 time = 1
 
@@ -1246,77 +1331,77 @@ triggerall = var(40) = 0
 trigger1 = time = 0
 value = 100 + (30 * var(25))
 
-[State 0, 214A anim stall 1]
+[State 0, 214A anim skip 1]
 type = ChangeAnim
 triggerall = var(25) = 0 || var(25) = 3
 trigger1 = animelem = 1, = 1
-value = 1300 
+value = 1100 
 elem = 2
 persistent = 0
 
-[State 0, 214A anim stall 2]
+[State 0, 214A anim skip 2]
 type = ChangeAnim
 triggerall = var(25) = 0 || var(25) = 3
 trigger1 = animelem = 2, = 1
-value = 1300 
+value = 1100 
 elem = 3
 persistent = 0
 
-[State 0, 214A anim stall 2]
+[State 0, 214A anim skip 2]
 type = ChangeAnim
 triggerall = var(25) = 0 || var(25) = 3
 trigger1 = animelem = 3, = 1
-value = 1300 
+value = 1100 
 elem = 4
 persistent = 0
 
-[State 0, 214B anim stall 1]
+[State 0, 214B anim skip 1]
 type = ChangeAnim
 triggerall = var(25) = 1 
-trigger1 = animelem = 1, = 1
-value = 1300 
-elem = 1
-persistent = 0
-
-[State 0, 214B anim stall 2]
-type = ChangeAnim
-triggerall = var(25) = 1 
-trigger1 = animelem = 2, = 1
-value = 1300 
-elem = 2
-persistent = 0
-
-[State 0, 214B anim stall 3]
-type = ChangeAnim
-triggerall = var(25) = 1 
-trigger1 = animelem = 3, = 1
-value = 1300 
-elem = 3
-persistent = 0
-
-[State 0, 214C anim stall 1]
-type = ChangeAnim
-triggerall = var(25) = 2 
 trigger1 = animelem = 1, = 2
-value = 1300 
-elem = 1
-persistent = 0
-
-[State 0, 214C anim stall 2]
-type = ChangeAnim
-triggerall = var(25) = 2 
-trigger1 = animelem = 2, = 2
-value = 1300 
+value = 1100 
 elem = 2
 persistent = 0
 
-[State 0, 214C anim stall 3]
+[State 0, 214B anim skip 2]
 type = ChangeAnim
-triggerall = var(25) = 2 
-trigger1 = animelem = 3, = 2
-value = 1300 
+triggerall = var(25) = 1 
+trigger1 = animelem = 2, = 2
+value = 1100 
 elem = 3
 persistent = 0
+
+[State 0, 214B anim skip 3]
+type = ChangeAnim
+triggerall = var(25) = 1 
+trigger1 = animelem = 3, = 2
+value = 1100 
+elem = 4
+persistent = 0
+
+;[State 0, 214C anim stall 1]
+;type = ChangeAnim
+;triggerall = var(25) = 2 
+;trigger1 = animelem = 1, = 2
+;value = 1300 
+;elem = 1
+;persistent = 0
+;
+;[State 0, 214C anim stall 2]
+;type = ChangeAnim
+;triggerall = var(25) = 2 
+;trigger1 = animelem = 2, = 2
+;value = 1300 
+;elem = 2
+;persistent = 0
+;
+;[State 0, 214C anim stall 3]
+;type = ChangeAnim
+;triggerall = var(25) = 2 
+;trigger1 = animelem = 3, = 2
+;value = 1300 
+;elem = 3
+;persistent = 0
 
 [state 1020, velset]
 type=velset
@@ -1361,13 +1446,6 @@ paladd = 10,10,10
 palmul = .65,.65,.65
 trans=add
 
-[State 0, AssertSpecial]
-type = AssertSpecial
-trigger1 = 1
-flag = unguardable
-flag2 = nojugglecheck
-ignorehitpause = 1
-
 [State 200, 1]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
@@ -1385,8 +1463,8 @@ sparkxy = -10, -60
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
-ground.slidetime = 40
-ground.hittime  = 40
+ground.slidetime = 20
+ground.hittime  = 20
 ground.velocity = -1,-8
 airguard.velocity = -.1,-.8
 air.type = high
@@ -1716,7 +1794,7 @@ value = -500
 [State 0, NotHitBy]
 type = NotHitBy
 triggerall = var(25) = 3
-trigger1 = time = [0,8]
+trigger1 = time = [1,8]
 value = SCA,NA,SA,HA,NP,SP,HP
 time = 1
 
@@ -1793,9 +1871,9 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = S7,8
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 23
-ground.hittime  = 23
-guard.hittime = 15
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = 16
 ground.velocity = -8,0
 guard.velocity = -8
 airguard.velocity = -.5,-.8
@@ -1928,9 +2006,9 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = S7,8
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 23
-ground.hittime  = 23
-guard.hittime = 15
+ground.slidetime = 19
+ground.hittime  = 19
+guard.hittime = 17
 ground.velocity = -8,0
 guard.velocity = -8
 airguard.velocity = -.5,-.8
@@ -2346,9 +2424,9 @@ sparkxy = -10, -60 ; = -10, -26
 hitsound = S7,8
 guardsound = 6, 0
 ground.type = High
-ground.slidetime = 23
-ground.hittime  = 23
-guard.hittime = 15
+ground.slidetime = 22
+ground.hittime  = 22
+guard.hittime = 22
 ground.velocity = -2,-5
 guard.velocity = -15
 airguard.velocity = -.5,-.8
