@@ -1939,7 +1939,7 @@ length=15
 type=poweradd
 triggerall=var(40)=1
 trigger1=time%1=0
-value=-6
+value=-20
 ignorehitpause = 1
 
 [state -2, speed off]

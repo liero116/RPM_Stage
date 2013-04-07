@@ -8,8 +8,8 @@
 sff = fight_cf.sff
 snd = fight.snd
 font1 = enter48.def
-fightfx.sff = fightfx.sff
-fightfx.air = fightfx.air
+fightfx.sff = fightfx_2.sff
+fightfx.air = fightfx_2.air
 common.snd = common_8bit.snd
 
 ;-----------------------------------------------------------

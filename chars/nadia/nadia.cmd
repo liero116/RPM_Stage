@@ -3062,7 +3062,7 @@ type = ChangeState
 value = 3050
 triggerall = var(27) = 2
 triggerall = command="236S"
-triggerall = power >= 1000
+triggerall = power >= 1000 || var(40)=1
 triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
