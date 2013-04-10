@@ -42,17 +42,17 @@ trigger1 = Time = 0
 priority = 6
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*10)
+damage    = floor(fvar(13)*15)
 guardflag = MA
 hitflag = MAF
 pausetime = 8,8
-sparkno = 14
-sparkxy = -20, -55 ; = -10,-60
+sparkno = 200 + (random%5)
+sparkxy = (-5 - random%5), (-50 - random%15); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 20
-ground.hittime  = 20
+ground.slidetime = 17
+ground.hittime  = 17
 guard.hittime = 14
 ground.velocity = -9
 air.type = high
@@ -112,12 +112,12 @@ trigger1 = animelem = 5
 priority = 5
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*5)
+damage    = floor(fvar(13)*10)
 guardflag = MA
 hitflag = MAF
 pausetime = 8,8
-sparkno = 14
-sparkxy = -20, -55 ; = -10,-60
+sparkno = 210 + (random%5)
+sparkxy = (-5 - random%5), (-55 - random%15); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -130,13 +130,6 @@ air.fall = 1
 air.velocity = -3,-3
 nochainid=1
 
-[State 0, StateTypeSet]
-type = StateTypeSet
-trigger1 = animelem = 9
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = S         ;A,C,S,N
-
 [State 240, 2]
 type = hitdef
 ground.cornerpush.veloff = -4
@@ -145,12 +138,12 @@ trigger1 = animelem = 9
 priority = 3
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*10)
-guardflag = HA
+damage    = floor(fvar(13)*15)
+guardflag = MA
 hitflag = MAF
 pausetime = 8,8
-sparkno = 15
-sparkxy = -20, -55 ; = -10,-60
+sparkno = 210 + (random%5)
+sparkxy = (-5 - random%5), (-35 - random%15); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -207,12 +200,12 @@ trigger1 = time = 0
 priority = 4
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*20)
+damage    = floor(fvar(13)*45)
 guardflag = MA
 hitflag = MAF
 pausetime = 8,8
-sparkno = 30
-sparkxy = -10, -55 ; = -10,-60
+sparkno = 1001
+sparkxy = (-5 - random%5), (-55 - random%15); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -267,17 +260,17 @@ trigger1 = time = 0
 priority = 4
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*10)
+damage    = floor(fvar(13)*15)
 guardflag = LA
 hitflag = MAF
 pausetime = 8,8
-sparkno = 14
-sparkxy = -20, -18
+sparkno = 200 + (random%5)
+sparkxy = (-5 - random%5), (-15- random%15)
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 21
-ground.hittime  = 21
+ground.slidetime = 18
+ground.hittime  = 18
 guard.hittime = 13
 ground.velocity = -8
 air.type = high
@@ -329,12 +322,12 @@ trigger1 = time = 0
 priority = 4
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*15)
+damage    = floor(fvar(13)*20)
 guardflag = LA
 hitflag = MAFD
 pausetime = 8,8
-sparkno = 14
-sparkxy = -20, -5
+sparkno = 210 + (random%5)
+sparkxy = (-5 - random%15), -2
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -409,12 +402,12 @@ trigger1 = time = 0
 priority = 4
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*20)
+damage    = floor(fvar(13)*30)
 guardflag = LA
 hitflag = MAF
 pausetime = 8,8
-sparkno = 11
-sparkxy = -30, -5 
+sparkno = 230 + (random%5)
+sparkxy = (-5 - random%15), -2
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -468,12 +461,12 @@ trigger1 = time = 0
 priority = 2
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*10)
+damage    = floor(fvar(13)*15)
 guardflag = HA
 hitflag = MAF
 pausetime = 8,8
-sparkno = 14
-sparkxy = -10, -55 ; = -10,-60
+sparkno = 200 + (random%5)
+sparkxy = (-10 - random%5), (-20 - random%15); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -537,12 +530,12 @@ trigger2 = animelem = 7
 priority = 1
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*10)
+damage    = floor(fvar(13)*15)
 guardflag = HA
 hitflag = MAF
 pausetime = 8,8
-sparkno = 14
-sparkxy = -20, -55 ; = -10,-60
+sparkno = 210 + (random%5)
+sparkxy = (-5 - random%5), (-20 - random%15); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -615,12 +608,12 @@ trigger1 = animelem = 4
 priority = 1
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*6)
+damage    = floor(fvar(13)*5)
 guardflag = HA
 hitflag = MAF
 pausetime = 8,8
-sparkno = 2
-sparkxy = -10, -30 ; = -10,-60
+sparkno = 230 + (random%5)
+sparkxy = (-10 - random%30), (-10 - random%30); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -647,12 +640,12 @@ trigger7 = animelem = 18
 priority = 1
 attr = S, NA
 animtype  = Medium
-damage    = floor(fvar(13)*8)
+damage    = floor(fvar(13)*5)
 guardflag = HA
 hitflag = MAF
 pausetime = 4,4
-sparkno = 1
-sparkxy = -10, -30 ; = -10,-60
+sparkno = 230 + (random%5)
+sparkxy = (-10 - random%30), (-10 - random%30); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -897,7 +890,7 @@ type    = U
 movetype= A
 physics = U
 ;juggle  = 0
-poweradd = -150
+poweradd = -200
 ;anim = 1000
 ctrl = 0
 sprpriority = 2
@@ -972,7 +965,7 @@ var(21) = 3
 
 [State 0, FIREBALL]
 type = Helper
-trigger1 = animelem = 10
+trigger1 = animelem = 9
 helpertype = normal ;player
 name = "Fireball"
 ID = 1050
@@ -1027,7 +1020,7 @@ sprpriority=5
 type = parentvarAdd
 triggerall = p2statetype != S && p2statetype != C
 trigger1 = movehit = 1
-fvar(20)=0.04
+fvar(20)=0.10
 ignorehitpause = 1
 persistent = 0
 
@@ -1127,14 +1120,14 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(parent,fvar(13)*150),80
+damage = floor(parent,fvar(13)*100),60
 animtype = Light
 guardflag = MA
 hitflag = MAF
 priority = 2, Hit
 pausetime = 0,8
-sparkno = -1
-sparkxy = -10, 0 ; = -10, -80
+sparkno = 1004
+sparkxy = 0,0
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
@@ -1257,7 +1250,7 @@ type = DestroySelf
 trigger1 = animtime=0
 
 ;-------------------------------------------------------------------------
-;214 AT JUMP
+;214AT JUMP
 [StateDef 1100]
 type = S
 movetype= I
@@ -1322,7 +1315,7 @@ var(18) = 9
 
 [State 0, ChangeAnim]
 type = ChangeAnim
-trigger1 = time = 1
+trigger1 = time = 0
 value = 1100 + var(18)
 
 [State 0, StateTypeSet]
@@ -1369,7 +1362,7 @@ value = 699
 ctrl = 1
 
 ;-------------------------------------------------------------------------
-;214 AT FAST FALL
+;214AT FAST FALL
 [StateDef 1110]
 type = A
 movetype= I
@@ -1467,7 +1460,7 @@ value = 699
 ctrl = 1
 ;-------------------------------------------------------------------------------
 
-;623 AT
+;623AT CHARGE
 [StateDef 1200]
 type = S
 movetype= A
@@ -1497,26 +1490,26 @@ var(18) = 3
 
 [State 0, ChangeAnim]
 type = ChangeAnim
-trigger1 = time = 1
+trigger1 = time = 0
 value = 1200 + var(18)
 
 [State 0, 623A Power]
 type = PowerAdd
 triggerall = var(18) = 1
 trigger1 = animelem = 4
-value = 200
+value = 300
 
 [State 0, 623A Power]
 type = PowerAdd
 triggerall = var(18) = 2
 trigger1 = animelem = 4
-value = 300
+value = 500
 
 [State 0, 623A Power]
 type = PowerAdd
 triggerall = var(18) = 3
 trigger1 = animelem = 4
-value = 500
+value = 700
 
 [State 0, AfterImage]
 type = AfterImage
@@ -1546,6 +1539,195 @@ mul = 256,256,256
 sinadd = -255,-255,-255,3
 invertall = 0
 color = 0
+
+[State 200, end]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------------------------------------------------------
+
+;22 AT TELEPORT
+[StateDef 1300]
+type = U
+movetype= A
+physics = U
+juggle  = 1
+velset = 0,0
+ctrl = 0
+sprpriority = 7
+
+[State 0, GROUND ANIM]
+type = ChangeAnim
+trigger1 = statetype != A
+trigger1 = time = 0
+value = 1300
+
+[State 0, AIR ANIM]
+type = ChangeAnim
+trigger1 = statetype = A
+trigger1 = time = 0
+value = 1305
+
+[State 0, DASH SELECT A]
+type = VarSet
+trigger1 = time = 0
+trigger1 = command = "a" || command = "22A" ;|| command = "z"
+var(18) = 1
+
+[State 0, DASH SELECT B]
+type = VarSet
+trigger1 = time = 0
+trigger1 = command = "b" || command = "22B"
+var(18) = 2
+
+[State 0, DASH SELECT C]
+type = VarSet
+trigger1 = time = 0
+trigger1 = command = "c" || command = "22C"
+var(18) = 3
+
+[State 0, DASH SELECT EX A]
+type = VarSet
+trigger1 = time = 0 && power >= 500
+trigger1 = command = "EXA" ;|| command = "22EX"
+var(18) = 4
+
+[State 0, DASH SELECT EX B]
+type = VarSet
+trigger1 = time = 0 && power >= 500
+trigger1 = command = "EXB" ;|| command = "22EX"
+var(18) = 5
+
+[State 0, DASH SELECT EX C]
+type = VarSet
+trigger1 = time = 0 && power >= 500
+trigger1 = command = "EXC" ;|| command = "22EX"
+var(18) = 6
+
+;-EX FX--------------------------
+[State 0, EX Palfx]
+type = PalFX
+triggerall = var(18) >= 4
+trigger1 = time = 0
+time = 20
+add = 30,200,-255
+mul = 256,256,256
+sinadd = 30,200,-255,5
+invertall = 0
+color = 0
+
+[State 0, EX sound]
+type = PlaySnd
+triggerall = var(18) >= 4
+trigger1 = time = 0
+value = F29,5
+volume = 255
+channel = -1
+
+[State 0, PowerAdd]
+type = PowerAdd
+triggerall = var(18) >= 4
+trigger1 = time = 0
+value = -500
+
+[State 0, NotHitBy]
+type = NotHitBy
+triggerall = var(18) >= 4
+trigger1 = time = [0,10] 
+value = SCA,NA,SA,HA,NP,SP,HP;,NT,ST,HT
+;value2 = S,NA
+time = 1
+;ignorehitpause = 
+;persistent = 
+;--------------------------------
+
+[State 0, AfterImage]
+type = AfterImage
+trigger1 = animelem = 7
+time = 44
+palcolor = 256
+palbright = 30,30,30
+palcontrast = 120,120,120
+paladd = 10,10,10
+palmul = .65,.65,.65
+trans=add
+
+[State 0, EnvShake]
+type = EnvShake
+trigger1 = animelem = 7
+trigger2 = animelem = 9
+time = 6
+freq = 60
+ampl = -2
+phase = 40
+
+[State 0, PalFXWiz]
+type = PalFX
+trigger1 = animelem = 7
+trigger2 = animelem = 9
+time = 6
+add = 120,120,120
+mul = 256,256,256
+sinadd = -255,-255,-255,3
+invertall = 0
+color = 0
+
+[State 0, VelSet]
+type = posadd ;VelSet
+triggerall = var(18) = 1 || var(18) = 4
+trigger1 = animelem = 8
+x = -200
+
+[State 0, VelSet]
+type = posadd ;VelSet
+triggerall = var(18) = 2 || var(18) = 5
+trigger1 = animelem = 8
+x = -100
+
+[State 0, VelSet]
+type = posadd ;VelSet
+triggerall = var(18) = 3 || var(18) = 6
+trigger1 = animelem = 8
+x = 200
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = animelem = 8
+y = 0
+
+[State 0, Explod]
+type = Explod
+trigger1 = animelem=7
+anim = 11019
+ID = 11019
+pos = 0,0
+postype = p1  ;p2,front,back,left,right
+bindtime = 1
+facing = -1
+removetime = -2
+scale = 0.35,0.35
+sprpriority = 7
+ontop = 1
+removeongethit = 1
+ignorehitpause = 1
+
+[State 0, Explod]
+type = Explod
+trigger1 = animelem=9
+anim = 1310
+ID = 1310
+pos = 0,0
+postype = p1  ;p2,front,back,left,right
+bindtime = 1
+facing = -1
+removetime = -2
+scale = 0.20,0.35
+sprpriority = 2
+ontop = 0
+removeongethit = 1
+ignorehitpause = 1
 
 [State 200, end]
 type = ChangeState
@@ -1777,14 +1959,14 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-damage = floor(parent,fvar(13)*150),80
+damage = floor(parent,fvar(13)*100),60
 animtype = Light
 guardflag = MA
 hitflag = MAF
 priority = 2, Hit
 pausetime = 0,15
-sparkno = -1
-sparkxy = -10, 0 ; = -10, -80
+sparkno = 1004
+sparkxy = 0,0
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
@@ -1906,7 +2088,7 @@ value = -500
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 = time = [2,10]
+trigger1 = time = [0,10]
 value = SCA,NA,SA,HA,NP,SP,HP
 time = 1
 
@@ -2155,8 +2337,8 @@ damage    = floor(parent,fvar(13)*40),10
 guardflag = MA
 hitflag = MAF
 pausetime = 0,0
-sparkno = -1
-sparkxy = -20, -55 ; = -10,-60
+sparkno = 1004
+sparkxy = (25 - random%50), (-1 - random%120); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
@@ -2184,8 +2366,8 @@ damage    = floor(parent,fvar(13)*80),10
 guardflag = MA
 hitflag = MAF
 pausetime = 0,0
-sparkno = -1
-sparkxy = -20, -55 ; = -10,-60
+sparkno = 1004
+sparkxy = (25 - random%50), (-1 - random%120); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low

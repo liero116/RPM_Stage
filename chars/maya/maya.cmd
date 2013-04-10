@@ -2050,10 +2050,10 @@ triggerall = command != "holddown"
 trigger1 = statetype = S
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
-;trigger3 = stateno = 202
-;trigger3 = movecontact
-;trigger3 = p2stateno != [12000,12002]
-;trigger3 = p2stateno != [11000,11010]
+trigger3 = stateno = 202
+trigger3 = movecontact
+trigger3 = p2stateno != [12000,12002]
+trigger3 = p2stateno != [11000,11010]
 ;trigger4 = stateno = 412
 ;trigger4 = movecontact
 ;trigger4 = p2stateno != [12000,12002]

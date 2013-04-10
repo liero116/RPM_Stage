@@ -69,7 +69,7 @@ value = 1
 
 [State 0, 0]
 type = lifeset
-trigger1 = time = 60
+trigger1 = time = 1
 value = lifemax
 
 [State 0, 1]

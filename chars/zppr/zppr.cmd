@@ -1570,7 +1570,7 @@ triggerall = command = "623EX" ;|| command="y"
 triggerall =  power >= 500
 trigger1 = statetype != A
 trigger1 = ctrl
-trigger2 = stateno=212 || stateno=242 || stateno=412 || stateno=442
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -1619,7 +1619,7 @@ triggerall = var(27) = 0
 triggerall = command = "623A" ;|| command="y"
 trigger1 = statetype != A
 trigger1 = ctrl
-trigger2 = stateno=212 || stateno=242 || stateno=412 || stateno=442
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -1632,7 +1632,7 @@ triggerall = var(27) = 0
 triggerall = command = "623B" ;|| command="y"
 trigger1 = statetype != A
 trigger1 = ctrl
-trigger2 = stateno=212 || stateno=242 || stateno=412 || stateno=442
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -1645,7 +1645,7 @@ triggerall = var(27) = 0
 triggerall = command = "623C" ;|| command="y"
 trigger1 = statetype != A
 trigger1 = ctrl
-trigger2 = stateno=212 || stateno=242 || stateno=412 || stateno=442
+trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]

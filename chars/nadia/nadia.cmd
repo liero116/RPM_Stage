@@ -2391,9 +2391,9 @@ trigger1=1
 type = Null
 trigger1=1
 
-[State -1, Strong 230]
+[State -1, Strong 1600]
 type = ChangeState
-value = 1400
+value = 1600
 triggerall = var(27) = 0
 triggerall = command != "214S" 
 triggerall = command = "a" && command = "b" && command = "c"

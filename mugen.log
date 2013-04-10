@@ -2,12 +2,12 @@
 M.U.G.E.N ver 1.00 (2011.01.18) status log
 ------------------------------------------
 Parsing command line...
-Command line: D:\Projects\Cross Fighter\RPM_Stage\mugen.exe
+Command line: F:\Cross Fighter\RPM_Stage\mugen.exe
 Parse command line OK
 Initializing...
 Allocating game variables
 Reading configuration file...OK
-Initializing timer...performance timer enabled...frequency 1948730...OK
+Initializing timer...performance timer enabled...frequency 3517773...OK
 Initializing keyboard...configuring...OK
 Initializing input engine...OK
 Initializing sound...Using SDL audio driver: dsound
@@ -22,7 +22,7 @@ Initializing font...OK
 Initializing game variables...OK
 Loading system fonts...OK
 Loading options...
-Initializing pads...failed
+Initializing pads...OK
 Reinitializing input engine...OK
 Remapping keys...OK
 Reinitializing input engine...OK
@@ -64,7 +64,7 @@ Playing storyboard logo.def: scene
 attempting load and start...attempting load of data/intro_sc2.mp3...hooking mixer callback...
 success!
 starting BGM...
-Storyboard playback canceled 10:0 k72 p0
+Storyboard playback canceled 40:0 k0 p12
 Finished playing storyboard logo.def: scene
 Initializing character info...OK
 Initializing select screen...finding characters...
@@ -121,32 +121,32 @@ Entering main loop
 Playing storyboard intro.def: scene
 attempting load and start...attempting load of data/title 4.mp3...success!
 starting BGM...
-Storyboard playback canceled 10:0 k72 p0
+Storyboard playback canceled 10:0 k0 pD
 Finished playing storyboard intro.def: scene
 Entering character select.
 attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 attempting load and start...attempting load of sound/select.mp3...success!
 starting BGM...
-Loading character chars/nadia/nadia.def...
+Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
   Loading cns decimal.cns...OK
   Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
+  Loading cmd state entry mc_supercut.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17011 expressions (5256 on trigger lines)
-Character nadia.def loaded OK
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -160,39 +160,39 @@ Loading character chars/bot_blu/bot_blu.def...
   Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19628 expressions (5746 on trigger lines)
+  19629 expressions (5747 on trigger lines)
 Character bot_blu.def loaded OK
 attempting load and start...no BGM...Unloading system background data...sprite data...OK
 Initializing stage...
-  Loading BG...OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
   Allocating helpers...OK
 Stage initialized OK
-attempting load of stages/training2/training2.mp3...success!
 prebuffering BGM...
 Start of game loop
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/nadia/nadia.def...
+Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...prebuffering BGM...
-OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
   Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
+  Loading cmd state entry mc_supercut.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17011 expressions (5256 on trigger lines)
-Character nadia.def loaded OK
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -206,25 +206,4718 @@ Loading character chars/bot_blu/bot_blu.def...
   Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19628 expressions (5746 on trigger lines)
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...prebuffering BGM...
+OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...prebuffering BGM...
+OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...prebuffering BGM...
+OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...prebuffering BGM...
+OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...prebuffering BGM...
+OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19949 expressions (6768 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19953 expressions (6770 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/mc_supercut/mc_supercut.def...
+  Loading info...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry mc_supercut.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19953 expressions (6770 on trigger lines)
+Character mc_supercut.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
 Character bot_blu.def loaded OK
 End of game loop
-Total time: 66699.07s
-Total frames: 182436 	Skipped frames: 59
-Avg game rate: 2.74
-Avg frame rate: 2.73
+Total time: 5036.03s
+Total frames: 301461 	Skipped frames: 1
+Avg game rate: 59.86
+Avg frame rate: 59.86
 
 Reloading system sprite data...Reloading system background data...OK
-Entering character select.
 attempting load and start...attempting load of sound/select.mp3...success!
 starting BGM...
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Entering character select.
+attempting load and start...attempting load of sound/title 4.mp3...success!
+starting BGM...
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...prebuffering BGM...
+OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/oliver/oliver.def...
+  Loading info...OK
+  Loading cmd command set oliver.cmd...OK
+  Loading cns oliver.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry oliver.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff oliver.sff...OK
+  Loading anim oliver.air...OK
+  Loading snd oliver.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15141 expressions (5210 on trigger lines)
+Character oliver.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+End of game loop
+Total time: 2272.57s
+Total frames: 136197 	Skipped frames: 0
+Avg game rate: 59.93
+Avg frame rate: 59.93
+
+Reloading system sprite data...Reloading system background data...OK
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17514 expressions (5620 on trigger lines)
+Character maya.def loaded OK
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17514 expressions (5620 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17514 expressions (5620 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17514 expressions (5620 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17514 expressions (5620 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17514 expressions (5620 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17514 expressions (5620 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17514 expressions (5620 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...attempting load of stages/training2/training2.mp3...success!
+prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17518 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17517 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17517 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17517 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17517 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17517 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17517 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...OK
+  Loading cns maya.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17517 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...OK
+  Allocating helpers...OK
+Loading character chars/maya/maya.def...
+  Loading info...OK
+  Loading cmd command set maya.cmd...attempting load of stages/training2/training2.mp3...OK
+  Loading cns maya.cns...success!
+prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry maya.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff maya.sff...OK
+  Loading anim maya.air...OK
+  Loading snd maya.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17517 expressions (5624 on trigger lines)
+Character maya.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+End of game loop
+Total time: 4054.92s
+Total frames: 242943 	Skipped frames: 0
+Avg game rate: 59.91
+Avg frame rate: 59.91
+
+Reloading system sprite data...Reloading system background data...OK
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10209 expressions (4172 on trigger lines)
+Character petra.def loaded OK
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10209 expressions (4172 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...prebuffering BGM...
+OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10209 expressions (4172 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10209 expressions (4172 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...prebuffering BGM...
+OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10209 expressions (4172 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10209 expressions (4172 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10217 expressions (4180 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10217 expressions (4180 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10218 expressions (4181 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10218 expressions (4181 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10218 expressions (4181 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+prebuffering BGM...
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10219 expressions (4182 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10219 expressions (4182 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10294 expressions (4208 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10285 expressions (4202 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10285 expressions (4202 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10285 expressions (4202 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10285 expressions (4202 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10294 expressions (4208 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10294 expressions (4208 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...prebuffering BGM...
+OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10294 expressions (4208 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10294 expressions (4208 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10308 expressions (4209 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10308 expressions (4209 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10310 expressions (4211 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10310 expressions (4211 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10324 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10324 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10324 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10324 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...prebuffering BGM...
+OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10324 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10324 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10324 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10324 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10352 expressions (4220 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10363 expressions (4226 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10363 expressions (4226 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10362 expressions (4225 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/roys_house/roys_house.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10362 expressions (4225 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+End of game loop
+Total time: 4706.21s
+Total frames: 281716 	Skipped frames: 353
+Avg game rate: 59.86
+Avg frame rate: 59.79
+
+Reloading system sprite data...Reloading system background data...OK
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+End of game loop
+Total time: 1.72s
+Total frames: 104 	Skipped frames: 0
+Avg game rate: 60.47
+Avg frame rate: 60.47
+
+Reloading system sprite data...Reloading system background data...OK
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...prebuffering BGM...
+OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10362 expressions (4225 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10362 expressions (4225 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10362 expressions (4225 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10368 expressions (4229 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10368 expressions (4229 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10368 expressions (4229 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10368 expressions (4229 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10368 expressions (4229 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10367 expressions (4228 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...prebuffering BGM...
+OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10368 expressions (4229 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19629 expressions (5747 on trigger lines)
+Character bot_blu.def loaded OK
+End of game loop
+Total time: 1660.35s
+Total frames: 99419 	Skipped frames: 0
+Avg game rate: 59.88
+Avg frame rate: 59.88
+
+Reloading system sprite data...Reloading system background data...OK
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+Entering character select.
+attempting load and start...attempting load of sound/title 4.mp3...success!
+starting BGM...
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/germany_night/germany_night.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+End of game loop
+Total time: 53.28s
+Total frames: 3198 	Skipped frames: 0
+Avg game rate: 60.02
+Avg frame rate: 60.02
+
+Reloading system sprite data...Reloading system background data...OK
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+Entering character select.
 attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 Returned from main loop
 Deinitializing...
-Frames      : 182436
-Time elapsed: 66710.120 sec
-ticks: 6671012, tps: 100, start 85, end 6671097
+Frames      : 1065038
+Time elapsed: 17939.700 sec
+ticks: 1793970, tps: 100, start 89, end 1794059
 
 Clearing player cache...OK
 Freeing character info...OK
@@ -238,11 +4931,11 @@ Deintializing timer...OK
 Deinitializing graphics...OK
 Deinitializing BGM...Cleaning up mixer callback...unhooking mixer callback...
 
-Mixer callback was entered 65966 times
-Mixer callback timing stats (last 65966 calls):
-	4.000000 median, 5.926326 avg, 9.244312 sample std. dev.
-Top 10 slowest times:	422 (1), 375 (1), 331 (1), 323 (1), 296 (1), 273 (1), 253 (2), 229 (2), 223 (1), 222 (2)
-Top 10 fastest times:	1 (24), 2 (155), 3 (11613), 4 (28232), 5 (10811), 6 (3141), 7 (2894), 8 (3444), 9 (1442), 10 (958)
+Mixer callback was entered 386268 times
+Mixer callback timing stats (last 131072 calls):
+	6.000000 median, 6.074547 avg, 4.785344 sample std. dev.
+Top 10 slowest times:	476 (1), 328 (1), 284 (1), 261 (1), 250 (1), 249 (1), 214 (2), 205 (1), 204 (1), 198 (1)
+Top 10 fastest times:	1 (63), 2 (226), 3 (95), 4 (8175), 5 (48515), 6 (51250), 7 (16380), 8 (2679), 9 (759), 10 (455)
 OK
 Deinitializing sound...OK
 Successful program termination.

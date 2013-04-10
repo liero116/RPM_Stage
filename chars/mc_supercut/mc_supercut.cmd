@@ -3483,7 +3483,7 @@ triggerall = command = "a"
 triggerall = command != "holddown"
 trigger1 = statetype = S
 trigger1 = ctrl
-trigger2 = stateno = 202 && time > 7
+trigger2 = stateno = 202 && time > 5
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 
@@ -3703,7 +3703,7 @@ trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 241 || stateno = 441
+trigger3 = stateno = [200,411]
 trigger3 = movecontact
 
 ;---------------------------------------------------------------------------
@@ -3718,7 +3718,7 @@ trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 241 || stateno = 441
+trigger3 = stateno = [200,411]
 trigger3 = movecontact
 
 ;===========================================================================
@@ -3772,7 +3772,7 @@ triggerall = numhelper(10381)=0 && numhelper(10391)=0 ;&& anim!=11361
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241
+trigger2 = stateno = 241 || stateno = 201 || stateno = 211
 trigger2 = movecontact ;&& time>=23
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3804,7 +3804,7 @@ triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 201 || stateno = 211 | stateno = 241 || stateno = 411
+trigger2 = stateno = 201 || stateno = 211 | stateno = 241 || stateno = 411 || stateno = 401
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = stateno=441 && movehit
@@ -3915,7 +3915,7 @@ triggerall = var(15)=0
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241
+trigger2 = stateno = 241 || stateno = 201 || stateno = 211
 trigger2 = movecontact ;&& time>=23
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3935,7 +3935,7 @@ triggerall = numhelper(10381)=0 && numhelper(10391)=0 ;&& anim!=11361
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241
+trigger2 = stateno = 241 || stateno = 201 || stateno = 211
 trigger2 = movecontact ;&& time>=23
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3955,7 +3955,7 @@ triggerall = numhelper(10381)=0 && numhelper(10391)=0 ;&& anim!=11361
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 241
+trigger2 = stateno = 241 || stateno = 201 || stateno = 211
 trigger2 = movecontact ;&& time>=23
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -4015,7 +4015,7 @@ triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 201 || stateno = 211 | stateno = 241 || stateno = 411
+trigger2 = stateno = 201 || stateno = 211 | stateno = 241 || stateno = 411 || stateno = 401
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = stateno=441 && movehit
@@ -4029,7 +4029,7 @@ triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 201 || stateno = 211 | stateno = 241 || stateno = 411
+trigger2 = stateno = 201 || stateno = 211 | stateno = 241 || stateno = 411 || stateno = 401
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = stateno=441 && movehit
@@ -4043,7 +4043,7 @@ triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 201 || stateno = 211 | stateno = 241 || stateno = 411
+trigger2 = stateno = 201 || stateno = 211 | stateno = 241 || stateno = 411 || stateno = 401
 trigger2 = movecontact
 trigger3 = stateno = 101 || stateno = 109
 trigger4 = stateno=441 && movehit

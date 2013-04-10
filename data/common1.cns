@@ -2351,7 +2351,7 @@ id = 300002
 [state 0, scale set]
 type=varset
 trigger1=time=0
-fvar(9)=0.62
+fvar(9)=0.20
 
 ;=======================
 ;Dawn (Hex) Style
@@ -3596,7 +3596,7 @@ hitflag = M-
 priority = 1, Miss
 sparkxy = -10,-37
 hitsound = 0,0
-sparkno = 4
+sparkno = 800
 p1facing = ifelse (command = "holdback", -1, 1)
 p2facing = 1
 p1stateno = 810
@@ -3764,7 +3764,7 @@ damage    = 0
 hitflag = MAFD
 guardflag = MA
 pausetime = 25,25
-sparkno = -1
+sparkno = 2001
 sparkxy = -10,-37
 hitsound   = 0,0
 guardsound = 6,0
@@ -3941,7 +3941,7 @@ anim = F72
 pos = 0, floor (screenpos y) - 50
 postype = back
 sprpriority = 3
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 ;[State 1027, Anim]
 ;type = ChangeAnim2
@@ -4174,7 +4174,7 @@ MoveCamera = 0,1
 ;anim = F72
 ;ID = 72
 ;pos = 0,-40
-;scale = 1.5,1.5;ground
+;scale = 1.0,1.0;ground
 ;removetime = -2
 ;
 ;[State 0, Explod]
@@ -4183,7 +4183,7 @@ MoveCamera = 0,1
 ;anim = F70
 ;ID = 70
 ;pos = 0,-40
-;scale = 1.5,1.5;ground
+;scale = 1.0,1.0;ground
 ;removetime = -2
 
 [State 0, EnvShake]
@@ -4267,7 +4267,7 @@ trigger2 = command="holdA" || command="holdB" || command="holdC"
 ;anim = F72
 ;ID = 72
 ;pos = 0,-40
-;scale = 1.5,1.5;ground
+;scale = 1.0,1.0;ground
 ;removetime = -2
 ;
 ;[State 0, Explod]
@@ -4276,7 +4276,7 @@ trigger2 = command="holdA" || command="holdB" || command="holdC"
 ;anim = F70
 ;ID = 70
 ;pos = 0,-40
-;scale = 1.5,1.5;ground
+;scale = 1.0,1.0;ground
 ;removetime = -2
 
 ; [State -1]
@@ -4390,7 +4390,7 @@ trigger1 = time = 0 && var(49) = 0 ;gethitvar(fall.recover) = 0
 anim = F72
 ID = 72
 pos = 0,-40
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 removetime = -2
 
 [State 0, Explod]
@@ -4399,7 +4399,7 @@ trigger1 = time = 0 && var(49) = 1;gethitvar(fall.recover) = 1
 anim = F70
 ID = 70
 pos = 0,-40
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 removetime = -2
 
 [State -1]
@@ -5730,7 +5730,7 @@ trigger1 = time = 1 && canrecover = 0
 anim = F60
 ID = 60
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 0, Explod]
 type = explod
@@ -5738,7 +5738,7 @@ trigger1 = time = 1 && canrecover = 1
 anim = F61
 ID = 61
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 5100, 9]
 type = HitFallDamage
@@ -5911,7 +5911,7 @@ trigger1 = time = 1 && canrecover = 0
 anim = F60
 ID = 60
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 0, Explod]
 type = explod
@@ -5919,7 +5919,7 @@ trigger1 = time = 1 && canrecover = 1
 anim = F61
 ID = 61
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 5100, 9]
 type = HitFallDamage
@@ -6023,7 +6023,7 @@ trigger1 = time = 1 && canrecover = 0
 anim = F60
 ID = 60
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 0, Explod]
 type = explod
@@ -6031,7 +6031,7 @@ trigger1 = time = 1 && canrecover = 1
 anim = F61
 ID = 61
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 5110, 8]
 type = VelSet
@@ -6203,7 +6203,7 @@ trigger1 = time = 1 && canrecover = 0
 anim = F60
 ID = 60
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 0, Explod]
 type = explod
@@ -6211,7 +6211,7 @@ trigger1 = time = 1 && canrecover = 1
 anim = F61
 ID = 61
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 5110, 8]
 type = VelSet
@@ -6343,7 +6343,7 @@ trigger1 = time = 1 && canrecover = 0
 anim = F60
 ID = 60
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 0, Explod]
 type = explod
@@ -6351,7 +6351,7 @@ trigger1 = time = 1 && canrecover = 1
 anim = F61
 ID = 61
 pos = 0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 
 [State 5110, 8]
 type = VelSet
@@ -8743,7 +8743,7 @@ type=explod
 trigger1=time=0
 anim=F5
 ID=20000
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 postype=p1
 pos=0,-30
 supermove=1
@@ -9010,7 +9010,7 @@ pos = 0,0
 postype = p1
 removetime = -1
 bindtime=-1
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 sprpriority = 5
 
 [State 0, Charge Dust Top Output]
@@ -9025,7 +9025,7 @@ pos = 0,0
 postype = p1
 removetime = -2
 bindtime=-1
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 sprpriority = 5
 persistent=0
 
@@ -9046,7 +9046,7 @@ pos = 0,0
 postype = p1
 removetime = -1
 bindtime=-1
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 sprpriority = -3
 
 [State 0, Charge Dust Bac Output]
@@ -9061,7 +9061,7 @@ pos = 0,0
 postype = p1
 removetime = -2
 bindtime=-1
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 sprpriority = -3
 
 [State 0, Remove Charge Dust Bac]
@@ -9083,7 +9083,7 @@ pos = 0,0
 postype = p1
 removetime = -2
 bindtime=-1
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 sprpriority = 7
 
 [State 0, Dust Ring Back]
@@ -9099,7 +9099,7 @@ pos = 0,0
 postype = p1
 removetime = -2
 bindtime=-1
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 sprpriority = -3
 
 [State 999, sound]
@@ -11623,7 +11623,7 @@ sprpriority=7
 anim=11005
 ID=11005
 vel=0,0
-scale = 1.5,1.5;ground
+scale = 1.0,1.0;ground
 postype=p1
 pos=0,0
 supermove=1
@@ -12453,6 +12453,7 @@ type = parentvaradd
 triggerall = parent,fvar(8) < 200
 triggerall = parent,stateno != [12300,12399]
 triggerall = parent,stateno != [3500,3504]
+triggerall = numhelper(70000) = 0
 triggerall = (parent,name = "oliver" && parent,var(27) = 1 && parent,var(9) = 0) || parent,name != "Oliver"
 trigger1 = p2stateno = [5000,5210]
 trigger1 = enemy,movetype = H

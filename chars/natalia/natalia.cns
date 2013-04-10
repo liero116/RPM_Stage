@@ -862,7 +862,7 @@ value = p2dist x
 
 [State 0, overdrive drain]
 type = varadd
-trigger1 = numhelper(4000)=1
+trigger1 = numhelper(70000)=1
 fvar(8) = -0.15
 ignorehitpause = 1
 persistent = 1

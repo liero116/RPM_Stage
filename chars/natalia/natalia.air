@@ -10690,7 +10690,7 @@ Clsn2:2
 
 
 ; Stand
-[Begin Action 7000]
+[Begin Action 70000]
 4000,1, 0,0, 6
 4000,2, 0,0, 6
 4000,3, 0,0, 6
@@ -10700,7 +10700,7 @@ Clsn2:2
 
 
 ; Walk F
-[Begin Action 7001]
+[Begin Action 70001]
 4001,1, 0,0, 5
 4001,2, 0,0, 5
 4001,3, 0,0, 5
@@ -10713,7 +10713,7 @@ Clsn2:2
 
 
 ; Walk B
-[Begin Action 7002]
+[Begin Action 70002]
 4001,9, 0,0, 5
 4001,8, 0,0, 5
 4001,7, 0,0, 5
@@ -10726,24 +10726,24 @@ Clsn2:2
 
 
 ; S2C
-[Begin Action 7009]
+[Begin Action 70009]
 4010,1, 0,0, 2
 4010,2, 0,0, 2
 
 
 ; 
-[Begin Action 7010]
+[Begin Action 70010]
 4010,3, 0,0, 3
 
 
 ; C2S
-[Begin Action 7011]
+[Begin Action 70011]
 4010,2, 0,0, 2
 4010,1, 0,0, 2
 
 
 ; Jump
-[Begin Action 7040]
+[Begin Action 70040]
 4040,1, 0,0, 7
 4040,2, 0,0, 7
 4040,3, 0,0, 7
@@ -10756,7 +10756,7 @@ Loopstart
 
 
 ; Run
-[Begin Action 7100]
+[Begin Action 70100]
 4010,1, 0,0, 2
 4100,1, 0,0, 3
 4100,2, 0,0, 3
@@ -10771,7 +10771,7 @@ Loopstart
 
 
 ; Run
-[Begin Action 7101]
+[Begin Action 70101]
 4010,1, 0,0, 2
 4100,1, 0,0, 3
 4100,2, 0,0, 3
@@ -10780,7 +10780,7 @@ Loopstart
 
 
 ; A
-[Begin Action 7200]
+[Begin Action 70200]
 4200,3, 0,0, 1
 4200,4, 0,0, 1
 4200,5, 0,0, 1
@@ -10793,7 +10793,7 @@ Clsn1:1
 
 
 ; B
-[Begin Action 7210]
+[Begin Action 70210]
 4210,3, 0,0, 2
 4210,4, 0,0, 2
 4210,5, 0,0, 2
@@ -10809,7 +10809,7 @@ Clsn1:1
 
 
 ; C
-[Begin Action 7230]
+[Begin Action 70230]
 4230,2, 0,0, 2
 4230,3, 0,0, 2
 4230,4, 0,0, 2
@@ -10837,13 +10837,13 @@ Clsn1:2
 
 
 ; Jump
-[Begin Action 7240]
+[Begin Action 70240]
 4240,1, 0,0, 3
 4240,2, 0,0, 3
 4240,3, 0,0, 3
 
 
 ; 
-[Begin Action 7500]
+[Begin Action 70500]
 4500,1, 0,0, 12
 

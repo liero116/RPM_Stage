@@ -58,8 +58,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
 pausetime = 10,10
-sparkno = 0
-sparkxy = -10, -10 ; = -10, -26
+sparkno = 200 + (random%5)
+sparkxy = (-10 - random%5), (-10 - random%15); = -10, -26
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
@@ -143,8 +143,8 @@ damage    = floor(fvar(13)*25),0
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -60 ; = -10,-37
+sparkno = 210 + (random%5)
+sparkxy = (-10 - random%5), (-30 - random%15); = -10,-37
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -227,8 +227,8 @@ guardflag = MA
 hitflag = MAF
 priority = 6, Hit
 pausetime = 18,18
-sparkno = 2
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 230 + (random%5)
+sparkxy = (-10 - random%5), (-50 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -377,8 +377,8 @@ animtype  = Light
 hitflag = MAF
 guardflag = L
 pausetime = 10,10
-sparkno = 0
-sparkxy = -10, -20 ; = -10,-42
+sparkno = 200 + (random%5)
+sparkxy = (-10 - random%5), (-20 - random%15); = -10,-42
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = Low
@@ -454,8 +454,8 @@ damage    = floor(fvar(13)*10)
 hitflag = MAF
 guardflag = L
 pausetime = 5,5
-sparkno = 1
-sparkxy = -10, -10 ; = -5,-10
+sparkno = 210 + (random%5)
+sparkxy = (-10 - random%5), (-10 - random%15); = -5,-10
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -479,8 +479,8 @@ damage    = floor(fvar(13)*10)
 hitflag = MAF
 guardflag = L
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -10 ; = -5,-10
+sparkno = 210 + (random%5)
+sparkxy = (-10 - random%5), (-10 - random%15); = -5,-10
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -614,7 +614,7 @@ damage    = floor(fvar(13)*45),0
 hitflag = MAF
 guardflag = MA
 pausetime = 20,20
-sparkno = 30
+sparkno = 230 + (random%5)
 sparkxy = -10, -40 ; = -5,-10
 hitsound   = 5,3
 guardsound = 6,0
@@ -760,8 +760,8 @@ fall.animtype = back
 guardflag = HA
 priority = 1,hit;4,hit
 pausetime = 10,10
-sparkno = 0
-sparkxy = -10, -60 ; = -10,-58
+sparkno = 200 + (random%5)
+sparkxy = -10, -30 ; = -10,-58
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = High
@@ -833,8 +833,8 @@ hitflag = MAF
 guardflag = HA
 priority = 1,hit;5,hit
 pausetime = 14,14
-sparkno = 1
-sparkxy = -10, -60 ; = -10,-58
+sparkno = 210 + (random%5)
+sparkxy = -10, -30 ; = -10,-58
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = High
@@ -904,8 +904,8 @@ animtype = light
 fall.animtype = back
 priority = 1,hit;5,hit
 pausetime = 18,18
-sparkno = 2
-sparkxy = -10, -60 ; = -10,-40
+sparkno = 230 + (random%5)
+sparkxy = -10, -30 ; = -10,-40
 hitsound   = 5,4
 guardsound = 6,0
 animtype = Med
@@ -1130,8 +1130,8 @@ guardflag = MA
 hitflag = MAF
 priority = 4, Hit
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1000
+sparkxy = (-10 - random%5), (-40 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -1164,8 +1164,8 @@ guardflag = MA
 hitflag = MAF
 priority = 4, Hit
 pausetime = 15,15
-sparkno = 2
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1000
+sparkxy = (-10 - random%5), (-20 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -1317,8 +1317,8 @@ guardflag = MA
 hitflag = MAF
 priority = 4, Hit
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1000
+sparkxy = (-10 - random%5), (-40 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -1351,8 +1351,8 @@ guardflag = MA
 hitflag = MAF
 priority = 4, Hit
 pausetime = 15,15
-sparkno = 2
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1000
+sparkxy = (-10 - random%5), (-20 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -1505,8 +1505,8 @@ guardflag = MA
 hitflag = MAF
 priority = 4, Hit
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1000
+sparkxy = (-10 - random%5), (-40 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -1539,8 +1539,8 @@ guardflag = MA
 hitflag = MAF
 priority = 4, Hit
 pausetime = 15,15
-sparkno = 2
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1000
+sparkxy = (-10 - random%5), (-20 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -1885,8 +1885,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
 pausetime =  20,20
-sparkno = 1
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1001
+sparkxy = (-10 - random%5), (-35 - random%15); = -10, -26
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
@@ -2034,8 +2034,8 @@ guardflag = HA
 hitflag = MAFD
 priority = 6, Hit
 pausetime = 20,20
-sparkno = 30
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1004
+sparkxy = (-10 - random%5), (-35 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -2148,8 +2148,8 @@ guardflag = HA
 hitflag = MAFD
 priority = 6, Hit
 pausetime = 20,20
-sparkno = 2
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1001
+sparkxy = (-10 - random%5), (-35 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -2291,8 +2291,8 @@ guardflag = HA
 hitflag = MAFD
 priority = 6, Hit
 pausetime = 20,20
-sparkno = 30
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1004
+sparkxy = (-10 - random%5), (-35 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -2404,8 +2404,8 @@ guardflag = LA
 hitflag = MAFD
 priority = 5, Hit
 pausetime =  20,20
-sparkno = 2
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1001
+sparkxy = (-10 - random%5), (-10 - random%15); = -10, -26
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
@@ -2545,8 +2545,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
 pausetime =  20,20
-sparkno = 2
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1004
+sparkxy = (-10 - random%5), (-40 - random%15); = -10, -26
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
@@ -2648,8 +2648,8 @@ trans=add
 [State 0, SuperPause]
 type = SuperPause
 trigger1 = time=3
-pos = 25, -57
-anim = 100
+pos = 0,0
+anim = 2001
 sound = 20, 0
 poweradd=-1000
 time=35
@@ -2772,8 +2772,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 4, Hit
 pausetime = 25,25
-sparkno = 30
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1000
+sparkxy = (-10 - random%5), (-35 - random%15)
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -2870,8 +2870,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 4, Hit
 pausetime = 25,25
-sparkno = 30
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1001
+sparkxy = (-10 - random%5), (-35 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -2969,8 +2969,8 @@ priority  = 7
 guardflag = MA
 hitflag = MAFD
 pausetime = 60,60
-sparkno = 30
-sparkxy = -10, -60 ; = 0,-110
+sparkno = 3000
+sparkxy = -10, -35 ; = 0,-110
 hitsound   = 5,16
 guardsound = 6,0
 ground.type = Low
@@ -3159,8 +3159,8 @@ guardflag = MA
 hitflag = MAF
 priority = 4, Hit
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1000
+sparkxy = (-10 - random%5), (-40 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -3193,8 +3193,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 4, Hit
 pausetime = 15,15
-sparkno = 2
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1001
+sparkxy = (-10 - random%5), (-20 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -3320,8 +3320,8 @@ guardflag = HA
 hitflag = MAFD
 priority = 6, Hit
 pausetime = 20,20
-sparkno = 2
-sparkxy = -10, -60 ; = -10, -26
+sparkno = 1004
+sparkxy = (-10 - random%5), (-35 - random%15); = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -3883,8 +3883,8 @@ facep2=0
 [State 3050, Super A]
 type = SuperPause
 trigger1 = time = 5
-pos = -5, -55
-anim = 100
+pos = 0,0
+anim = 2001
 sound = 20, 0
 poweradd = 0
 time=30
@@ -4082,8 +4082,8 @@ type = Helper
 trigger1 = time = 0
 helpertype = normal
 name = "Ivan"
-ID = 40
-stateno = 40
+ID = 70000
+stateno = 70000
 pos = 0,0
 
 [State 0, RemoveExplod]
@@ -4234,11 +4234,11 @@ trigger1 = parent,stateno != [12300,12301]
 
 ;---------------------------------------------------------------------------
 ; Stand 
-[Statedef 7000]
+[Statedef 70000]
 type = S
 physics = S
 sprpriority = 0
-anim = 40
+anim = 70000
 facep2 = 1
 ctrl =1
 
@@ -4253,7 +4253,7 @@ type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
 trigger2 = parent,command = "FFe"
-value = 7005
+value = 70005
 persistent = 1
 ignorehitpause = 1
 
@@ -4263,46 +4263,46 @@ triggerall = parent,command != "holdfwd"
 triggerall = parent,command != "holdback"
 triggerall = parent,command != "FFe"
 trigger1 = parent,command = "holddown"
-value = 7009
+value = 70009
 ;
 [State 0, walk fwd]
 type = ChangeState
 trigger1 = parent,command = "holdfwd"
-value = 7001
+value = 70001
 
 [State 0, walk back]
 type = ChangeState
 trigger1 = parent,command = "holdback"
-value = 7002
+value = 70002
 
 [State 0, a]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 7200
+value = 70200
 
 [State 0, b]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 7210
+value = 70210
 
 [State 0, c]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 7230
+value = 70230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 101
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ; Stand to Crouch 
-[Statedef 7009]
+[Statedef 70009]
 type = S
 physics = S
 sprpriority = 0
-anim = 7009
+anim = 70009
 facep2 = 1
 ctrl =1
 
@@ -4317,27 +4317,27 @@ type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
 trigger2 = parent,command = "FFe"
-value = 7005
+value = 70005
 persistent = 1
 ignorehitpause = 1
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = animtime = 0
-value = 7010
+value = 70010
 
 ;---------------------------------------------------------------------------
 ; Crouch 
-[Statedef 7010]
+[Statedef 70010]
 type = S
 physics = S
 sprpriority = 0
-anim = 7010
+anim = 70010
 facep2 = 1
 ctrl =1
 
@@ -4352,7 +4352,7 @@ type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
 trigger2 = parent,command = "FFe"
-value = 7005
+value = 70005
 persistent = 1
 ignorehitpause = 1
 
@@ -4361,36 +4361,36 @@ type = ChangeState
 trigger1 = parent,command != "holddown"
 trigger2 = parent,command = "holdfwd"
 trigger3 = parent,command = "holdback"
-value = 7011
+value = 70011
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 7200
+value = 70200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 7210
+value = 70210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 7230
+value = 70230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ; Crouch to Stand
-[Statedef 7011]
+[Statedef 70011]
 type = S
 physics = S
 sprpriority = 0
-anim = 7011
+anim = 70011
 facep2 = 1
 ctrl =1
 
@@ -4405,27 +4405,27 @@ type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
 trigger2 = parent,command = "FFe"
-value = 7005
+value = 70005
 persistent = 1
 ignorehitpause = 1
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = animtime = 0
-value = 40
+value = 70000
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ; Walk Fwd
-[Statedef 7001]
+[Statedef 70001]
 type = S
 physics = S
 sprpriority = 0
-anim = 7001
+anim = 70001
 facep2 = 1
 
 [State 20, 3]
@@ -4433,7 +4433,7 @@ type = ChangeAnim
 triggerall = vel x > 0
 trigger1 = time = 0
 trigger2 = animtime = 0
-value = 7001
+value = 70001
 
 [State 20, 1]
 type = VelSet
@@ -4444,7 +4444,7 @@ x = 1.5*(const(velocity.walk.fwd.x))
 type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
-value = 7005
+value = 70005
 persistent = 1
 ignorehitpause = 1
 
@@ -4452,36 +4452,36 @@ ignorehitpause = 1
 type = ChangeState
 trigger1 = parent,command != "holdfwd"
 trigger1 = parent,command != "holdback"
-value = 40
+value = 70000
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 7200
+value = 70200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 7210
+value = 70210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 7230
+value = 70230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ; Walk Back
-[Statedef 7002]
+[Statedef 70002]
 type = S
 physics = S
 sprpriority = 0
-anim = 7002
+anim = 70002
 facep2 = 1
 
 [State 20, 3]
@@ -4489,7 +4489,7 @@ type = ChangeAnim
 triggerall = vel x > 0
 trigger1 = time = 0
 trigger2 = animtime = 0
-value = 7002
+value = 70002
 
 [State 20, 2]
 type = VelSet
@@ -4500,7 +4500,7 @@ x = 1.5*(const(velocity.walk.back.x))
 type = ChangeState
 trigger1 = 1
 trigger1 = parentdist x > p2dist x
-value = 7005
+value = 70005
 persistent = 1
 ignorehitpause = 1
 
@@ -4508,36 +4508,36 @@ ignorehitpause = 1
 type = ChangeState
 trigger1 = parent,command != "holdfwd"
 trigger1 = parent,command != "holdback"
-value = 40
+value = 70000
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 7200
+value = 70200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 7210
+value = 70210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 7230
+value = 70230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ; Dash
-[Statedef 7005]
+[Statedef 70005]
 type = S
 physics = S
 sprpriority = 0
-anim = 7101
+anim = 70101
 facep2 = 1
 
 [State 0, 2]
@@ -4549,38 +4549,38 @@ y = 0
 [State 1000, Land]
 type= changestate
 trigger1 = animtime = 0
-value= 40
+value= 70000
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "a"
-value = 7200
+value = 70200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "b"
-value = 7210
+value = 70210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 7230
+value = 70230
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ;A
-[Statedef 7200]
+[Statedef 70200]
 type    = S
 movetype= A
 physics = S
 juggle  = 3
 ctrl = 0
-anim = 7200
+anim = 70200
 ;poweradd= ifelse(fvar(17)=0,21,0)
 sprpriority = 2
 facep2=1
@@ -4589,18 +4589,7 @@ hitcountpersist=1
 [state 0, damage scaling change]
 type = parentvarset
 trigger1 = movehit = 1
-fvar(13)=parent,fvar(13)*fvar(13)
-persistent = 0
-
-[state 0, damage scaling reset]
-type = varset
-trigger1=1
-fvar(13)=1
-
-[state 0, damage scaling change]
-type = parentvarset
-trigger1 = movehit = 1
-fvar(13)=fvar(13)*fvar(14)
+fvar(13)=parent,fvar(13)*parent,fvar(14)
 persistent = 0
 
 [State 200, 1]
@@ -4609,15 +4598,15 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = time = 0
 attr = S, NA
-damage = floor(fvar(13)*10),0
+damage = floor((parent,fvar(13))*50),10
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = M
 priority = 5, Hit
 pausetime = 5,5
-sparkno = 141
-sparkxy = -10, -10 ; = -10, -26
+sparkno = 300 + (random%5)
+sparkxy = (-10 - random%5), (-10 - random%15); = -10, -26
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
@@ -4636,50 +4625,50 @@ nochainid=1
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 40
+value = 70000
 ctrl = 1
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "a"
-value = 7200
+value = 70200
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "b"
-value = 7210
+value = 70210
 
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 7230
+value = 70230
 
 [State 0, jump]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "FFe"
-value = 7005
+value = 70005
 persistent = 1
 ignorehitpause = 1
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ;B
-[Statedef 7210]
+[Statedef 70210]
 type    = S
 movetype= A
 physics = S
 juggle  = 3
 ctrl = 0
-anim = 7210
+anim = 70210
 ;poweradd= ifelse(fvar(17)=0,21,0)
 sprpriority = 2
 facep2=1
@@ -4689,18 +4678,7 @@ velset = 13,0
 [state 0, damage scaling change]
 type = parentvarset
 trigger1 = movehit = 1
-fvar(13)=parent,fvar(13)*fvar(13)
-persistent = 0
-
-[state 0, damage scaling reset]
-type = varset
-trigger1=1
-fvar(13)=1
-
-[state 0, damage scaling change]
-type = parentvarset
-trigger1 = movehit = 1
-fvar(13)=fvar(13)*fvar(14)
+fvar(13)=parent,fvar(13)*parent,fvar(14)
 persistent = 0
 
 [State 200, 1]
@@ -4710,15 +4688,15 @@ fall.yvelocity = 0
 fall.yvelocity = 0
 trigger1 = time = 0
 attr = S, NA
-damage = floor(fvar(13)*20),0
+damage = floor(parent,fvar(13)*70),10
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = M
 priority = 5, Hit
 pausetime = 9,9
-sparkno = 142
-sparkxy = -10, -10 ; = -10, -26
+sparkno = 310 + (random%5)
+sparkxy = (-10 - random%5), (-10 - random%15); = -10, -26
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
@@ -4736,7 +4714,7 @@ air.hittime = 35
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 40
+value = 70000
 ctrl = 1
 
 [State 0, ChangeState]
@@ -4744,30 +4722,30 @@ type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "c"
 trigger1 = p2statetype = L
-value = 7230
+value = 70230
 
 [State 0, jump]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = parent,command = "FFe"
-value = 7005
+value = 70005
 persistent = 1
 ignorehitpause = 1
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ;C
-[Statedef 7230]
+[Statedef 70230]
 type    = S
 movetype= A
 physics = S
 juggle  = 3
 ctrl = 0
-anim = 7230
+anim = 70230
 ;poweradd= ifelse(fvar(17)=0,21,0)
 sprpriority = 2
 facep2=1
@@ -4777,25 +4755,14 @@ velset = 14,0
 [state 0, damage scaling change]
 type = parentvarset
 trigger1 = movehit = 1
-fvar(13)=parent,fvar(13)*fvar(13)
-persistent = 0
-
-[state 0, damage scaling reset]
-type = varset
-trigger1=1
-fvar(13)=1
-
-[state 0, damage scaling change]
-type = parentvarset
-trigger1 = movehit = 1
-fvar(13)=fvar(13)*fvar(14)
+fvar(13)=parent,fvar(13)*parent,fvar(14)
 persistent = 0
 
 [State 0, SuperPause]
 type = SuperPause
 trigger1 = time=0
-pos = 25, -57
-anim = 100
+pos = 0,0
+anim = 2001
 sound = 20, 0
 poweradd=-1000
 time=35
@@ -4806,15 +4773,15 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = animelem = 5
 attr = S, NA
-damage = floor(fvar(13)*30),0
+damage = floor(parent,fvar(13)*100),10
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
 pausetime = 20,35
-sparkno = 5
-sparkxy = -10, -10 ; = -10, -26
+sparkno = 330 + (random%5)
+sparkxy = (-10 - random%5), (0 - random%15); = -10, -26
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
@@ -4839,15 +4806,15 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
 trigger1 = animelem = 9
 attr = S, NA
-damage = floor(fvar(13)*40),0
+damage = floor(parent,fvar(13)*100),10
 animtype = Light
 fall.animtype = back
 guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
 pausetime = 30,30
-sparkno = 143
-sparkxy = -10, -10 ; = -10, -26
+sparkno = 330 + (random%5)
+sparkxy = (-10 - random%5), (-10 - random%15); = -10, -26
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
@@ -4869,21 +4836,21 @@ fall.recover = 0
 [State 200, 7]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 40
+value = 70000
 ctrl = 1
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ; Hit
-[Statedef 7500]
+[Statedef 70500]
 type = S
 physics = S
 sprpriority = 0
-anim = 7500
+anim = 70500
 facep2 = 1
 ctrl =1
 
@@ -4896,20 +4863,20 @@ y = 0
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = animtime = 0
-value = 40
+value = 70000
 
 [State 0, destroy]
 type = ChangeState
 trigger1 = parent,fvar(8) <= 0
-value = 7900
+value = 70900
 
 ;---------------------------------------------------------------------------
 ; Destroy
-[Statedef 7900]
+[Statedef 70900]
 type = A
 physics = U
 sprpriority = 0
-anim = 7040
+anim = 70040
 facep2 = 1
 ctrl =1
 

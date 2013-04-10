@@ -2288,7 +2288,7 @@ type = ChangeState
 value = 3000
 triggerall = var(27)=2
 triggerall = command="214S"
-triggerall = power >= 3000
+triggerall = power >= 1000
 triggerall = statetype != A
 trigger1 = ctrl
 trigger2 = stateno = 101 || stateno = 109
@@ -4025,7 +4025,7 @@ type = ChangeState
 value = 3000
 triggerall = var(27)=2
 triggerall = var(15) = 1;="214S"
-triggerall = power >= 3000
+triggerall = power >= 1000
 triggerall = statetype != A
 triggerall = abs(p2bodydist x) = [90,999] 
 triggerall = abs(p2bodydist y) = [50,90]

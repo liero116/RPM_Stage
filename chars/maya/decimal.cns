@@ -61,16 +61,16 @@ guardflag = MA
 hitflag = MAF
 priority = 4, Hit
 pausetime = 10,10
-sparkno = 0
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -70
+sparkno = 200 + (random%5)
+sparkxy = (-10 - random%5), (-15 - random%15); = -10, -70 ; = -10, -70
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = Low
-ground.slidetime = 15 ;14
-ground.hittime  = 15 ;14
-guard.hittime = 12
-ground.velocity = -7.0
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+ground.slidetime = 13 ;14
+ground.hittime  = 13 ;14
+guard.hittime = 10
+ground.velocity = -9
+ground.cornerpush.veloff = ifelse(p2statetype = A,-8,0)
 airguard.velocity = -.1,-.8
 air.type = Low
 air.velocity = -1.4 ,-2.5
@@ -145,8 +145,8 @@ damage    = floor(fvar(13)*25),0
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 210 + (random%5)
+sparkxy = (-10 - random%5), (-15 - random%15); = -10, -70 ; = -10, -70
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -219,8 +219,8 @@ guardflag = MA
 hitflag = MAF
 priority = 6, Hit
 pausetime = 8,8
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 230 + (random%5)
+sparkxy = (-10 - random%5), (-30 - random%15); = -10, -70 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -351,8 +351,8 @@ guardflag = LA
 hitflag = MAFD
 priority = 4, Hit
 pausetime = 8,8
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 230 + (random%5)
+sparkxy = (-10- random%15), -2 ; = -10, -70 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = low
@@ -481,8 +481,8 @@ guardflag = HA
 hitflag = MAFD
 priority = 5, Hit
 pausetime = 8,8
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 230 + (random%5)
+sparkxy = (-10 - random%5), (-30 - random%15); = -10, -70 ; = -10, -26
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -719,7 +719,7 @@ channel=0
 
 [State 400, 2]
 type = hitdef
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+ground.cornerpush.veloff = ifelse(p2statetype = A,-8,0)
 fall.yvelocity = 0
 trigger1 = Time = 0
 attr = C, NA
@@ -729,15 +729,15 @@ animtype  = Light
 hitflag = MAF
 guardflag = L
 pausetime = 10,10
-sparkno = 0
-sparkxy = -10, -10 ; = -10, -70 ; = -10,-42
+sparkno = 200 + (random%5)
+sparkxy = (-10 - random%5), (-5 - random%15); = -10, -70 ; = -10,-42
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 11
-ground.hittime  = 11
+ground.slidetime = 13
+ground.hittime  = 13
 guard.hittime = 9
-ground.velocity = -5
+ground.velocity = -9
 air.type = Low
 air.slidetime = 4
 air.hittime  = 30
@@ -819,8 +819,8 @@ damage    = floor(fvar(13)*20)
 hitflag = MAF
 guardflag = L
 pausetime = 10,10
-sparkno = 2
-sparkxy = -10, -10 ; = -5,-10
+sparkno = 210 + (random%5)
+sparkxy = (-10 - random%5), (-5 - random%15); = -10, -70 ; = -10,-42
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -896,8 +896,8 @@ damage    = floor(fvar(13)*30),0
 hitflag = MAF
 guardflag = MA
 pausetime = 10,10
-sparkno = 2
-sparkxy = -10, -20 ; = -5,-10
+sparkno = 230 + (random%5)
+sparkxy = (-10 - random%5), (-20 - random%15); = -5,-10
 hitsound   = 5,3
 guardsound = 6,0
 ground.type = high
@@ -1038,8 +1038,8 @@ fall.animtype = back
 guardflag = HA
 priority = 1,hit;4,hit
 pausetime = 8,8
-sparkno = 0
-sparkxy = -30, -70 ; = -10,-58
+sparkno = 200 + (random%5)
+sparkxy = (-10 - random%5), (-5 - random%15); = -10,-58
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = High
@@ -1110,8 +1110,8 @@ hitflag = MAF
 guardflag = HA
 priority = 1,hit;2,hit
 pausetime = 10,10
-sparkno = 1
-sparkxy = -30, -70 ; = -10,-58
+sparkno = 210 + (random%5)
+sparkxy = (-10 - random%5), (-5 - random%15); = -10,-58
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = High
@@ -1183,8 +1183,8 @@ animtype = light
 fall.animtype = back
 priority = 1,hit;4,hit
 pausetime =12,12
-sparkno = 2
-sparkxy = -30, -70 ; = -10,-40
+sparkno = 230 + (random%5)
+sparkxy = (-10 - random%5), (-5 - random%15); = -10,-40
 hitsound   = 5,4
 guardsound = 6,0
 animtype = Med
@@ -1215,8 +1215,8 @@ animtype = light
 fall.animtype = back
 priority = 1,hit;4,hit
 pausetime = 12,12
-sparkno = 2
-sparkxy = -30, -70 ; = -10,-40
+sparkno = 230 + (random%5)
+sparkxy = (-10 - random%5), (-5 - random%15); = -10,-40
 hitsound   = 5,4
 guardsound = 6,0
 animtype = Med
@@ -2294,8 +2294,8 @@ guardflag = MA
 hitflag = MAF
 priority = 6, Hit
 pausetime = 2,2
-sparkno = -1
-sparkxy = -10, 0 ; = -10, -80
+sparkno = 1003
+sparkxy = 0,0
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
@@ -2498,8 +2498,8 @@ guardflag = MA
 hitflag = MAF
 priority = 6, Hit
 pausetime = 2,2
-sparkno = -1
-sparkxy = -10, 0 ; = -10, -80
+sparkno = 1003
+sparkxy = 0,0
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
@@ -2704,8 +2704,8 @@ guardflag = MA
 hitflag = MAF
 priority = 6, Hit
 pausetime = 2,2
-sparkno = -1
-sparkxy = -10, 0 ; = -10, -80
+sparkno = 1003
+sparkxy = 0,0
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
@@ -2986,7 +2986,7 @@ trans=add
 
 [State 210, 2]
 type = hitdef
-ground.cornerpush.veloff = -4
+ground.cornerpush.veloff = -5
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
@@ -2997,16 +2997,16 @@ damage    = floor(fvar(13)*50),15
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-25 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
-ground.slidetime = 20
-ground.hittime  = 20
+ground.slidetime = 18
+ground.hittime  = 18
 guard.hittime = 12
-guard.velocity = -13
-ground.velocity = -13,0
+guard.velocity = -14
+ground.velocity = -14
 air.velocity = -1.5,-4.0
 air.hittime  = 44
 fall.recover = 0
@@ -3057,7 +3057,7 @@ trans=add
 
 [State 210, 2]
 type = hitdef
-ground.cornerpush.veloff = -4
+ground.cornerpush.veloff = -5
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
@@ -3068,15 +3068,15 @@ damage    = floor(fvar(13)*55),15
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-25 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
-ground.slidetime = 19
-ground.hittime  = 19
+ground.slidetime = 18
+ground.hittime  = 18
 guard.hittime =11
-ground.velocity = -9,0
+ground.velocity = -10.5,0
 air.velocity = -2.0,-4.5
 air.hittime  = 44
 fall.recover = 0
@@ -3138,8 +3138,8 @@ damage    = floor(fvar(13)*60),15
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-25 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -3349,8 +3349,8 @@ damage    = floor(fvar(13)*50),10
 guardflag = HA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-25 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -3428,8 +3428,8 @@ damage    = floor(fvar(13)*50),10
 guardflag = HA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-25 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -3507,8 +3507,8 @@ damage    = floor(fvar(13)*50),10
 guardflag = HA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-25 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -3589,8 +3589,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 6, Hit
 pausetime = 14,14
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 1004
+sparkxy = (-10 - random%5), (-5 - random%15)
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -3677,8 +3677,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 6, Hit
 pausetime = 14,14
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 1004
+sparkxy = (-10 - random%5), (-5 - random%15)
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -3765,8 +3765,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 6, Hit
 pausetime = 14,14
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 1004
+sparkxy = (-10 - random%5), (-5 - random%15)
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -4094,8 +4094,8 @@ damage = floor(parent,fvar(13)*60),20
 hitflag = MAF
 guardflag = MA
 pausetime = 2,6
-sparkno = -1
-sparkxy = -10, -35 ; = -10,-60
+sparkno = 1003
+sparkxy = 0,0
 hitsound   = 5,3
 guardsound = 6,0
 ground.type = high
@@ -4354,8 +4354,8 @@ damage    = floor(fvar(13)*20),5
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-5 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -4380,8 +4380,8 @@ damage    = floor(fvar(13)*20),5
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-5 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -4500,8 +4500,8 @@ damage    = floor(fvar(13)*20),5
 guardflag = MA
 hitflag = MAF
 pausetime = 7,7
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-5 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -4527,8 +4527,8 @@ damage    = floor(fvar(13)*20),5
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = (-10 - random%5), (-5 - random%15)
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = low
@@ -4632,8 +4632,8 @@ guardflag = MA
 hitflag = MAFD
 priority = 6, Hit
 pausetime = 14,14
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 1004
+sparkxy = (-10 - random%5), (-5 - random%15)
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = High
@@ -4754,8 +4754,8 @@ keyctrl = 0
 [State 3050, Super A]
 type = SuperPause
 trigger1 = time = 7
-pos = 0,-10
-anim = 100
+pos = 0,0
+anim = 2001
 sound = 20, 0
 poweradd = -1000
 time=30
@@ -4812,8 +4812,8 @@ guardflag = MA
 hitflag = MAF
 priority = 6, Hit
 pausetime = 15,10
-sparkno = 4
-sparkxy = -10, 0 ; = -10, -80
+sparkno = 1003
+sparkxy = (-1 - random%50), (-1 - random%50); = -10, -80
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
@@ -4929,8 +4929,8 @@ damage = floor(parent,fvar(13)*50),10
 hitflag = MAF
 guardflag = MA
 pausetime = 10,16
-sparkno = -1
-sparkxy = -10, -35 ; = -10,-60
+sparkno = 1003
+sparkxy = (-1 - random%25), (-1 - random%25); = -10, -80
 hitsound   = 5,3
 guardsound = 6,0
 ground.type = high
@@ -5051,8 +5051,8 @@ hitcountpersist=1
 [State 3050, Super A]
 type = SuperPause
 trigger1 = time = 5
-pos = 0,-10
-anim = 100
+pos = 0,0
+anim = 2001
 sound = 20, 0
 poweradd = -1000
 time=30
@@ -5115,8 +5115,8 @@ damage    = floor(fvar(13)*40),10
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = -10, -35 ; = -10, -70 ; = -10,-37
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = high
@@ -5194,8 +5194,8 @@ guardflag = LA
 hitflag = MAF
 priority = 6, Hit
 pausetime = 8,8
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 1001
+sparkxy = -10, -2 ; = -10, -70 ; = -10,-37
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = low
@@ -5261,8 +5261,8 @@ damage    = floor(fvar(13)*40),10
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = -10, -35 ; = -10, -70 ; = -10,-37
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = high
@@ -5338,8 +5338,8 @@ guardflag = LA
 hitflag = MAF
 priority = 6, Hit
 pausetime = 8,8
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 1001
+sparkxy = -10, -2 ; = -10, -70 ; = -10,-37
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = low
@@ -5405,8 +5405,8 @@ damage    = floor(fvar(13)*40),10
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10
-sparkno = 1
-sparkxy = -10, -25 ; = -10, -70 ; = -10,-37
+sparkno = 1001
+sparkxy = -10, -35 ; = -10, -70 ; = -10,-37
 hitsound   = 5,2
 guardsound = 6,0
 ground.type = high
@@ -5482,8 +5482,8 @@ guardflag = LA
 hitflag = MAF
 priority = 6, Hit
 pausetime = 8,8
-sparkno = 2
-sparkxy = -10, -25 ; = -10, -70 ; = -10, -26
+sparkno = 3000
+sparkxy = -10, -2 ; = -10, -70 ; = -10,-37
 hitsound = 5, 3
 guardsound = 6, 0
 ground.type = low
