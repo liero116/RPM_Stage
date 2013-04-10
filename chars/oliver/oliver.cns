@@ -32,8 +32,8 @@ draw.offset = 0,3    ;Player drawing offset in pixels (x, y)
 [Velocity]
 walk.fwd  = 2.4      ;Walk forward
 walk.back = -2.2     ;Walk backward
-run.fwd  = 9, 0    ;Run forward (x, y)
-run.back = -10,-5 ;Hop backward (x, y)
+run.fwd  = 8, 0    ;Run forward (x, y)
+run.back = -8,-5 ;Hop backward (x, y)
 jump.neu = 0,-10.5  ;Neutral jumping velocity (x, y)
 jump.back = -3.0    ;Jump back Speed (x, y)
 jump.fwd = 3.0       ;Jump forward Speed (x, y)
@@ -125,26 +125,21 @@ trigger2=animelem=2
 trigger3=animelem=3
 trigger4=animelem=4
 trigger5=animelem=5
-; trigger6=animelem=6
+trigger6=animelem=6
 ; trigger7=animelem=7
 x=const(velocity.run.fwd.x)
 
-[state 101,run]
-type=changestate
-trigger1=animelem=4
-trigger1=command="holdfwd"
-value= 101
-;elem=1
-persistent=1
-
-[State 0, CtrlSet]
-type = CtrlSet
-trigger1 = time > 10
-value = 1
+;[state 101,run]
+;type=changestate
+;trigger1=animelem=4
+;trigger1=command="holdfwd"
+;value= 101
+;;elem=1
+;persistent=1
 
 [state 101, changestate]
 type=changestate
-trigger1=animtime=0
+trigger1 = animtime=0
 value=0
 ctrl=1
 
@@ -165,13 +160,13 @@ volume = 0
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 = time = [0,6]
+trigger1 = time = [0,5]
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 time = 1
 
 [State 105, 1]
 type = VelSet
-trigger1 = Time = [3,6]
+trigger1 = Time = [0,5]
 x = const(velocity.run.back.x)
 y = 0;const(velocity.run.back.y)
 

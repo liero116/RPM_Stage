@@ -126,7 +126,7 @@ time = 1
 
 [State 105, 1]
 type = VelSet
-trigger1 = Time = [1,11]
+trigger1 = Time = [0,7]
 x = const(velocity.run.back.x)
 y = 0;const(velocity.run.back.y)
 

@@ -996,7 +996,7 @@ facep2=1
 type = varAdd
 triggerall = p2statetype != S && p2statetype != C
 trigger1 = movehit = 1
-fvar(20)=0.05
+fvar(20)=0.20
 ignorehitpause = 1
 persistent = 0
 
@@ -1361,7 +1361,6 @@ volume=200
 [State 640, 3]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-fall.yvelocity = 0
 trigger1 = animelem=5
 attr = A, NA
 damage    = floor(fvar(13)*30)
@@ -1374,17 +1373,18 @@ hitsound   = 5,12
 guardsound = 6,0
 animtype = Med
 ground.type = High
-air.type=trip
+air.type=high
 ground.slidetime = 15
 ground.hittime  = 15
 air.velocity =  -8,12
 air.fall=1
-air.recover=0
 envshake.time=20
-fall.recovertime=999
-yaccel=const(movement.yaccel)
-;snap=ifelse(facing=1,0,20),0
+yaccel=0.4;const(movement.yaccel)
 air.fall=1
+fall.recover=0
+down.bounce=1
+fall.xvelocity = -0.7
+fall.yvelocity = -5
 
 [State 200, vox]
 type = PlaySnd

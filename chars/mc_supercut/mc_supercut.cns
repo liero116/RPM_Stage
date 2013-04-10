@@ -129,13 +129,13 @@ volume = 0
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 = time = [0,10]
+trigger1 = time = [0,6]
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 time = 1
 
 [State 105, 1]
 type = VelSet
-trigger1 = Time = [3,10]
+trigger1 = Time = [0,6]
 x = const(velocity.run.back.x)
 y = 0;const(velocity.run.back.y)
 
