@@ -7,6 +7,9 @@ physics = S
 anim = 810
 ctrl=0
 
+
+
+
 [State 0, PowerAdd]
 type = PowerAdd
 triggerall = fvar(17)= 0
@@ -38,7 +41,7 @@ damage    = 180
 guardflag = MA
 hitflag = MAFD
 pausetime = 8,8
-sparkno = 800
+sparkno = -1
 sparkxy = -10,-37
 hitsound = 5,12
 guardsound = 6,0
@@ -63,6 +66,11 @@ physics = S
 anim = 812
 ctrl=0
 
+[State 0, Width]
+type = Width
+trigger1 = 1
+edge = 0,0
+player = 0,0
 
 [State 0, VelSet]
 type = VelSet
@@ -93,6 +101,12 @@ physics = S
 anim = 813
 ctrl=0
 velset = 0,0
+
+[State 0, Width]
+type = Width
+trigger1 = 1
+edge = 10,5
+player = 10,5
 
 [State 0, PosSet]
 type = PosSet

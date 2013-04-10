@@ -2462,7 +2462,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; = Jolt 4C
 [Statedef 1405]
-type    = A
+type    = S
 movetype= A
 physics = S
 juggle  = 4

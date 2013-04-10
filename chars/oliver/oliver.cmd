@@ -746,7 +746,7 @@ value = 800
 triggerall = command = "throw"
 trigger1 = statetype = S
 trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
+trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = stateno = [200,499]
 trigger3 = time = [0,2]
 
@@ -896,7 +896,7 @@ triggerall = random < ailevel * 10
 triggerall = p2statetype = S || p2statetype = C
 trigger1 = statetype = S
 trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
+trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = stateno = [200,499]
 trigger3 = time = [0,2]
 
@@ -1582,7 +1582,7 @@ trigger2 = stateno != [3000,3050)
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 ;----------------------------------------------
 
@@ -1627,7 +1627,7 @@ trigger2 = stateno = 202 || stateno = 212 || stateno = 232 || stateno = 242 || s
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Strong Jump Kick 1260]
 type = ChangeState
@@ -1640,7 +1640,7 @@ trigger2 = stateno = 202 || stateno = 212 || stateno = 232 || stateno = 242 || s
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Portal A 1220]
 type = ChangeState
@@ -1652,7 +1652,7 @@ trigger2 = stateno = 202 || stateno = 212 || stateno = 232 || stateno = 242 || s
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Portal B 1221]
 type = ChangeState
@@ -1664,7 +1664,7 @@ trigger2 = stateno = 202 || stateno = 212 || stateno = 232 || stateno = 242 || s
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Portal C 1222]
 type = ChangeState
@@ -1676,7 +1676,7 @@ trigger2 = stateno = 202 || stateno = 212 || stateno = 232 || stateno = 242 || s
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Slash A 1200]
 type = ChangeState
@@ -1688,7 +1688,7 @@ trigger2 = stateno = 202 || stateno = 212 || stateno = 232 || stateno = 242 || s
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Slash B 1210]
 type = ChangeState
@@ -1700,7 +1700,7 @@ trigger2 = stateno = 1200 || stateno = 202 || stateno = 212 || stateno = 232 || 
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 ;===========================================================================
 ;===========================================================================
@@ -1756,7 +1756,7 @@ trigger3 = stateno = 442
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Strong Punch 212]
 type = ChangeState
@@ -1770,7 +1770,7 @@ trigger2 = stateno = 202 || stateno = 232
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Strong Kick 242]
 type = ChangeState
@@ -1784,7 +1784,7 @@ trigger2 = stateno = 212 || stateno = 202
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 
 ;======================================
@@ -1808,7 +1808,7 @@ trigger2 = stateno = 212 || stateno = 202 || stateno = 242 || stateno = 402 && t
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Strong Punch 412]
 type = ChangeState
@@ -1823,7 +1823,7 @@ trigger2 = stateno = 402 || stateno = 202 || stateno = 212 || stateno = 232 || s
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Strong Kick 440]
 type = ChangeState
@@ -1837,7 +1837,7 @@ trigger2 = stateno = 410  || stateno=240 || stateno=400
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, ]
 type = Null
@@ -1973,7 +1973,7 @@ trigger2 = stateno != [3000,3050)
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 ;=======================
 [State -1, ]
@@ -1999,7 +1999,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Cool Dash EX 1431]
 type = ChangeState
@@ -2017,7 +2017,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Panther Kick EX 1331]
 type = ChangeState
@@ -2035,7 +2035,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 ;==========================================
 
@@ -2061,7 +2061,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Slaughter Kick B 1511]
 type = ChangeState
@@ -2078,7 +2078,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Slaughter Finale C 1521]
 type = ChangeState
@@ -2095,7 +2095,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Cool Dash A 1401]
 type = ChangeState
@@ -2112,7 +2112,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Cool Dash B 1411]
 type = ChangeState
@@ -2129,7 +2129,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Cool Dash C 1421]
 type = ChangeState
@@ -2146,7 +2146,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Panther Kick A 1301]
 type = ChangeState
@@ -2163,7 +2163,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Panther Kick B 1311]
 type = ChangeState
@@ -2180,7 +2180,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Panther Kick C 1321]
 type = ChangeState
@@ -2197,7 +2197,7 @@ trigger3 = stateno=[411,441]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 
 ;===========================================================================
 
@@ -2265,7 +2265,7 @@ triggerall = command = "a"
 triggerall = command != "holddown"
 trigger1 = statetype = S
 trigger1 = ctrl
-trigger2 = stateno = 101 || stateno = 109
+trigger2 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Strong Punch 211]
 type = ChangeState
@@ -2279,7 +2279,7 @@ trigger2 = stateno = 231 || stateno=431
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Strong Kick 241]
 type = ChangeState
@@ -2293,7 +2293,7 @@ trigger2 = stateno = 211 || stateno=231
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 
 
@@ -2318,7 +2318,7 @@ trigger1 = ctrl
 ; trigger2 = movecontact
 ; trigger2 = p2stateno != [12000,12002]
 ; trigger2 = p2stateno != [11000,11010]
-trigger2 = stateno = 101 || stateno = 109
+trigger2 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Strong Punch 411]
 type = ChangeState
@@ -2333,7 +2333,7 @@ trigger2 = stateno = 401 || stateno=231
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, Strong Kick 441]
 type = ChangeState
@@ -2347,7 +2347,7 @@ trigger2 = stateno = 411  || stateno=211;|| stateno=401
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 
 [State -1, ]
 type = Null
@@ -2501,7 +2501,7 @@ trigger2 = stateno != [3000,3050)
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 3000
 
 ;----------------------------------------------
@@ -2550,7 +2550,7 @@ trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger3 = stateno = 1000 || stateno = 1015
 trigger3 = movecontact
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1012
 
 [State -1, Grab C]
@@ -2566,7 +2566,7 @@ trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger3 = stateno = 1050 || stateno = 1060 || stateno = 1070 ;|| stateno = 240
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
 [State -1, ]
@@ -2588,7 +2588,7 @@ trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger3 = stateno = 1050 || stateno = 1060 || stateno = 1070 ;|| stateno = 240
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
 [State -1, Grab B]
@@ -2603,7 +2603,7 @@ trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger3 = stateno = 1050 || stateno = 1060 || stateno = 1070 ;|| stateno = 240
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
 [State -1, Grab C]
@@ -2618,7 +2618,7 @@ trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger3 = stateno = 1050 || stateno = 1060 || stateno = 1070 ;|| stateno = 240
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1020
 
 [State -1, Portal A 1050]
@@ -2632,7 +2632,7 @@ trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1050
 
 [State -1, Portal B 1060]
@@ -2646,7 +2646,7 @@ trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109 || stateno = 1050 || stateno = 1070
+trigger3 = stateno = 10100000 || stateno = 10900000 || stateno = 1050 || stateno = 1070
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1060
 
 [State -1, Portal C 1070]
@@ -2660,7 +2660,7 @@ trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1070
 
 [State -1, Slash A 1000]
@@ -2674,7 +2674,7 @@ trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000 && stateno != 1010 && stateno != 1017
 
 [State -1, Slash B 1010]
@@ -2688,7 +2688,7 @@ trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000 && stateno != 1010 && stateno != 1017
 
 [State -1, Slash C 1017]
@@ -2702,7 +2702,7 @@ trigger2 = stateno = [200,499]
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 1000 && stateno != 1010 && stateno != 1017
 
 
@@ -2831,7 +2831,7 @@ trigger3 = stateno = 440
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 101 || stateno = 109
+trigger4 = stateno = 10100000 || stateno = 10900000
 trigger5 = statetype = S && p2movetype = H && var(40)=1 && stateno != 200
 
 [State -1, Strong Punch 210]
@@ -2846,7 +2846,7 @@ trigger2 = stateno = 200 || stateno = 230
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 210
 
 [State -1, Strong Kick 240]
@@ -2861,7 +2861,7 @@ trigger2 = stateno = 210 || stateno = 200
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 240
 
 [State -1, F Strong Kick 250]
@@ -2876,7 +2876,7 @@ trigger2 = stateno = 210 || stateno = 200 || stateno = 240
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 240
 
 [State -1, B Strong Kick 260]
@@ -2891,7 +2891,7 @@ trigger2 = stateno = 210 || stateno = 200 || stateno = 240
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 240
 
 
@@ -2917,7 +2917,7 @@ trigger2 = stateno = 210 || stateno = 200 || stateno = 240 || stateno = 400
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 400
 
 [State -1, Strong Punch 410]
@@ -2933,7 +2933,7 @@ trigger2 = stateno = 400 || stateno = 200 || stateno = 210 || stateno = 230 || s
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 440
 
 [State -1, Strong Kick 440]
@@ -2948,7 +2948,7 @@ trigger2 = stateno = 200 || stateno = 210 || stateno=240 || stateno=400 || state
 trigger2 = movecontact
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
-trigger3 = stateno = 101 || stateno = 109
+trigger3 = stateno = 10100000 || stateno = 10900000
 trigger4 = statetype = S && p2movetype = H && var(40)=1 && stateno != 410
 
 [State -1, ]

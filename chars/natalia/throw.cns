@@ -17,7 +17,7 @@
 ;
 ;[State 800, 1]
 ;type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+;ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 ;Trigger1 = Time = 0
 ;attr = S, NT
 ;hitflag = M
@@ -86,8 +86,8 @@ damage    = 220
 guardflag = MA
 hitflag = MAFD
 pausetime = 8,5
-sparkno = 0
-sparkxy = -10,-37
+sparkno = 1004
+sparkxy = -25,-37
 hitsound = 5,12
 guardsound = 6,0
 ground.type = High

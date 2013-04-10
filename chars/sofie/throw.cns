@@ -30,7 +30,7 @@ pos = 35, 0
 [State 210, 2]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-trigger1 = p2movetype != H
+trigger1 = animelem = 2
 priority = 1,miss
 attr = S, NA
 animtype  = Hard
@@ -38,8 +38,8 @@ damage    = 100
 guardflag = MA
 hitflag = MAFD
 pausetime = 5,40
-sparkno = 0
-sparkxy = -10,-37
+sparkno = 430 + random%5
+sparkxy = -30,-40
 hitsound = 5,12
 guardsound = 6,0
 ground.type = High
@@ -60,8 +60,8 @@ damage    = 150
 guardflag = MA
 hitflag = MAFD
 pausetime = 5,5
-sparkno = 0
-sparkxy = -10,-37
+sparkno = 430 + random%5
+sparkxy = -40,-20
 hitsound = 5,12
 guardsound = 6,0
 ground.type = High
