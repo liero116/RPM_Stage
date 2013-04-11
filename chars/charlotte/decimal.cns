@@ -2613,7 +2613,7 @@ channel = -1
 [State 0, PowerAdd]
 type = PowerAdd
 trigger1 = time = 0
-value = -500
+value = -500 && var(40) = 0
 ;--------------------------------
 
 [State 0, NotHitBy]
@@ -2758,7 +2758,7 @@ channel = -1
 [State 0, PowerAdd]
 type = PowerAdd
 trigger1 = time = 0
-value = -500
+value = -500 && var(40) = 0
 ;--------------------------------
 
 [State 0, VelSet]
@@ -2886,7 +2886,7 @@ channel = -1
 [State 0, PowerAdd]
 type = PowerAdd
 trigger1 = time = 0
-value = -500
+value = -500 && var(40) = 0
 
 ;--------------------------------
 
@@ -3148,7 +3148,7 @@ trigger1 = time = 0
 pos = 0,0
 anim = 2001
 sound = 20, 0
-poweradd = -1000
+poweradd = ifelse(var(40) = 0,-1000,-9999)
 time= 20
 
 [State 0, VelSet]

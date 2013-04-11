@@ -3272,7 +3272,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
-trigger1 = time = 0
+trigger1 = time = 0 && var(40) = 0
 value = -500
 
 ;--------------------------------
@@ -3433,7 +3433,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
-trigger1 = time = 0
+trigger1 = time = 0 && var(40) = 0
 value = -500
 
 ;--------------------------------
@@ -3586,7 +3586,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
-trigger1 = time = 0
+trigger1 = time = 0 && var(40) = 0
 value = -500
 
 ;--------------------------------
@@ -3865,7 +3865,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
-trigger1 = time = 0
+trigger1 = time = 0 && var(40) = 0
 value = -500
 
 ;--------------------------------
@@ -4060,8 +4060,6 @@ trigger1=time>0 && time<30
 trigger1=statetype=A
 y=Vel Y/2.5
 
-
-
 [State 200, vox]
 type = PlaySnd
 trigger1 = Time = 0
@@ -4076,7 +4074,7 @@ time=50
 pos = 0,0
 anim = 2001
 sound = 20, 0
-poweradd = -1000
+poweradd = ifelse(var(40) = 0,-1000,-9999)
 
 [State 0, Helper]
 type = Helper
@@ -4658,7 +4656,7 @@ time=70
 pos = 0,0
 anim = 2001
 sound = 20, 0
-poweradd = -1000
+poweradd = ifelse(var(40) = 0,-1000,-9999)
 
 [state 3000, face crawl]
 type=explod
@@ -4830,7 +4828,7 @@ time=100
 pos = 0,0
 anim = 2001
 sound = 20, 0
-poweradd = -3000
+poweradd = ifelse(var(40) = 0,-3000,-9999)
 
 [State 1020, explode]
 type = Projectile
