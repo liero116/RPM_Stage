@@ -1040,8 +1040,7 @@ trigger1=movecontact && p2statetype = A && time>19
 value=636
 
 ;---------------------------------------------------------------------------
-;Dive A
-
+;Dive AT
 [Statedef 642]
 type    = A
 movetype= A
@@ -1151,9 +1150,9 @@ sparkxy = (-10 - random%5), (-20 - random%15); = -10,-40
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = High
-ground.slidetime = 26
-ground.hittime  = 26
-guard.hittime = 11
+ground.slidetime = 19
+ground.hittime  = 19
+guard.hittime = 7
 ground.velocity = -4
 air.velocity = -((vel x * 10)), 10
 air.hittime = 20
