@@ -59,13 +59,14 @@ ground.type = high
 ground.slidetime = 15
 ground.hittime  = 15
 guard.hittime = 13
-ground.velocity = -4
+ground.velocity = -6
 airguard.velocity = -.1,-.8
 air.type = high
-air.velocity = -0.7 ,-4.5
+air.velocity = -0.5 ,-3.5
 air.hittime = 35
 guard.hittime = 26
 nochainid=1
+;forcenofall = 1
 fall.yvelocity = 0
 
 [state 210, jump cancel]
@@ -155,9 +156,10 @@ ground.slidetime = 23
 ground.hittime  = 23
 guard.hittime = 21
 ground.velocity = -4,0
-air.velocity = -1.0,-4.2
+air.velocity = -0.5, -5
 air.hittime  = 44
 nochainid=1
+;forcenofall = 1
 fall.yvelocity = 0
 
 [state 210, jump cancel]
@@ -248,10 +250,11 @@ ground.hittime  = 20
 guard.hittime = 19
 ground.velocity = -6
 airguard.velocity = -.5,-.8
-air.type = trip
-air.velocity = -1.5  ,-4.5
+air.type = high
+air.velocity = -0.5, -3.0
 air.hittime = 36
-air.fall=1
+air.fall=0
+;forcenofall = 1
 fall.recovertime=-1
 nochainid=1
 fall.yvelocity = 0
@@ -544,12 +547,13 @@ ground.type = Low
 ground.slidetime =13
 ground.hittime  = 13
 guard.hittime = 10
-ground.velocity = -5.5
+ground.velocity = -9
 air.type = Low
-air.hittime  = 30
-air.velocity = -0.2,-4
+air.hittime  = 15
+air.velocity = -2.5,-3
 down.hittime  = 10
-down.velocity = -3,-2
+down.velocity = -2.5,-3
+;forcenofall = 1
 nochainid=1
 fall.yvelocity = 0
 
@@ -926,9 +930,7 @@ air.type=high
 yaccel=const(movement.yaccel)
 air.fall=1
 fall.recover=0
-down.bounce=1
-fall.xvelocity=-0.7
-fall.yvelocity=-5
+fall.yvelocity = 0
 
 ;---------------------------------------------------------------------------
 ;Strong B
@@ -1149,22 +1151,37 @@ sparkxy = (-10 - random%5), (-20 - random%15); = -10,-40
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = High
-ground.slidetime =26
+ground.slidetime = 26
 ground.hittime  = 26
 guard.hittime = 11
 ground.velocity = -4
-air.velocity = -1,-7
-air.hittime=20
+air.velocity = -((vel x * 10)), 10
+air.hittime = 20
 yaccel=const(movement.yaccel)
-forcenofall = 1
-fall.yvelocity = 0
+fall.recover = 0
+air.fall = 1
+fall.yvelocity= 0
+;fall.yvelocity=-5
+;down.bounce=1
 
-[State 1000, Land]
-type= changestate
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
-trigger2 = pos y > 0
-value = 672
+[State 0, TargetBind]
+type = TargetBind
+triggerall = statetype = A && p2statetype = A
+trigger1 = movehit
+trigger1 = pos y <= -20
+time = 1
+id = -1
+pos = 30,0
+ignorehitpause = 1
+persistent = 1
+
+
+;[State 1000, Land]
+;type= changestate
+;trigger1 = vel y > 0
+;trigger1 = pos y > -vel y
+;trigger2 = pos y > 0
+;value = 672
 
 ;---------------------------------------------------------------------------
 ;Dive B
@@ -1968,7 +1985,7 @@ airguard.velocity = -.5,-.8
 air.type = High
 air.velocity = 0,0
 air.hittime = 30
-snap =65,-100
+snap =65,-80
 
 [State 200, pull]
 type = hitdef 
@@ -2388,9 +2405,10 @@ guard.hittime = 9
 ground.velocity = 15,0
 airguard.velocity = -.1,-.8
 air.type = high
-air.velocity = 1.5 ,-7
+air.velocity = 0.5 ,-5
 air.hittime = 35
-air.fall=1
+forcenofall = 1
+air.fall= 0
 fall.recover=0
 fall.yvelocity = 0
 
