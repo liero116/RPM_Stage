@@ -1052,6 +1052,21 @@ anim = 642
 facep2=0
 ;velset = (vel x)/3,vel y
 
+[State 0, VarSet]
+type = VarSet
+trigger1 = command = "a"
+var(25) = 0
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = command = "b"
+var(25) = 1
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = command = "c"
+var(25) = 2
+
 [state 0, damage counter set]
 type = varadd
 trigger1 = (movehit)
@@ -1063,18 +1078,50 @@ ignorehitpause = 1
 type = Velmul
 trigger1 = prevstateno = 102
 x = 0.9
-
+;----------------------------
 [State 0, VelSet]
 type = VelSet
+triggerall = var(25) = 0
 trigger1 = time = 0
 x = 0
 y = -2.5
 
 [State 0, VelSet]
 type = VelSet
+triggerall = var(25) = 0
 trigger1 = time > 8
 x = 3
 y = 7.5
+
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 1
+trigger1 = time = 0
+x = 0
+y = -2.5
+
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 1
+trigger1 = time > 8
+x = 6
+y = 6.5
+
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 2
+trigger1 = time = 0
+x = 0
+y = -2.5
+
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 2
+trigger1 = time > 8
+x = 7.5
+y = 6
+;----------------------------
+
 
 [State 200, 1]
 type = PlaySnd
@@ -1102,15 +1149,22 @@ sparkxy = (-10 - random%5), (-20 - random%15); = -10,-40
 hitsound   = 5,1
 guardsound = 6,0
 ground.type = High
-ground.slidetime =20
-ground.hittime  = 20
-guard.hittime = 7
+ground.slidetime =26
+ground.hittime  = 26
+guard.hittime = 11
 ground.velocity = -4
 air.velocity = -1,-7
 air.hittime=20
 yaccel=const(movement.yaccel)
 forcenofall = 1
 fall.yvelocity = 0
+
+[State 1000, Land]
+type= changestate
+trigger1 = vel y > 0
+trigger1 = pos y > -vel y
+trigger2 = pos y > 0
+value = 672
 
 ;---------------------------------------------------------------------------
 ;Dive B
@@ -1187,6 +1241,8 @@ yaccel=const(movement.yaccel)
 forcenofall = 1
 fall.yvelocity = 0
 
+
+
 ;---------------------------------------------------------------------------
 ;Dive C
 
@@ -1262,7 +1318,40 @@ yaccel=const(movement.yaccel)
 forcenofall = 1
 fall.yvelocity = 0
 
+;---------------------------------------------------------------------------
+; = DIVE LAND
+[Statedef 672]
+type    = S
+physics = S
+ctrl = 0
+anim = 672
 
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time=0
+value = F500,1
+volume = 255
+channel = -1
+freqmul = 1.0
+loop = 0
+pan = 0
+ignorehitpause = 1
+
+[State 52, 1]
+type = VelSet
+trigger1 = Time = 0
+y = 0
+
+[State 52, 2]
+type = PosSet
+trigger1 = Time = 0
+y = 0
+
+[State 52, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
 
 
 

@@ -2200,7 +2200,7 @@ trigger5 = stateno = 1035 && time > 6
 type = ChangeState
 value = 642
 triggerall = var(27) = 0
-triggerall = command = "a" || command = "y"
+triggerall = (command = "a" || command = "y") || command = "b" || command = "c"
 triggerall = command = "holddown" && vel x >= 0
 triggerall = pos y <= -60 || vel y >= 0
 trigger1 = statetype = A
@@ -2211,33 +2211,33 @@ trigger3 = movecontact
 trigger4 = stateno = 1025 && time > 6
 trigger5 = stateno = 1035 && time > 6
 
-[State -1, Dive Kick B 652]
-type = ChangeState
-value = 652
-triggerall = var(27) = 0
-triggerall = command = "b" && command = "holddown" && vel x >= 0
-triggerall = pos y <= -60 || vel y >= 0
-trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
-trigger2 = stateno = 102 || stateno = 103
-trigger3 = stateno = [600,641]
-trigger3 = movecontact
-trigger4 = stateno = 1025 && time > 6
-trigger5 = stateno = 1035 && time > 6
-
-[State -1, Dive Kick C 662]
-type = ChangeState
-value = 662
-triggerall = var(27) = 0
-triggerall = command = "c" && command = "holddown" && vel x >= 0
-triggerall = pos y <= -60 || vel y >= 0
-trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
-trigger2 = stateno = 102 || stateno = 103
-trigger3 = stateno = [600,641]
-trigger3 = movecontact
-trigger4 = stateno = 1025 && time > 6
-trigger5 = stateno = 1035 && time > 6
+;[State -1, Dive Kick B 652]
+;type = ChangeState
+;value = 652
+;triggerall = var(27) = 0
+;triggerall = command = "b" && command = "holddown" && vel x >= 0
+;triggerall = pos y <= -60 || vel y >= 0
+;trigger1 = statetype = A
+;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger2 = stateno = 102 || stateno = 103
+;trigger3 = stateno = [600,641]
+;trigger3 = movecontact
+;trigger4 = stateno = 1025 && time > 6
+;trigger5 = stateno = 1035 && time > 6
+;
+;[State -1, Dive Kick C 662]
+;type = ChangeState
+;value = 662
+;triggerall = var(27) = 0
+;triggerall = command = "c" && command = "holddown" && vel x >= 0
+;triggerall = pos y <= -60 || vel y >= 0
+;trigger1 = statetype = A
+;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger2 = stateno = 102 || stateno = 103
+;trigger3 = stateno = [600,641]
+;trigger3 = movecontact
+;trigger4 = stateno = 1025 && time > 6
+;trigger5 = stateno = 1035 && time > 6
 
 ;===========================================================================
 [State -1, ]
