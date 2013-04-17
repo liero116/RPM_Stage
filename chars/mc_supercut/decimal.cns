@@ -2744,7 +2744,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
-trigger1 = time = 0
+trigger1 = time = 0 && var(40) = 0
 value = -500
 ;--------------------------------
 
@@ -2914,7 +2914,7 @@ value = -500
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 = time = 3
+trigger1 = time = 3 && var(40) = 0
 value = SCA,NA,SA,HA,NP,SP,HP;,NT,ST,HT
 ;value2 = S,NA
 time = 16
@@ -3125,7 +3125,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
-trigger1 = time = 0
+trigger1 = time = 0 && var(40) = 0
 value = -500
 
 [State 0, NotHitBy]
@@ -3518,7 +3518,7 @@ pos = 0,0
 anim = 2001
 sound = 20, 0
 time = 20
-poweradd = -1000
+poweradd = ifelse(var(40) = 0,-1000,-9999)
 
 [State 200, vox]
 type = PlaySnd

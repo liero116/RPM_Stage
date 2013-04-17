@@ -103,12 +103,6 @@ trigger1=time = [4,14]
 ;trigger3=animelem=3
 x=const(velocity.run.fwd.x)
 
-;[state 210, jump cancel]
-;type=changestate
-;trigger1=command="holdup"
-;value=40
-;ctrl=1
-
 [state 101, changestate]
 type=changestate
 trigger1=animtime=0
@@ -1542,20 +1536,20 @@ timegap=1
 framegap=1
 length=15
 
-[state -2, speed definition]
-type = ChangeAnim
-triggerall = var(40)=1
-trigger1 = AnimElemTime(AnimElemNo(0) + 1) < 0
-trigger1 = AnimElemTime(AnimElemNo(0)) > floor ((AnimElemTime(AnimElemNo(0)) - AnimElemTime(AnimElemNo(0) + 1))/2)
-ignorehitpause = 1
-value = anim
-elem = AnimElemNo(0) + 1
+;[state -2, speed definition]
+;type = ChangeAnim
+;triggerall = var(40)=1
+;trigger1 = AnimElemTime(AnimElemNo(0) + 1) < 0
+;trigger1 = AnimElemTime(AnimElemNo(0)) > floor ((AnimElemTime(AnimElemNo(0)) - AnimElemTime(AnimElemNo(0) + 1))/2)
+;ignorehitpause = 1
+;value = anim
+;elem = AnimElemNo(0) + 1
 
 [State -2, speed power drain]
 type=poweradd
 triggerall=var(40)=1
 trigger1=time%1=0
-value=-6
+value=-20
 ignorehitpause = 1
 
 [state -2, speed off]

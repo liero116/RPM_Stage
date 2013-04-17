@@ -3175,6 +3175,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
+triggerall = var(40) = 0
 trigger1 = time = 0
 value = -500
 
@@ -3308,6 +3309,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
+triggerall = var(40) = 0
 trigger1 = time = 0
 value = -500
 
@@ -3402,7 +3404,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; == Release EX C
 [Statedef 1055]
-type    = A
+type    = S
 movetype= A
 physics = S
 ;juggle  = 0
@@ -3440,6 +3442,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
+triggerall = var(40) = 0
 trigger1 = time = 0
 value = -500
 
@@ -3563,6 +3566,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
+triggerall = var(40) = 0
 trigger1 = time = 0
 value = -500
 
@@ -3693,6 +3697,7 @@ channel = -1
 
 [State 0, PowerAdd]
 type = PowerAdd
+triggerall = var(40) = 0
 trigger1 = time = 0
 value = -500
 

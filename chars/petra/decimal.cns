@@ -890,7 +890,7 @@ type    = U
 movetype= A
 physics = U
 ;juggle  = 0
-poweradd = -200
+poweradd = ifelse(var(40) = 0,-200,0)
 ;anim = 1000
 ctrl = 0
 sprpriority = 2
@@ -2228,7 +2228,7 @@ sprpriority = 2
 
 [State 0, beam]
 type = Helper
-trigger1 = time = 62
+trigger1 = animelem = 8
 helpertype = normal ;player
 name = "Beam"
 ID = 3010
@@ -2256,18 +2256,18 @@ trans=add
 
 [State 0, StateTypeSet]
 type = StateTypeSet
-trigger1 = animelem = 18
+trigger1 = animelem = 6
 statetype = S       ;S,A,C,L
 movetype = A        ;I,A,H
 physics = S         ;A,C,S,N
 
 [State 3050, Super A]
 type = SuperPause
-trigger1 = animelem = 18
-pos = 6,-85
-anim = 100
+trigger1 = animelem = 6
+pos = 0,0
+anim = 2001
 sound = 20, 0
-poweradd = -1000
+poweradd = ifelse(var(40) = 0,-1000,-9999)
 time=45
 
 [State 200, end]
@@ -2280,7 +2280,7 @@ ctrl = 1
 ;= 236S Beam
 [StateDef 3010]
 type = S
-movetype= I
+movetype= A
 physics = S
 juggle  = 1
 velset = 0,0
@@ -2298,16 +2298,16 @@ type = PosSet
 trigger1 = 1
 y = 0
 
-[State 0, StateTypeSet]
-type = StateTypeSet
-trigger1 = time = 40
-statetype = S       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = S         ;A,C,S,N
+;[State 0, StateTypeSet]
+;type = StateTypeSet
+;trigger1 = time = 4
+;statetype = S       ;S,A,C,L
+;movetype = A        ;I,A,H
+;physics = S         ;A,C,S,N
 
 [State 0, EnvShake]
 type = EnvShake
-trigger1 = time = 44
+trigger1 = time = 4
 time = 100
 freq = 100
 ampl = -4
@@ -2333,7 +2333,7 @@ trigger1 = time%5 = 0
 priority = 6
 attr = S, NA
 animtype  = Medium
-damage    = floor(parent,fvar(13)*40),10
+damage    = floor(parent,fvar(13)*20),5
 guardflag = MA
 hitflag = MAF
 pausetime = 0,0
@@ -2352,13 +2352,13 @@ air.fall = 1
 air.velocity = 0,-1
 nochainid=1
 fall.recover = 0
-snap = 0,0
+;snap = 0,0
 
 [State 240, 2]
 type = hitdef
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 fall.yvelocity = 0
-trigger1 = animelem = 36
+trigger1 = animelem = 24
 priority = 6
 attr = S, NA
 animtype  = Medium
@@ -2373,7 +2373,7 @@ guardsound = 6,0
 ground.type = Low
 ground.slidetime = 17
 ground.hittime  = 17
-guard.hittime = 12
+guard.hittime = 5
 ground.velocity = 0,-9
 air.type = high
 fall = 1
@@ -2381,7 +2381,7 @@ air.fall = 1
 air.velocity = 0,-9
 nochainid=1
 fall.recover = 0
-snap = 0,0
+;snap = 0,0
 
 [State 0, DestroySelf]
 type = DestroySelf

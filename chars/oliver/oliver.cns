@@ -129,14 +129,6 @@ trigger6=animelem=6
 ; trigger7=animelem=7
 x=const(velocity.run.fwd.x)
 
-;[state 101,run]
-;type=changestate
-;trigger1=animelem=4
-;trigger1=command="holdfwd"
-;value= 101
-;;elem=1
-;persistent=1
-
 [state 101, changestate]
 type=changestate
 trigger1 = animtime=0

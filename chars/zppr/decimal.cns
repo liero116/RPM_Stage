@@ -3194,7 +3194,7 @@ trigger1 = time=9
 pos = 0,0
 anim = 2001
 sound = F20, 0
-poweradd = -1000
+poweradd = ifelse(var(40) = 0,-1000,-9999)
 time=40
 
 [State 3050, Bullet A]
@@ -3551,7 +3551,7 @@ trigger1 = animelem=4
 pos = 0,0
 anim = 2001
 sound = 20, 0
-poweradd = -1000
+poweradd = ifelse(var(40) = 0,-1000,-9999)
 time=48
 
 [State 200, vox]

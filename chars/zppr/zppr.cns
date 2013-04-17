@@ -91,12 +91,6 @@ type=velset
 trigger1=time = [3,6]
 x=const(velocity.run.fwd.x)
 
-;[state 210, jump cancel]
-;type=changestate
-;trigger1=command="holdup"
-;value=40
-;ctrl=1
-
 [state 101, changestate]
 type=changestate
 trigger1=animtime=0

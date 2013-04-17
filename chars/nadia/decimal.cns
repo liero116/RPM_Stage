@@ -1015,6 +1015,7 @@ channel = -1
 [State 0, PowerAdd]
 type = PowerAdd
 triggerall = var(25) = 3
+triggerall = var(40) = 0
 trigger1 = time = 0
 value = -500
 
@@ -1312,6 +1313,7 @@ channel = -1
 [State 0, PowerAdd]
 type = PowerAdd
 triggerall = var(25) = 3
+triggerall = var(40) = 0
 trigger1 = time = 0
 value = -500
 
@@ -1795,6 +1797,7 @@ channel = -1
 [State 0, PowerAdd]
 type = PowerAdd
 triggerall = var(25) = 3
+triggerall = var(40) = 0
 trigger1 = time = 0
 value = -500
 
@@ -2645,6 +2648,7 @@ channel = -1
 [State 0, PowerAdd]
 type = PowerAdd
 triggerall = var(25) = 3
+triggerall = var(40) = 0
 trigger1 = time = 0
 value = -500
 
