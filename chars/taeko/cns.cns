@@ -880,8 +880,14 @@ persistent = 1
 [State 0, DisplayToClipboard]
 type = DisplayToClipboard
 trigger1 = 1
-text = "GRV = %f, DM = %f, PBLK = %d, TECH = %d"
-params = fvar(20), fvar(13), var(51), var(49)
+text = "GRV = %f, DM = %f, PBLK = %d, TECH = %d, Y = %f"
+params = fvar(20), fvar(13), var(51), var(49), fvar(21)
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = 1
+fvar(21) = pos y
+
 
 [State 0, wall crossup request]
 type = VelSet

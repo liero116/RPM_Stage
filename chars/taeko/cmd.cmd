@@ -2202,6 +2202,7 @@ value = 642
 triggerall = var(27) = 0
 triggerall = command = "a" || command = "y"
 triggerall = command = "holddown" && vel x >= 0
+triggerall = pos y <= -60 || vel y >= 0
 trigger1 = statetype = A
 trigger1 = ctrl || (stateno = 101 && time >= 4)
 trigger2 = stateno = 102 || stateno = 103
@@ -2215,6 +2216,7 @@ type = ChangeState
 value = 652
 triggerall = var(27) = 0
 triggerall = command = "b" && command = "holddown" && vel x >= 0
+triggerall = pos y <= -60 || vel y >= 0
 trigger1 = statetype = A
 trigger1 = ctrl || (stateno = 101 && time >= 4)
 trigger2 = stateno = 102 || stateno = 103
@@ -2228,6 +2230,7 @@ type = ChangeState
 value = 662
 triggerall = var(27) = 0
 triggerall = command = "c" && command = "holddown" && vel x >= 0
+triggerall = pos y <= -60 || vel y >= 0
 trigger1 = statetype = A
 trigger1 = ctrl || (stateno = 101 && time >= 4)
 trigger2 = stateno = 102 || stateno = 103
