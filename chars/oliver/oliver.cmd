@@ -2379,7 +2379,7 @@ triggerall = command != "holddown"
 trigger1 = statetype = A
 trigger1 = ctrl || (stateno = 101 && time >= 4)
 trigger2 = stateno = 102 || stateno = 103
-trigger3 = stateno = 601
+trigger3 = stateno = 601 && p2statetype = A
 trigger3 = movecontact
 trigger4 = stateno = [1300,1399]
 trigger4 = time > 8
@@ -2393,7 +2393,7 @@ triggerall = command != "holddown"
 trigger1 = statetype = A
 trigger1 = ctrl || (stateno = 101 && time >= 4)
 trigger2 = stateno = 102 || stateno = 103
-trigger3 = stateno = [601,611]
+trigger3 = stateno = [601,611] && p2statetype = A
 trigger3 = movecontact
 trigger4 = stateno = [1300,1399]
 trigger4 = time > 8
@@ -2408,7 +2408,7 @@ triggerall = vel x >= 0
 trigger1 = statetype = A
 trigger1 = ctrl || (stateno = 101 && time >= 4)
 trigger2 = stateno = 102 || stateno = 103
-trigger3 = stateno = [601,641]
+trigger3 = stateno = [601,641] && p2statetype = A
 trigger3 = movecontact
 trigger4 = stateno = [1300,1399]
 trigger4 = time > 8
