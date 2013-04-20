@@ -413,7 +413,7 @@ clearcolor = 255,255,255
 rows = 6
 columns = 8
 wrapping = 1              
-pos = 365,50
+pos = 365,150
 showemptyboxes = 0
 moveoveremptyboxes = 0
 

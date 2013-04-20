@@ -735,7 +735,7 @@ type = ChangeState
 value = 800
 triggerall = command = "throw";ommand="x"
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 
 [State -1, tag]
@@ -873,7 +873,7 @@ triggerall = abs(p2bodydist y) < 0
 triggerall = random < ailevel * 10
 triggerall = p2statetype = S || p2statetype = C
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = stateno = [200,499]
 trigger3 = time = [0,2]
@@ -900,7 +900,7 @@ time = 20
 ;type = ChangeState
 ;value = 7000
 ;triggerall = var(15) = 1
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
 ;trigger2 = stateno = 432
 ;trigger3 = stateno = 410
 
@@ -920,7 +920,7 @@ triggerall = abs(p2bodydist x) = [170,999]
 triggerall = abs(p2bodydist y) = [0,999]
 triggerall = random < ailevel * 2
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 ;
 ;[State -3, Run Fwd Air 102]
 ;type = ChangeState
@@ -933,7 +933,7 @@ trigger1 = ctrl || (stateno = 101 && time >= 4)
 ;triggerall = random < ailevel * 2
 ;trigger1 = statetype = A
 ;trigger1 = stateno != 102
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
 ;
 ;---------------------------------------------------------------------------
 [State -3, Run Back 105]
@@ -957,7 +957,7 @@ trigger1 = statetype = S
 ;triggerall = abs(p2bodydist x) = [0,140] 
 ;triggerall = abs(p2bodydist y) = [0,999]
 ;triggerall = random < ailevel * 8
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
 ;trigger1 = statetype = A
 ;trigger2 = stateno = 102 || stateno = 103
 
@@ -1048,7 +1048,7 @@ triggerall = abs(p2bodydist y) = [0,35]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = stateno = 5120
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 8
 trigger2 = stateno = 242
 trigger3 = random < ailevel * 14
@@ -1065,7 +1065,7 @@ triggerall = abs(p2bodydist y) = [0,55]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = stateno = 5120
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 8
 trigger2 = stateno = 242
 trigger3 = random < ailevel * 14
@@ -1082,7 +1082,7 @@ triggerall = abs(p2bodydist y) = [0,85]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = stateno = 5120
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 8
 trigger2 = stateno = 242
 trigger3 = random < ailevel * 14
@@ -1102,7 +1102,7 @@ triggerall = abs(p2bodydist x) = [80,999]
 triggerall = abs(p2bodydist y) = [0,999]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Iris Trap Set B 10412]
 type = ChangeState
@@ -1116,7 +1116,7 @@ triggerall = p2statetype != L
 trigger1 = abs(p2bodydist x) = [110,999] 
 trigger1 = abs(p2bodydist y) = [0,999]
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = abs(p2bodydist x) = [110,130] 
 trigger2 = abs(p2bodydist y) = [0,10]
 trigger2 = random < ailevel * 16
@@ -1134,7 +1134,7 @@ triggerall = p2statetype != L
 trigger1 = abs(p2bodydist x) = [210,999] 
 trigger1 = abs(p2bodydist y) = [0,999]
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = abs(p2bodydist x) = [210,230] 
 trigger2 = abs(p2bodydist y) = [0,10]
 trigger2 = random < ailevel * 16
@@ -1151,7 +1151,7 @@ triggerall = abs(p2bodydist y) = [0,5]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 12
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -1167,7 +1167,7 @@ triggerall = abs(p2bodydist x) = [47,85]
 triggerall = abs(p2bodydist y) = [0,70]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger1 = statetype != A
 
 [State -1, Whip Lunge 10060]
@@ -1179,7 +1179,7 @@ triggerall = abs(p2bodydist x) = [95,130]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger1 = statetype != A
 
 ;===========================================================================
@@ -1233,7 +1233,7 @@ triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Strong Punch 212]
 type = ChangeState
@@ -1285,7 +1285,7 @@ triggerall = statetype != A
 triggerall = abs(p2bodydist x) = [0,25] 
 triggerall = abs(p2bodydist y) = [0,0]
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger1 = p2statetype = C || p2statetype = L
 
 [State -1, Strong Punch 412]
@@ -1333,7 +1333,7 @@ triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = p2statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 ;---------------------------------------------------------------------------
 [State -1, ]
@@ -1353,7 +1353,7 @@ triggerall = abs(p2bodydist y) = [0,18]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Strong Punch 612]
 type = ChangeState
@@ -1365,7 +1365,7 @@ triggerall = abs(p2bodydist y) = [0,20]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger1 = p2statetype = C
 trigger2 = random < ailevel * 12
 trigger2 = p2stateno != [12000,12002]
@@ -1435,7 +1435,7 @@ triggerall = abs(p2bodydist x) = [120,999]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 5
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 10
 trigger2 = stateno = 5120
 
@@ -1450,7 +1450,7 @@ triggerall = abs(p2bodydist x) = [180,999]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 12
 trigger2 = stateno = 5120
 
@@ -1464,7 +1464,7 @@ triggerall = abs(p2bodydist x) = [70,100]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 7
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 9
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -1491,7 +1491,7 @@ triggerall = abs(p2bodydist y) = [0,20]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Strong Bullet 1060]
 type = ChangeState
@@ -1503,7 +1503,7 @@ triggerall = abs(p2bodydist y) = [0,20]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Strong Bullet 1060]
 type = ChangeState
@@ -1515,7 +1515,7 @@ triggerall = abs(p2bodydist y) = [0,20]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 ;===========================================================================
 [State -1, Violet Iris 1030]
@@ -1529,7 +1529,7 @@ triggerall = abs(p2bodydist x) = [210,999]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 9
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, White Iris 1021]
 type = ChangeState
@@ -1541,7 +1541,7 @@ triggerall = abs(p2bodydist x) = [210,999]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 9
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Black Iris 1021]
 type = ChangeState
@@ -1553,7 +1553,7 @@ triggerall = abs(p2bodydist x) = [210,999]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 9
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Violet Iris Air 10200]
 type = ChangeState
@@ -1566,7 +1566,7 @@ triggerall = abs(p2bodydist y) = [0,10]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 9
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, White Iris Air 10210]
 type = ChangeState
@@ -1578,7 +1578,7 @@ triggerall = abs(p2bodydist y) = [0,10]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 9
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Black Iris Air 10210]
 type = ChangeState
@@ -1590,7 +1590,7 @@ triggerall = abs(p2bodydist y) = [0,10]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 9
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 ;---------------------------------------------------------------------------
 [State -1, Light Whip 1000]
@@ -1656,7 +1656,7 @@ triggerall = abs(p2bodydist y) = [0,12]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Strong Punch 210]
 type = ChangeState
@@ -1710,7 +1710,7 @@ triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = p2statetype = S
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Strong Punch 410]
 type = ChangeState
@@ -1725,7 +1725,7 @@ triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = C
 trigger1 = p2statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 12
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -1768,7 +1768,7 @@ triggerall = p2statetype != L
 trigger1 = random < ailevel * 8
 trigger1 = p2statetype = C
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Strong Punch 610]
 type = ChangeState
@@ -1781,7 +1781,7 @@ triggerall = p2statetype != L
 trigger1 = random < ailevel * 5
 trigger1 = statetype = A
 trigger1 = p2statetype = C
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 12
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -1799,7 +1799,7 @@ triggerall = p2statetype != L
 trigger1 = random < ailevel * 5
 trigger1 = statetype = A
 trigger1 = p2statetype = C
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 12
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -1817,7 +1817,7 @@ triggerall = abs(p2bodydist y) = [0,82]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 
 [State -1, ]
@@ -1920,7 +1920,7 @@ triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 triggerall = statetype != A
 trigger1 = random < ailevel * 5
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 241 || stateno = 211
@@ -1937,7 +1937,7 @@ triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 triggerall = statetype != A
 trigger1 = random < ailevel * 8
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 4
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -2024,7 +2024,7 @@ triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Dual Iris 10211]
 type = ChangeState
@@ -2037,7 +2037,7 @@ triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Triple Iris 10411]
 type = ChangeState
@@ -2050,7 +2050,7 @@ triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Prime Iris Air 10341]
 type = ChangeState
@@ -2063,7 +2063,7 @@ triggerall = abs(p2bodydist y) = [0,20]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Dual Iris Air 10241]
 type = ChangeState
@@ -2075,7 +2075,7 @@ triggerall = abs(p2bodydist y) = [0,20]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Triple Iris Air 10241]
 type = ChangeState
@@ -2087,7 +2087,7 @@ triggerall = abs(p2bodydist y) = [0,20]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 ;---------------------------------------------------------------------------
 [State -1, Whip 1 1001]
@@ -2099,7 +2099,7 @@ triggerall = abs(p2bodydist x) = [85,120]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 12
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -2115,7 +2115,7 @@ triggerall = abs(p2bodydist x) = [121,150]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 12
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -2131,7 +2131,7 @@ triggerall = abs(p2bodydist x) = [151,175]
 triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = random < ailevel * 12
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -2189,7 +2189,7 @@ triggerall = abs(p2bodydist y) = [0,0]
 triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Strong Punch 211]
 type = ChangeState
@@ -2245,7 +2245,7 @@ triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = p2statetype = S
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Strong Punch 411]
 type = ChangeState
@@ -2298,7 +2298,7 @@ triggerall = p2statetype != L
 trigger1 = random < ailevel * 12
 trigger1 = statetype = A
 trigger1 = p2statetype = C
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 102 || stateno = 103
 
 [State -1, Strong Punch 610]
@@ -2381,7 +2381,7 @@ type = ChangeState
 value = 800
 triggerall = command = "throw"
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = stateno = [200,499]
 trigger3 = time = [0,2]
@@ -2401,7 +2401,7 @@ triggerall = command="overdrive"
 triggerall = fvar(17)=1
 triggerall = statetype != A
 triggerall = stateno != [3000,3999]
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 241 || stateno = 411
@@ -2417,7 +2417,7 @@ triggerall = command="236S"
 triggerall = power >= 1000
 triggerall = stateno != [3000,3999]
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = [200,499]
@@ -2432,7 +2432,7 @@ trigger2 = movecontact
 ;triggerall = command="623S" || command="623S"
 ;triggerall = power = 3000 || fvar(17)=1
 ;triggerall = statetype != A
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
 ;trigger2 = p2stateno != [12000,12002]
 ;trigger2 = p2stateno != [11000,11010]
 ;trigger2 = stateno = 241 || stateno = 411
@@ -2448,7 +2448,7 @@ triggerall = command="214S"
 triggerall = power >= 1000 || fvar(17)=1
 triggerall = statetype != A
 triggerall = stateno != [3000,3999]
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = [200,499]
@@ -2467,7 +2467,7 @@ triggerall = command="623S" || command="623S"
 triggerall = power > 3000
 triggerall = statetype != A
 triggerall = stateno != [3000,3999]
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = statetype = S && p2movetype = H && var(40)=1 && stateno != 3100
 
 ;---------------------------------------------------------------------------
@@ -2479,7 +2479,7 @@ triggerall = command="236S"
 triggerall = stateno != [3000,3999]
 triggerall = power >= 1000
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = statetype != A
 trigger2 = hitdefattr = SC, NA, SA, HA
 trigger2 = stateno != [3000,3050)
@@ -2495,7 +2495,7 @@ triggerall = command="214S"
 triggerall = power >= 1000
 triggerall = stateno != [3000,3999]
 triggerall = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger1= stateno != [10211,10341]
 trigger2 = stateno = [200,499]
 trigger2 = movecontact
@@ -2511,7 +2511,7 @@ triggerall = command="214S"
 triggerall = stateno != [3000,3999]
 triggerall = power >= 1000
 triggerall = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno=630 || stateno=610 || stateno=6410
 ;trigger1 = movecontact
 trigger3 = stateno = 102 || stateno = 103
@@ -2527,7 +2527,7 @@ triggerall = command="236S"
 triggerall = power >= 1000
 triggerall = stateno != [3000,3999]
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 10052 || stateno = 10056 || stateno = 10057 || stateno = 10060 || stateno = 11000
@@ -2628,7 +2628,7 @@ var(1) = 0
 type = VarSet
 ;triggerall 2= var(27) = 034567859
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = (stateno = [200,299]) || (stateno = [400,499])
 trigger2 = stateno != 440 ;Except for sweep kick
 trigger2 = movecontact
@@ -2648,7 +2648,7 @@ triggerall = var(27) = 0
 triggerall = command = "623EX"
 triggerall = power >= 500
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 242 || stateno =212  || stateno = 402 || stateno = 412
@@ -2664,7 +2664,7 @@ triggerall = var(27) = 0
 triggerall = command = "236EX"
 triggerall = power >= 500
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 242 || stateno = 212 ||stateno = 412 || stateno = 442 || stateno = 11000
@@ -2679,7 +2679,7 @@ triggerall = command = "214EX" ;|| command="z"
 triggerall = stateno != 1020
 triggerall = numhelper(10322)=0 && numhelper(10422)=0 && numhelper(10522)=0
 triggerall = power >= 500
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno != 445
@@ -2699,7 +2699,7 @@ type = ChangeState
 value = 10702
 triggerall = var(27) = 0
 triggerall = command = "623A"
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger1 = var(1)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -2712,7 +2712,7 @@ value = 10722
 triggerall = var(27) = 0
 triggerall = command = "623B"
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 242 || stateno =212  || stateno = 402 || stateno = 412
@@ -2727,7 +2727,7 @@ value = 10742
 triggerall = var(27) = 0
 triggerall = command = "623C"
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 242 || stateno =212  || stateno = 402 || stateno = 412
@@ -2745,7 +2745,7 @@ triggerall = command = "214A" ;|| command="z"
 triggerall = stateno != 1020
 triggerall = numhelper(10322)=0 && numhelper(10422)=0 && numhelper(10522)=0
 triggerall = stateno < 3000
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno != 445
@@ -2760,7 +2760,7 @@ triggerall = command = "214B";|| command="z"
 triggerall = stateno != 1020
 triggerall = numhelper(10322)=0 && numhelper(10422)=0 && numhelper(10522)=0
 triggerall = stateno < 3000
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno != 445
@@ -2775,7 +2775,7 @@ triggerall = command = "214C" ;|| command="z"
 triggerall = stateno != 1020
 triggerall = numhelper(10322)=0 && numhelper(10422)=0 && numhelper(10522)=0
 triggerall = stateno < 3000
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno != 445
@@ -2791,7 +2791,7 @@ triggerall = stateno != 1020
 triggerall = statetype != A
 triggerall = numhelper(10322)=1 || numhelper(10422)=1 || numhelper(10522)=1
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = [200,499]
@@ -2810,7 +2810,7 @@ value = 10052
 triggerall = var(27) = 0
 triggerall = command = "236A"
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 242 || stateno = 212 ||stateno = 412 || stateno = 442 || stateno = 11000
@@ -2823,7 +2823,7 @@ value = 10060
 triggerall = var(27) = 0
 triggerall = command = "236B"
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 242 || stateno = 56 || stateno = 57 || stateno = 11000
@@ -2840,7 +2840,7 @@ value = 10070
 triggerall = var(27) = 0
 triggerall = command = "236C"
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 242 || stateno = 56 || stateno = 57 || stateno = 11000 || stateno = 10060
@@ -2889,7 +2889,7 @@ triggerall = command = "a"
 triggerall = command != "holddown"
 ;triggerall = stateno != 200
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = stateno = 202 ;&& time > 7
 trigger3 = movecontact
@@ -2906,7 +2906,7 @@ triggerall = var(27) = 0
 triggerall = command = "b"
 triggerall = command != "holddown"
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -2923,7 +2923,7 @@ triggerall = var(27) = 0
 triggerall = command = "c"
 triggerall = command != "holddown"
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -2950,7 +2950,7 @@ triggerall = var(27) = 0
 triggerall = command = "a" || command = "y"
 triggerall = command = "holddown"
 triggerall = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 ;trigger3 = p2stateno != [12000,12002]
 ;trigger3 = p2stateno != [11000,11010]
@@ -2965,7 +2965,7 @@ triggerall = command = "b"
 triggerall = command = "holddown"
 triggerall = stateno != 410
 triggerall = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -2982,7 +2982,7 @@ triggerall = var(27) = 0
 triggerall = command = "c"
 triggerall = command = "holddown" && command = "holdfwd"
 triggerall = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -2999,7 +2999,7 @@ triggerall = var(27) = 0
 triggerall = command = "c"
 triggerall = command = "holddown" && command != "holdfwd"
 triggerall = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3023,7 +3023,7 @@ value = 602
 triggerall = var(27) = 0
 triggerall = command = "a" || command = "y"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 102 || stateno = 103
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3036,7 +3036,7 @@ value = 612
 triggerall = var(27) = 0
 triggerall = command = "b"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 102 || stateno = 103
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3050,7 +3050,7 @@ triggerall = var(27) = 0
 triggerall = command != "holddown"
 triggerall = command = "c"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 102 || stateno = 103
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3064,7 +3064,7 @@ triggerall = var(27) = 0
 triggerall = command = "holddown"
 triggerall = command = "c"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 102 || stateno = 103
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3142,7 +3142,7 @@ var(1) = 0
 type = VarSet
 ;triggerall 2= var(27) = 034567859
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = (stateno = [200,299]) || (stateno = [400,499])
 trigger2 = stateno != 440 ;Except for sweep kick
 trigger2 = movecontact
@@ -3161,7 +3161,7 @@ value = 10571
 triggerall = var(27) = 1
 triggerall = command="623EX"
 triggerall = power >= 500
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger1 = var(1)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -3175,7 +3175,7 @@ triggerall = var(27) = 1
 triggerall = command = "236EX" 
 triggerall = power >= 500
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 241 || stateno = 211 || stateno = 411
@@ -3192,7 +3192,7 @@ triggerall = command = "214EX"
 triggerall = statetype != A
 triggerall = numhelper(10321) = 0 
 triggerall = power >= 500 
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = [200,499]
@@ -3214,7 +3214,7 @@ type = ChangeState
 value = 10501
 triggerall = var(27) = 1
 triggerall = command="623A"
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger1 = var(1)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
@@ -3227,7 +3227,7 @@ value = 10551
 triggerall = var(27) = 1
 triggerall = command="623B"
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 241 || stateno =211
@@ -3242,7 +3242,7 @@ value = 10561
 triggerall = var(27) = 1
 triggerall = command="623C"
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 241 || stateno =211
@@ -3259,7 +3259,7 @@ triggerall = var(27) = 1
 triggerall = command = "214A" || command = "214B" || command = "214C"
 triggerall = statetype != A
 triggerall = numhelper(10321) = 0 
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = [200,499]
@@ -3275,7 +3275,7 @@ value = 1001
 triggerall = var(27) = 1
 triggerall = command = "236A" 
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = [200,429]
@@ -3290,7 +3290,7 @@ value = 1002
 triggerall = var(27) = 1
 triggerall = command = "236B" 
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = [200,429]
@@ -3305,7 +3305,7 @@ value = 1003
 triggerall = var(27) = 1
 triggerall = command = "236C" 
 trigger1 = var(1)
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = [200,429]
@@ -3424,7 +3424,7 @@ triggerall = command = "a"
 triggerall = command != "holddown"
 ;triggerall = stateno != 200
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 ; trigger2 = p2stateno != [12000,12002]
 ; trigger2 = p2stateno != [11000,11010]
 ; trigger2 = stateno = 201 && time > 7
@@ -3438,7 +3438,7 @@ triggerall = var(27) = 1
 triggerall = command = "b"
 triggerall = command != "holddown"
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 201 || stateno = 401
@@ -3452,7 +3452,7 @@ triggerall = var(27) = 1
 triggerall = command = "c"
 triggerall = command != "holddown"
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 211 || stateno = 411
@@ -3476,7 +3476,7 @@ triggerall = var(27) = 1
 triggerall = command = "a" || command = "y"
 triggerall = command = "holddown"
 trigger1 = statetype = C
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 ; trigger2 = p2stateno != [12000,12002]
 ; trigger2 = p2stateno != [11000,11010]
 ; trigger2 = stateno = 401 && time > 9
@@ -3490,7 +3490,7 @@ triggerall = var(27) = 1
 triggerall = command = "b"
 triggerall = command = "holddown"
 trigger1 = statetype = C
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 401 || stateno = 201
@@ -3504,7 +3504,7 @@ triggerall = var(27) = 1
 triggerall = command = "c"
 triggerall = command = "holddown"
 trigger1 = statetype = C
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 411 || stateno = 211 || stateno = 241
@@ -3525,7 +3525,7 @@ value = 601
 triggerall = var(27) = 1
 triggerall = command = "a" || command = "y"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 102 || stateno = 103
 
 [State -1, Strong Punch 610]
@@ -3534,7 +3534,7 @@ value = 611
 triggerall = var(27) = 1
 triggerall = command = "b"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 102 || stateno = 103
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
@@ -3547,7 +3547,7 @@ value = 641
 triggerall = var(27) = 1
 triggerall = command = "c"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2stateno != [12000,12002]
 trigger2 = p2stateno != [11000,11010]
 trigger2 = stateno = 601 || stateno =611
@@ -3568,7 +3568,7 @@ trigger1=1
 ; triggerall = var(27) = 2
 ; triggerall = Command = "SJ"
 ; trigger1 = StateType = S
-; trigger1 = ctrl || (stateno = 101 && time >= 4)
+; trigger1 = ctrl || (stateno = 101 && time >= 2)
 ; 
 ; [State -1, Super Jump 7050]
 ; type = ChangeState
@@ -3576,7 +3576,7 @@ trigger1=1
 ; triggerall = var(27) = 0
 ; triggerall = Command = "SJF"
 ; trigger1 = StateType = S
-; trigger1 = ctrl || (stateno = 101 && time >= 4)
+; trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 
 
@@ -3620,7 +3620,7 @@ var(1) = 0
 type = VarSet
 ;triggerall = var(27) = 2
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = (stateno = [200,299]) || (stateno = [400,499])
 trigger2 = stateno != 440 ;Except for sweep kick
 trigger2 = movecontact
@@ -3639,7 +3639,7 @@ value = 1090
 triggerall = var(27) = 2
 triggerall = command = "623EX" 
 triggerall = power >= 500 || var(40) = 1
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1050,1090]
 trigger3 = stateno = [200,499]
@@ -3652,7 +3652,7 @@ triggerall = var(27) = 2
 triggerall = command = "214EX"
 triggerall = statetype != A
 triggerall = power >= 500 || var(40) = 1
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1021,1044]
 trigger3 = stateno = [200,410]
@@ -3665,7 +3665,7 @@ triggerall = var(27) = 2
 triggerall = power >= 500 || var(40) = 1
 triggerall = command = "214EX"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 1046
 trigger3 = stateno = [600,699]
@@ -3677,7 +3677,7 @@ value = 1016
 triggerall = var(27) = 2
 triggerall = command = "236EX"
 triggerall = power >= 500 || var(40) = 1
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1000,1016]
 trigger3 = stateno = [200,410]
@@ -3696,7 +3696,7 @@ type = ChangeState
 value = 1050
 triggerall = var(27) = 2
 triggerall = command = "623A"
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1050,1090]
 trigger3 = stateno = 240 || stateno = 210 || stateno = 410
@@ -3707,7 +3707,7 @@ type = ChangeState
 value = 1060
 triggerall = var(27) = 2
 triggerall = command = "623B" 
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1050,1090]
 trigger3 = stateno = 1050 && time>18
@@ -3717,7 +3717,7 @@ type = ChangeState
 value = 1070
 triggerall = var(27) = 2
 triggerall = command = "623C" 
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1050,1090]
 trigger3 = stateno = 1050 && time>18
@@ -3730,7 +3730,7 @@ triggerall = var(27) = 2
 triggerall = command = "214A" 
 triggerall = stateno != 1020
 triggerall = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1021,1044]
 trigger3 = stateno = [200,410]
@@ -3742,7 +3742,7 @@ value = 1031
 triggerall = var(27) = 2
 triggerall = command = "214B"
 triggerall = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1021,1044]
 trigger3 = stateno = [200,410]
@@ -3754,7 +3754,7 @@ value = 1041
 triggerall = var(27) = 2
 triggerall = command = "214C"
 triggerall = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1021,1044]
 trigger3 = stateno = [200,410]
@@ -3767,7 +3767,7 @@ triggerall = var(27) = 2
 triggerall = command = "214A"
 triggerall = stateno != 10200
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1021,1044]
 trigger3 = stateno = [600,699]
@@ -3779,7 +3779,7 @@ value = 1034
 triggerall = var(27) = 2
 triggerall = command = "214B"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1021,1044]
 trigger3 = stateno = [600,699]
@@ -3791,7 +3791,7 @@ value = 1044
 triggerall = var(27) = 2
 triggerall = command = "214C"
 trigger1 = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1021,1044]
 trigger3 = stateno = [600,699]
@@ -3803,7 +3803,7 @@ type = ChangeState
 value = 1000
 triggerall = var(27) = 2
 triggerall = command = "236A"
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1000,1016]
 trigger3 = stateno = [200,410]
@@ -3814,7 +3814,7 @@ type = ChangeState
 value = 1010
 triggerall = var(27) = 2
 triggerall = command = "236B"
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1000,1016]
 trigger3 = stateno = [200,410]
@@ -3825,7 +3825,7 @@ type = ChangeState
 value = 1015
 triggerall = var(27) = 2
 triggerall = command = "236C"
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1000,1016]
 trigger3 = stateno = [200,410]
@@ -3854,7 +3854,7 @@ trigger2 = command = "special" && p2movetype = H
 ;;triggerall = command = "speed" && command != "throw" && command != "a"
 ;triggerall = command = "special" && command != "holdfwd"
 ;trigger1 = statetype != A
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Burst Dash]
 type = ChangeState
@@ -3863,7 +3863,7 @@ triggerall = var(27)=2
 triggerall = command = "special" && command = "holdfwd"
 triggerall = power>1000
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 ;===========================================================================
 [State -1, ]
@@ -3880,7 +3880,7 @@ triggerall = statetype = A
 triggerall = command = "holdup"
 triggerall = var(30)=2
 triggerall = var(19)=1
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno=600 || stateno=610 || stateno=630 || stateno=640
 trigger2 = movecontact
 
@@ -3890,7 +3890,7 @@ value = 101
 triggerall = command = "FF" ;|| command = "ab" && command!="holdback"
 triggerall = stateno!=[5000,5300]
 trigger1 = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 ;[State -1, Run Fwd Air 102]
 ;type = ChangeState
@@ -3900,7 +3900,7 @@ trigger1 = ctrl || (stateno = 101 && time >= 4)
 ;trigger1 = command = "FF" ;|| command = "ab" && command!="holdback"
 ;trigger1 = statetype = A
 ;trigger1 = stateno != 102
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 [State -1, Run Back 105]
 type = ChangeState
@@ -3917,7 +3917,7 @@ trigger1 = statetype = S
 ;triggerall = command = "BB" ;|| command="ab" && command="holdback"
 ;triggerall = stateno!=105
 ;triggerall = stateno!=[5000,5300]
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
 ;trigger1 = statetype = A
 ;trigger2 = stateno = 102 || stateno = 103
 
@@ -3938,7 +3938,7 @@ triggerall = var(27) = 2
 triggerall = command = "a"
 triggerall = command != "holddown"
 triggerall = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 200
 trigger3 = stateno = 200 
@@ -3951,7 +3951,7 @@ triggerall = var(27) = 2
 triggerall = command = "c"
 triggerall = command != "holddown"
 triggerall = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 240
 trigger3 = stateno = 200 || stateno = 210 || stateno = 410
@@ -3964,7 +3964,7 @@ triggerall = var(27) = 2
 triggerall = command = "b"
 triggerall = command != "holddown"
 trigger1 = statetype = S
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 210
 trigger3 = stateno = 200 || stateno = 410 || stateno = 430
@@ -3989,7 +3989,7 @@ triggerall = var(27) = 2
 triggerall = command = "a" || command = "y"
 triggerall = command = "holddown"
 triggerall = statetype = C
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 400
 trigger3 = stateno=200 || stateno=210 || stateno=400
@@ -4003,7 +4003,7 @@ triggerall = command = "b"
 triggerall = command = "holddown"
 triggerall = stateno != 410
 triggerall = statetype = C
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 410
 trigger3 = stateno = 200 || stateno = 230 || stateno = 400
@@ -4016,7 +4016,7 @@ triggerall = var(27) = 2
 triggerall = command = "c"
 triggerall = command = "holddown"
 triggerall = statetype = C
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 440
 trigger3 = stateno = 200 || stateno = 240 || stateno = 230 || stateno = 210 || stateno = 410 ;|| stateno = 400
@@ -4038,7 +4038,7 @@ value = 600
 triggerall = var(27) = 2
 triggerall = command = "a" || command = "y"
 triggerall = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 600
 
@@ -4048,7 +4048,7 @@ value = 610
 triggerall = var(27) = 2
 triggerall = command = "b"
 triggerall = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 610
 trigger3 = stateno = 600 || stateno = 630
@@ -4060,7 +4060,7 @@ value = 640
 triggerall = var(27) = 2
 triggerall = command = "c" && command != "holddown"
 triggerall = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 640
 trigger3 = stateno = 600 || stateno =610 || stateno =630
@@ -4073,7 +4073,7 @@ triggerall = var(27) = 2
 triggerall = vel x>=0
 triggerall = command = "c" && command = "holddown"
 triggerall = statetype = A
-trigger1 = ctrl || (stateno = 101 && time >= 4)
+trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 650
 trigger3 = stateno = 600 || stateno =610 || stateno =630
@@ -4094,7 +4094,7 @@ trigger1=1
 ;triggerall = command = "y"
 ;triggerall = var(25)=300
 ;trigger1 = statetype = S
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
 ;trigger2 = stateno = 10100000 || stateno = 10900000
 ;trigger3 = p2stateno != [12000,12002]
 ;trigger3 = p2stateno != [11000,11010]
@@ -4116,7 +4116,7 @@ trigger1=1
 ;;triggerall = var(27) = 2
 ;triggerall = Command = "SJ"
 ;trigger1 = StateType = S
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
 
 ;[State -1, Super Jump 7050]
 ;type = ChangeState
@@ -4124,4 +4124,4 @@ trigger1=1
 ;;triggerall = var(27) = 0
 ;triggerall = Command = "SJF"
 ;trigger1 = StateType = S
-;trigger1 = ctrl || (stateno = 101 && time >= 4)
+;trigger1 = ctrl || (stateno = 101 && time >= 2)

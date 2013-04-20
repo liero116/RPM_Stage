@@ -29,8 +29,8 @@ blank
 blank
 zppr,         order = 3
 mc_supercut,  order = 2
-randomselect
-randomselect
+oliver, 	  order = 1
+maya,		  order = 1
 blank
 blank
 
@@ -38,9 +38,9 @@ blank
 
 blank
 blank
-oliver,       order = 1
-maya,         order = 1
 randomselect
+petra,       order = 1
+bot_blu,         order = 1
 randomselect
 blank
 blank
@@ -49,10 +49,10 @@ blank
 
 blank
 blank
-randomselect
-randomselect
-kfm_tag
-bot_blu
+blank
+blank
+blank
+blank
 blank
 blank
 
@@ -60,10 +60,10 @@ blank
 
 blank
 blank
-endora
-captain_jack
-petra
-maya_omega
+blank
+blank
+blank
+blank
 blank
 blank
 
