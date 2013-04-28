@@ -737,7 +737,8 @@ ground.type = Low
 ground.slidetime = 13
 ground.hittime  = 13
 guard.hittime = 9
-ground.velocity = -9
+ground.velocity = -7
+guard.velocity = -9
 air.type = Low
 air.slidetime = 4
 air.hittime  = 30
@@ -827,7 +828,7 @@ ground.type = low
 ground.slidetime = 25
 ground.hittime  = 25
 guard.hittime = 23
-ground.velocity = -8.0,0
+ground.velocity = -7.0,0
 air.velocity = -1,-5.5
 air.type=low
 guard.velocity = 0
@@ -2883,7 +2884,7 @@ triggerall = fvar(17)= 0
 triggerall = fvar(7) = 0
 triggerall = var(40) = 0
 trigger1 = time = 0
-value = 110
+value = 80
 
 [State 1000, 7]
 type = ChangeState
@@ -2911,7 +2912,7 @@ triggerall = fvar(17)= 0
 triggerall = fvar(7) = 0
 triggerall = var(40) = 0
 trigger1 = time = 0
-value = 130
+value = 80
 
 [State 1000, 7]
 type = ChangeState
@@ -2939,7 +2940,7 @@ triggerall = fvar(17)= 0
 triggerall = fvar(7) = 0
 triggerall = var(40) = 0
 trigger1 = time = 0
-value = 180
+value = 80
 
 [State 1000, 7]
 type = ChangeState
@@ -3146,11 +3147,12 @@ ground.type = low
 ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = 10
-ground.velocity = -12,0
+ground.velocity = -0.8,-5
 air.velocity = -2.0,-6.0
 air.hittime  = 44
 fall.recover = 0
 air.fall =1
+fall =1
 
 [State 1000, Land]
 type= changestate

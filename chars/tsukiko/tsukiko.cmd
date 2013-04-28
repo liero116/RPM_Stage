@@ -1969,7 +1969,7 @@ type = ChangeState
 value = 3100
 triggerall = var(27) = 2
 triggerall = !(ishelper)
-triggerall = command = "623S"
+triggerall = command = "22S"
 triggerall = power>=1000 || var(40) = 1
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2movetype=H
@@ -2027,7 +2027,7 @@ type = ChangeState
 value = 1230
 triggerall = var(27) = 2
 triggerall = !(ishelper)
-triggerall = command = "623EX"
+triggerall = command = "22EX"
 triggerall = power >= 500 || var(40) = 1
 ;triggerall = statetype != A
 trigger1 = ctrl || (stateno = 101 && time >= 2)
@@ -2054,7 +2054,7 @@ type = ChangeState
 value = 1200
 triggerall = var(27) = 2
 triggerall = !(ishelper)
-triggerall = command = "623A"
+triggerall = command = "22A"
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1200,1230]
@@ -2071,7 +2071,7 @@ type = ChangeState
 value = 1210
 triggerall = var(27) = 2
 triggerall = !(ishelper)
-triggerall = command = "623B"
+triggerall = command = "22B"
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1200,1230]
@@ -2089,7 +2089,7 @@ type = ChangeState
 value = 1220
 triggerall = var(27) = 2
 triggerall = !(ishelper)
-triggerall = command = "623C"
+triggerall = command = "22C"
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1200,1230]

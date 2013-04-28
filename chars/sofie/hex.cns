@@ -178,7 +178,7 @@ physics = S
 juggle  = 5
 ;poweradd= ifelse(fvar(7)=0,72,0)
 ctrl = 0
-;velset = 0,0
+velset = 5,0
 anim = 210
 sprpriority = 2
 facep2=1
@@ -512,8 +512,8 @@ ground.type = high
 ground.slidetime = 20
 ground.hittime  = 20
 guard.hittime = 20
-ground.velocity = -3,-5.5
-air.velocity = -3,-3.5
+ground.velocity = -2,-5.5
+air.velocity = -3,-5
 air.type=high
 guard.velocity = -7
 fall = 1
@@ -925,6 +925,106 @@ anim = 652
 facep2=0
 ;velset = (vel x)/3,vel y
 
+[State 0, VarSet]
+type = VarSet
+trigger1 = command = "a"
+var(25) = 0
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = command = "b"
+var(25) = 1
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = command = "c"
+var(25) = 2
+
+[state 0, damage counter set]
+type = varadd
+trigger1 = (movehit)
+var(3) = (enemynear, gethitvar(damage))
+persistent = 0
+ignorehitpause = 1
+
+[State 0, VelSet]
+type = Velmul
+trigger1 = prevstateno = 102
+x = 0.9
+;----------------------------
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 0
+trigger1 = time = 0
+x = 1
+y = -4
+
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 0
+trigger1 = time >= 10
+x = 2
+y = 6
+ignorehitpause = 1
+persistent = 1
+
+[State 0, AngleDraw]
+type = AngleDraw
+triggerall = var(25) = 0
+trigger1 = time >= 10
+value = 10
+ignorehitpause = 1
+persistent = 1
+
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 1
+trigger1 = time = 0
+x = 1
+y = -4
+
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 1
+trigger1 = time >= 10
+x = 3
+y = 6
+ignorehitpause = 1
+persistent = 1
+
+[State 0, AngleDraw]
+type = AngleDraw
+triggerall = var(25) = 1
+trigger1 = time >= 10
+value = 20
+ignorehitpause = 1
+persistent = 1
+
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 2
+trigger1 = time = 0
+x = 1
+y = -4
+
+[State 0, VelSet]
+type = VelSet
+triggerall = var(25) = 2
+trigger1 = time >= 10
+x = 4
+y = 6
+ignorehitpause = 1
+persistent = 1
+
+[State 0, AngleDraw]
+type = AngleDraw
+triggerall = var(25) = 2
+trigger1 = time >= 10
+value = 30
+ignorehitpause = 1
+persistent = 1
+;----------------------------
+
 [State 610, 2]
 type = PlaySnd
 trigger1 = animelem=6
@@ -955,8 +1055,9 @@ guardsound = 6,0
 animtype = Med
 ground.type = High
 air.type = high
-ground.slidetime = 15
-ground.hittime  = 15
+ground.slidetime = 20
+ground.hittime  = 20
+guard.hittime = 15
 ground.velocity = -5
 air.velocity =  -3,12
 air.fall=1
@@ -1110,7 +1211,7 @@ volume=50
 
 [State 1000, 5]
 type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+ground.cornerpush.veloff = ifelse(p2statetype = A,-8,0)
 fall.yvelocity = 0
 trigger1 = animelem=4
 attr = S, SA
@@ -1128,13 +1229,13 @@ ground.type = Low
 ground.slidetime = 10
 ground.hittime  = 10
 guard.hittime = 6
-ground.velocity = 0,0
+ground.velocity = -5,0
 air.velocity = 0,-2
 air.hittime = 25
 
 [State 1000, 5]
 type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+ground.cornerpush.veloff = ifelse(p2statetype = A,-8,0)
 fall.yvelocity = 0
 trigger1 = animelem=8
 attr = S, SA
@@ -1152,7 +1253,7 @@ ground.type = high
 ground.slidetime = 11
 ground.hittime  = 11
 guard.hittime = 9
-ground.velocity = -3,0
+ground.velocity = -5,0
 air.velocity = -1,-4.5
 air.hittime = 25
 air.fall=1
@@ -1224,7 +1325,7 @@ damage    = floor(fvar(13)*10), 5
 priority  = 1,hit
 guardflag = MA
 hitflag = MAF
-pausetime = 6,6
+pausetime = 4,4
 sparkno = 1000
 sparkxy = (-10 + random%5),(-20 + random%10)
 guardsound = 6,0
@@ -1337,7 +1438,7 @@ damage    = floor(fvar(13)*10), 5
 priority  = 1,hit
 guardflag = MA
 hitflag = MAF
-pausetime = 6,6
+pausetime = 4,4
 sparkno = 1000
 sparkxy = (-10 + random%5),(-40 + random%10)
 guardsound = 6,0
@@ -1484,11 +1585,16 @@ triggerall = var(40) = 0
 trigger1 = time = 0
 value = 180
 
-;[state 0, damage scaling change]
-;type = varset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
+[State 0, Width]
+type = Width
+trigger1 = 1
+edge = 0,0
+player = 35,0
+;value = 0,0
+;ignorehitpause = 
+;persistent = 
+
+
 
 [state 0, damage counter set]
 type = varadd

@@ -35,8 +35,8 @@ walk.back = -2.6  ;Walk backward
 run.fwd  = 6, 0    ;Run forward (x, y)
 run.back = -6.5,-5 ;Hop backward (x, y)
 jump.neu = 0,-11 ;Neutral jumping velocity (x, y)
-jump.back = -2.0    ;Jump back Speed (x, y)
-jump.fwd = 2.0       ;Jump forward Speed (x, y)
+jump.back = -3.0    ;Jump back Speed (x, y)
+jump.fwd = 3.0       ;Jump forward Speed (x, y)
 runjump.back = -2.55,-8.1 ;Running jump speeds (opt)
 runjump.fwd = 3,-10      ;.
 airjump.neu = 0,-5      ;.
@@ -1663,7 +1663,7 @@ fvar(0)=100
 [state -3, guard damage multiplier]
 type=varset
 trigger1=1
-fvar(1)=1.10
+fvar(1)= 0.90
 
 [State -3, ChangeState]
 type = ChangeState

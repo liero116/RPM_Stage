@@ -1963,7 +1963,7 @@ fvar(0)=100
 [state -3, guard damage multiplier]
 type=varset
 trigger1=1
-fvar(1)=0.70
+fvar(1)=0.50
 
 [State -3, ChangeState]
 type = ChangeState

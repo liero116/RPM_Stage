@@ -136,11 +136,11 @@ trigger1=var(27)=0
 trigger1=fvar(7)=1
 value=1
 
-[State 0, ChangeState]
-type = ChangeState
-trigger1 = command = "holdup"
-value = 7000
-ctrl = 1
+;[State 0, ChangeState]
+;type = ChangeState
+;trigger1 = command = "holdup"
+;value = 7000
+;ctrl = 1
 
 [State 10, 2]
 type = ChangeState
@@ -2030,6 +2030,8 @@ velset = 0,0
 type = ChangeAnim
 trigger1 = SelfAnimExist(190)
 value = 190
+
+
 
 [State 190, 2] ;Go straight to intro.
 type = ChangeState
@@ -4909,51 +4911,61 @@ ctrl=1
 
 ;---------------------------------------------------------------------------
 ; Initialize (at the start of the round)
-[Statedef 5900]
-type = S
+;[Statedef 5900]
+;type = S
 
-[State 5900, 0] ;Clear all int variables
-type = VarRangeSet
-trigger1 = roundno = 1
-value = 0
-last = 49
-
-[State 5900, 1] ;Clear all float variables
-type = VarRangeSet
-trigger1 = roundno = 1
-fvalue = 0
+;[State 5900, 0] ;Clear all int variables
+;type = VarRangeSet
+;trigger1 = roundno = 1
+;value = 0
+;last = 49
+;
+;[State 5900, 1] ;Clear all float variables
+;type = VarRangeSet
+;trigger1 = roundno = 1
+;fvalue = 0
 
 
 ;-!!!-> ADD THESE AT THE BOTTOM IF THIS STATEDEF ALREADY EXISTS IN THE CHARACTER (NOT IN COMMON1.CNS);
 ;	REMEMBER TO DELETE ANY "CHANGESTATES" ALREADY IN THE STATEDEF. <-!!!-;
 
 
-[State 5900, 7]
-type = VarSet
-triggerall = NumPartner
-trigger1 = RoundState < 2
-trigger1 = Var(53) = 0
-v = 53
-value = 1
+;[State 5900, 7]
+;type = VarSet
+;triggerall = NumPartner
+;trigger1 = RoundState < 2
+;trigger1 = Var(53) = 0
+;v = 53
+;value = 1
+;
+;[State 5900, 10] ;Intro W/Partner
+;type = TagIn
+;triggerall = partner, stateno != [4510,4512]	; Partner not waiting outside the screen (thus on stage)
+;triggerall = NumPartner
+;triggerall = ID > Partner,ID
+;trigger1 = roundno = 1
+;trigger1 = Time = [0, 1]
+;trigger1 = RoundState <= 2
+;trigger1 = Partner, Life > 0
+;trigger1 = StateNo != [4510, 4512]
+;stateno = 4510
+;partnerstateno = 190
 
-[State 5900, 10] ;Intro W/Partner
-type = TagIn
-triggerall = partner, stateno != [4510,4512]	; Partner not waiting outside the screen (thus on stage)
-triggerall = NumPartner
-triggerall = ID > Partner,ID
-trigger1 = roundno = 1
-trigger1 = Time = [0, 1]
-trigger1 = RoundState <= 2
-trigger1 = Partner, Life > 0
-trigger1 = StateNo != [4510, 4512]
-stateno = 4510
-partnerstateno = 190
+;[State 5900, 11] ;Intro
+;type = ChangeState
+;trigger1 = roundno = 1
+;trigger1 = !NumPartner ; partner does not exist
+;value = 190
 
-[State 5900, 11] ;Intro
-type = ChangeState
-trigger1 = roundno = 1
-trigger1 = !NumPartner ; partner does not exist
-value = 190
+;[State 0, ChangeState]
+;type = ChangeState
+;trigger1 = 1
+;value = 191
+;ctrl = 0
+;anim =
+;ignorehitpause = 
+;persistent = 
+
 
 ;---------------------------------------------------------------------------
 ; HITG_SHAKE
@@ -7247,7 +7259,7 @@ value = 5500
 [Statedef 5900]
 type = S
 
-; This sends your character to his teammate intro state if he's the partner (means not the leader of the team).
+ ;This sends your character to his teammate intro state if he's the partner (means not the leader of the team).
 [State 5900, ChangeState]
 type = ChangeState
 triggerall = numenemy
@@ -7255,11 +7267,11 @@ triggerall = roundstate < 2
 triggerall = time = 0
 trigger1 = numpartner
 trigger1 = ID>partner,ID
-value = 358000
+value = 190
 ctrl = 0
 
 
-; This will send oyur character to his intro state as usual (also works as a turns mode intro).
+ ;This will send oyur character to his intro state as usual (also works as a turns mode intro).
 [State 5900, Changestate]
 type = ChangeState
 triggerall = roundstate < 2
@@ -7275,20 +7287,30 @@ value = 190
 ; There are other ways of course but just make sure the teammate intro is the first piece of code to be read,
 ; otherwise it won't work.
 
-[State 5900, 1] ;Clear all int variables
-type = VarRangeSet
-trigger1 = roundsexisted = 0
-value = 0
-
-[State 5900, 2] ;Clear all float variables
-type = VarRangeSet
-trigger1 = roundsexisted = 0
-fvalue = 0
+;[State 5900, 1] ;Clear all int variables
+;type = VarRangeSet
+;trigger1 = roundsexisted = 0
+;value = 0
+;
+;[State 5900, 2] ;Clear all float variables
+;type = VarRangeSet
+;trigger1 = roundsexisted = 0
+;fvalue = 0
 
 [State 5900, 3] ;Intro for round 1
 type = ChangeState
 trigger1 = !RoundsExisted;roundno = 1
 value = 190
+
+;[State 0, ChangeState]
+;type = ChangeState
+;trigger1 = time = 0
+;value = 190
+;ctrl = 0
+;;anim =
+;;ignorehitpause = 
+;;persistent = 
+
 
 ; ;---------------------------------------------------------------------------
 ; ; Shield Ground

@@ -874,6 +874,14 @@ type = PlaySnd
 trigger1 = animelem=3
 value = 5,20
 
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20) = 0.10
+ignorehitpause = 1
+persistent = 0
+
 [State 400, 2]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
@@ -1058,7 +1066,7 @@ type=changestate
 triggerall = movehit
 trigger1=command="holdup"
 ;trigger2=command="holdC"
-value=7000
+value=40
 ctrl=1
 
 [State 410, 4]
@@ -2472,6 +2480,14 @@ var(3) = ((enemynear, gethitvar(damage))/1)
 persistent = 1
 ignorehitpause = 1
 
+[State 0, Width]
+type = Width
+trigger1 = 1
+edge = 30,0
+player = 0,0
+ignorehitpause = 1
+persistent = 1
+
 [state 0, velocity variable]
 type=varadd
 trigger1=time>20
@@ -2593,6 +2609,14 @@ type = VarSet
 trigger1 = time = [0,3]
 trigger1 = command = "c"
 var(6) = 1
+
+[State 0, Width]
+type = Width
+trigger1 = 1
+edge = 35,0
+player = 0,0
+ignorehitpause = 1
+persistent = 1
 
 [state 0, damage counter set]
 type = varadd

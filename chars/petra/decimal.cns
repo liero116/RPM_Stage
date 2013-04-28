@@ -1003,7 +1003,7 @@ type = U
 movetype=A
 physics=N
 ctrl = 0
-anim = 1050
+;anim = 1050
 sprpriority=5
 
 ;[State 0, hitpower]
@@ -1015,6 +1015,11 @@ sprpriority=5
 ;type = PowerAdd
 ;trigger1 = moveguarded = 1
 ;value = 75
+
+[State 0, ChangeAnim]
+type = ChangeAnim
+trigger1 = time = 0
+value = ifelse(parent,pos y = 0, 1050,1051)
 
 [State 0, gravity up]
 type = parentvarAdd
@@ -1164,7 +1169,7 @@ ignorehitpause = 1
 [State 901, hitoverride]
 type = HitOverride
 trigger1 = 1
-stateno = 1099
+stateno = 1090
 attr = SCA,NP
 slot = 0
 time = -1
@@ -2342,7 +2347,7 @@ trigger1 = time%5 = 0
 priority = 6
 attr = S, NA
 animtype  = Medium
-damage    = floor(parent,fvar(13)*20),5
+damage    = floor(parent,fvar(13)*15),5
 guardflag = MA
 hitflag = MAF
 pausetime = 0,0
@@ -2371,7 +2376,7 @@ trigger1 = animelem = 24
 priority = 6
 attr = S, NA
 animtype  = Medium
-damage    = floor(parent,fvar(13)*80),10
+damage    = floor(parent,fvar(13)*40),10
 guardflag = MA
 hitflag = MAF
 pausetime = 0,0

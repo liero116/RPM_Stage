@@ -757,6 +757,7 @@ ground.velocity = -4
 air.velocity = -vel x, -5
 air.hittime=30
 air.type=high
+fall.recover = 0
 yaccel = const(movement.yaccel)
 
 ;---------------------------------------------------------------------------

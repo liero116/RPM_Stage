@@ -1820,6 +1820,8 @@ trigger5 = p2stateno = [200,430]
 trigger5 = movecontact
 trigger6 = p2stateno = 432
 trigger6 = movehit
+trigger7 = stateno = 23210 
+trigger7 = movecontact
 
 
 ;---------------------------------------------------------------------------
@@ -1837,6 +1839,8 @@ trigger3 = stateno != [1202,1282]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
+trigger4 = stateno = 23210 
+trigger4 = movecontact
 
 ;---------------------------------------------------------------------------
 [State -1, Dash B Stance 21201]
@@ -1853,6 +1857,8 @@ trigger3 = stateno != [1202,1282]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
+trigger4 = stateno = 23210 
+trigger4 = movecontact
 
 ;---------------------------------------------------------------------------
 [State -1, Dash C Stance 23201]
@@ -1869,6 +1875,8 @@ trigger3 = stateno != [1202,1282]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
+trigger4 = stateno = 23210 
+trigger4 = movecontact
 
 ;---------------------------------------------------------------------------
 [State -1, Stab A 1002]
@@ -1891,6 +1899,8 @@ trigger5 = stateno = 432
 trigger5 = movehit
 trigger5 = p2stateno != [12000,12002]
 trigger5 = p2stateno != [11000,11010]
+trigger6 = stateno = 23210 
+trigger6 = movecontact
 
 [State -1, Stab B 1012]
 type = ChangeState
@@ -1912,6 +1922,8 @@ trigger5 = stateno = 432
 trigger5 = movehit
 trigger5 = p2stateno != [12000,12002]
 trigger5 = p2stateno != [11000,11010]
+trigger6 = stateno = 23210 
+trigger6 = movecontact
 
 [State -1, Stab C 1022]
 type = ChangeState
@@ -1925,7 +1937,7 @@ trigger3 = stateno = [200,430]
 trigger3 = movecontact
 trigger3 = p2stateno != [12000,12002]
 trigger3 = p2stateno != [11000,11010]
-trigger4 = stateno = 21212 || stateno = 23210 || stateno = 23211 ;stateno = 20211
+trigger4 = stateno = 21212 || stateno = 23211 ;stateno = 20211
 trigger4 = movehit
 trigger4 = p2stateno != [12000,12002]
 trigger4 = p2stateno != [11000,11010]
@@ -1933,6 +1945,8 @@ trigger5 = stateno = 432
 trigger5 = movehit
 trigger5 = p2stateno != [12000,12002]
 trigger5 = p2stateno != [11000,11010]
+trigger6 = stateno = 23210 
+trigger6 = movecontact
 
 ;---------------------------------------------------------------------------
 [State -1, Dive Slash A 1202]
