@@ -2113,12 +2113,12 @@ removeongethit = 1
 
 [State 400]
 type = HitDef
-trigger1 = animelem = 4
+trigger1 = animelem = 5
 attr = S, NA
 animtype  = Light
 damage    = 100,50
 guardflag = MA
-pausetime = 12,12
+pausetime = 8,8
 sparkxy = -10,-37
 hitsound   = S10,1
 guardsound = S10,2
@@ -2129,6 +2129,13 @@ guard.hittime = 5
 ground.velocity = -9,0
 air.velocity = -2,-4
 air.fall = 1
+
+[State 400]
+type = changeanim
+trigger1 = moveguarded = 1
+value = 400
+elem = 4
+ctrl = 0
 
 [State 400]
 type = Changestate

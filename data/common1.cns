@@ -1263,13 +1263,14 @@ value = 0
 type = U    ;Leave state type unchanged
 physics = U ;Leave physics unchanged
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1355,13 +1356,14 @@ type = ChangeAnim
 trigger1 = Anim != 130
 value = 130
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1401,13 +1403,14 @@ type = ChangeAnim
 trigger1 = Anim != 131
 value = 131
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1442,13 +1445,14 @@ Type=CtrlSet
 Trigger1=var(15)>0
 value=0
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1504,13 +1508,14 @@ type     = U
 physics  = U
 ctrl     = 1
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1581,13 +1586,14 @@ velset = 0,0
 
 ;===HS
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1659,13 +1665,14 @@ anim = 150
 
 ;===HS
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1727,13 +1734,14 @@ velset = 0,0
 
 ;===HS
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1803,13 +1811,14 @@ movetype= H
 physics = C
 anim = 151
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1873,13 +1882,14 @@ velset = 0,0
 
 ;===HS
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1925,13 +1935,14 @@ movetype= H
 physics = N
 anim = 152
 
-[State -1, Repel Shield SC 11000]
+[State -1, Alpha Counter 6000]
 type = ChangeState
-value = 11000
+value = 6000
 triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
-triggerall = power >= 500
+triggerall = power >= 1000
+triggerall = moveguarded <= 4
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -9592,149 +9603,168 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; Push Block SC
-[Statedef 11000]
-type = S
-physics = S
-movetype = H
-ctrl = 0
-anim = 6000
-poweradd=0
-;velset=-30,0
-
-[State 0, PowerAdd]
-type = PowerAdd
-trigger1 = time = 0
-value = -500
-
-[State 0, PlaySnd]
-type = PlaySnd
-trigger1 = time=2
-value = 30,3
-
-[State 6000, PalFXWiz]
-type = PalFX
-trigger1=time=0
-time = 15
-add = 100,100,180
-mul = 256,256,256
-sinadd = 50,50,50,30
-invertall = 0
-color = 256
-
-;[State 0, light]
-;type = VarSet
-;trigger1 = time=0
-;var(51) = enemy,hitpausetime ;ceil(power/1000)
-;ignorehitpause = 1
-;persistent = 1
-
-[State 0, StateTypeSet]
-type = StateTypeSet
-trigger1 = time = 0
-movetype = A      
-
-;[State 0, light]
-;type = VarSet
-;trigger1 = p2stateno = [200,209]
-;trigger2 = p2stateno = [400,409]
-;trigger3 = p2stateno = [600,609]
-;var(51) = -10
-;ignorehitpause = 1
-;persistent = 1
+; Alpha Counter
+;[Statedef 11000]
+;type = S
+;physics = S
+;movetype = H
+;ctrl = 0
+;anim = 6000
+;poweradd=0
+;;velset=-30,0
 ;
-;[State 0, mid]
-;type = VarSet
-;trigger1 = p2stateno = [210,219]
-;trigger2 = p2stateno = [410,419]
-;trigger3 = p2stateno = [610,619]
-;trigger4 = p2stateno = [1000,2999]
-;var(51) = -20
-;ignorehitpause = 1
-;persistent = 1
+;;-EX FX--------------------------
+;[State 0, EX Palfx]
+;type = PalFX
+;trigger1 = time = 0
+;time = 20
+;add = 30,200,-255
+;mul = 256,256,256
+;sinadd = 30,200,-255,5
+;invertall = 0
+;color = 0
 ;
-;[State 0, strong]
-;type = VarSet
-;trigger1 = p2stateno = [220,299]
-;trigger2 = p2stateno = [420,499]
-;trigger3 = p2stateno = [620,699]
-;trigger4 = p2stateno = [3000,99999999]
-;var(51) = -30
-;ignorehitpause = 1
-;persistent = 1
-
-[state 0, normal shield]
-type = HitOverride
-trigger1 = 1;time=0
-attr = SCA,AA,AP,AT
-slot = 3
-stateno = 11050
-time = 6
-forceair = 0
-
-[State 210, stun hit]
-type = HitDef
-trigger1=p2statetype!=A
-trigger1=time=0
-priority=7,hit
-attr = S, NA
-animtype  = High
-damage    = 0
-guardflag = MA
-pausetime = 0,0
-sparkno = 72
-sparkxy = -10,-30
-hitsound   = 20,1
-guardsound = 6,0
-ground.type = High
-ground.slidetime = 12
-ground.hittime  = 1
-ground.velocity = -4,0
-air.velocity = -4,-1
-air.hittime=35
-palfx.add = 240,50,0
-palfx.mul = 250,224,120
-palfx.sinadd = 110,55,85,30
-palfx.invertall = 0
-palfx.color = 0
-palfx.time = 30
-air.fall=1
-p2stateno = 13552
-
-[State 210, stun hit]
-type = HitDef
-trigger1=p2statetype=A
-trigger1=time=0
-priority=7,hit
-attr = S, NA
-animtype  = High
-damage    = 0
-guardflag = MA
-pausetime = 0,0
-sparkno = 72
-sparkxy = -10,-30
-hitsound   = 20,1
-guardsound = 6,0
-ground.type = High
-ground.slidetime = 12
-ground.hittime  = 1
-ground.velocity = -4,0
-air.velocity = -4,-1
-air.hittime=35
-palfx.add = 240,50,0
-palfx.mul = 250,224,120
-palfx.sinadd = 110,55,85,30
-palfx.invertall = 0
-palfx.color = 0
-palfx.time = 30
-air.fall=1
-p2stateno = 13553
-
-[State 330, 1]
-type = ChangeState
-trigger1 = time = 20
-value = 0
-ctrl = 1
+;[State 0, EX sound]
+;type = PlaySnd
+;trigger1 = time = 0
+;value = F29,5
+;volume = 255
+;channel = -1
+;
+;[State 0, PowerAdd]
+;type = PowerAdd
+;trigger1 = time = 0
+;value = -1000
+;;--------------------------------
+;
+;[State 0, PlaySnd]
+;type = PlaySnd
+;trigger1 = time=2
+;value = 30,3
+;
+;[State 6000, PalFXWiz]
+;type = PalFX
+;trigger1=time=0
+;time = 15
+;add = 100,100,180
+;mul = 256,256,256
+;sinadd = 50,50,50,30
+;invertall = 0
+;color = 256
+;
+;;[State 0, light]
+;;type = VarSet
+;;trigger1 = time=0
+;;var(51) = enemy,hitpausetime ;ceil(power/1000)
+;;ignorehitpause = 1
+;;persistent = 1
+;
+;[State 0, StateTypeSet]
+;type = StateTypeSet
+;trigger1 = time = 0
+;movetype = A      
+;
+;;[State 0, light]
+;;type = VarSet
+;;trigger1 = p2stateno = [200,209]
+;;trigger2 = p2stateno = [400,409]
+;;trigger3 = p2stateno = [600,609]
+;;var(51) = -10
+;;ignorehitpause = 1
+;;persistent = 1
+;;
+;;[State 0, mid]
+;;type = VarSet
+;;trigger1 = p2stateno = [210,219]
+;;trigger2 = p2stateno = [410,419]
+;;trigger3 = p2stateno = [610,619]
+;;trigger4 = p2stateno = [1000,2999]
+;;var(51) = -20
+;;ignorehitpause = 1
+;;persistent = 1
+;;
+;;[State 0, strong]
+;;type = VarSet
+;;trigger1 = p2stateno = [220,299]
+;;trigger2 = p2stateno = [420,499]
+;;trigger3 = p2stateno = [620,699]
+;;trigger4 = p2stateno = [3000,99999999]
+;;var(51) = -30
+;;ignorehitpause = 1
+;;persistent = 1
+;
+;[state 0, normal shield]
+;type = HitOverride
+;trigger1 = 1;time=0
+;attr = SCA,AA,AP,AT
+;slot = 3
+;stateno = 11050
+;time = 6
+;forceair = 0
+;
+;[State 210, stun hit]
+;type = HitDef
+;trigger1=p2statetype!=A
+;trigger1=time=0
+;priority=7,hit
+;attr = S, NA
+;animtype  = High
+;damage    = 0
+;guardflag = MA
+;pausetime = 0,0
+;sparkno = 72
+;sparkxy = -10,-30
+;hitsound   = 20,1
+;guardsound = 6,0
+;ground.type = High
+;ground.slidetime = 12
+;ground.hittime  = 1
+;ground.velocity = -4,0
+;air.velocity = -4,-1
+;air.hittime=35
+;palfx.add = 240,50,0
+;palfx.mul = 250,224,120
+;palfx.sinadd = 110,55,85,30
+;palfx.invertall = 0
+;palfx.color = 0
+;palfx.time = 30
+;air.fall=1
+;p2stateno = 13552
+;
+;[State 210, stun hit]
+;type = HitDef
+;trigger1=p2statetype=A
+;trigger1=time=0
+;priority=7,hit
+;attr = S, NA
+;animtype  = High
+;damage    = 0
+;guardflag = MA
+;pausetime = 0,0
+;sparkno = 72
+;sparkxy = -10,-30
+;hitsound   = 20,1
+;guardsound = 6,0
+;ground.type = High
+;ground.slidetime = 12
+;ground.hittime  = 1
+;ground.velocity = -4,0
+;air.velocity = -4,-1
+;air.hittime=35
+;palfx.add = 240,50,0
+;palfx.mul = 250,224,120
+;palfx.sinadd = 110,55,85,30
+;palfx.invertall = 0
+;palfx.color = 0
+;palfx.time = 30
+;air.fall=1
+;p2stateno = 13553
+;
+;[State 330, 1]
+;type = ChangeState
+;trigger1 = time = 20
+;value = 0
+;ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Push Block SCP Final
@@ -9854,6 +9884,270 @@ trigger1=animtime=0
 trigger2=movecontact
 value = 0
 ctrl = 1
+
+;---------------------------------------------------------------------------
+; Push Block SC
+;[Statedef 11000]
+;type = S
+;physics = S
+;movetype = H
+;ctrl = 0
+;anim = 6000
+;poweradd=0
+;;velset=-30,0
+;
+;[State 0, PowerAdd]
+;type = PowerAdd
+;trigger1 = time = 0
+;value = -500
+;
+;[State 0, PlaySnd]
+;type = PlaySnd
+;trigger1 = time=2
+;value = 30,3
+;
+;[State 6000, PalFXWiz]
+;type = PalFX
+;trigger1=time=0
+;time = 15
+;add = 100,100,180
+;mul = 256,256,256
+;sinadd = 50,50,50,30
+;invertall = 0
+;color = 256
+;
+;;[State 0, light]
+;;type = VarSet
+;;trigger1 = time=0
+;;var(51) = enemy,hitpausetime ;ceil(power/1000)
+;;ignorehitpause = 1
+;;persistent = 1
+;
+;[State 0, StateTypeSet]
+;type = StateTypeSet
+;trigger1 = time = 0
+;movetype = A      
+;
+;;[State 0, light]
+;;type = VarSet
+;;trigger1 = p2stateno = [200,209]
+;;trigger2 = p2stateno = [400,409]
+;;trigger3 = p2stateno = [600,609]
+;;var(51) = -10
+;;ignorehitpause = 1
+;;persistent = 1
+;;
+;;[State 0, mid]
+;;type = VarSet
+;;trigger1 = p2stateno = [210,219]
+;;trigger2 = p2stateno = [410,419]
+;;trigger3 = p2stateno = [610,619]
+;;trigger4 = p2stateno = [1000,2999]
+;;var(51) = -20
+;;ignorehitpause = 1
+;;persistent = 1
+;;
+;;[State 0, strong]
+;;type = VarSet
+;;trigger1 = p2stateno = [220,299]
+;;trigger2 = p2stateno = [420,499]
+;;trigger3 = p2stateno = [620,699]
+;;trigger4 = p2stateno = [3000,99999999]
+;;var(51) = -30
+;;ignorehitpause = 1
+;;persistent = 1
+;
+;[state 0, normal shield]
+;type = HitOverride
+;trigger1 = 1;time=0
+;attr = SCA,AA,AP,AT
+;slot = 3
+;stateno = 11050
+;time = 6
+;forceair = 0
+;
+;[State 210, stun hit]
+;type = HitDef
+;trigger1=p2statetype!=A
+;trigger1=time=0
+;priority=7,hit
+;attr = S, NA
+;animtype  = High
+;damage    = 0
+;guardflag = MA
+;pausetime = 0,0
+;sparkno = 72
+;sparkxy = -10,-30
+;hitsound   = 20,1
+;guardsound = 6,0
+;ground.type = High
+;ground.slidetime = 12
+;ground.hittime  = 1
+;ground.velocity = -4,0
+;air.velocity = -4,-1
+;air.hittime=35
+;palfx.add = 240,50,0
+;palfx.mul = 250,224,120
+;palfx.sinadd = 110,55,85,30
+;palfx.invertall = 0
+;palfx.color = 0
+;palfx.time = 30
+;air.fall=1
+;p2stateno = 13552
+;
+;[State 210, stun hit]
+;type = HitDef
+;trigger1=p2statetype=A
+;trigger1=time=0
+;priority=7,hit
+;attr = S, NA
+;animtype  = High
+;damage    = 0
+;guardflag = MA
+;pausetime = 0,0
+;sparkno = 72
+;sparkxy = -10,-30
+;hitsound   = 20,1
+;guardsound = 6,0
+;ground.type = High
+;ground.slidetime = 12
+;ground.hittime  = 1
+;ground.velocity = -4,0
+;air.velocity = -4,-1
+;air.hittime=35
+;palfx.add = 240,50,0
+;palfx.mul = 250,224,120
+;palfx.sinadd = 110,55,85,30
+;palfx.invertall = 0
+;palfx.color = 0
+;palfx.time = 30
+;air.fall=1
+;p2stateno = 13553
+;
+;[State 330, 1]
+;type = ChangeState
+;trigger1 = time = 20
+;value = 0
+;ctrl = 1
+;
+;;---------------------------------------------------------------------------
+;; Push Block SCP Final
+;[Statedef 11050]
+;type = S
+;physics = S
+;movetype = H
+;ctrl = 0
+;velset = 0,0
+;;anim = 6000
+;poweradd=0
+;
+;[State 0, VelAdd]
+;type = varadd
+;trigger1 = time=0
+;var(17)=1
+;
+;[state 8100, damage negator]
+;type = lifeadd
+;trigger1 = time<=6
+;value = 0
+;
+;[state 0, hitcounter]
+;type=varadd
+;trigger1=enemynear,movetype=A
+;trigger1=enemynear,movecontact
+;fv=5
+;value=1
+;persistent=0
+;
+;[State 10800, ChangeAnim]
+;type = ChangeAnim
+;trigger1 = Time<=6 && Anim != 6005
+;value = 6005
+;
+;[State 0, PlaySnd]
+;type = PlaySnd
+;trigger1 = time=2
+;value = 30,3
+;
+;[State 6000, PalFXWiz]
+;type = PalFX
+;trigger1=time=0
+;time = 8
+;add = 100,100,180
+;mul = 256,256,256
+;sinadd = 50,50,50,30
+;invertall = 0
+;color = 256
+;
+;[State 210, stun hit]
+;type = HitDef
+;trigger1=p2statetype != A
+;trigger1=time=0
+;priority=7,hit
+;attr = S, NA
+;animtype  = High
+;damage    = 0
+;guardflag = MA
+;pausetime = 0,0
+;sparkno = 1
+;sparkxy = -10,-30
+;hitsound   = 20,1
+;guardsound = 6,0
+;ground.type = High
+;ground.slidetime = 12
+;ground.hittime  = 1
+;ground.velocity = -4,0
+;air.velocity = -4,-1
+;air.hittime=35
+;palfx.add = 240,50,0
+;palfx.mul = 250,224,120
+;palfx.sinadd = 110,55,85,30
+;palfx.invertall = 0
+;palfx.color = 0
+;palfx.time = 30
+;air.fall=1
+;p2stateno = 13552
+;
+;[State 210, stun hit]
+;type = HitDef
+;trigger1=p2statetype = A
+;trigger1=time=0
+;priority=7,hit
+;attr = S, NA
+;animtype  = High
+;damage    = 0
+;guardflag = MA
+;pausetime = 0,0
+;sparkno = 1
+;sparkxy = -10,-30
+;hitsound   = 20,1
+;guardsound = 6,0
+;ground.type = High
+;ground.slidetime = 12
+;ground.hittime  = 1
+;ground.velocity = -4,0
+;air.velocity = -4,-1
+;air.hittime=35
+;palfx.add = 240,50,0
+;palfx.mul = 250,224,120
+;palfx.sinadd = 110,55,85,30
+;palfx.invertall = 0
+;palfx.color = 0
+;palfx.time = 30
+;air.fall=1
+;p2stateno = 13553
+;
+;[state 0, ctrl reset]
+;type=ctrlset
+;trigger1=movecontact
+;value=1
+;
+;[State 330, 1]
+;type = ChangeState
+;trigger1=animtime=0
+;trigger2=movecontact
+;value = 0
+;ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Push Blocked SC
@@ -11729,6 +12023,17 @@ facep2=1
 ;fvar(8) = 1.5
 ;ignorehitpause = 1
 ;persistent = 1
+
+;[State 0, SuperPause]
+;type = SuperPause
+;trigger1 = time = 0
+;time = 10
+;anim = 2001
+;sound = S10,0
+;pos = 0,0
+;movetime = 0
+;darken = 0
+;unhittable = 0
 
 [State 0, Explod]
 type = Explod
