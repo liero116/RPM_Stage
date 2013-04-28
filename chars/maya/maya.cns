@@ -803,7 +803,7 @@ ground.cornerpush.veloff = -10
 fall.yvelocity = 0
 trigger1 = time=0
 attr = S, NA
-priority = 2,hit
+priority = 6,hit
 animtype  = light
 fall.animtype = back
 damage    = floor(fvar(13)*60),15

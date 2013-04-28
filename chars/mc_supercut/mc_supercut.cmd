@@ -3483,7 +3483,7 @@ triggerall = command = "a"
 triggerall = command != "holddown"
 trigger1 = statetype = S
 trigger1 = ctrl || (stateno = 101 && time >= 2)
-trigger2 = stateno = 202 && time > 5
+trigger2 = stateno = 202 ;&& time > 5
 trigger2 = movecontact
 trigger3 = stateno = 10100000 || stateno = 10900000
 

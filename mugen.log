@@ -22,7 +22,7 @@ Initializing font...OK
 Initializing game variables...OK
 Loading system fonts...OK
 Loading options...
-Initializing pads...OK
+Initializing pads...failed
 Reinitializing input engine...OK
 Remapping keys...OK
 Reinitializing input engine...OK
@@ -64,7 +64,8 @@ Playing storyboard logo.def: scene
 attempting load and start...attempting load of data/intro_sc2.mp3...hooking mixer callback...
 success!
 starting BGM...
-Storyboard playback canceled 80:0 k0 pE
+Attempting to set graphics to 1280x720x16 mode 0x0...success
+Storyboard playback canceled 200:1 k0 p0
 Finished playing storyboard logo.def: scene
 Initializing character info...OK
 Initializing select screen...finding characters...
@@ -137,40 +138,32 @@ Entering main loop
 Playing storyboard intro.def: scene
 attempting load and start...attempting load of data/title 4.mp3...success!
 starting BGM...
-Storyboard playback canceled 10:0 k0 pD
+Storyboard playback canceled 10:0 k72 p0
 Finished playing storyboard intro.def: scene
 Entering character select.
 attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
-Options Screen
-Config pads menu
-Setting up input
-Remapping keys...OK
-Reinitializing input engine...OK
-Return from config pads menu
-Attempting to set graphics to 1280x720x16 mode 0x0...success
-Return from Options Screen
 attempting load and start...attempting load of sound/select.mp3...success!
 starting BGM...
-Loading character chars/nadia/nadia.def...
+Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
+  Loading cns hex.cns...OK
   Loading cns decimal.cns...OK
   Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
+  Loading cmd state entry mc_supercut.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  16975 expressions (5232 on trigger lines)
-Character nadia.def loaded OK
+  19836 expressions (6711 on trigger lines)
+Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -184,44 +177,8 @@ Loading character chars/bot_blu/bot_blu.def...
   Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19604 expressions (5726 on trigger lines)
+  19506 expressions (5727 on trigger lines)
 Character bot_blu.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 682.38s
-Total frames: 40944 	Skipped frames: 0
-Avg game rate: 60.00
-Avg frame rate: 60.00
-
-Reloading system sprite data...Reloading system background data...OK
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17439 expressions (5547 on trigger lines)
-Character maya.def loaded OK
 attempting load and start...no BGM...Unloading system background data...sprite data...OK
 Initializing stage...
   Loading BG...attempting load of stages/training2/training2.mp3...success!
@@ -233,140 +190,26 @@ prebuffering BGM...
   Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/maya/maya.def...
+Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17439 expressions (5547 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19492 expressions (5715 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...attempting load of stages/training2/training2.mp3...success!
-prebuffering BGM...
-OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17378 expressions (5542 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19492 expressions (5715 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17378 expressions (5542 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19492 expressions (5715 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
   Loading cns hex.cns...OK
   Loading cns decimal.cns...OK
   Loading cns binary.cns...prebuffering BGM...
 OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
+  Loading cmd state entry mc_supercut.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17378 expressions (5542 on trigger lines)
-Character maya.def loaded OK
+  19837 expressions (6713 on trigger lines)
+Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -380,14 +223,14 @@ Loading character chars/bot_blu/bot_blu.def...
   Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19492 expressions (5715 on trigger lines)
+  19506 expressions (5727 on trigger lines)
 Character bot_blu.def loaded OK
   Loading BG...OK
   Allocating helpers...OK
-Loading character chars/maya/maya.def...
+Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...attempting load of stages/training2/training2.mp3...success!
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...attempting load of stages/training2/training2.mp3...success!
 prebuffering BGM...
 OK
   Loading cns hex.cns...OK
@@ -395,16 +238,16 @@ OK
   Loading cns binary.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
+  Loading cmd state entry mc_supercut.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17389 expressions (5553 on trigger lines)
-Character maya.def loaded OK
+  19840 expressions (6715 on trigger lines)
+Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -418,107 +261,31 @@ Loading character chars/bot_blu/bot_blu.def...
   Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19503 expressions (5726 on trigger lines)
+  19506 expressions (5727 on trigger lines)
 Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
+  Loading BG...OK
+  Allocating helpers...attempting load of stages/training2/training2.mp3...OK
+success!
+Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17389 expressions (5553 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19503 expressions (5726 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17389 expressions (5553 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19503 expressions (5726 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...OK
-  Allocating helpers...success!
-OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
   Loading cns hex.cns...OK
   Loading cns decimal.cns...OK
   Loading cns binary.cns...prebuffering BGM...
 OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
+  Loading cmd state entry mc_supercut.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17389 expressions (5553 on trigger lines)
-Character maya.def loaded OK
+  19840 expressions (6715 on trigger lines)
+Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -532,69 +299,31 @@ Loading character chars/bot_blu/bot_blu.def...
   Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19503 expressions (5726 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...attempting load of stages/training2/training2.mp3...success!
-prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17389 expressions (5553 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19503 expressions (5726 on trigger lines)
+  19506 expressions (5727 on trigger lines)
 Character bot_blu.def loaded OK
   Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/maya/maya.def...
+Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
   Loading cns hex.cns...prebuffering BGM...
 OK
   Loading cns decimal.cns...OK
   Loading cns binary.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
+  Loading cmd state entry mc_supercut.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17389 expressions (5553 on trigger lines)
-Character maya.def loaded OK
+  19840 expressions (6715 on trigger lines)
+Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -613,26 +342,26 @@ Character bot_blu.def loaded OK
   Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/maya/maya.def...
+Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
   Loading cns hex.cns...OK
   Loading cns decimal.cns...prebuffering BGM...
 OK
   Loading cns binary.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
+  Loading cmd state entry mc_supercut.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17389 expressions (5553 on trigger lines)
-Character maya.def loaded OK
+  19840 expressions (6715 on trigger lines)
+Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -651,178 +380,26 @@ Character bot_blu.def loaded OK
   Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/maya/maya.def...
+Loading character chars/mc_supercut/mc_supercut.def...
   Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
+  Loading cmd command set mc_supercut.cmd...OK
+  Loading cns mc_supercut.cns...OK
   Loading cns hex.cns...OK
   Loading cns decimal.cns...prebuffering BGM...
 OK
   Loading cns binary.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
+  Loading cmd state entry mc_supercut.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
+  Loading sff mc_supercut.sff...OK
+  Loading anim mc_supercut.air...OK
+  Loading snd mc_supercut.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17389 expressions (5553 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19506 expressions (5727 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17389 expressions (5553 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19506 expressions (5727 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17391 expressions (5554 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19506 expressions (5727 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...attempting load of stages/training2/training2.mp3...success!
-prebuffering BGM...
-OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17391 expressions (5554 on trigger lines)
-Character maya.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19506 expressions (5727 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/maya/maya.def...
-  Loading info...OK
-  Loading cmd command set maya.cmd...OK
-  Loading cns maya.cns...OK
-  Loading cns hex.cns...prebuffering BGM...
-OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry maya.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff maya.sff...OK
-  Loading anim maya.air...OK
-  Loading snd maya.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17391 expressions (5554 on trigger lines)
-Character maya.def loaded OK
+  19840 expressions (6715 on trigger lines)
+Character mc_supercut.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -839,22 +416,22 @@ Loading character chars/bot_blu/bot_blu.def...
   19506 expressions (5727 on trigger lines)
 Character bot_blu.def loaded OK
 End of game loop
-Total time: 3419.64s
-Total frames: 204961 	Skipped frames: 0
-Avg game rate: 59.94
-Avg frame rate: 59.94
+Total time: 788.33s
+Total frames: 47188 	Skipped frames: 0
+Avg game rate: 59.86
+Avg frame rate: 59.86
 
 Reloading system sprite data...Reloading system background data...OK
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
 Entering character select.
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
 attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 Returned from main loop
 Deinitializing...
-Frames      : 245905
-Time elapsed: 4158.680 sec
-ticks: 415868, tps: 100, start 93, end 415961
+Frames      : 47188
+Time elapsed: 815.730 sec
+ticks: 81573, tps: 100, start 90, end 81663
 
 Clearing player cache...OK
 Freeing character info...OK
@@ -868,11 +445,11 @@ Deintializing timer...OK
 Deinitializing graphics...OK
 Deinitializing BGM...Cleaning up mixer callback...unhooking mixer callback...
 
-Mixer callback was entered 89535 times
-Mixer callback timing stats (last 89535 calls):
-	4.000000 median, 5.338460 avg, 7.902109 sample std. dev.
-Top 10 slowest times:	322 (1), 205 (1), 202 (1), 201 (1), 191 (1), 183 (1), 177 (2), 176 (1), 171 (1), 164 (1)
-Top 10 fastest times:	1 (2228), 2 (25747), 3 (14566), 4 (5362), 5 (16126), 6 (9607), 7 (5291), 8 (1443), 9 (1867), 10 (3343)
+Mixer callback was entered 17550 times
+Mixer callback timing stats (last 17550 calls):
+	6.000000 median, 7.251453 avg, 8.105053 sample std. dev.
+Top 10 slowest times:	112 (1), 109 (1), 108 (1), 103 (1), 95 (1), 94 (1), 92 (1), 91 (1), 90 (2), 89 (3)
+Top 10 fastest times:	1 (198), 2 (1798), 3 (968), 4 (329), 5 (2918), 6 (4699), 7 (2599), 8 (715), 9 (587), 10 (1329)
 OK
 Deinitializing sound...OK
 Successful program termination.
