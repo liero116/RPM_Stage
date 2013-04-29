@@ -2185,7 +2185,7 @@ trigger2 = stateno = 10100000 || stateno = 10900000
 type = ChangeState
 value = 1300
 triggerall = var(27) = 0
-triggerall = command = "421A" || command = "421B" || command = "421C"
+triggerall = command = "22A" || command = "22B" || command = "22C" || command = "22EX"
 triggerall = statetype != A
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000

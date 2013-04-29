@@ -2,12 +2,12 @@
 M.U.G.E.N ver 1.00 (2011.01.18) status log
 ------------------------------------------
 Parsing command line...
-Command line: F:\Cross Fighter\RPM_Stage\mugen.exe
+Command line: D:\Projects\Cross Fighter\RPM_Stage\mugen.exe
 Parse command line OK
 Initializing...
 Allocating game variables
 Reading configuration file...OK
-Initializing timer...performance timer enabled...frequency 3517773...OK
+Initializing timer...performance timer enabled...frequency 1948759...OK
 Initializing keyboard...configuring...OK
 Initializing input engine...OK
 Initializing sound...Using SDL audio driver: dsound
@@ -64,8 +64,7 @@ Playing storyboard logo.def: scene
 attempting load and start...attempting load of data/intro_sc2.mp3...hooking mixer callback...
 success!
 starting BGM...
-Attempting to set graphics to 1280x720x16 mode 0x0...success
-Storyboard playback canceled 200:1 k0 p0
+Storyboard playback finished OK
 Finished playing storyboard logo.def: scene
 Initializing character info...OK
 Initializing select screen...finding characters...
@@ -145,25 +144,146 @@ attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 attempting load and start...attempting load of sound/select.mp3...success!
 starting BGM...
-Loading character chars/mc_supercut/mc_supercut.def...
+Attempting to set graphics to 1280x720x16 mode 0x0...success
+Loading character chars/natalia/natalia.def...
   Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
   Loading cns hex.cns...OK
   Loading cns decimal.cns...OK
   Loading cns binary.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
+  Loading cmd state entry natalia.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19836 expressions (6711 on trigger lines)
-Character mc_supercut.def loaded OK
+  16174 expressions (5533 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  16986 expressions (5243 on trigger lines)
+Character nadia.def loaded OK
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  16174 expressions (5533 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  16986 expressions (5243 on trigger lines)
+Character nadia.def loaded OK
+  Loading BG...attempting load of stages/training2/training2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  16188 expressions (5536 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  16986 expressions (5243 on trigger lines)
+Character nadia.def loaded OK
+End of game loop
+Total time: 2555.12s
+Total frames: 153211 	Skipped frames: 0
+Avg game rate: 59.96
+Avg frame rate: 59.96
+
+Reloading system sprite data...Reloading system background data...OK
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -190,102 +310,26 @@ prebuffering BGM...
   Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/mc_supercut/mc_supercut.def...
+Loading character chars/natalia/natalia.def...
   Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
   Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
+  Loading cns decimal.cns...prebuffering BGM...
 OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19837 expressions (6713 on trigger lines)
-Character mc_supercut.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19506 expressions (5727 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...OK
-  Allocating helpers...OK
-Loading character chars/mc_supercut/mc_supercut.def...
-  Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...attempting load of stages/training2/training2.mp3...success!
-prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
   Loading cns binary.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
+  Loading cmd state entry natalia.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19840 expressions (6715 on trigger lines)
-Character mc_supercut.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19506 expressions (5727 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...OK
-  Allocating helpers...attempting load of stages/training2/training2.mp3...OK
-success!
-Loading character chars/mc_supercut/mc_supercut.def...
-  Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19840 expressions (6715 on trigger lines)
-Character mc_supercut.def loaded OK
+  16190 expressions (5538 on trigger lines)
+Character natalia.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -304,102 +348,26 @@ Character bot_blu.def loaded OK
   Loading BG...attempting load of stages/training2/training2.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/mc_supercut/mc_supercut.def...
+Loading character chars/natalia/natalia.def...
   Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
   Loading cns hex.cns...prebuffering BGM...
 OK
   Loading cns decimal.cns...OK
   Loading cns binary.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
+  Loading cmd state entry natalia.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  19840 expressions (6715 on trigger lines)
-Character mc_supercut.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19506 expressions (5727 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/mc_supercut/mc_supercut.def...
-  Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19840 expressions (6715 on trigger lines)
-Character mc_supercut.def loaded OK
-Loading character chars/bot_blu/bot_blu.def...
-  Loading info...OK
-  Loading cmd command set bot_blu.cmd...OK
-  Loading cns bot_blu.cns...OK
-  Loading cns config.txt...OK
-  Loading cmd state entry bot_blu.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff bot_blu.sff...OK
-  Loading anim bot_blu.air...OK
-  Loading snd bot_blu.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19506 expressions (5727 on trigger lines)
-Character bot_blu.def loaded OK
-  Loading BG...attempting load of stages/training2/training2.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/mc_supercut/mc_supercut.def...
-  Loading info...OK
-  Loading cmd command set mc_supercut.cmd...OK
-  Loading cns mc_supercut.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry mc_supercut.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff mc_supercut.sff...OK
-  Loading anim mc_supercut.air...OK
-  Loading snd mc_supercut.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  19840 expressions (6715 on trigger lines)
-Character mc_supercut.def loaded OK
+  16190 expressions (5538 on trigger lines)
+Character natalia.def loaded OK
 Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
   Loading cmd command set bot_blu.cmd...OK
@@ -416,22 +384,22 @@ Loading character chars/bot_blu/bot_blu.def...
   19506 expressions (5727 on trigger lines)
 Character bot_blu.def loaded OK
 End of game loop
-Total time: 788.33s
-Total frames: 47188 	Skipped frames: 0
-Avg game rate: 59.86
-Avg frame rate: 59.86
+Total time: 9871.19s
+Total frames: 45468 	Skipped frames: 14
+Avg game rate: 4.61
+Avg frame rate: 4.60
 
 Reloading system sprite data...Reloading system background data...OK
-Entering character select.
 attempting load and start...attempting load of sound/select.mp3...success!
 starting BGM...
+Entering character select.
 attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 Returned from main loop
 Deinitializing...
-Frames      : 47188
-Time elapsed: 815.730 sec
-ticks: 81573, tps: 100, start 90, end 81663
+Frames      : 198679
+Time elapsed: 17441.870 sec
+ticks: 1744187, tps: 100, start 95, end 1744282
 
 Clearing player cache...OK
 Freeing character info...OK
@@ -445,11 +413,11 @@ Deintializing timer...OK
 Deinitializing graphics...OK
 Deinitializing BGM...Cleaning up mixer callback...unhooking mixer callback...
 
-Mixer callback was entered 17550 times
-Mixer callback timing stats (last 17550 calls):
-	6.000000 median, 7.251453 avg, 8.105053 sample std. dev.
-Top 10 slowest times:	112 (1), 109 (1), 108 (1), 103 (1), 95 (1), 94 (1), 92 (1), 91 (1), 90 (2), 89 (3)
-Top 10 fastest times:	1 (198), 2 (1798), 3 (968), 4 (329), 5 (2918), 6 (4699), 7 (2599), 8 (715), 9 (587), 10 (1329)
+Mixer callback was entered 179428 times
+Mixer callback timing stats (last 131072 calls):
+	2.000000 median, 2.373535 avg, 3.292078 sample std. dev.
+Top 10 slowest times:	199 (1), 180 (1), 148 (1), 136 (1), 126 (1), 125 (1), 113 (1), 112 (1), 111 (1), 108 (1)
+Top 10 fastest times:	0 (1), 1 (22145), 2 (85538), 3 (14672), 4 (3773), 5 (839), 6 (351), 7 (1118), 8 (729), 9 (367)
 OK
 Deinitializing sound...OK
 Successful program termination.

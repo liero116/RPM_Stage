@@ -708,6 +708,147 @@ type = ChangeState
 trigger1 = animtime=0
 value = 0
 
+;---------------------------------------------------------------------------
+; Alpha Counter
+[Statedef 6000]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+anim = 6000
+poweradd=0
+
+;-EX FX--------------------------
+[State 0, EX Palfx]
+type = PalFX
+trigger1 = time = 0
+time = 20
+add = 30,200,-255
+mul = 256,256,256
+sinadd = 30,200,-255,5
+invertall = 0
+color = 0
+
+[State 0, EX sound]
+type = PlaySnd
+trigger1 = time = 0
+value = F29,5
+volume = 255
+channel = -1
+
+;[State 0, PowerAdd]
+;type = PowerAdd
+;trigger1 = time = 0
+;value = -1000
+
+[State 3050, Super A]
+type = SuperPause
+trigger1 = time = 0
+pos = 0, 0
+anim = 2001
+sound = 20, 0
+darken = 0
+poweradd = -1000
+time=20
+
+;--------------------------------
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time=2
+value = 30,3
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = animelem = 6
+x = 15
+y = 0
+
+[State 0, Width]
+type = Width
+trigger1 = 1
+edge = 0,0
+player = 35,0
+;value = 0,0
+;ignorehitpause = 
+;persistent = 
+
+
+[state 1000, spark gfx]
+type = Explod
+trigger1 = time=0
+scale=.35,.35
+anim =10318
+ID =6000
+pos = 0,0
+postype = p1
+bindtime = -1
+sprpriority=7
+pausemove=0
+ignorehitpause=0
+removeongethit=1
+
+[state 1000, bolt gfx]
+type = Explod
+trigger1 = time=0
+scale=.35,.35
+anim =10319
+ID =6000
+pos = 0,0
+postype = p1
+bindtime = -1
+sprpriority=7
+pausemove=0
+ignorehitpause=0
+removeongethit=1
+
+[State 210, 2]
+type = hitdef
+ground.cornerpush.veloff = -10
+fall.yvelocity = 0
+trigger1 = time=0
+attr = S, NA
+priority = 6,hit
+animtype  = light
+fall.animtype = back
+damage    = floor(fvar(13)*60),15
+guardflag = MA
+hitflag = MAF
+pausetime = 10,10
+sparkno = 1003
+sparkxy = (-10 - random%5), (-25 - random%15)
+hitsound   = 5,2
+guardsound = 6,0
+ground.type = low
+ground.slidetime = 27
+ground.hittime  = 27
+guard.hittime = 10
+ground.velocity = -1,0
+air.velocity = -1,-7
+air.hittime  = 44
+fall.recover = 0
+air.fall = 1
+fall = 0
+palfx.time=35
+palfx.add=100,100,180
+palfx.mul=256,256,256
+palfx.sinadd=-80,-80,-80,3
+palfx.invertall=0
+palfx.color=64
+envshake.time=9
+envshake.freq=60
+envshake.ampl=-4
+envshake.phase=90
+
+[State 330, 1]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+
+
+
+
 [statedef -2]
 
 [state -2, remove lock bar]
@@ -1276,6 +1417,7 @@ ignorehitpause = 1
 ;=============================
 [state -2, super armor on]
 type=varset
+triggerall = var(59) = 9909909909 ;locked
 trigger1=stateno=1021 || stateno=1031 || stateno = 1041 || stateno = 3010 || stateno = 1010
 fv=7
 value=1
