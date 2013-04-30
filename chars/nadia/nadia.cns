@@ -745,11 +745,11 @@ channel = -1
 type = SuperPause
 trigger1 = time = 0
 pos = 0, 0
-anim = 2001
+anim = 2002
 sound = 20, 0
 darken = 0
 poweradd = -1000
-time=20
+time=0
 
 ;--------------------------------
 
@@ -811,7 +811,7 @@ attr = S, NA
 priority = 6,hit
 animtype  = light
 fall.animtype = back
-damage    = floor(fvar(13)*60),15
+damage    = floor(fvar(13)*200),15
 guardflag = MA
 hitflag = MAF
 pausetime = 10,10

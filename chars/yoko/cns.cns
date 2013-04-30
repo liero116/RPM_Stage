@@ -878,6 +878,171 @@ type = SelfState
 trigger1 = (Vel y > 0) && (Pos y >= 0)
 value = 5100
 
+;---------------------------------------------------------------------------
+; Alpha Counter
+[Statedef 6000]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+anim = 6000
+poweradd=0
+
+;-EX FX--------------------------
+[State 0, EX Palfx]
+type = PalFX
+trigger1 = time = 0
+time = 20
+add = 30,200,-255
+mul = 256,256,256
+sinadd = 30,200,-255,5
+invertall = 0
+color = 0
+
+[State 0, EX sound]
+type = PlaySnd
+trigger1 = time = 0
+value = F29,5
+volume = 255
+channel = -1
+
+;[State 0, PowerAdd]
+;type = PowerAdd
+;trigger1 = time = 0
+;value = -1000
+
+[State 3050, Super A]
+type = SuperPause
+trigger1 = time = 0
+pos = 0, 0
+anim = 2002
+sound = 20, 0
+darken = 0
+poweradd = -1000
+time=0
+;--------------------------------
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time=2
+value = 30,3
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = animelem = 6
+x = 15
+y = 0
+
+[State 0, Width]
+type = Width
+trigger1 = 1
+edge = 0,0
+player = 35,0
+;value = 0,0
+;ignorehitpause = 
+;persistent = 
+
+
+[state 1000, spark gfx]
+type = Explod
+trigger1 = time=0
+scale=.35,.35
+anim =10318
+ID =6000
+pos = 0,0
+postype = p1
+bindtime = -1
+sprpriority=7
+pausemove=0
+ignorehitpause=0
+removeongethit=1
+
+[state 1000, bolt gfx]
+type = Explod
+trigger1 = time=0
+scale=.35,.35
+anim =10319
+ID =6000
+pos = 0,0
+postype = p1
+bindtime = -1
+sprpriority=7
+pausemove=0
+ignorehitpause=0
+removeongethit=1
+
+[State 200, first hit]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+fall.yvelocity = 0
+;trigger1 = var(7)<4
+trigger1 = animelem = 6
+attr = S, NA
+damage = floor(fvar(13)*30),5
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4, Hit
+pausetime = 8,8
+sparkno = 330 + (random%5)
+sparkxy = (-25 - random%5), (-35 - random%15);  = -10, -26
+hitsound = S5,28
+guardsound = 6, 0
+ground.type = High
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = 15
+ground.velocity = 4,0
+guard.velocity = -4
+airguard.velocity = -.5,-.8
+air.type = High
+air.velocity = 0,0
+air.hittime = 30
+;snap = 60,0
+
+[State 200, pull]
+type = hitdef 
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+fall.yvelocity = 0
+;trigger1 = var(7)<4
+trigger1 = AnimElem = 9
+attr = S, NA
+damage = floor(fvar(13)*30),5
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4, Hit
+pausetime = 8,8
+sparkno = 330 + (random%5)
+sparkxy = (-25 - random%5), (-35 - random%15);  = -10, -26
+hitsound = S5,28
+guardsound = 6, 0
+ground.type = High
+ground.slidetime = 14
+ground.hittime  = 14
+guard.hittime = 12
+ground.velocity = 2,-6
+guard.velocity = -10
+airguard.velocity = -.5,-.8
+air.type = High
+air.velocity = 2,-5
+air.hittime = 30
+envshake.time=9
+envshake.freq=60
+envshake.ampl=-4
+envshake.phase=90
+fall = 1
+air.fall = 1
+
+[State 330, 1]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+;==============================================================================================
+
+
+
 [statedef -2]
 
 [state -2, remove lock bar]

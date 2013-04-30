@@ -742,6 +742,148 @@ trigger1 = animtime=0
 value = 0
  
 ;---------------------------------------------------------------------------
+; Alpha Counter
+[Statedef 6000]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+anim = 6000
+poweradd=0
+
+;-EX FX--------------------------
+[State 0, EX Palfx]
+type = PalFX
+trigger1 = time = 0
+time = 20
+add = 30,200,-255
+mul = 256,256,256
+sinadd = 30,200,-255,5
+invertall = 0
+color = 0
+
+[State 0, EX sound]
+type = PlaySnd
+trigger1 = time = 0
+value = F29,5
+volume = 255
+channel = -1
+
+;[State 0, PowerAdd]
+;type = PowerAdd
+;trigger1 = time = 0
+;value = -1000
+
+[State 3050, Super A]
+type = SuperPause
+trigger1 = time = 0
+pos = 0, 0
+anim = 2002
+sound = 20, 0
+darken = 0
+poweradd = -1000
+time=0
+
+;--------------------------------
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time=2
+value = 30,3
+
+[State 0, Explod]
+type = Explod
+trigger1 = animelem = 5
+anim = 1125
+ID = 6000
+pos = 0,-40
+postype = p2  
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = 0.10,0.10
+sprpriority = 7
+ontop = 1
+
+[State 210, 2]
+type = hitdef
+ground.cornerpush.veloff = -10
+fall.yvelocity = 0
+trigger1 = time=0
+attr = S, NA
+priority = 6,hit
+animtype  = light
+fall.animtype = back
+damage    = floor(fvar(13)*60),15
+guardflag = MA
+hitflag = MAF
+pausetime = 10,10
+sparkno = 1003
+sparkxy = (-10 - random%5), (-25 - random%15)
+hitsound   = 5,2
+guardsound = 6,0
+ground.type = low
+ground.slidetime = 27
+ground.hittime  = 27
+guard.hittime = 10
+ground.velocity = -0.2, -7
+air.velocity = -0.2, -7
+air.hittime  = 44
+fall.recover = 0
+air.fall = 1
+fall = 1
+envshake.time=9
+envshake.freq=60
+envshake.ampl=-4
+envshake.phase=90
+
+[State 330, 1]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+
+
+;---------------------------------------------------------------------------
+; Alpha Counter Bomb
+[Statedef 6001]
+type = S
+physics = N
+movetype = A
+ctrl = 0
+anim = 1125
+poweradd=0
+
+[State 0, EnvShake]
+type = EnvShake
+trigger1 = time=0
+time = 10
+freq = 120
+ampl = -12
+phase = 90
+
+[State 200, flower]
+type = PlaySnd
+trigger1 = time=0
+value = 5,17
+volume=200
+
+[State 0, Width]
+type = Width
+trigger1 = 1
+edge = 0,0
+player = 35,0
+;value = 0,0
+;ignorehitpause = 
+;persistent = 
+
+[State 330, 1]
+type = destroyself
+trigger1 = animtime = 0
+
+
+;---------------------------------------------------------------------------
 ; Override common states (use same number to override) :
 ;---------------------------------------------------------------------------
 

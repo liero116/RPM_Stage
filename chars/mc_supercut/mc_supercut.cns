@@ -1030,10 +1030,20 @@ value = F29,5
 volume = 255
 channel = -1
 
-[State 0, PowerAdd]
-type = PowerAdd
+;[State 0, PowerAdd]
+;type = PowerAdd
+;trigger1 = time = 0
+;value = -1000
+
+[State 3050, Super A]
+type = SuperPause
 trigger1 = time = 0
-value = -1000
+pos = 0, 0
+anim = 2002
+sound = 20, 0
+darken = 0
+poweradd = -1000
+time=0
 
 ;--------------------------------
 

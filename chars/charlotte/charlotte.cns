@@ -963,7 +963,97 @@ type = SelfState
 trigger1 = (Vel y > 0) && (Pos y >= 0)
 value = 5100
 
+;---------------------------------------------------------------------------
+; Alpha Counter
+[Statedef 6000]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+anim = 6000
+poweradd=0
 
+;-EX FX--------------------------
+[State 0, EX Palfx]
+type = PalFX
+trigger1 = time = 0
+time = 20
+add = 30,200,-255
+mul = 256,256,256
+sinadd = 30,200,-255,5
+invertall = 0
+color = 0
+
+[State 0, EX sound]
+type = PlaySnd
+trigger1 = time = 0
+value = F29,5
+volume = 255
+channel = -1
+
+;[State 0, PowerAdd]
+;type = PowerAdd
+;trigger1 = time = 0
+;value = -1000
+
+[State 3050, Super A]
+type = SuperPause
+trigger1 = time = 0
+pos = 0, 0
+anim = 2002
+sound = 20, 0
+darken = 0
+poweradd = -1000
+time=0
+
+;--------------------------------
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time=2
+value = 30,3
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = animelem = 6
+x = 15
+y = 0
+
+[State 210, 2]
+type = hitdef
+ground.cornerpush.veloff = -10
+fall.yvelocity = 0
+trigger1 = time=0
+attr = S, NA
+priority = 6,hit
+animtype  = light
+fall.animtype = back
+damage    = floor(fvar(13)*60),15
+guardflag = MA
+hitflag = MAF
+pausetime = 10,10
+sparkno = 1001
+sparkxy = (-10 - random%5), (-25 - random%15)
+hitsound   = 5,2
+guardsound = 6,0
+ground.type = low
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = 10
+ground.velocity = -1,-7
+air.velocity = -1,-7
+air.hittime  = 44
+fall.recover = 0
+air.fall =1
+fall =1
+
+[State 330, 1]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
 
 [statedef -2]
 

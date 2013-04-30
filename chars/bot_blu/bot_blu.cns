@@ -2137,6 +2137,12 @@ value = 400
 elem = 4
 ctrl = 0
 
+;[State 400]
+;type = Changestate
+;trigger1 = enemy, stateno = 6000
+;value = 130
+;ctrl = 1
+
 [State 400]
 type = Changestate
 trigger1 = Animtime = 0
