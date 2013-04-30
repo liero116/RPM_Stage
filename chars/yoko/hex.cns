@@ -1081,7 +1081,7 @@ fall.yvelocity = 0
 ;trigger1 = var(7)<4
 trigger1 = animelem = 6
 attr = S, NA
-damage = floor(fvar(13)*30),5
+damage = floor(fvar(13)*75),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1110,7 +1110,7 @@ fall.yvelocity = 0
 ;trigger1 = var(7)<4
 trigger1 = AnimElem = 9
 attr = S, NA
-damage = floor(fvar(13)*30),5
+damage = floor(fvar(13)*75),5
 animtype = Light
 guardflag = MA
 hitflag = MAF

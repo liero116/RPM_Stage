@@ -870,7 +870,7 @@ ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
 guard.dist = 175
 trigger1 = animelem = 6
 attr = S, NA
-damage = floor(fvar(13)*30),5
+damage = floor(fvar(13)*75),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -899,7 +899,7 @@ guard.dist = 175
 trigger1 = p2statetype != A
 trigger1 = AnimElem = 10
 attr = S, NA
-damage = floor(fvar(13)*30),5
+damage = floor(fvar(13)*75),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
