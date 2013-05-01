@@ -2249,7 +2249,7 @@ keyctrl = 0
 [State 0, AfterImage]
 type = AfterImage
 trigger1 =time=0
-time = 190
+time = 132
 palcolor = 256
 palbright = 30,30,30
 palcontrast = 120,120,120

@@ -3039,7 +3039,7 @@ trigger1 = statetype = S
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 210
-trigger3 = stateno = 200
+trigger3 = stateno = 200 || stateno = 400
 trigger3 = movecontact
 
 [State -1, Strong 230]

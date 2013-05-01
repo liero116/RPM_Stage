@@ -2175,7 +2175,7 @@ trigger1=1
 type = ChangeState
 value = 1310
 triggerall = var(27) = 0
-triggerall = command = "421EX"
+triggerall = command = "22EX"
 triggerall = statetype != A
 triggerall = power >= 500 
 trigger1 = ctrl || (stateno = 101 && time >= 2)
