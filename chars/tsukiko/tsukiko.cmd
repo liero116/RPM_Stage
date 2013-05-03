@@ -661,7 +661,7 @@ buffer.time=1
 
 [command]
 name = "grab"
-command = a+x
+command = a+b
 time=1
 buffer.time=1
 
