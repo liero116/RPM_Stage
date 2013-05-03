@@ -722,7 +722,7 @@ time=1
 
 [command]
 name = "throw"
-command = a+x
+command = a+b
 time=1
 buffer.time=1
 

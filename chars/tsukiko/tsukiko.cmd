@@ -649,7 +649,7 @@ time=1
 
 [command]
 name = "throw"
-command = a+x
+command = a+b
 time=1
 buffer.time=1
 
@@ -1962,6 +1962,8 @@ triggerall = power>=1000 || var(40) = 1
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2movetype=H && stateno!=3000
 trigger2 = stateno!=[3100,3125]
+trigger3 = stateno = [200,499]
+trigger3 = movecontact
 
 ;---------------------------------------------------------------------------
 [State -1, 623 C Rising Wind]
@@ -1975,6 +1977,8 @@ trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = p2movetype=H
 trigger2 = stateno!=3100
 trigger2 = stateno!=[3000,3125]
+trigger3 = stateno = [200,499]
+trigger3 = movecontact
 
 ;===========================================================================
 [State -1, ]
@@ -2035,7 +2039,7 @@ trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 1230
 trigger3 = stateno = 210 || stateno = 230
 trigger3 = movecontact
-trigger4 = stateno = 400 || stateno = 410
+trigger4 = stateno = [400,499]
 trigger4 = movecontact
 trigger5 = stateno = 600 || stateno = 610  || stateno = 630
 trigger5 = movecontact
@@ -2060,7 +2064,7 @@ trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1200,1230]
 trigger3 = stateno = 210 || stateno = 230
 trigger3 = movecontact
-trigger4 = stateno = 400 || stateno = 410
+trigger4 = stateno = [400,499]
 trigger4 = movecontact
 trigger5 = stateno = 600 || stateno = 610  || stateno = 630
 trigger5 = movecontact
@@ -2077,7 +2081,7 @@ trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1200,1230]
 trigger3 = stateno = 210 || stateno = 230
 trigger3 = movecontact
-trigger4 = stateno = 400 || stateno = 410
+trigger4 = stateno = [400,499]
 trigger4 = movecontact
 trigger5 = stateno = 600 || stateno = 610  || stateno = 630
 trigger5 = movecontact
@@ -2095,7 +2099,7 @@ trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != [1200,1230]
 trigger3 = stateno = 210 || stateno = 230
 trigger3 = movecontact
-trigger4 = stateno = 400 || stateno = 410
+trigger4 = stateno = [400,499]
 trigger4 = movecontact
 trigger5 = stateno = 600 || stateno = 610  || stateno = 630
 trigger5 = movecontact
@@ -2115,12 +2119,12 @@ trigger2 = stateno != [1000,1020]
 trigger3 = stateno = [200,499]
 trigger3 = movecontact
 
-[State -1, 236 B Grab]
+[State -1, 236 B/EX Grab]
 type = ChangeState
 value = 1010
 triggerall = var(27) = 2
 triggerall = !(ishelper)
-triggerall = command = "236B"
+triggerall = command = "236B" || (command = "236EX" && power >= 500)
 triggerall = statetype != A
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )

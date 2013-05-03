@@ -649,7 +649,7 @@ time=1
 
 [command]
 name = "throw"
-command = a+x
+command = a+b
 time=1
 buffer.time=1
 
@@ -1791,6 +1791,7 @@ trigger3 = stateno != [3000,3999]
 trigger3 = stateno != [20000,29999]
 trigger3 = stateno != [1202,1282]
 trigger3 = stateno != [1262,1264]
+trigger3 = stateno != [30000,39999]
 trigger3 = movehit
 trigger4 = stateno = 23214
 trigger4 = p2movetype = H
