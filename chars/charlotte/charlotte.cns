@@ -1072,49 +1072,14 @@ type = removeexplod
 trigger1 = roundstate=3
 id = 191002
 
-;[state 190, decimal-hex]
-;type = varset
-;triggerall = teammode = simul
-;triggerall = stateno = 4512  
-;triggerall = partner, stateno = 192
-;triggerall = partner,var(28) = 1
-;trigger1 = partner,command = "up" 
-;trigger1 = var(27)=2
-;v=27
-;value = 0
-;
-;[state 190, decimal-binary]
-;type = varset
-;triggerall = teammode = simul
-;triggerall = stateno = 4512 
-;triggerall = partner, stateno = 192
-;triggerall = partner,var(28) = 1
-;trigger1 = partner,command = "down" 
-;trigger1 = var(27)=2
-;v=27
-;value = 1
-;
-;[state 190, binary-decimal]
-;type = varset
-;triggerall = teammode = simul
-;triggerall = stateno = 4512 
-;triggerall = partner, stateno = 192
-;triggerall = partner,var(28) = 1
-;trigger1 = partner,command = "up" 
-;trigger1 = var(27)=1
-;v=27
-;value = 2
-;
-;[state 190, hex-decimal]
-;type = varset
-;triggerall = teammode = simul
-;triggerall = stateno = 4512 
-;triggerall = partner, stateno = 192
-;triggerall = partner,var(28) = 1
-;trigger1 = partner,command = "down" 
-;trigger1 = var(27)=0
-;v=27
-;value = 2
+;===== ATTACK WIDTH =====
+;========================
+
+[State 0, Width]
+type = Width
+trigger1 = movetype = A
+edge = 0,0
+player = ifelse(enemy,backedgebodydist < 30,25,10),0
 
 ;===== COUNTER CHECK =====
 ;==========================

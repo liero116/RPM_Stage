@@ -1190,6 +1190,15 @@ type = removeexplod
 trigger1 = roundstate=3
 id = 191002
 
+;===== ATTACK WIDTH =====
+;========================
+
+[State 0, Width]
+type = Width
+trigger1 = movetype = A
+edge = 0,0
+player = ifelse(enemy,backedgebodydist < 30,25,10),0
+
 ;===== COUNTER CHECK =====
 ;==========================
 
