@@ -911,7 +911,7 @@ id = 191002
 type = Width
 trigger1 = movetype = A && stateno != 800
 edge = 0,0
-player = ifelse(enemy,backedgebodydist < 30,25,10),0
+player = ifelse(enemy,backedgebodydist < 30,10,5),0
 
 ;===== COUNTER CHECK =====
 ;==========================

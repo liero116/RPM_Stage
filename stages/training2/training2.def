@@ -1,4 +1,4 @@
-﻿[Info]
+[Info]
 name = "TRAINING STAGE"
 
 ;--------------------------------------------------------
@@ -16,7 +16,7 @@ tension = 30
 ;--------------------------------------------------------
 [PlayerInfo]
 p1startx = -70        
-p1starty = 0           
+p1starty = 0          
 p1startz = 0           
 p1facing = 1         
 
@@ -51,6 +51,7 @@ resetBG = 1
 HIRES = 1
 xscale = 0.245;0.20
 yscale = 0.245;0.20
+;localcoord = 1280, 720
 
 ;--------------------------------------------------------
 [Shadow]
@@ -70,7 +71,7 @@ bgvolume = 255
 
 ;========================================================
 ;--------------------------------------------------------
-; Background definition
+; Background deftion
 ;-------------------------------------
 ; Main background definition
 [BGdef]
@@ -82,10 +83,10 @@ debugbg = 0
 type  = parallax
 spriteno = 0,1
 start = 0,0
-delta = 2,2
+delta = 1.5,2
 ;xscale = 3,1
 width = 3000,4400
-yscalestart = 55
+yscalestart = 150
 yscaledelta = 0
 trans=addalpha
 alpha=256,0
@@ -95,7 +96,7 @@ alpha=256,0
 type  = normal
 spriteno = 0,2
 start = 0,255
-delta = 1.98,2
+delta = 1.48,2
 xscale = 1,1
 yscalestart = 100
 yscaledelta = 0.2
@@ -107,7 +108,7 @@ alpha=256,0
 type  = normal
 spriteno = 0,3
 start = 0,255
-delta = 1.98,2
+delta = 1.48,2
 xscale = 1,1
 yscalestart = 100
 yscaledelta = 0.2
