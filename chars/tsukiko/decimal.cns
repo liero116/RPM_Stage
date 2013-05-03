@@ -1028,7 +1028,7 @@ hitcountpersist=1
 type = varAdd
 triggerall = p2statetype != S && p2statetype != C
 trigger1 = movehit = 1
-fvar(20)=0.10
+fvar(20)=0.05
 ignorehitpause = 1
 persistent = 0
 
@@ -1684,6 +1684,14 @@ triggerall = var(40) = 0
 trigger1 = time = 0
 value = 50
 
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.025
+ignorehitpause = 1
+persistent = 0
+
 [State 0, AssertSpecial]
 type = AssertSpecial
 trigger1 = 1
@@ -1750,36 +1758,36 @@ air.fall=1
 p2facing=-1
 ;numhits=0
 
-[State 200, 1]
-type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-fall.yvelocity = 0
-trigger1 = enemy,var(50)=1
-trigger1 = time=0
-attr = S, NA
-damage = 0,0
-animtype = Light
-fall.animtype = back
-guardflag = MA
-hitflag = MAFD
-priority = 5, Hit
-pausetime = 6, 6
-sparkno = 2000
-sparkxy = -10, -50 ; = -10, -80
-hitsound = 5, 1
-guardsound = 6, 0
-ground.type = Low
-ground.slidetime = 20
-ground.hittime  = 20
-ground.velocity = -4,-3
-airguard.velocity = -.1,-.8
-air.type = Low
-air.velocity = -4,-3
-air.hittime = 35
-p2stateno=106099
-fall.recover = 0
-;p1stateno=5050
-;numhits=0
+;[State 200, 1]
+;type = hitdef 
+;ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+;fall.yvelocity = 0
+;trigger1 = enemy,var(50)=1
+;trigger1 = time=0
+;attr = S, NA
+;damage = 0,0
+;animtype = Light
+;fall.animtype = back
+;guardflag = MA
+;hitflag = MAFD
+;priority = 5, Hit
+;pausetime = 6, 6
+;sparkno = 2000
+;sparkxy = -10, -50 ; = -10, -80
+;hitsound = 5, 1
+;guardsound = 6, 0
+;ground.type = Low
+;ground.slidetime = 20
+;ground.hittime  = 20
+;ground.velocity = -4,-3
+;airguard.velocity = -.1,-.8
+;air.type = Low
+;air.velocity = -4,-3
+;air.hittime = 35
+;p2stateno=106099
+;fall.recover = 0
+;;p1stateno=5050
+;;numhits=0
 
 [State 0, CtrlSet]
 type = CtrlSet
@@ -1813,6 +1821,14 @@ triggerall = fvar(7) = 0
 triggerall = var(40) = 0
 trigger1 = time = 0
 value = 70
+
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.025
+ignorehitpause = 1
+persistent = 0
 
 [State 0, AssertSpecial]
 type = AssertSpecial
@@ -1878,35 +1894,35 @@ fall=1
 air.fall=1
 ;numhits=0
 
-[State 200, 1]
-type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-fall.yvelocity = 0
-trigger1 = enemy,var(50)=2
-trigger1 = time=0
-attr = S, NA
-damage = 0,0
-animtype = Light
-fall.animtype = back
-guardflag = MA
-hitflag = MAFD
-priority = 5, Hit
-pausetime = 6, 6
-sparkno = 2000
-sparkxy = -10, -50 ; = -10, -80
-hitsound = 5, 1
-guardsound = 6, 0
-ground.type = Low
-ground.slidetime = 20
-ground.hittime  = 20
-ground.velocity = 4
-airguard.velocity = -.1,-.8
-air.type = Low
-air.velocity = 4
-air.hittime = 35
-p2stateno=106099
-fall.recover = 0
-;numhits=0
+;[State 200, 1]
+;type = hitdef 
+;ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+;fall.yvelocity = 0
+;trigger1 = enemy,var(50)=2
+;trigger1 = time=0
+;attr = S, NA
+;damage = 0,0
+;animtype = Light
+;fall.animtype = back
+;guardflag = MA
+;hitflag = MAFD
+;priority = 5, Hit
+;pausetime = 6, 6
+;sparkno = 2000
+;sparkxy = -10, -50 ; = -10, -80
+;hitsound = 5, 1
+;guardsound = 6, 0
+;ground.type = Low
+;ground.slidetime = 20
+;ground.hittime  = 20
+;ground.velocity = 4
+;airguard.velocity = -.1,-.8
+;air.type = Low
+;air.velocity = 4
+;air.hittime = 35
+;p2stateno=106099
+;fall.recover = 0
+;;numhits=0
 
 [State 0, Turn]
 type = Turn
@@ -1946,6 +1962,14 @@ triggerall = fvar(7) = 0
 triggerall = var(40) = 0
 trigger1 = time = 0
 value = 80
+
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.025
+ignorehitpause = 1
+persistent = 0
 
 [State 0, AssertSpecial]
 type = AssertSpecial
@@ -2635,36 +2659,36 @@ fall=1
 air.fall=1
 fall.recover = 0
 
-[State 200, 1]
-type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
-fall.yvelocity = 0
-trigger1 = AnimElem = 8
-trigger2 = AnimElem = 12
-attr = S, NA
-damage = floor(fvar(13)*30),5
-animtype = Light
-fall.animtype = back
-guardflag = MA
-hitflag = MAFD
-priority = 5, Hit
-pausetime = 5,5
-sparkno = 2
-sparkxy = -10, -70 ; = -10, -80
-hitsound = 5, 1
-guardsound = 6, 0
-ground.type = Low
-ground.slidetime = 25
-ground.hittime  = 25
-ground.velocity = -3.5,-2
-guard.velocity = -6
-airguard.velocity = -.1,-.8
-air.type = Low
-air.velocity = -3.5,-2
-air.hittime = 35
-fall=1
-air.fall=1
-fall.recover = 0
+;[State 200, 1]
+;type = hitdef 
+;ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+;fall.yvelocity = 0
+;trigger1 = AnimElem = 8
+;trigger2 = AnimElem = 12
+;attr = S, NA
+;damage = floor(fvar(13)*30),5
+;animtype = Light
+;fall.animtype = back
+;guardflag = MA
+;hitflag = MAFD
+;priority = 5, Hit
+;pausetime = 5,5
+;sparkno = 2
+;sparkxy = -10, -70 ; = -10, -80
+;hitsound = 5, 1
+;guardsound = 6, 0
+;ground.type = Low
+;ground.slidetime = 25
+;ground.hittime  = 25
+;ground.velocity = -3.5,-2
+;guard.velocity = -6
+;airguard.velocity = -.1,-.8
+;air.type = Low
+;air.velocity = -3.5,-2
+;air.hittime = 35
+;fall=1
+;air.fall=1
+;fall.recover = 0
 
 [State 200, 1]
 type = hitdef 

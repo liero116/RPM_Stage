@@ -2228,7 +2228,7 @@ y = 1
 [State 0, PosAdd]
 type = PosAdd
 trigger1 = time = 17
-x = p2dist x + 20
+x = p2dist x - 20
 y = 0
 ;ignorehitpause = 
 ;persistent = 
@@ -2240,11 +2240,11 @@ y = 0
 ;y = 0
 ;ignorehitpause = 1
 
-[State 0, Turn]
-type = Turn
-trigger1 = time = 18
-;ignorehitpause = 
-;persistent = 
+;[State 0, Turn]
+;type = Turn
+;trigger1 = time = 18
+;;ignorehitpause = 
+;;persistent = 
 
 
 [State 1200, 2]

@@ -96,7 +96,7 @@ type    = S
 movetype= A
 physics = S
 juggle  = 2
-;poweradd= ifelse(fvar(17)=0,40,0)
+velset = 5,0
 ctrl = 0
 anim = 211
 priority=3
@@ -410,7 +410,7 @@ type    = C
 movetype= A
 physics = C
 juggle  = 2
-;poweradd= ifelse(fvar(17)=0,31,0)
+velset = 8,0
 ctrl = 0
 anim = 410
 sprpriority = 2
@@ -1584,11 +1584,6 @@ sprpriority = 2
 facep2=1
 hitcountpersist=1
 
-[State 0, VelSet]
-type = VelSet
-trigger1 = time = [5,17]
-x = 10
-
 [State 0, AfterImage]
 type = AfterImage
 trigger1 =time=0
@@ -1608,44 +1603,44 @@ value = 6,31
 volume=200
 channel=0
 
-[State 1000, to throw]
-type = ChangeState
-trigger1 = time>=2
-trigger1 = command="throw"
-value = 800
-ctrl = 0
-
-[State 1000, to hop fwd]
-type = ChangeState
-trigger1 = time>=2
-trigger1 = command="fwd"
-value = 1131
-ctrl = 0
-
-[State 1000, to hop back]
-type = ChangeState
-trigger1 = time>=2
-trigger1 = command="back"
-value = 1132
-ctrl = 0
+;[State 1000, to throw]
+;type = ChangeState
+;trigger1 = time>=2
+;trigger1 = command="throw"
+;value = 800
+;ctrl = 0
+;
+;[State 1000, to hop fwd]
+;type = ChangeState
+;trigger1 = time>=2
+;trigger1 = command="fwd"
+;value = 1131
+;ctrl = 0
+;
+;[State 1000, to hop back]
+;type = ChangeState
+;trigger1 = time>=2
+;trigger1 = command="back"
+;value = 1132
+;ctrl = 0
 
 [State 1000, to light]
 type = ChangeState
-trigger1 = time>=2
+trigger1 = time>=0
 trigger1 = command="a"
 value = 1135
 ctrl = 0
 
 [State 1000, to mid]
 type = ChangeState
-trigger1 = time>=2
+trigger1 = time>=0
 trigger1 = command="b"
 value = 1140
 ctrl = 0
 
 [State 1000, to strong]
 type = ChangeState
-trigger1 = time>=2
+trigger1 = time>=0
 trigger1 = command="c"
 value = 1144
 ctrl = 0
@@ -1826,7 +1821,7 @@ value = 100
 [State 0, VelSet]
 type = VelSet
 trigger1 = time = [0,3]
-x = 8
+x = 10
 
 [State 200, vox]
 type = PlaySnd
@@ -1892,8 +1887,9 @@ guardsound = 6, 0
 ground.type = high
 ground.slidetime = 25
 ground.hittime  = 25
-guard.hittime = 21
+guard.hittime = 23
 ground.velocity = -1,-10
+guard.velocity = -10
 airguard.velocity = -.1,-.8
 air.type = high
 air.velocity = -1 ,-10
@@ -2098,7 +2094,7 @@ value = 100
 [State 0, VelSet]
 type = VelSet
 trigger1 = time = [0,3]
-x = 8
+x = 10
 
 [State 0, AfterImage]
 type = AfterImage
@@ -2155,8 +2151,9 @@ guardsound = 6, 0
 ground.type = High
 ground.slidetime = 25
 ground.hittime  = 25
-guard.hittime = 13
+guard.hittime = 21
 ground.velocity = -1,30
+guard.velocity = -10
 airguard.velocity = -.5,-.8
 air.type = high
 air.velocity = -1.5,30
@@ -2352,7 +2349,7 @@ value = 100
 [State 0, VelSet]
 type = VelSet
 trigger1 = time = [0,3]
-x = 8
+x = 10
 
 [State 0, AfterImage]
 type = AfterImage
@@ -2621,7 +2618,7 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; == C Start
+; 46S Start
 [Statedef 3146]
 type    = S
 movetype= A
@@ -2654,11 +2651,11 @@ sound = 20, 0
 poweradd=-1000
 time=35
 
-[State 0, PosAdd]
-type = Posadd
-trigger1 = time = [8,99]
-x = 1000
-y = 0
+;[State 0, PosAdd]
+;type = Posadd
+;trigger1 = time = 4
+;x = p2dist x + 100
+;y = 0
 
 ; [State 0, VelSet]
 ; type = VelSet
@@ -2706,22 +2703,28 @@ physics = S
 juggle  = 0
 ;poweradd= ifelse(fvar(7)=0,78,0)
 ctrl = 0
-anim = 1147
+anim = 1148
 sprpriority = 2
 facep2=1
 hitcountpersist=1
 
 [State 0, TargetBind]
 type = TargetBind
+triggerall = movehit
 trigger1 = time=[0,1]
 time = 2
 id = -1
 pos = 100,-30
 
+[State 0, Turn]
+type = Turn
+trigger1 = time = 0
+ignorehitpause = 1
+
 [State 0, PosAdd]
 type = Posadd
-trigger1 = time = [5,99]
-x = 1000
+trigger1 = time = 0
+x = p2dist x - 80
 y = 0
 
 ;[state 0, damage scaling change]
@@ -2779,7 +2782,7 @@ guardsound = 6, 0
 ground.type = High
 ground.slidetime = 27
 ground.hittime  = 27
-guard.hittime = 24
+guard.hittime = 3
 ground.velocity = -10,0
 guard.velocity = -10
 airguard.velocity = -.5,-.8
@@ -2793,13 +2796,20 @@ envshake.freq=60
 envshake.ampl=-4
 envshake.phase=90
 fall.recover=0
+guard.dist = 9999
 ;ground.cornerpush.veloff =
 ;snap = 90,-5
 
 [State 230, 3]
 type = ChangeState
-trigger1 = animelem = 4
+trigger1 = animelem = 4 && movehit
 value = 3148
+ctrl = 1
+
+[State 230, 3]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
@@ -2811,22 +2821,28 @@ physics = S
 juggle  = 0
 ;poweradd= ifelse(fvar(7)=0,78,0)
 ctrl = 0
-anim = 1147
+anim = 1148
 sprpriority = 2
 facep2=1
 hitcountpersist=1
 
 [State 0, TargetBind]
 type = TargetBind
+triggerall = movehit
 trigger1 = time=[0,1]
 time = 2
 id = -1
 pos = 100,-30
 
+[State 0, Turn]
+type = Turn
+trigger1 = time = 0
+ignorehitpause = 1
+
 [State 0, PosAdd]
 type = Posadd
-trigger1 = time = [5,99]
-x = 1000
+trigger1 = time = 0
+x = p2dist x - 80
 y = 0
 
 ;[state 0, damage scaling change]
@@ -2916,16 +2932,22 @@ hitcountpersist=1
 
 [State 0, TargetBind]
 type = TargetBind
+triggerall = movehit
 trigger1 = time=[0,1]
 time = 2
 id = -1
 pos = 100,-30
 
-;[state 0, damage scaling change]
-;type = varset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
+[State 0, Turn]
+type = Turn
+trigger1 = time = 0
+ignorehitpause = 1
+
+[State 0, PosAdd]
+type = Posadd
+trigger1 = time = 0
+x = p2dist x - 80
+y = 0
 
 [state 0, damage counter set]
 type = varadd
