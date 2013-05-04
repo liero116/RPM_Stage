@@ -659,7 +659,7 @@ time=1
 
 [command]
 name = "throw"
-command = a+b
+command = y
 time=1
 buffer.time=1
 
