@@ -1545,7 +1545,7 @@ airguard.velocity = -.5,-.8
 air.type = High
 air.velocity = 0,-2.5
 air.hittime = 30
-snap =120,0
+snap =105,0
 
 [State 200, pull]
 type = hitdef 

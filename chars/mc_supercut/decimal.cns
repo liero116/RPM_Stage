@@ -1371,6 +1371,7 @@ ctrl = 1
 [state 600,5]
 type = changestate
 trigger1 = command = "back"
+trigger1 = time > 2
 value = 1008
 ctrl = 0
 

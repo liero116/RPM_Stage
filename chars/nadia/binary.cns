@@ -1675,7 +1675,7 @@ damage = floor(fvar(13)*30),5
 animtype = Light
 guardflag = MA
 hitflag = MAF
-priority = 2, Hit
+priority = 1, Miss
 pausetime = 10,10
 sparkno = 1000
 sparkxy = -10, -60 ; = -10, -26
@@ -3531,7 +3531,7 @@ fall.yvelocity = 0
 guard.dist = 999
 trigger1 = time=0
 attr = S, NA
-damage = floor(parent,fvar(13)*200),40
+damage = floor(parent,fvar(13)*250),40
 animtype = Light
 guardflag = MA
 hitflag = MAFD

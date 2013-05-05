@@ -540,7 +540,12 @@ hitcountpersist=1
 [State 0, VelSet]
 type = VelSet
 trigger1 = animelem = 4
-x = 6
+x = 16
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = animelem = 9
+x = -16
 
 [state 0, damage counter set]
 type = varadd
@@ -581,7 +586,7 @@ guardsound = 6,0
 ground.type = low
 ground.slidetime = 19
 ground.hittime  = 19
-guard.hittime = 16
+guard.hittime = 17
 ground.velocity = -8.0,0
 air.velocity = -1,-5.5
 air.type=low
@@ -1152,7 +1157,7 @@ trans=add
 
 [State 1000, 7]
 type = ChangeState
-trigger1 = command = "holdA" && time = 10
+trigger1 = command = "x" && time <= 10
 value = 1040
 ctrl = 0
 
@@ -1219,7 +1224,7 @@ trans=add
 
 [State 1000, 7]
 type = ChangeState
-trigger1 = command = "holdB" && time = 10
+trigger1 = command = "x" && time <= 10
 value = 1040
 ctrl = 0
 
@@ -1286,7 +1291,7 @@ trans=add
 
 [State 1000, 7]
 type = ChangeState
-trigger1 = command = "holdC" && time = 10
+trigger1 = command = "x" && time <= 10
 value = 1040
 ctrl = 0
 
@@ -1410,10 +1415,10 @@ sparkxy = 0,0
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
-ground.slidetime = 23
-ground.hittime  = 23
-guard.hittime = 20
-ground.velocity = -6,0
+ground.slidetime = 26
+ground.hittime  = 26
+guard.hittime = 23
+ground.velocity = -14,0
 airguard.velocity = -.1,-.8
 air.type = high
 air.velocity = -1,-4
@@ -1528,10 +1533,10 @@ sparkxy = 0,0
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
-ground.slidetime = 27
-ground.hittime  = 27
+ground.slidetime = 28
+ground.hittime  = 28
 guard.hittime = 26
-ground.velocity = -6,0
+ground.velocity = -14,0
 airguard.velocity = -.1,-.8
 air.type = high
 air.velocity = -1,-4
@@ -1642,10 +1647,10 @@ sparkxy = 0,0
 hitsound = 5, 1
 guardsound = 6, 0
 ground.type = high
-ground.slidetime = 31
-ground.hittime  = 31
-guard.hittime = 30
-ground.velocity = -6,0
+ground.slidetime = 32
+ground.hittime  = 32
+guard.hittime = 29
+ground.velocity = -14,0
 airguard.velocity = -.1,-.8
 air.type = high
 air.velocity = -1,-4
@@ -1861,7 +1866,7 @@ ground.type = High
 ground.slidetime = 19
 ground.hittime  = 19
 guard.hittime = 19
-ground.velocity = -2.0,-4.5
+ground.velocity = -2.0,-5.5
 down.velocity = -1.5,-3
 airguard.velocity = -.5,-.8
 air.type = high

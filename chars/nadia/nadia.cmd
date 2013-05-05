@@ -601,6 +601,24 @@ buffer.time=7
 ;time = 18
 
 [Command]
+name = "22A"
+command = ~D, U, a
+buffer.time=7
+;time = 18
+
+[Command]
+name = "22B"
+command = ~D, U, b
+buffer.time=7
+;time = 18
+
+[Command]
+name = "22C"
+command = ~D, U, c
+buffer.time=7
+;time = 18
+
+[Command]
 name = "66A"
 command = ~F, F, a
 buffer.time = 3

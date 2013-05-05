@@ -1270,7 +1270,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1363,7 +1363,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1410,7 +1410,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1452,7 +1452,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1515,7 +1515,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1593,7 +1593,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1672,7 +1672,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1741,7 +1741,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1818,7 +1818,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1889,7 +1889,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 
@@ -1942,7 +1942,7 @@ triggerall = !(ishelper)
 triggerall = !(enemynear,ishelper)
 triggerall = var(27) = 0
 triggerall = power >= 1000
-triggerall = moveguarded <= 4
+triggerall = moveguarded <= 1
 trigger1 = command = "x"
 ignorehitpause=1
 

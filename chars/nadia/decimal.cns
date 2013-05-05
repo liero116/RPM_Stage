@@ -1120,10 +1120,99 @@ pausemove=0
 ignorehitpause=0
 removeongethit=1
 
+;------------------------------------
+
+[State 0, 214A anim skip 0]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 1, = 1
+value = 1000 
+elem = 2
+persistent = 0
+
+[State 0, 214A anim skip 1]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 2, = 1
+value = 1000 
+elem = 3
+persistent = 0
+
+[State 0, 214A anim skip 2]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 3, = 1
+value = 1000 
+elem = 4
+persistent = 0
+
+[State 0, 214A anim skip 3]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 4, = 1
+value = 1000 
+elem = 5
+persistent = 0
+
+[State 0, 214A anim skip 4]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 5, = 1
+value = 1000 
+elem = 6
+persistent = 0
+
+;------------------------------------
+;------------------------------------
+
+[State 0, 214B anim skip 0]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 1, = 2
+value = 1000 
+elem = 2
+persistent = 0
+
+[State 0, 214B anim skip 1]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 2, = 2
+value = 1000 
+elem = 3
+persistent = 0
+
+[State 0, 214B anim skip 2]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 3, = 2
+value = 1000 
+elem = 4
+persistent = 0
+
+[State 0, 214B anim skip 3]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 4, = 2
+value = 1000 
+elem = 5
+persistent = 0
+
+[State 0, 214B anim skip 4]
+type = ChangeAnim
+triggerall = var(25) = 0 
+trigger1 = animelem = 5, = 2
+value = 1000 
+elem = 6
+persistent = 0
+
+;------------------------------------
+
 [State 0, VelSet]
 type = VelSet
 trigger1 = animelem = 7
-x = ifelse(abs(p2bodydist X) > 70,(25 + (var(25) * 10)),10)
+trigger2 = animelem = 8
+trigger3 = animelem = 9
+x = ifelse(abs(p2bodydist X) > 70,(1 + (var(25) * 4)),7)
 
 [State 1000, hit]
 type = hitdef 
@@ -1146,7 +1235,7 @@ ground.slidetime = 23
 ground.hittime  = 23
 guard.hittime = 15
 ground.velocity = -5 - (var(25) * 1),-4 - (var(25) * 0)
-guard.velocity = -30
+guard.velocity = -15
 airguard.velocity = -.5,-.8
 fall = 1
 air.fall = 1
@@ -2595,7 +2684,7 @@ ctrl = 1
 ; 214AT Jump Kick
 [Statedef 1500]
 type    = S
-movetype= A
+movetype= I
 physics = S
 juggle  = 4
 ;poweradd= ifelse(power!=3000,ifelse(fvar(17)=0,80,0),0)
@@ -2848,6 +2937,16 @@ x = 0
 y = 0
 ignorehitpause = 1
 persistent = 1
+
+[State 0, Width]
+type = Width
+trigger1 = 1;time = [0,24]
+edge = 0,0
+player = 40,15
+;value = 0,0
+;ignorehitpause = 
+;persistent = 
+
 
 [State 200, first hit]
 type = hitdef 

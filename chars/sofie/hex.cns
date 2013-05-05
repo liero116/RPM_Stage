@@ -98,7 +98,7 @@ physics = S
 juggle  = 10
 ;poweradd= ifelse(fvar(7)=0,43,0)
 ctrl = 0
-velset = 11,0
+velset = 15,0
 anim = 243
 sprpriority = -1
 facep2=1
@@ -382,7 +382,7 @@ type    = C
 movetype= A
 physics = C
 juggle  = 6
-;poweradd= ifelse(fvar(7)=0,41,0)
+velset = 8,0
 ctrl = 0
 anim = 402
 sprpriority = 2
@@ -1474,7 +1474,7 @@ movetype= A
 physics = S
 juggle  = 4
 ;poweradd= ifelse(fvar(7)=0,80,0)
-;velset = 0,0
+velset = 9,0
 anim = 10060
 ctrl = 0
 sprpriority = 2

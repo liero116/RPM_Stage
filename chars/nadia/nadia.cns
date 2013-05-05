@@ -851,6 +851,13 @@ ctrl = 1
 
 [statedef -2]
 
+[State 0, ChangeState]
+type = ChangeState
+trigger1 = command = "22A" || command = "22B" || command = "22C" || command = "22EX"
+trigger1 = stateno = 40
+value = 1300
+ctrl = 0
+
 [state -2, remove lock bar]
 type = removeexplod
 trigger1 = roundstate=3
