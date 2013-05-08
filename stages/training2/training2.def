@@ -79,6 +79,30 @@ spr = stages/training2/training2.sff
 debugbg = 0
 
 ;----------
+[BG Light]
+type  = normal
+spriteno = 10,1
+start = 0,0
+delta = 2,2
+layerno = 1
+xscale = 10,10
+yscalestart = 100
+yscaledelta = 0.2
+trans=add
+
+;----------
+[BG Sky]
+type  = normal
+spriteno = 0,2
+start = 0,255
+delta = 1.5,2
+xscale = 1,1
+yscalestart = 100
+yscaledelta = 0.2
+trans=addalpha
+alpha=256,0
+
+;----------
 [BG Floor]
 type  = parallax
 spriteno = 0,1
@@ -92,25 +116,47 @@ trans=addalpha
 alpha=256,0
 
 ;----------
-[BG Sky]
-type  = normal
-spriteno = 0,2
-start = 0,255
-delta = 1.48,2
+[BG Floor R]
+type  = parallax
+spriteno = 0,4
+start = 0,0
+delta = 1.5,2
 xscale = 1,1
-yscalestart = 100
-yscaledelta = 0.2
-trans=addalpha
-alpha=256,0
+width = 3000,4400
+yscalestart = 150
+yscaledelta = 0
+trans=none
+mask =1
+alpha=256,256
 
 ;----------
-[BG Sky]
-type  = normal
-spriteno = 0,3
-start = 0,255
-delta = 1.48,2
+[BG Floor C]
+type  = parallax
+spriteno = 0,5
+start = 0,0
+delta = 1.5,2
 xscale = 1,1
-yscalestart = 100
-yscaledelta = 0.2
-trans=addalpha
-alpha=256,0
+width = 3000,4400
+yscalestart = 150
+yscaledelta = 0
+trans=none
+mask =1
+alpha=256,256
+
+;----------
+[BG Floor L]
+type  = parallax
+spriteno = 0,3
+start = 0,0
+delta = 1.5,2
+xscale = 1,1
+width = 3000,4400
+yscalestart = 150
+yscaledelta = 0
+trans=none
+mask =1
+alpha=256,256
+
+
+
+

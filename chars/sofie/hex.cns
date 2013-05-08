@@ -230,7 +230,7 @@ ground.type = low
 ground.slidetime = 19
 ground.hittime  = 19
 guard.hittime = 17
-ground.velocity = -4,0
+ground.velocity = -8,0
 air.type = high
 air.fall = 1
 air.velocity = -3,-5
@@ -1211,7 +1211,7 @@ volume=50
 
 [State 1000, 5]
 type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-8,0)
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,-3)
 fall.yvelocity = 0
 trigger1 = animelem=4
 attr = S, SA
@@ -1235,7 +1235,7 @@ air.hittime = 25
 
 [State 1000, 5]
 type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-8,0)
+ground.cornerpush.veloff = ifelse(p2statetype = A,-4,-3)
 fall.yvelocity = 0
 trigger1 = animelem=8
 attr = S, SA

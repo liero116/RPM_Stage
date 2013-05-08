@@ -3020,7 +3020,7 @@ trigger1=1
 type = ChangeState
 value = 602
 triggerall = var(27) = 0
-;triggerall = command != "holddown"
+triggerall = command != "holddown"
 triggerall = command = "a" || command = "y"
 trigger1 = statetype = A
 trigger1 = ctrl || (stateno = 101 && time >= 2)
@@ -3034,7 +3034,7 @@ trigger3 = movecontact
 type = ChangeState
 value = 612
 triggerall = var(27) = 0
-;triggerall = command != "holddown"
+triggerall = command != "holddown"
 triggerall = command = "b"
 trigger1 = statetype = A
 trigger1 = ctrl || (stateno = 101 && time >= 2)
@@ -3058,7 +3058,7 @@ trigger3 = p2stateno != [11000,11010]
 trigger3 = stateno = 612
 trigger3 = movecontact
 
-[State -1, Down Strong 652]
+[State -1, Dive Kick 652]
 type = ChangeState
 value = 652
 triggerall = var(27) = 0
