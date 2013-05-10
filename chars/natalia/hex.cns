@@ -551,7 +551,7 @@ hitcountpersist=1
 type = varAdd
 triggerall = p2statetype != S && p2statetype != C
 trigger1 = movehit = 1
-fvar(20)=0.10
+fvar(20)=0.08
 ignorehitpause = 1
 persistent = 0
 
