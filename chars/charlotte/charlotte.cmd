@@ -264,25 +264,25 @@ buffer.time=3
 
 [Command]
 name = "46S"
-command = ~55$B, $F, a+b+c
+command = ~40$B, $F, a+b+c
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "46S"
-command = ~55$B, $F, z
+command = ~40$B, $F, z
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "28S"
-command = ~55$D, $U, a+b+c
+command = ~40$D, $U, a+b+c
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "28S"
-command = ~55$D, $U, z
+command = ~40$D, $U, z
 buffer.time=3
 ;time = 18
 
@@ -370,37 +370,37 @@ buffer.time=3
 
 [Command]
 name = "46EX"
-command = ~55$B, $F, a+b
+command = ~40$B, $F, a+b
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "46EX"
-command = ~55$B, $F, b+c
+command = ~40$B, $F, b+c
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "46EX"
-command = ~55$B, $F, a+c
+command = ~40$B, $F, a+c
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "28EX"
-command = ~55$D, $U, a+b
+command = ~40$D, $U, a+b
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "28EX"
-command = ~55$D, $U, b+c
+command = ~40$D, $U, b+c
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "28EX"
-command = ~55$D, $U, a+c
+command = ~40$D, $U, a+c
 buffer.time=3
 ;time = 18
 
@@ -559,37 +559,37 @@ buffer.time=3
 
 [Command]
 name = "46A"
-command = ~55$B, $F, a
+command = ~40$B, $F, a
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "46B"
-command = ~55$B, $F, b
+command = ~40$B, $F, b
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "46C"
-command = ~55$B, $F, c
+command = ~40$B, $F, c
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "28A"
-command = ~55$D, $U, a
+command = ~40$D, $U, a
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "28B"
-command = ~55$D, $U, b
+command = ~40$D, $U, b
 buffer.time=3
 ;time = 18
 
 [Command]
 name = "28C"
-command = ~55$D, $U, c
+command = ~40$D, $U, c
 buffer.time=3
 ;time = 18
 

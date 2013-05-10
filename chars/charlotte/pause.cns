@@ -42,346 +42,384 @@ persistent = 1
 ;---   HEX  ATTACK SET   ---------------------------------------------------
 ;---------------------------------------------------------------------------
 
-[State 0, attack hex]
+[State 0, HEX 623AT]
 type = ChangeAnim
-trigger1 = parent,var(27) = 0
-trigger1 = parent,command = "623A"
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "623A" || parent, command = "623B" || parent,command = "623C" || parent,command = "623EX"
 value = 1251
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[State 0, attack hex]
+[State 0, HEX 46AT]
 type = ChangeAnim
-trigger1 = parent,var(27) = 0
-trigger1 = parent,command = "623B"
-value = 1251
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack hex]
-type = ChangeAnim
-trigger1 = parent,var(27) = 0
-trigger1 = parent,command = "623C"
-value = 1251
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack hex]
-type = ChangeAnim
-trigger1 = parent,var(27) = 0
-trigger1 = parent,command = "623EX"
-value = 1251
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack hex]
-type = ChangeAnim
-trigger1 = parent,var(27) = 0
-trigger1 = parent,command = "236A"
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "46A" || parent,command = "46B" || parent,command = "46C" || parent,command = "46EX"
 value = 1100
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[State 0, attack hex]
+[State 0, HEX 214A]
 type = ChangeAnim
-trigger1 = parent,var(27) = 0
-trigger1 = parent,command = "236B"
-value = 1100
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack hex]
-type = ChangeAnim
-trigger1 = parent,var(27) = 0
-trigger1 = parent,command = "236C"
-value = 1100
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack hex]
-type = ChangeAnim
-trigger1 = parent,var(27) = 0
-trigger1 = parent,command = "236EX"
-value = 1100
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[state 0, attack hex fx 236ABC/EX]
-type=explod
-trigger1 = parent,var(27) = 0
-trigger1 = anim = 1100 && animelem = 4
-anim = 1101
-ID = 1101
-scale = 0.35,0.35
-postype = p1
-pos = 50,-50
-bindtime = -1
-removetime = 30
-pausemovetime = 999999
-sprpriority = 7
-ontop = 1
-ignorehitpause = 0
-persistent = 1
-
-[State 0, attack hex]
-type = ChangeAnim
-trigger1 = parent,var(27) = 0
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
 trigger1 = parent,command = "214A"
 value = 1230
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[state 0, attack hex fx 214A]
-type=explod
-trigger1 = parent,var(27) = 0
-trigger1 = anim = 10202 && animelem = 8
-anim = 10252
-ID = 10252
-scale = 0.35,0.35
-postype = p1
-pos = 0,0
-bindtime = -1
-removetime = -2
-pausemovetime = 999999
-sprpriority = 7
-ontop = 1
-ignorehitpause = 0
-persistent = 1
-
-[State 0, attack hex]
+[State 0, HEX 214B]
 type = ChangeAnim
-trigger1 = parent,var(27) = 0
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
 trigger1 = parent,command = "214B"
-value = 1230
+value = 1231
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[state 0, attack hex fx 214B]
-type=explod
-trigger1 = parent,var(27) = 0
-trigger1 = anim = 10302 && animelem = 3
-anim = 10362
-ID = 10362
-scale = 0.35,0.35
-postype = p1
-pos = 0,0
-bindtime = -1
-removetime = -2
-pausemovetime = 999999
-sprpriority = 7
-ontop = 1
-ignorehitpause = 0
-persistent = 1
-
-[State 0, attack hex]
+[State 0, HEX 214C]
 type = ChangeAnim
-trigger1 = parent,var(27) = 0
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
 trigger1 = parent,command = "214C"
-value = 1230
+value = 1232
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[state 0, attack hex fx 214C - 1]
-type=explod
-trigger1 = parent,var(27) = 0
-trigger1 = anim = 10402 && animelem = 3
-anim = 10452
-ID = 10452
-scale = 0.35,0.35
-postype = p1
-pos = 0,0
-bindtime = -1
-removetime = -2
-pausemovetime = 999999
-sprpriority = 7
-ontop = 1
-ignorehitpause = 0
-persistent = 1
-
-[state 0, attack hex fx 214C - 2]
-type=explod
-trigger1 = parent,var(27) = 0
-trigger1 = anim = 10412 && animelem = 7
-anim = 10462
-ID = 10462
-scale = 0.35,0.35
-postype = p1
-pos = -30,0
-bindtime = -1
-removetime = -2
-pausemovetime = 999999
-sprpriority = 7
-ontop = 1
-ignorehitpause = 0
-persistent = 1
-
-[State 0, attack hex]
+[State 0, HEX 214EX]
 type = ChangeAnim
-trigger1 = parent,var(27) = 0
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
 trigger1 = parent,command = "214EX"
-value = 102020
+value = 1233
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[state 0, attack hex fx 214A]
-type=explod
-trigger1 = parent,var(27) = 0
-trigger1 = anim = 102020 && animelem = 2
-anim = 10252
-ID = 10252
-scale = 0.35,0.35
-postype = p1
-pos = 0,0
-bindtime = -1
-removetime = -2
-pausemovetime = 999999
-sprpriority = 7
-ontop = 1
-ignorehitpause = 0
+[State 0, HEX 5A]
+type = ChangeAnim
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "a"
+trigger1 = parent,command != "holddown" && parent,command != "holdup"
+value = 201
+elem = 1
+ignorehitpause = 1
 persistent = 1
 
+[State 0, HEX 5B]
+type = ChangeAnim
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "b"
+trigger1 = parent,command != "holddown" && parent,command != "holdup"
+value = 231
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, HEX 5C]
+type = ChangeAnim
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "c"
+trigger1 = parent,command != "holddown" && parent,command != "holdup"
+value = 262
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, HEX 2A]
+type = ChangeAnim
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "a"
+trigger1 = parent,command = "holddown" && parent,command != "holdup"
+value = 401
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, HEX 2B]
+type = ChangeAnim
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "b"
+trigger1 = parent,command = "holddown" && parent,command != "holdup"
+value = 412
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, HEX 2C]
+type = ChangeAnim
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "c"
+trigger1 = parent,command = "holddown" && parent,command != "holdup"
+value = 431
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, HEX 8A]
+type = ChangeAnim
+triggerall = anim = [40,49]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "a"
+value = 600
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, HEX 8B]
+type = ChangeAnim
+triggerall = anim = [40,49]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "b"
+value = 610
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, HEX 8C]
+type = ChangeAnim
+triggerall = anim = [40,49]
+triggerall = parent,var(27) = 0
+trigger1 = parent,command = "c"
+value = 630
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+;------------------------------------------------------------
 
 ;---------------------------------------------------------------------------
-;---   DECIMAL  ATTACK SET   -----------------------------------------------
+;---   DEC  ATTACK SET   ---------------------------------------------------
 ;---------------------------------------------------------------------------
 
-[State 0, attack decimal]
+[State 0, DEC 28AT]
 type = ChangeAnim
-trigger1 = parent,var(27) = 2
-trigger1 = parent,command = "623A"
+triggerall = anim != [1020,1040]
+;triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "28A" || parent, command = "28B" || parent,command = "28C" || parent,command = "28EX"
 value = 1050
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[State 0, attack decimal]
+[State 0, DEC 46AT]
 type = ChangeAnim
-trigger1 = parent,var(27) = 2
-trigger1 = parent,command = "623B"
-value = 1050
+triggerall = anim != [1020,1040]
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "46A" || parent,command = "46B" || parent,command = "46C" || parent,command = "46EX"
+value = 1100
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[State 0, attack decimal]
+[State 0, DEC 214A]
 type = ChangeAnim
-trigger1 = parent,var(27) = 2
-trigger1 = parent,command = "623C"
-value = 1050
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack decimal]
-type = ChangeAnim
-trigger1 = parent,var(27) = 2
-trigger1 = parent,command = "623EX"
-value = 1050
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack decimal]
-type = ChangeAnim
-trigger1 = parent,var(27) = 2
-trigger1 = parent,command = "236A"
-value = 1000
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack decimal]
-type = ChangeAnim
-trigger1 = parent,var(27) = 2
-trigger1 = parent,command = "236B"
-value = 1000
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack decimal]
-type = ChangeAnim
-trigger1 = parent,var(27) = 2
-trigger1 = parent,command = "236C"
-value = 1000
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[State 0, attack decimal]
-type = ChangeAnim
-trigger1 = parent,var(27) = 2
-trigger1 = parent,command = "236EX"
-value = 1000
-elem = 1
-ignorehitpause = 1
-persistent = 1
-
-[state 0, attack decimal fx 623ABC/EX]
-type=explod
-trigger1 = parent,var(27) = 2
-trigger1 = anim = 1000 && animelem = 1
-anim = 1211
-ID = 1211
-scale = 0.25,0.25
-postype = p1
-pos = 0,0
-bindtime = -1
-removetime = -2
-pausemovetime = 999999
-sprpriority = 7
-ontop = 1
-ignorehitpause = 0
-persistent = 1
-
-[State 0, attack decimal]
-type = ChangeAnim
-trigger1 = parent,var(27) = 2
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = anim != [1020,1022]
+triggerall = parent,var(27) = 2
 trigger1 = parent,command = "214A"
 value = 1020
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[State 0, attack decimal]
+[State 0, DEC 214B]
 type = ChangeAnim
-trigger1 = parent,var(27) = 2
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = anim != [1020,1022]
+triggerall = parent,var(27) = 2
 trigger1 = parent,command = "214B"
+value = 1021
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 214C]
+type = ChangeAnim
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = anim != [1020,1022]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "214C"
+value = 1022
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 214AT2]
+type = ChangeAnim
+triggerall = anim = [1020,1022]
+triggerall = animtime = 0
+trigger1 = parent,var(27) = 2
+;trigger1 = parent,command = "214A" || parent,command = "214B" || parent,command = "214C"
 value = 1030
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[State 0, attack decimal]
+[State 0, DEC 214AT3]
 type = ChangeAnim
+triggerall = anim = 1030
+triggerall = animtime = 0
+triggerall = time > 5
 trigger1 = parent,var(27) = 2
-trigger1 = parent,command = "214C"
+;trigger1 = parent,command = "214A" || parent,command = "214B" || parent,command = "214C"
 value = 1040
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[State 0, attack decimal]
+[State 0, DEC 214EX]
 type = ChangeAnim
-trigger1 = parent,var(27) = 2
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 2
 trigger1 = parent,command = "214EX"
-value = 1045
+value = 1233
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
+[State 0, DEC 5A]
+type = ChangeAnim
+triggerall = anim != [1020,1040]
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "a"
+trigger1 = parent,command != "holddown" && parent,command != "holdup"
+value = 200
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 5B]
+type = ChangeAnim
+triggerall = anim != [1020,1040]
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "b"
+trigger1 = parent,command != "holddown" && parent,command != "holdup"
+value = 210
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 5C]
+type = ChangeAnim
+triggerall = anim != [1020,1040]
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "c"
+trigger1 = parent,command != "holddown" && parent,command != "holdup"
+value = 230
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 2A]
+type = ChangeAnim
+triggerall = anim != [1020,1040]
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "a"
+trigger1 = parent,command = "holddown" && parent,command != "holdup"
+value = 401
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 2B]
+type = ChangeAnim
+triggerall = anim != [1020,1040]
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "b"
+trigger1 = parent,command = "holddown" && parent,command != "holdup"
+value = 412
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 2C]
+type = ChangeAnim
+triggerall = anim != [1020,1040]
+triggerall = anim != [40,49]
+triggerall = anim != [600,699]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "c"
+trigger1 = parent,command = "holddown" && parent,command != "holdup"
+value = 431
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 8A]
+type = ChangeAnim
+triggerall = anim != [1020,1040]
+triggerall = anim = [40,49]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "a"
+value = 600
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 8B]
+type = ChangeAnim
+triggerall = anim != [1020,1040]
+triggerall = anim = [40,49]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "b"
+value = 610
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DEC 8C]
+type = ChangeAnim
+triggerall = anim != [1020,1040]
+triggerall = anim = [40,49]
+triggerall = parent,var(27) = 2
+trigger1 = parent,command = "c"
+value = 630
+elem = 1
+ignorehitpause = 1
+persistent = 1
 ;---------------------------------------------------------------------------
 ;---   BINARY ATTACK SET   -------------------------------------------------
 ;---------------------------------------------------------------------------
@@ -609,6 +647,8 @@ type = PalFX
 trigger1 = parent,command = "623EX"
 trigger2 = parent,command = "214EX"
 trigger3 = parent,command = "236EX"
+trigger4 = parent,command = "46EX"
+trigger5 = parent,command = "28EX"
 time = 15
 add = 30,200,-255
 mul = 256,256,256
@@ -626,45 +666,158 @@ volume = 255
 channel = -1
 
 ;---------------------------------------------------------------------------
-;---   RESET   -------------------------------------------------------------
+;---   BASIC MOTIONS   -----------------------------------------------------
 ;---------------------------------------------------------------------------
 
-[State 0, reset hex]
+[State 0, STAND]
 type = ChangeAnim
-triggerall = parent,var(27) = 0
-triggerall = animtime = 0 
-trigger1  = anim = 1100
-trigger2  = anim = 1230
-trigger3  = anim = 1251
+;triggerall = parent,var(27) = 0
+trigger1 = animtime = 0
+trigger1 = anim != [400,499]
+trigger1 = anim != [600,699]
+trigger1 = anim != [40,46]
+trigger1 = anim != [20,21]
+trigger1 = anim = [12,99999999]
+trigger2 = anim = 20 && parent,command != "holdfwd"
+trigger3 = anim = 21 && parent,command != "holdback"
 value = 0
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[State 0, reset decimal]
+[State 0, WALK FWD]
 type = ChangeAnim
-triggerall = parent,var(27) = 2
-triggerall = animtime = 0 
-trigger1  = anim = 1000
-trigger2  = anim = 1020
-trigger3  = anim = 1030
-trigger4  = anim = 1040
-trigger5  = anim = 1050
-trigger6  = anim = 1045
-value = 2
+;triggerall = parent,var(27) = 0
+trigger1 = anim = [0,12]
+trigger1 = parent,command = "holdfwd"
+value = 20
 elem = 1
 ignorehitpause = 1
 persistent = 1
 
-[State 0, reset binary]
+[State 0, WALK BACK]
 type = ChangeAnim
-triggerall = parent,var(27) = 1
-triggerall = animtime = 0 
-trigger1  = anim = [200,99999999]
-value = 1
+;triggerall = parent,var(27) = 0
+trigger1 = anim = [0,12]
+trigger1 = parent,command = "holdback"
+value = 21
 elem = 1
 ignorehitpause = 1
 persistent = 1
+
+[State 0, ST-CROUCH TRANS]
+type = ChangeAnim
+;triggerall = parent,var(27) = 0
+trigger1 = anim = 0 ;|| anim = 20 || anim = 21
+trigger1 = parent,command = "holddown"
+value = 10
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, CROUCH]
+type = ChangeAnim
+;triggerall = parent,var(27) = 0
+trigger1 = anim = 10 && animtime = 0
+trigger1 = parent,command = "holddown" ;|| (parent,command = "holddown" && (parent,command = "holdfwd" || parent,command = "holdback"))
+trigger2 = anim = 11 && animtime = 0
+trigger3 = anim = [400,499]
+trigger3 = animtime = 0
+value = 11
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, CROUCH-ST]
+type = ChangeAnim
+;triggerall = parent,var(27) = 0
+trigger1 = anim = 10 && animtime = 0
+trigger1 = parent,command != "holddown"
+trigger2 = anim = 11
+trigger2 = parent,command != "holddown"
+value = 12
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, ST-JUMP TRANS]
+type = ChangeAnim
+;triggerall = parent,var(27) = 0
+trigger1 = anim = 0
+trigger1 = parent,command = "holdup"
+value = 40
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, JUMP]
+type = ChangeAnim
+;triggerall = parent,var(27) = 0
+trigger1 = anim = 40 && animtime = 0
+value = 41
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, JUMP POST ATK]
+type = ChangeAnim
+;triggerall = parent,var(27) = 0
+trigger1 = anim = [600,699]
+trigger1 = animtime = 0
+value = 41
+elem = 7
+ignorehitpause = 1
+persistent = 1
+
+[State 0, JUMP LAND]
+type = ChangeAnim
+;triggerall = parent,var(27) = 0
+trigger1 = anim = 41 && animtime = 0
+value = 47
+elem = 1
+ignorehitpause = 1
+persistent = 1
+
+;---------------------------------------------------------------------------
+;---   RESET   -------------------------------------------------------------
+;---------------------------------------------------------------------------
+
+;[State 0, reset hex]
+;type = ChangeAnim
+;triggerall = parent,var(27) = 0
+;triggerall = animtime = 0 
+;trigger1  = anim = 1100
+;trigger2  = anim = 1230
+;trigger3  = anim = 1251
+;value = 0
+;elem = 1
+;ignorehitpause = 1
+;persistent = 1
+;
+;[State 0, reset decimal]
+;type = ChangeAnim
+;triggerall = parent,var(27) = 2
+;triggerall = animtime = 0 
+;trigger1  = anim = 1000
+;trigger2  = anim = 1020
+;trigger3  = anim = 1030
+;trigger4  = anim = 1040
+;trigger5  = anim = 1050
+;trigger6  = anim = 1045
+;value = 2
+;elem = 1
+;ignorehitpause = 1
+;persistent = 1
+;
+;[State 0, reset binary]
+;type = ChangeAnim
+;triggerall = parent,var(27) = 1
+;triggerall = animtime = 0 
+;trigger1  = anim = [200,99999999]
+;value = 1
+;elem = 1
+;ignorehitpause = 1
+;persistent = 1
 
 [State 181, 1]
 type = NotHitBy
