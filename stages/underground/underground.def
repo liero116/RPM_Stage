@@ -99,8 +99,8 @@ delta = 0.80,0.60
 [BG Glow 3]
 type  = normal
 spriteno = 0,4
-start = 0,400
-delta = 0.80,0.60
+start = 0,250
+delta = 0.00,0.60
 trans=add
 
 ;--------------------------
@@ -165,8 +165,8 @@ alpha=256,0
 [BG Glow 2]
 type  = normal
 spriteno = 0,4
-start = 0,700
-delta = 1.00,0.80
+start = 0,550
+delta = 0.00,0.80
 trans=add
 
 ;----------
@@ -305,8 +305,8 @@ alpha=256,0
 [BG Glow 1]
 type  = normal
 spriteno = 0,4
-start = 70,740
-delta = 1.65,1.65
+start = 70,650
+delta = 0.00,1.65
 trans=add
 layerno = 1
 
