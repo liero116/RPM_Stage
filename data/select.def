@@ -80,6 +80,7 @@ stages/paintedbridge/paintedbridge.def
 stages/void/void.def
 stages/neighborhood/neighborhood.def
 stages/underground/underground.def
+stages/underground2/underground2.def
 stages/training2/training2.def
 
 ;---------------------------------------------------------------------
