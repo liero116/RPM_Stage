@@ -2319,16 +2319,16 @@ ampl = -4
 phase = 90
 ignorehitpause = 1
 
-[State 0, AfterImage]
-type = AfterImage
-trigger1 =time=0
-time = 156
-palcolor = 256
-palbright = 30,30,30
-palcontrast = 120,120,120
-paladd = 10,10,10
-palmul = .65,.65,.65
-trans=add
+;[State 0, AfterImage]
+;type = AfterImage
+;trigger1 =time=0
+;time = 156
+;palcolor = 256
+;palbright = 30,30,30
+;palcontrast = 120,120,120
+;paladd = 10,10,10
+;palmul = .65,.65,.65
+;trans=add
 
 [State 0, TargetBind]
 type = TargetBind

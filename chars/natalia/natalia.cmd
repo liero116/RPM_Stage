@@ -2987,13 +2987,15 @@ value = 232
 triggerall = var(27) = 0
 ;triggerall = !(ishelper)
 triggerall = command = "c"
-triggerall = command != "holddown" ;&& command != "holdfwd"
+trigger1 = command != "holddown" ;&& command != "holdfwd"
 trigger1 = statetype = S
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
-trigger3 = stateno = 202 || stateno = 212 || stateno = 402 || stateno = 412 || stateno = 432
+trigger3 = command != "holddown" ;&& command != "holdfwd"
+trigger3 = stateno = 202 || stateno = 212 || stateno = 402 || stateno = 412
 trigger3 = movecontact
-
+trigger4 = stateno = 432
+trigger4 = movecontact
 
 [State -1, Strong 242]
 type = ChangeState
@@ -3001,7 +3003,7 @@ value = 242
 triggerall = var(27) = 0
 ;triggerall = !(ishelper)
 triggerall = command = "c" ;&& command = "holdfwd"
-triggerall = command != "holddown"
+;trigger1 = command != "holddown"
 trigger1 = statetype = S
 trigger1 = stateno = 232 && movecontact
 ;trigger1 = ctrl || (stateno = 101 && time >= 2)
