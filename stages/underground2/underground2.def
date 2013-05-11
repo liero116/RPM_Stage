@@ -96,12 +96,12 @@ spriteno = 0,3
 start = 0,310
 delta = 0.70,0.60
 
-[BG Glow 3]
-type  = normal
-spriteno = 0,4
-start = 0,-200
-delta = 0.00,0.60
-trans=add
+;[BG Glow 3]
+;type  = normal
+;spriteno = 0,4
+;start = 0,-200
+;delta = 0.00,0.60
+;trans=add
 
 ;--------------------------
 [BG Particle B-02]
@@ -145,12 +145,12 @@ delta = 1.00,0.80
 trans=addalpha
 alpha=256,0
 
-[BG Glow 2]
-type  = normal
-spriteno = 0,4
-start = 0,-100
-delta = 0.00,0.80
-trans=add
+;[BG Glow 2]
+;type  = normal
+;spriteno = 0,4
+;start = 0,-100
+;delta = 0.00,0.80
+;trans=add
 
 [BG Connector 1]
 type  = normal
