@@ -4346,8 +4346,8 @@ Freq  = 90
 [State -1]
 Type = VelSet
 Trigger1 = Time = 5
-X = -1.5
-Y = -6.6
+X = -1.0
+Y = -6.0
 
 [State -1]
 Type = VelAdd

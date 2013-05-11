@@ -79,6 +79,7 @@ stages/roys_house/roys_house.def
 stages/paintedbridge/paintedbridge.def
 stages/void/void.def
 stages/neighborhood/neighborhood.def
+stages/underground/underground.def
 stages/training2/training2.def
 
 ;---------------------------------------------------------------------
