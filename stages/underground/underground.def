@@ -96,62 +96,62 @@ spriteno = 0,3
 start = 0,700
 delta = 0.80,0.60
 
-[BG Glow 3]
-type  = normal
-spriteno = 0,4
-start = 0,250
-delta = 0.00,0.60
-trans=add
+;[BG Glow 3]
+;type  = normal
+;spriteno = 0,4
+;start = 0,250
+;delta = 0.00,0.60
+;trans=add
 
 ;--------------------------
-[BG Particle B-01]
-type  = anim
-actionno = 22
-start = -1000,1000
-delta = 0.80,0.60
-layerno = 0
-trans=add
-
-[BG Particle B-01]
-type  = anim
-actionno = 23
-start = -1000,1000
-delta = 0.80,0.60
-layerno = 0
-trans=add
-
-;--------------------------
-[BG Particle B-02]
-type  = anim
-actionno = 20
-start = 0,900
-delta = 0.80,0.60
-layerno = 0
-trans=add
-
-[BG Particle B-02]
-type  = anim
-actionno = 21
-start = 0,900
-delta = 0.80,0.60
-layerno = 0
-trans=add
-
-[BG Particle B-02]
-type  = anim
-actionno = 22
-start = 1000,1000
-delta = 0.80,0.60
-layerno = 0
-trans=add
-
-[BG Particle B-02]
-type  = anim
-actionno = 23
-start = 1000,1000
-delta = 0.80,0.60
-layerno = 0
-trans=add
+;[BG Particle B-01]
+;type  = anim
+;actionno = 22
+;start = -1000,1000
+;delta = 0.80,0.60
+;layerno = 0
+;trans=add
+;
+;[BG Particle B-01]
+;type  = anim
+;actionno = 23
+;start = -1000,1000
+;delta = 0.80,0.60
+;layerno = 0
+;trans=add
+;
+;;--------------------------
+;[BG Particle B-02]
+;type  = anim
+;actionno = 20
+;start = 0,900
+;delta = 0.80,0.60
+;layerno = 0
+;trans=add
+;
+;[BG Particle B-02]
+;type  = anim
+;actionno = 21
+;start = 0,900
+;delta = 0.80,0.60
+;layerno = 0
+;trans=add
+;
+;[BG Particle B-02]
+;type  = anim
+;actionno = 22
+;start = 1000,1000
+;delta = 0.80,0.60
+;layerno = 0
+;trans=add
+;
+;[BG Particle B-02]
+;type  = anim
+;actionno = 23
+;start = 1000,1000
+;delta = 0.80,0.60
+;layerno = 0
+;trans=add
 
 ;----------
 [BG Back Floor]
@@ -162,137 +162,137 @@ delta = 1.00,0.80
 trans=addalpha
 alpha=256,0
 
-[BG Glow 2]
-type  = normal
-spriteno = 0,4
-start = 0,550
-delta = 0.00,0.80
-trans=add
+;[BG Glow 2]
+;type  = normal
+;spriteno = 0,4
+;start = 0,550
+;delta = 0.00,0.80
+;trans=add
 
 ;----------
-[BG Connector 1]
-type  = normal
-spriteno = 0,1
-start = 0,700
-delta = 1.30,1.40
-trans=addalpha
-alpha=256,0
-
-;--------------------------
-[BG Particle 1-00]
-type  = anim
-actionno = 10
-start = -3000,1400
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 2-00]
-type  = anim
-actionno = 11
-start = -3000,1400
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-;--------------------------
-[BG Particle 1-01]
-type  = anim
-actionno = 10
-start = -1000,1200
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 2-01]
-type  = anim
-actionno = 11
-start = -1000,1200
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 3-01]
-type  = anim
-actionno = 12
-start = -2000,1300
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 4-01]
-type  = anim
-actionno = 13
-start = -2000,1300
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-;--------------------------
-[BG Particle 1-02]
-type  = anim
-actionno = 10
-start = 0,1200
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 2-02]
-type  = anim
-actionno = 11
-start = 0,1200
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 3-02]
-type  = anim
-actionno = 12
-start = 1000,1300
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 4-02]
-type  = anim
-actionno = 13
-start = 1000,1300
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-;--------------------------
-[BG Particle 1-03]
-type  = anim
-actionno = 10
-start = 2000,1200
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 2-03]
-type  = anim
-actionno = 11
-start = 2000,1200
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 3-03]
-type  = anim
-actionno = 12
-start = 3000,1300
-delta = 1.45,1.45
-layerno = 0
-trans=add
-
-[BG Particle 4-03]
-type  = anim
-actionno = 13
-start = 3000,1300
-delta = 1.45,1.45
-layerno = 0
-trans=add
+;[BG Connector 1]
+;type  = normal
+;spriteno = 0,1
+;start = 0,700
+;delta = 1.30,1.40
+;trans=addalpha
+;alpha=256,0
+;
+;;--------------------------
+;[BG Particle 1-00]
+;type  = anim
+;actionno = 10
+;start = -3000,1400
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 2-00]
+;type  = anim
+;actionno = 11
+;start = -3000,1400
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;;--------------------------
+;[BG Particle 1-01]
+;type  = anim
+;actionno = 10
+;start = -1000,1200
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 2-01]
+;type  = anim
+;actionno = 11
+;start = -1000,1200
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 3-01]
+;type  = anim
+;actionno = 12
+;start = -2000,1300
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 4-01]
+;type  = anim
+;actionno = 13
+;start = -2000,1300
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;;--------------------------
+;[BG Particle 1-02]
+;type  = anim
+;actionno = 10
+;start = 0,1200
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 2-02]
+;type  = anim
+;actionno = 11
+;start = 0,1200
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 3-02]
+;type  = anim
+;actionno = 12
+;start = 1000,1300
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 4-02]
+;type  = anim
+;actionno = 13
+;start = 1000,1300
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;;--------------------------
+;[BG Particle 1-03]
+;type  = anim
+;actionno = 10
+;start = 2000,1200
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 2-03]
+;type  = anim
+;actionno = 11
+;start = 2000,1200
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 3-03]
+;type  = anim
+;actionno = 12
+;start = 3000,1300
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
+;
+;[BG Particle 4-03]
+;type  = anim
+;actionno = 13
+;start = 3000,1300
+;delta = 1.45,1.45
+;layerno = 0
+;trans=add
 
 [BG Floor]
 type  = normal
