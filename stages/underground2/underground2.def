@@ -13,8 +13,8 @@
 ;
 ;=============================================================
 [Info]
-name 		= "Underground_2"
-displayname 	= "Underground 2"
+name 		= "Underground"
+displayname 	= "Underground"
 versiondate 	= 
 mugenversion 	= 1.0
 author 		= "Liero"
@@ -152,14 +152,6 @@ alpha=256,0
 ;delta = 0.00,0.80
 ;trans=add
 
-[BG Connector 1]
-type  = normal
-spriteno = 0,1
-start = 0,100
-delta = 1.30,1.40
-trans=addalpha
-alpha=256,0
-
 ;--------------------------
 ;[BG Particle 1-02]
 ;type  = anim
@@ -185,13 +177,13 @@ alpha=256,0
 ;layerno = 0
 ;trans=add
 
-;[BG Particle 4-02]
-;type  = anim
-;actionno = 13
-;start = 500,550
-;delta = 1.45,1.45
-;layerno = 0
-;trans=add
+[BG Particle 4-02]
+type  = anim
+actionno = 13
+start = 0,550 ;500,550
+delta = 1.45,1.45
+layerno = 0
+trans=add
 ;--------------------------
 
 

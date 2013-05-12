@@ -2,12 +2,12 @@
 M.U.G.E.N ver 1.00 (2011.01.18) status log
 ------------------------------------------
 Parsing command line...
-Command line: F:\Cross Fighter\RPM_Stage\mugen.exe
+Command line: \\ROSEWILL-PC\Projects\Cross Fighter\RPM_Stage\mugen.exe
 Parse command line OK
 Initializing...
 Allocating game variables
 Reading configuration file...OK
-Initializing timer...performance timer enabled...frequency 3517773...OK
+Initializing timer...performance timer enabled...frequency 2343867...OK
 Initializing keyboard...configuring...OK
 Initializing input engine...OK
 Initializing sound...Using SDL audio driver: dsound
@@ -64,7 +64,7 @@ Playing storyboard logo.def: scene
 attempting load and start...attempting load of data/intro_sc2.mp3...hooking mixer callback...
 success!
 starting BGM...
-Storyboard playback canceled 10:0 k72 p0
+Storyboard playback finished OK
 Finished playing storyboard logo.def: scene
 Initializing character info...OK
 Initializing select screen...finding characters...
@@ -144,25 +144,23 @@ attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 attempting load and start...attempting load of sound/select.mp3...success!
 starting BGM...
-Loading character chars/natalia/natalia.def...
+Loading character chars/petra/petra.def...
   Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
+  Loading cmd command set cmd.cmd...OK
+  Loading cns cns.cns...OK
   Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
+  Loading cmd state entry cmd.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...attempting load and start...no BGM...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
+  10232 expressions (4212 on trigger lines)
+Character petra.def loaded OK
 Loading character chars/nadia/nadia.def...
   Loading info...OK
   Loading cmd command set nadia.cmd...OK
@@ -182,7 +180,7 @@ Loading character chars/nadia/nadia.def...
   SFF v1.01 palette hack engaged.
   17217 expressions (5414 on trigger lines)
 Character nadia.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Unloading system background data...sprite data...OK
 Initializing stage...
   Loading BG...attempting load of stages/underground/underground.mp3...success!
 OK
@@ -193,26 +191,24 @@ prebuffering BGM...
   Loading BG...attempting load of stages/underground/underground.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
+Loading character chars/petra/petra.def...
   Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
+  Loading cmd command set cmd.cmd...prebuffering BGM...
 OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
+  Loading cmd state entry cmd.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
+  10232 expressions (4212 on trigger lines)
+Character petra.def loaded OK
 Loading character chars/nadia/nadia.def...
   Loading info...OK
   Loading cmd command set nadia.cmd...OK
@@ -235,26 +231,24 @@ Character nadia.def loaded OK
   Loading BG...attempting load of stages/underground/underground.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
+Loading character chars/petra/petra.def...
   Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
+  Loading cmd command set cmd.cmd...prebuffering BGM...
 OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
+  Loading cmd state entry cmd.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
+  10232 expressions (4212 on trigger lines)
+Character petra.def loaded OK
 Loading character chars/nadia/nadia.def...
   Loading info...OK
   Loading cmd command set nadia.cmd...OK
@@ -277,68 +271,24 @@ Character nadia.def loaded OK
   Loading BG...attempting load of stages/underground/underground.mp3...success!
 OK
   Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
+Loading character chars/petra/petra.def...
   Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...prebuffering BGM...
+  Loading cmd command set cmd.cmd...prebuffering BGM...
 OK
+  Loading cns cns.cns...OK
   Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
   Loading cns throw.cns...OK
   Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
+  Loading cmd state entry cmd.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/underground/underground.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
+  10232 expressions (4212 on trigger lines)
+Character petra.def loaded OK
 Loading character chars/nadia/nadia.def...
   Loading info...OK
   Loading cmd command set nadia.cmd...OK
@@ -359,14 +309,26 @@ Loading character chars/nadia/nadia.def...
   17217 expressions (5414 on trigger lines)
 Character nadia.def loaded OK
 End of game loop
-Total time: 180.26s
-Total frames: 10602 	Skipped frames: 0
-Avg game rate: 58.82
-Avg frame rate: 58.82
+Total time: 728.25s
+Total frames: 41901 	Skipped frames: 11775
+Avg game rate: 57.54
+Avg frame rate: 41.37
 
 Reloading system sprite data...Reloading system background data...OK
 attempting load and start...attempting load of sound/select.mp3...success!
 starting BGM...
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
+OK
+  Allocating helpers...OK
+prebuffering BGM...
 Loading character chars/petra/petra.def...
   Loading info...OK
   Loading cmd command set cmd.cmd...OK
@@ -384,51 +346,139 @@ Loading character chars/petra/petra.def...
   SFF v1.01 palette hack engaged.
   10232 expressions (4212 on trigger lines)
 Character petra.def loaded OK
-attempting load and start...no BGM...Unloading system background data...sprite data...OK
-Initializing stage...
-  Loading BG...attempting load of stages/underground/underground.mp3...success!
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17217 expressions (5414 on trigger lines)
+Character nadia.def loaded OK
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
 OK
   Allocating helpers...OK
-Stage initialized OK
-Start of game loop
-prebuffering BGM...
-End of game loop
-Total time: 8.59s
-Total frames: 511 	Skipped frames: 1
-Avg game rate: 59.49
-Avg frame rate: 59.37
-
-Reloading system sprite data...Reloading system background data...OK
-Entering character select.
-attempting load and start...attempting load of sound/select.mp3...success!
-starting BGM...
-attempting load and start...attempting load of sound/title 4.mp3...success!
-starting BGM...
-Returned from main loop
-Deinitializing...
-Frames      : 11113
-Time elapsed: 206.290 sec
-ticks: 20629, tps: 100, start 87, end 20716
-
-Clearing player cache...OK
-Freeing character info...OK
-Freeing select screen...OK
-Freeing fight data...OK
-Freeing system data...OK
-Freeing game variables...OK
-Deinitializing input...pad...keyboard...OK
-Removing callbacks...OK
-Deintializing timer...OK
-Deinitializing graphics...OK
-Deinitializing BGM...Cleaning up mixer callback...unhooking mixer callback...
-
-Mixer callback was entered 4429 times
-Mixer callback timing stats (last 4429 calls):
-	6.000000 median, 7.833371 avg, 7.998080 sample std. dev.
-Top 10 slowest times:	151 (1), 149 (1), 140 (1), 105 (1), 82 (1), 71 (1), 66 (1), 63 (1), 62 (2), 57 (1)
-Top 10 fastest times:	1 (14), 2 (75), 3 (35), 4 (191), 5 (884), 6 (1175), 7 (844), 8 (297), 9 (355), 10 (275)
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...prebuffering BGM...
 OK
-Deinitializing sound...OK
-Successful program termination.
-
-Log file successfully closed.
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10232 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17217 expressions (5414 on trigger lines)
+Character nadia.def loaded OK
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...prebuffering BGM...
+OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10232 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  17217 expressions (5414 on trigger lines)
+Character nadia.def loaded OK
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/petra/petra.def...
+  Loading info...OK
+  Loading cmd command set cmd.cmd...prebuffering BGM...
+OK
+  Loading cns cns.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry cmd.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff sff.sff...OK
+  Loading anim air.air...OK
+  Loading snd snd.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  10232 expressions (4212 on trigger lines)
+Character petra.def loaded OK
+Loading character chars/nadia/nadia.def...
+  Loading info...OK
+  Loading cmd command set nadia.cmd...OK
+  Loading cns nadia.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry nadia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff nadia.sff...OK
+  Loading anim nadia.air...OK
+  Loading snd nadia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(
