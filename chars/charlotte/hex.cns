@@ -1260,6 +1260,14 @@ velset = 1.8,0
 sprpriority=5
 poweradd = 0; ifelse(fvar(17)=0,0,0)
 
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.10
+ignorehitpause = 1
+persistent = 0
+
 [State 0, AfterImage]
 type = AfterImage
 trigger1 =time=0
@@ -1413,6 +1421,14 @@ velset = 4,0
 sprpriority=5
 poweradd = 0; ifelse(fvar(17)=0,0,0)
 
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.10
+ignorehitpause = 1
+persistent = 0
+
 [State 0, AfterImage]
 type = AfterImage
 trigger1 =time=0
@@ -1561,6 +1577,14 @@ anim = 1103
 velset = 6,0
 sprpriority=5
 poweradd = 0; ifelse(fvar(17)=0,0,0)
+
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.10
+ignorehitpause = 1
+persistent = 0
 
 [State 0, AfterImage]
 type = AfterImage
