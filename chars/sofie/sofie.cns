@@ -970,6 +970,7 @@ triggerall = stateno != 10551
 triggerall = stateno != 10561
 triggerall = stateno != 10571
 triggerall = stateno != 3051
+triggerall = stateno != 10080
 triggerall = stateno != [30002,30042]
 triggerall = enemy,gethitvar(hitcount)>=3
 trigger1 = movehit = 1 ;|| helper,movehit = 1

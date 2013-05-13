@@ -1229,7 +1229,7 @@ ground.type = Low
 ground.slidetime = 10
 ground.hittime  = 10
 guard.hittime = 6
-ground.velocity = -5,0
+ground.velocity = -8,0
 air.velocity = 0,-2
 air.hittime = 25
 
@@ -1253,7 +1253,7 @@ ground.type = high
 ground.slidetime = 11
 ground.hittime  = 11
 guard.hittime = 9
-ground.velocity = -5,0
+ground.velocity = -9.5,0
 air.velocity = -1,-4.5
 air.hittime = 25
 air.fall=1
@@ -2140,7 +2140,7 @@ trigger1 = Time = 0
 priority=4,hit
 attr = SCA, AP
 animtype  = low
-damage    = floor(parent,fvar(13)*60),20
+damage    = floor(parent,fvar(13)*30),20
 guardflag = MAF
 hitflag = MAF
 pausetime = 0,0
@@ -2330,8 +2330,6 @@ air.fall=1
 fall=1
 fall.recover=0
 yaccel=const(movement.yaccel)
-id=1
-nochainid=1
 fall.recover = ifelse(var(6)=0,0,1)
 
 [state 0, hit check]
@@ -2451,7 +2449,7 @@ trigger1 = Time = 0
 priority=4,hit
 attr = SCA, NA
 animtype  = low
-damage    = floor(fvar(13)*90),10
+damage    = floor(fvar(13)*100),10
 guardflag = MAF
 pausetime = 10,10
 sparkno = 1004
@@ -2462,16 +2460,14 @@ ground.type = high
 ground.slidetime = 25
 ground.hittime  = 25
 guard.hittime = 9
-ground.velocity = -2,ifelse(var(6)=0,-11,-4)
+ground.velocity = -2,ifelse(var(6)=0,-12,-4)
 air.type = high
-air.velocity = -1,ifelse(var(6)=0,-11,-4)
+air.velocity = -1,ifelse(var(6)=0,-12,-4)
 air.hittime=35
 air.fall=1
 fall=1
 fall.recover=0
 yaccel=const(movement.yaccel)
-id=1
-nochainid=1
 fall.recover = ifelse(var(6)=0,0,1)
 
 [state 0, hit check]
@@ -2591,7 +2587,7 @@ trigger1 = Time = 0
 priority=4,hit
 attr = SCA, NA
 animtype  = low
-damage    = floor(fvar(13)*100),10
+damage    = floor(fvar(13)*80),10
 guardflag = MAF
 pausetime = 10,10
 sparkno = 1004
@@ -2602,16 +2598,14 @@ ground.type = high
 ground.slidetime = 25
 ground.hittime  = 25
 guard.hittime = 9
-ground.velocity = -2,ifelse(var(6)=0,-12,-6)
+ground.velocity = -1,ifelse(var(6)=0,-12,-6)
 air.type = high
-air.velocity = -1,ifelse(var(6)=0,-12,-6)
+air.velocity = -0.5,ifelse(var(6)=0,-12,-6)
 air.hittime=35
 air.fall=1
 fall=1
 fall.recover=0
 yaccel=const(movement.yaccel)
-id=1
-nochainid=1
 fall.recover = ifelse(var(6)=0,0,1)
 
 [state 0, hit check]
@@ -2748,7 +2742,7 @@ trigger3 = animelem = 4
 priority=4,hit
 attr = SCA, NA
 animtype  = low
-damage    = floor(fvar(13)*30),5
+damage    = floor(fvar(13)*45),5
 guardflag = MAFD
 pausetime = 10,10
 sparkno = 1004
@@ -2840,6 +2834,14 @@ trigger1 = animelem=3
 value = 5,18
 volume=50
 
+[state 0, damage scaling change]
+type = varset
+triggerall = time > 21
+triggerall = enemy,gethitvar(hitcount)>=3
+trigger1 = movehit = 1
+fvar(13)=fvar(13)*fvar(14)
+persistent = 0
+
 [State 1000, 5]
 type = hitdef 
 ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
@@ -2854,7 +2856,7 @@ trigger7 = animelem = 16
 trigger8 = animelem = 18
 attr = S, SA
 animtype  = Hard
-damage    = floor(fvar(13)*10), 5
+damage    = floor(fvar(13)*15), 5
 priority  = 6,hit
 guardflag = MA
 hitflag = MAF
@@ -2864,8 +2866,8 @@ sparkno = 1001
 hitsound   = 5,4
 guardsound = 6,0
 ground.type = high
-ground.slidetime = 30
-ground.hittime  = 30
+ground.slidetime = 31
+ground.hittime  = 31
 guard.hittime = 24
 ground.velocity = -1,0
 air.velocity = -1,-3

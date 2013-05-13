@@ -2974,19 +2974,19 @@ trigger3 = movecontact
 ;trigger4 = p2stateno != [11000,11010]
 ;trigger4 = stateno = 10313 || stateno = 10413 || stateno = 10513 || stateno = 11000
 
-[State -1, Strong Kick (Launcher) 445]
-type = ChangeState
-value = 445
-triggerall = var(27) = 0
-triggerall = command = "c"
-triggerall = command = "holddown" && command = "holdfwd"
-triggerall = statetype != A
-trigger1 = ctrl || (stateno = 101 && time >= 2)
-trigger2 = stateno = 10100000 || stateno = 10900000
-trigger3 = p2stateno != [12000,12002]
-trigger3 = p2stateno != [11000,11010]
-trigger3 = stateno = 212 || stateno = 242 || stateno = 412
-trigger3 = movecontact
+;[State -1, Strong Kick (Launcher) 445]
+;type = ChangeState
+;value = 445
+;triggerall = var(27) = 0
+;triggerall = command = "c"
+;triggerall = command = "holddown" ;&& command = "holdfwd"
+;triggerall = statetype != A
+;trigger1 = ctrl || (stateno = 101 && time >= 2)
+;trigger2 = stateno = 10100000 || stateno = 10900000
+;trigger3 = p2stateno != [12000,12002]
+;trigger3 = p2stateno != [11000,11010]
+;trigger3 = stateno = 212 || stateno = 242 || stateno = 412
+;trigger3 = movecontact
 ; trigger4 = p2stateno != [12000,12002]
 ; trigger4 = p2stateno != [11000,11010]
 ; trigger4 = stateno = 10313 || stateno = 10413 || stateno = 10513 || stateno = 11000
@@ -2996,7 +2996,7 @@ type = ChangeState
 value = 442
 triggerall = var(27) = 0
 triggerall = command = "c"
-triggerall = command = "holddown" && command != "holdfwd"
+triggerall = command = "holddown" ;&& command = "holdfwd"
 triggerall = statetype != A
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = stateno = 10100000 || stateno = 10900000
