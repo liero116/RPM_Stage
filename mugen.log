@@ -163,76 +163,30 @@ Loading character chars/natalia/natalia.def...
   SFF v1.01 palette hack engaged.
   15230 expressions (5199 on trigger lines)
 Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
+Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
 attempting load and start...no BGM...Unloading system background data...sprite data...OK
 Initializing stage...
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
 OK
   Allocating helpers...OK
 Stage initialized OK
 Start of game loop
 prebuffering BGM...
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...prebuffering BGM...
-OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
 OK
   Allocating helpers...OK
 Loading character chars/natalia/natalia.def...
@@ -255,26 +209,136 @@ OK
   SFF v1.01 palette hack engaged.
   15230 expressions (5199 on trigger lines)
 Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
+Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15230 expressions (5199 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15230 expressions (5199 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15230 expressions (5199 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
 OK
   Allocating helpers...OK
 Loading character chars/natalia/natalia.def...
@@ -295,70 +359,24 @@ OK
   Loading snd natalia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
+  15234 expressions (5201 on trigger lines)
 Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
+Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...prebuffering BGM...
-OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/underground2/underground2.mp3...success!
 OK
   Allocating helpers...OK
 Loading character chars/natalia/natalia.def...
@@ -379,1250 +397,425 @@ OK
   Loading snd natalia.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
+  15234 expressions (5201 on trigger lines)
 Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
+Loading character chars/bot_blu/bot_blu.def...
   Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
   Loading common states common1.cns...OK
   Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
   Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
   SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...prebuffering BGM...
-OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...prebuffering BGM...
-OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...prebuffering BGM...
-OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...prebuffering BGM...
-OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...prebuffering BGM...
-OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...prebuffering BGM...
-OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...prebuffering BGM...
-OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...prebuffering BGM...
-OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...prebuffering BGM...
-OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
-  Loading BG...attempting load of stages/skypalace_night/skypalace_night.mp3...success!
-OK
-  Allocating helpers...OK
-Loading character chars/natalia/natalia.def...
-  Loading info...OK
-  Loading cmd command set natalia.cmd...prebuffering BGM...
-OK
-  Loading cns natalia.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry natalia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff natalia.sff...OK
-  Loading anim natalia.air...OK
-  Loading snd natalia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  15230 expressions (5199 on trigger lines)
-Character natalia.def loaded OK
-Loading character chars/nadia/nadia.def...
-  Loading info...OK
-  Loading cmd command set nadia.cmd...OK
-  Loading cns nadia.cns...OK
-  Loading cns decimal.cns...OK
-  Loading cns binary.cns...OK
-  Loading cns hex.cns...OK
-  Loading cns throw.cns...OK
-  Loading cns pause.cns...OK
-  Loading cmd state entry nadia.cmd...OK
-  Loading common states common1.cns...OK
-  Unloading command names...OK
-  Loading sff nadia.sff...OK
-  Loading anim nadia.air...OK
-  Loading snd nadia.snd...OK
-  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
-  SFF v1.01 palette hack engaged.
-  17217 expressions (5414 on trigger lines)
-Character nadia.def loaded OK
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
 End of game loop
-Total time: 1486.47s
-Total frames: 88057 	Skipped frames: 3
-Avg game rate: 59.24
-Avg frame rate: 59.24
+Total time: 2416.33s
+Total frames: 144770 	Skipped frames: 0
+Avg game rate: 59.91
+Avg frame rate: 59.91
+
+Reloading system sprite data...Reloading system background data...OK
+attempting load and start...attempting load of sound/select.mp3...success!
+starting BGM...
+attempting load and start...no BGM...Unloading system background data...sprite data...OK
+Initializing stage...
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Stage initialized OK
+Start of game loop
+prebuffering BGM...
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15236 expressions (5203 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...prebuffering BGM...
+OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15236 expressions (5203 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15236 expressions (5203 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15236 expressions (5203 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15236 expressions (5203 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...prebuffering BGM...
+OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15236 expressions (5203 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...prebuffering BGM...
+OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15236 expressions (5203 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...prebuffering BGM...
+OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15240 expressions (5205 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...prebuffering BGM...
+OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15240 expressions (5205 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+  Loading BG...attempting load of stages/skypalace2/skypalace2.mp3...success!
+OK
+  Allocating helpers...OK
+Loading character chars/natalia/natalia.def...
+  Loading info...OK
+  Loading cmd command set natalia.cmd...OK
+  Loading cns natalia.cns...OK
+  Loading cns hex.cns...prebuffering BGM...
+OK
+  Loading cns decimal.cns...OK
+  Loading cns binary.cns...OK
+  Loading cns throw.cns...OK
+  Loading cns pause.cns...OK
+  Loading cmd state entry natalia.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff natalia.sff...OK
+  Loading anim natalia.air...OK
+  Loading snd natalia.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  15240 expressions (5205 on trigger lines)
+Character natalia.def loaded OK
+Loading character chars/bot_blu/bot_blu.def...
+  Loading info...OK
+  Loading cmd command set bot_blu.cmd...OK
+  Loading cns bot_blu.cns...OK
+  Loading cns config.txt...OK
+  Loading cmd state entry bot_blu.cmd...OK
+  Loading common states common1.cns...OK
+  Unloading command names...OK
+  Loading sff bot_blu.sff...OK
+  Loading anim bot_blu.air...OK
+  Loading snd bot_blu.snd...OK
+  Loading pals...(1,1)(1,2)(1,3)(1,4)(1,5)(1,6)(1,7)(1,8)(1,9)(1,10)(1,11)(1,12)OK
+  SFF v1.01 palette hack engaged.
+  19506 expressions (5727 on trigger lines)
+Character bot_blu.def loaded OK
+End of game loop
+Total time: 1540.75s
+Total frames: 92236 	Skipped frames: 0
+Avg game rate: 59.86
+Avg frame rate: 59.86
 
 Reloading system sprite data...Reloading system background data...OK
 Entering character select.
@@ -1632,9 +825,9 @@ attempting load and start...attempting load of sound/title 4.mp3...success!
 starting BGM...
 Returned from main loop
 Deinitializing...
-Frames      : 88057
-Time elapsed: 1498.820 sec
-ticks: 149882, tps: 100, start 77, end 149959
+Frames      : 237006
+Time elapsed: 4024.680 sec
+ticks: 402468, tps: 100, start 87, end 402555
 
 Clearing player cache...OK
 Freeing character info...OK
@@ -1648,11 +841,11 @@ Deintializing timer...OK
 Deinitializing graphics...OK
 Deinitializing BGM...Cleaning up mixer callback...unhooking mixer callback...
 
-Mixer callback was entered 32260 times
-Mixer callback timing stats (last 32260 calls):
-	7.000000 median, 8.234532 avg, 15.946084 sample std. dev.
-Top 10 slowest times:	1937 (1), 1000 (1), 601 (1), 498 (1), 374 (1), 303 (1), 299 (1), 278 (1), 273 (1), 265 (1)
-Top 10 fastest times:	1 (58), 2 (292), 3 (78), 4 (302), 5 (4363), 6 (9662), 7 (8403), 8 (2418), 9 (1346), 10 (2394)
+Mixer callback was entered 86651 times
+Mixer callback timing stats (last 86651 calls):
+	6.000000 median, 8.219824 avg, 8.751955 sample std. dev.
+Top 10 slowest times:	272 (1), 241 (1), 223 (1), 222 (1), 213 (1), 202 (1), 200 (1), 196 (1), 189 (1), 186 (1)
+Top 10 fastest times:	1 (30), 2 (135), 3 (90), 4 (1989), 5 (18601), 6 (25741), 7 (16905), 8 (4681), 9 (6116), 10 (6134)
 OK
 Deinitializing sound...OK
 Successful program termination.

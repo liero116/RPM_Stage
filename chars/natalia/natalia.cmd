@@ -611,6 +611,11 @@ time = 13
 
 ;-| 2/3 Button Combination |-----------------------------------------------
 [Command]
+name = "z"
+command = a+b+c
+buffer.time=3
+
+[Command]
 name = "recovery";Required (do not remove)
 command = x+y
 time = 1

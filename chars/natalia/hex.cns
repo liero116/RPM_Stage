@@ -551,7 +551,7 @@ hitcountpersist=1
 type = varAdd
 triggerall = p2statetype != S && p2statetype != C
 trigger1 = movehit = 1
-fvar(20)=0.08
+fvar(20)=0.22
 ignorehitpause = 1
 persistent = 0
 
@@ -1733,6 +1733,17 @@ air.hittime = 36
 air.fall=1
 fall=1
 yaccel=const(movement.yaccel)
+
+[State 0, Super Cancel]
+type = ChangeState
+trigger1 = power >= 1000
+trigger1 = ((command = "up" && command = "z") || (command = "holdup" && command = "z")) && movecontact
+value = 3250
+ctrl = 0
+;anim =
+;ignorehitpause = 
+;persistent = 
+
 
 [State 1000, Land]
 type= changestate

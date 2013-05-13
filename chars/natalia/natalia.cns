@@ -954,7 +954,9 @@ id = 191002
 
 [State 0, Width]
 type = Width
-trigger1 = movetype = A && stateno != 800
+triggerall = movetype = A 
+trigger1 = stateno != 800
+trigger1 = stateno != 632
 edge = 0,0
 player = ifelse(enemy,backedgebodydist < 30,25,10),0
 
