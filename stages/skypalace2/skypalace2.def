@@ -94,10 +94,8 @@ intensity = 64
 [BG Sky]
 type  = normal
 spriteno = 0,2
-start = 0,0
+start = 0,-50
 delta = 0.30,0.30
-trans=addalpha
-alpha=256,0
 
 ;-------------------------------------------------------------------
 
