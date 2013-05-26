@@ -188,7 +188,7 @@ value = 75
 type = varAdd
 triggerall = p2statetype != S && p2statetype != C
 trigger1 = movehit = 1
-fvar(20)=0.015
+fvar(20)=0.03
 ignorehitpause = 1
 persistent = 0
 
@@ -669,7 +669,7 @@ juggle  = 1
 velset = 0,0
 ctrl = 0
 ;anim = 430
-poweradd = 20
+poweradd = 0
 sprpriority = 2
 
 [State 0, limit add]
@@ -1502,19 +1502,19 @@ value = 1200 + var(18)
 type = PowerAdd
 triggerall = var(18) = 1
 trigger1 = animelem = 4
-value = 300
+value = 150
 
 [State 0, 623A Power]
 type = PowerAdd
 triggerall = var(18) = 2
 trigger1 = animelem = 4
-value = 500
+value = 300
 
 [State 0, 623A Power]
 type = PowerAdd
 triggerall = var(18) = 3
 trigger1 = animelem = 4
-value = 700
+value = 500
 
 [State 0, AfterImage]
 type = AfterImage

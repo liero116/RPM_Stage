@@ -454,11 +454,13 @@ sprpriority = 2
 facep2=1
 hitcountpersist=1
 
-;[state 0, damage scaling change]
-;type = varset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*0.92
-;persistent = 0
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.10
+ignorehitpause = 1
+persistent = 0
 
 [State 0, VelSet]
 type = VelSet

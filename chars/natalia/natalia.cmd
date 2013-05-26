@@ -611,11 +611,6 @@ time = 13
 
 ;-| 2/3 Button Combination |-----------------------------------------------
 [Command]
-name = "z"
-command = a+b+c
-buffer.time=3
-
-[Command]
 name = "recovery";Required (do not remove)
 command = x+y
 time = 1
@@ -2763,8 +2758,8 @@ trigger3 = movecontact
 trigger4 = stateno = 40
 trigger5 = stateno = [1200,1220]
 trigger5 = movecontact
-trigger6 = stateno = [1250,1252]
-trigger6 = movecontact && statetype != A
+;trigger6 = stateno = [1250,1252]
+;trigger6 = movecontact && time < 3
 
 ;===========================================================================
 [State -1, ]

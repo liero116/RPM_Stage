@@ -572,7 +572,7 @@ channel=0
 
 [State 240, 2]
 type = hitdef 
-ground.cornerpush.veloff = ifelse(p2statetype = A,-4,0)
+ground.cornerpush.veloff = ifelse(p2statetype = A,-9,0)
 fall.yvelocity = 0
 trigger1 = Time = 0
 priority = 5
@@ -587,8 +587,8 @@ sparkxy = (-10 - random%5), (-8 - random%15); = -10,-60
 hitsound   = 5,12
 guardsound = 6,0
 ground.type = Low
-ground.slidetime = 25
-ground.hittime  = 25
+ground.slidetime = 24
+ground.hittime  = 24
 guard.hittime = 21
 ground.velocity = -5
 air.type = high
@@ -1360,6 +1360,14 @@ anim = 601
 facep2=0
 ;velset = (vel x)/3,vel y
 
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20) = 0.05
+ignorehitpause = 1
+persistent = 0
+
 [State 0, VelSet]
 type = Velmul
 trigger1 = prevstateno = 102
@@ -1440,6 +1448,14 @@ anim = 611
 sprpriority = 2
 facep2=0
 ;velset = (vel x)/3,vel y
+
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20) = 0.05
+ignorehitpause = 1
+persistent = 0
 
 [State 0, VelSet]
 type = Velmul
@@ -1524,6 +1540,14 @@ anim = 645
 sprpriority = 2
 facep2=0
 ;velset = (vel x)/3,vel y
+
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20) = 0.05
+ignorehitpause = 1
+persistent = 0
 
 [State 0, VelSet]
 type = Velmul

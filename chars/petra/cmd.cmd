@@ -3122,10 +3122,10 @@ triggerall = command = "a"
 trigger1 = statetype = A
 trigger1 = ctrl || (stateno = 101 && time >= 2)
 trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
-trigger2 = stateno != 600
-trigger3 = stateno = 650 && p2movetype = H
-trigger4 = stateno = 1100 && statetype = A
-trigger5 = stateno = 1110 && statetype = A
+;trigger2 = stateno != 600
+;trigger3 = stateno = 650 && p2movetype = H
+;trigger4 = stateno = 1100 && statetype = A
+;trigger5 = stateno = 1110 && statetype = A
 
 [State -1, Mid 610]
 type = ChangeState
@@ -3138,9 +3138,9 @@ trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 610
 trigger3 = stateno = 600
 trigger3 = movecontact
-trigger3 = stateno = 650 && p2movetype = H
-trigger5 = stateno = 1100 && statetype = A
-trigger6 = stateno = 1110 && statetype = A
+;trigger3 = stateno = 650 && p2movetype = H
+;trigger5 = stateno = 1100 && statetype = A
+;trigger6 = stateno = 1110 && statetype = A
 
 [State -1, Strong Kick 630]
 type = ChangeState
@@ -3153,9 +3153,9 @@ trigger2 = var(40) = 1 && ( movecontact || p2movetype = H )
 trigger2 = stateno != 630
 trigger3 = stateno = 610
 trigger3 = movecontact
-trigger3 = stateno = 650 && p2movetype = H
-trigger5 = stateno = 1100 && statetype = A
-trigger6 = stateno = 1110 && statetype = A
+;trigger3 = stateno = 650 && p2movetype = H
+;trigger5 = stateno = 1100 && statetype = A
+;trigger6 = stateno = 1110 && statetype = A
 
 ;===========================================================================
 ;[State -1, Super Jump 7000]

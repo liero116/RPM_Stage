@@ -96,11 +96,13 @@ anim = 210
 sprpriority = -1
 facep2=1
 
-;[state 0, damage scaling change]
-;type = varset
-;trigger1 = movehit = 1
-;fvar(13)=fvar(13)*fvar(14)
-;persistent = 0
+[State 0, gravity up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.10
+ignorehitpause = 1
+persistent = 0
 
 [state 0, damage counter set]
 type = varadd
@@ -149,7 +151,7 @@ ground.slidetime = 17
 ground.hittime  = 17
 guard.hittime = 15
 ground.velocity = -4,0
-air.velocity = -.5,-4.2
+air.velocity = -1,-4.2
 air.hittime  = 27
 nochainid=1
 ;ground.cornerpush.veloff= -1.2

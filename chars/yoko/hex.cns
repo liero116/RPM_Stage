@@ -4711,7 +4711,7 @@ facep2=1
 type = varAdd
 triggerall = p2statetype != S && p2statetype != C
 trigger1 = movehit = 1
-fvar(20) = 0.05
+fvar(20) = 0.15
 ignorehitpause = 1
 persistent = 0
 

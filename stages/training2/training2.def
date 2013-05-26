@@ -11,7 +11,7 @@ boundhigh = -700
 boundlow = 0
 verticalfollow = 1.1
 floortension = 90
-tension = 30 
+tension = 300
 
 ;--------------------------------------------------------
 [PlayerInfo]
