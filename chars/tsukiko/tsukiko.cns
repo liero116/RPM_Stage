@@ -943,6 +943,12 @@ trigger1 = p2movetype!=H
 trigger2 = var(40)=1
 fvar(20)=0
 
+[State 0, gravity auto up]
+type = varAdd
+triggerall = p2statetype != S && p2statetype != C
+trigger1 = movehit = 1
+fvar(20)=0.02
+
 ;[State 0, gravity up];add scalable states here
 ;type = varAdd
 ;triggerall = p2statetype != S && p2statetype != C
